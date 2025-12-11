@@ -1,0 +1,275 @@
+[2025-08-17 20:15:46.822] ERROR: 通义千问API调用失败
+  {
+  "error": "timeout of 30000ms exceeded"
+}
+[2025-08-17 20:15:46.823] ERROR: 意图识别失败
+  {
+  "error": "API调用超时，请检查网络连接",
+  "userInput": "你好",
+  "processingTime": "30034ms",
+  "success": false
+}
+[2025-08-17 20:16:49.515] ERROR: 通义千问API调用失败
+  {
+  "error": "timeout of 30000ms exceeded"
+}
+[2025-08-17 20:18:05.573] ERROR: 通义千问API调用失败
+  {
+  "error": "timeout of 30000ms exceeded"
+}
+[2025-08-17 20:18:05.574] ERROR: 意图识别失败
+  {
+  "error": "API调用超时，请检查网络连接",
+  "userInput": "我要去取快递",
+  "processingTime": "30046ms",
+  "success": false
+}
+[2025-08-17 20:18:05.574] ERROR: 意图识别失败
+  {
+  "error": "API调用超时，请检查网络连接",
+  "stack": "Error: API调用超时，请检查网络连接\n    at IntentRecognitionService.callQwenAPI (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/intentRecognitionService.js:153:15)\n    at async IntentRecognitionService.recognizeIntent (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/intentRecognitionService.js:65:24)\n    at async IntentRecognitionController.recognizeIntent (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/controllers/intentRecognitionController.js:73:22)",
+  "input": "我要去取快递..."
+}
+[2025-08-17 20:50:24.140] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435021982",
+  "error": "Class constructor ObjectId cannot be invoked without 'new'",
+  "stack": "TypeError: Class constructor ObjectId cannot be invoked without 'new'\n    at conversationSchema.statics.getUserConversations (/Users/bytedance/Desktop/coding/timer3/backend/src/models/Conversation.js:183:28)\n    at ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:54)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runTests (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/tests/conversation-manual-test.js:129:24)",
+  "processingTime": "2158ms"
+}
+[2025-08-17 20:50:27.921] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435021982",
+  "error": "Class constructor ObjectId cannot be invoked without 'new'",
+  "stack": "TypeError: Class constructor ObjectId cannot be invoked without 'new'\n    at conversationSchema.statics.getUserConversations (/Users/bytedance/Desktop/coding/timer3/backend/src/models/Conversation.js:183:28)\n    at ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:54)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runTests (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/tests/conversation-manual-test.js:129:24)",
+  "processingTime": "2778ms"
+}
+[2025-08-17 20:50:30.461] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435021982",
+  "error": "Class constructor ObjectId cannot be invoked without 'new'",
+  "stack": "TypeError: Class constructor ObjectId cannot be invoked without 'new'\n    at conversationSchema.statics.getUserConversations (/Users/bytedance/Desktop/coding/timer3/backend/src/models/Conversation.js:183:28)\n    at ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:54)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runTests (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/tests/conversation-manual-test.js:129:24)",
+  "processingTime": "1538ms"
+}
+[2025-08-17 20:50:33.510] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435021982",
+  "error": "Class constructor ObjectId cannot be invoked without 'new'",
+  "stack": "TypeError: Class constructor ObjectId cannot be invoked without 'new'\n    at conversationSchema.statics.getUserConversations (/Users/bytedance/Desktop/coding/timer3/backend/src/models/Conversation.js:183:28)\n    at ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:54)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runTests (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/tests/conversation-manual-test.js:129:24)",
+  "processingTime": "2046ms"
+}
+[2025-08-17 20:50:36.908] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435021982",
+  "error": "Class constructor ObjectId cannot be invoked without 'new'",
+  "stack": "TypeError: Class constructor ObjectId cannot be invoked without 'new'\n    at conversationSchema.statics.getUserConversations (/Users/bytedance/Desktop/coding/timer3/backend/src/models/Conversation.js:183:28)\n    at ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:54)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runTests (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/tests/conversation-manual-test.js:129:24)",
+  "processingTime": "2395ms"
+}
+[2025-08-17 20:50:40.236] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435021982",
+  "error": "Class constructor ObjectId cannot be invoked without 'new'",
+  "stack": "TypeError: Class constructor ObjectId cannot be invoked without 'new'\n    at conversationSchema.statics.getUserConversations (/Users/bytedance/Desktop/coding/timer3/backend/src/models/Conversation.js:183:28)\n    at ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:54)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runTests (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/tests/conversation-manual-test.js:129:24)",
+  "processingTime": "2324ms"
+}
+[2025-08-17 20:50:43.506] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435021982",
+  "error": "Class constructor ObjectId cannot be invoked without 'new'",
+  "stack": "TypeError: Class constructor ObjectId cannot be invoked without 'new'\n    at conversationSchema.statics.getUserConversations (/Users/bytedance/Desktop/coding/timer3/backend/src/models/Conversation.js:183:28)\n    at ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:54)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runTests (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/tests/conversation-manual-test.js:129:24)",
+  "processingTime": "2267ms"
+}
+[2025-08-17 20:50:46.144] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435021982",
+  "error": "Class constructor ObjectId cannot be invoked without 'new'",
+  "stack": "TypeError: Class constructor ObjectId cannot be invoked without 'new'\n    at conversationSchema.statics.getUserConversations (/Users/bytedance/Desktop/coding/timer3/backend/src/models/Conversation.js:183:28)\n    at ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:54)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runTests (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/tests/conversation-manual-test.js:129:24)",
+  "processingTime": "1635ms"
+}
+[2025-08-17 20:50:50.077] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435021982",
+  "error": "Class constructor ObjectId cannot be invoked without 'new'",
+  "stack": "TypeError: Class constructor ObjectId cannot be invoked without 'new'\n    at conversationSchema.statics.getUserConversations (/Users/bytedance/Desktop/coding/timer3/backend/src/models/Conversation.js:183:28)\n    at ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:54)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runTests (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/tests/conversation-manual-test.js:129:24)",
+  "processingTime": "2931ms"
+}
+[2025-08-17 20:50:52.605] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435021982",
+  "error": "Class constructor ObjectId cannot be invoked without 'new'",
+  "stack": "TypeError: Class constructor ObjectId cannot be invoked without 'new'\n    at conversationSchema.statics.getUserConversations (/Users/bytedance/Desktop/coding/timer3/backend/src/models/Conversation.js:183:28)\n    at ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:54)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async runTests (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/tests/conversation-manual-test.js:129:24)",
+  "processingTime": "1527ms"
+}
+[2025-08-17 20:50:59.811] ERROR: 获取对话历史失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435021982",
+  "error": "Class constructor ObjectId cannot be invoked without 'new'",
+  "stack": "TypeError: Class constructor ObjectId cannot be invoked without 'new'\n    at conversationSchema.statics.getUserConversations (/Users/bytedance/Desktop/coding/timer3/backend/src/models/Conversation.js:183:28)\n    at ConversationService.getConversationHistory (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:293:48)\n    at runTests (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/tests/conversation-manual-test.js:210:55)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+[2025-08-17 20:50:59.813] ERROR: 获取服务统计失败
+  {
+  "error": "Class constructor ObjectId cannot be invoked without 'new'"
+}
+[2025-08-17 20:51:58.716] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435117448",
+  "error": "Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)",
+  "stack": "MissingSchemaError: Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)\n    at NativeConnection.model (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/connection.js:1493:13)\n    at _getModelFromConn (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:579:15)\n    at addModelNamesToMap (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:507:17)\n    at getModelsMapForPopulate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:208:7)\n    at _populatePath (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4469:21)\n    at model.populate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4436:21)\n    at model.Query._find (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:2429:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async model.Query.exec (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:4604:63)\n    at async ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:35)",
+  "processingTime": "1266ms"
+}
+[2025-08-17 20:52:01.371] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435117448",
+  "error": "Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)",
+  "stack": "MissingSchemaError: Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)\n    at NativeConnection.model (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/connection.js:1493:13)\n    at _getModelFromConn (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:579:15)\n    at addModelNamesToMap (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:507:17)\n    at getModelsMapForPopulate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:208:7)\n    at _populatePath (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4469:21)\n    at model.populate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4436:21)\n    at model.Query._find (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:2429:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async model.Query.exec (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:4604:63)\n    at async ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:35)",
+  "processingTime": "1651ms"
+}
+[2025-08-17 20:52:04.166] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435117448",
+  "error": "Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)",
+  "stack": "MissingSchemaError: Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)\n    at NativeConnection.model (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/connection.js:1493:13)\n    at _getModelFromConn (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:579:15)\n    at addModelNamesToMap (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:507:17)\n    at getModelsMapForPopulate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:208:7)\n    at _populatePath (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4469:21)\n    at model.populate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4436:21)\n    at model.Query._find (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:2429:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async model.Query.exec (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:4604:63)\n    at async ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:35)",
+  "processingTime": "1791ms"
+}
+[2025-08-17 20:52:06.777] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435117448",
+  "error": "Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)",
+  "stack": "MissingSchemaError: Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)\n    at NativeConnection.model (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/connection.js:1493:13)\n    at _getModelFromConn (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:579:15)\n    at addModelNamesToMap (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:507:17)\n    at getModelsMapForPopulate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:208:7)\n    at _populatePath (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4469:21)\n    at model.populate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4436:21)\n    at model.Query._find (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:2429:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async model.Query.exec (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:4604:63)\n    at async ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:35)",
+  "processingTime": "1608ms"
+}
+[2025-08-17 20:52:09.861] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435117448",
+  "error": "Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)",
+  "stack": "MissingSchemaError: Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)\n    at NativeConnection.model (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/connection.js:1493:13)\n    at _getModelFromConn (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:579:15)\n    at addModelNamesToMap (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:507:17)\n    at getModelsMapForPopulate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:208:7)\n    at _populatePath (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4469:21)\n    at model.populate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4436:21)\n    at model.Query._find (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:2429:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async model.Query.exec (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:4604:63)\n    at async ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:35)",
+  "processingTime": "2081ms"
+}
+[2025-08-17 20:52:12.843] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435117448",
+  "error": "Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)",
+  "stack": "MissingSchemaError: Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)\n    at NativeConnection.model (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/connection.js:1493:13)\n    at _getModelFromConn (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:579:15)\n    at addModelNamesToMap (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:507:17)\n    at getModelsMapForPopulate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:208:7)\n    at _populatePath (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4469:21)\n    at model.populate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4436:21)\n    at model.Query._find (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:2429:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async model.Query.exec (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:4604:63)\n    at async ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:35)",
+  "processingTime": "1979ms"
+}
+[2025-08-17 20:52:15.796] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435117448",
+  "error": "Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)",
+  "stack": "MissingSchemaError: Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)\n    at NativeConnection.model (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/connection.js:1493:13)\n    at _getModelFromConn (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:579:15)\n    at addModelNamesToMap (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:507:17)\n    at getModelsMapForPopulate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:208:7)\n    at _populatePath (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4469:21)\n    at model.populate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4436:21)\n    at model.Query._find (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:2429:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async model.Query.exec (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:4604:63)\n    at async ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:35)",
+  "processingTime": "1948ms"
+}
+[2025-08-17 20:52:18.619] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435117448",
+  "error": "Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)",
+  "stack": "MissingSchemaError: Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)\n    at NativeConnection.model (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/connection.js:1493:13)\n    at _getModelFromConn (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:579:15)\n    at addModelNamesToMap (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:507:17)\n    at getModelsMapForPopulate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:208:7)\n    at _populatePath (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4469:21)\n    at model.populate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4436:21)\n    at model.Query._find (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:2429:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async model.Query.exec (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:4604:63)\n    at async ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:35)",
+  "processingTime": "1819ms"
+}
+[2025-08-17 20:52:21.500] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435117448",
+  "error": "Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)",
+  "stack": "MissingSchemaError: Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)\n    at NativeConnection.model (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/connection.js:1493:13)\n    at _getModelFromConn (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:579:15)\n    at addModelNamesToMap (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:507:17)\n    at getModelsMapForPopulate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:208:7)\n    at _populatePath (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4469:21)\n    at model.populate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4436:21)\n    at model.Query._find (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:2429:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async model.Query.exec (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:4604:63)\n    at async ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:35)",
+  "processingTime": "1877ms"
+}
+[2025-08-17 20:52:24.064] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435117448",
+  "error": "Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)",
+  "stack": "MissingSchemaError: Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)\n    at NativeConnection.model (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/connection.js:1493:13)\n    at _getModelFromConn (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:579:15)\n    at addModelNamesToMap (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:507:17)\n    at getModelsMapForPopulate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:208:7)\n    at _populatePath (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4469:21)\n    at model.populate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4436:21)\n    at model.Query._find (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:2429:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async model.Query.exec (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:4604:63)\n    at async ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:35)",
+  "processingTime": "1561ms"
+}
+[2025-08-17 20:52:29.134] ERROR: 解析模型响应失败
+  {
+  "error": "Expected ',' or '}' after property value in JSON at position 238 (line 10 column 19)",
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户明确请求安排明天的日程，这属于时间调度和日程规划的范畴。\",\n  \"extracted_info\": {\n    \"keywords\": [\"安排\", \"日程\"],\n    \"entities\": {\n      \"time\": \"明天\",\n      \"location\": null,\n      \"task\": null\"\n    }\n  }\n}"
+}
+[2025-08-17 20:52:29.153] ERROR: 对话处理失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-rejection-session",
+  "error": "Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)",
+  "stack": "MissingSchemaError: Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)\n    at NativeConnection.model (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/connection.js:1493:13)\n    at _getModelFromConn (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:579:15)\n    at addModelNamesToMap (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:507:17)\n    at getModelsMapForPopulate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:208:7)\n    at _populatePath (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4469:21)\n    at model.populate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4436:21)\n    at model.Query._find (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:2429:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async model.Query.exec (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:4604:63)\n    at async ConversationService.processConversation (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:106:35)",
+  "processingTime": "2013ms"
+}
+[2025-08-17 20:52:31.874] ERROR: 获取对话历史失败
+  {
+  "userId": "507f1f77bcf86cd799439011",
+  "sessionId": "test-session-1755435117448",
+  "error": "Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)",
+  "stack": "MissingSchemaError: Schema hasn't been registered for model \"User\".\nUse mongoose.model(name, schema)\n    at NativeConnection.model (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/connection.js:1493:13)\n    at _getModelFromConn (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:579:15)\n    at addModelNamesToMap (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:507:17)\n    at getModelsMapForPopulate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/helpers/populate/getModelsMapForPopulate.js:208:7)\n    at _populatePath (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4469:21)\n    at model.populate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/model.js:4436:21)\n    at model.Query._find (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:2429:23)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async model.Query.exec (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/query.js:4604:63)\n    at async ConversationService.getConversationHistory (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/conversationService.js:293:29)"
+}
+[2025-08-17 22:19:50.007] ERROR: 对话处理失败
+  {
+  "userId": "689e06caca9260fd072b9c4c",
+  "sessionId": null,
+  "error": "Conversation validation failed: sessionId: Path `sessionId` is required.",
+  "stack": "ValidationError: Conversation validation failed: sessionId: Path `sessionId` is required.\n    at Document.invalidate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/document.js:3358:32)\n    at /Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/document.js:3119:17\n    at /Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/schemaType.js:1410:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)",
+  "processingTime": "3306ms"
+}
+[2025-08-17 22:19:50.007] ERROR: 对话消息处理失败 我今天心情不太好，能安慰我一下吗？...
+  {
+  "userId": "689e06caca9260fd072b9c4c",
+  "error": "Conversation validation failed: sessionId: Path `sessionId` is required.",
+  "stack": "ValidationError: Conversation validation failed: sessionId: Path `sessionId` is required.\n    at Document.invalidate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/document.js:3358:32)\n    at /Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/document.js:3119:17\n    at /Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/schemaType.js:1410:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)"
+}
+[2025-08-17 22:20:57.077] ERROR: 对话处理失败
+  {
+  "userId": "689e06caca9260fd072b9c4c",
+  "sessionId": null,
+  "error": "Conversation validation failed: sessionId: Path `sessionId` is required.",
+  "stack": "ValidationError: Conversation validation failed: sessionId: Path `sessionId` is required.\n    at Document.invalidate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/document.js:3358:32)\n    at /Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/document.js:3119:17\n    at /Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/schemaType.js:1410:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)",
+  "processingTime": "1715ms"
+}
+[2025-08-17 22:20:57.077] ERROR: 对话消息处理失败 我今天心情不太好，能安慰我一下吗？...
+  {
+  "userId": "689e06caca9260fd072b9c4c",
+  "error": "Conversation validation failed: sessionId: Path `sessionId` is required.",
+  "stack": "ValidationError: Conversation validation failed: sessionId: Path `sessionId` is required.\n    at Document.invalidate (/Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/document.js:3358:32)\n    at /Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/document.js:3119:17\n    at /Users/bytedance/Desktop/coding/timer3/backend/node_modules/mongoose/lib/schemaType.js:1410:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)"
+}
+[2025-08-17 23:26:28.666] ERROR: 任务规划服务初始化失败: Ali API key not found
+  {
+  "stack": "Error: Ali API key not found\n    at new ChatAlibabaTongyi (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/node_modules/@langchain/community/dist/chat_models/alibaba_tongyi.cjs:166:19)\n    at new TaskPlannerService (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/taskPlannerService.js:20:18)\n    at Object.<anonymous> (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/controllers/taskPlannerController.js:7:28)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)\n    at Object..js (node:internal/modules/cjs/loader:1871:10)\n    at Module.load (node:internal/modules/cjs/loader:1470:32)\n    at Module._load (node:internal/modules/cjs/loader:1290:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)"
+}
+[2025-08-17 23:26:33.145] ERROR: 任务规划服务初始化失败: Ali API key not found
+  {
+  "stack": "Error: Ali API key not found\n    at new ChatAlibabaTongyi (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/node_modules/@langchain/community/dist/chat_models/alibaba_tongyi.cjs:166:19)\n    at new TaskPlannerService (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/taskPlannerService.js:20:18)\n    at Object.<anonymous> (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/controllers/taskPlannerController.js:7:28)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)\n    at Object..js (node:internal/modules/cjs/loader:1871:10)\n    at Module.load (node:internal/modules/cjs/loader:1470:32)\n    at Module._load (node:internal/modules/cjs/loader:1290:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)"
+}
+[2025-08-17 23:27:28.349] ERROR: 任务规划服务初始化失败: Ali API key not found
+  {
+  "stack": "Error: Ali API key not found\n    at new ChatAlibabaTongyi (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/node_modules/@langchain/community/dist/chat_models/alibaba_tongyi.cjs:174:19)\n    at new TaskPlannerService (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/taskPlannerService.js:20:18)\n    at Object.<anonymous> (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/controllers/taskPlannerController.js:7:28)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)\n    at Object..js (node:internal/modules/cjs/loader:1871:10)\n    at Module.load (node:internal/modules/cjs/loader:1470:32)\n    at Module._load (node:internal/modules/cjs/loader:1290:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)"
+}
+[2025-08-17 23:27:34.424] ERROR: 任务规划服务初始化失败: Ali API key not found
+  {
+  "stack": "Error: Ali API key not found\n    at new ChatAlibabaTongyi (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/node_modules/@langchain/community/dist/chat_models/alibaba_tongyi.cjs:174:19)\n    at new TaskPlannerService (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/taskPlannerService.js:20:18)\n    at Object.<anonymous> (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/controllers/taskPlannerController.js:7:28)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)\n    at Object..js (node:internal/modules/cjs/loader:1871:10)\n    at Module.load (node:internal/modules/cjs/loader:1470:32)\n    at Module._load (node:internal/modules/cjs/loader:1290:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)"
+}
+[2025-08-17 23:27:57.016] ERROR: 任务规划服务初始化失败: Ali API key not found
+  {
+  "stack": "Error: Ali API key not found\n    at new ChatAlibabaTongyi (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/node_modules/@langchain/community/dist/chat_models/alibaba_tongyi.cjs:174:19)\n    at new TaskPlannerService (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/taskPlannerService.js:20:18)\n    at Object.<anonymous> (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/controllers/taskPlannerController.js:7:28)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)\n    at Object..js (node:internal/modules/cjs/loader:1871:10)\n    at Module.load (node:internal/modules/cjs/loader:1470:32)\n    at Module._load (node:internal/modules/cjs/loader:1290:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)"
+}
+[2025-08-17 23:28:03.566] ERROR: 任务规划服务初始化失败: Ali API key not found
+  {
+  "stack": "Error: Ali API key not found\n    at new ChatAlibabaTongyi (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/node_modules/@langchain/community/dist/chat_models/alibaba_tongyi.cjs:174:19)\n    at new TaskPlannerService (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/taskPlannerService.js:20:18)\n    at Object.<anonymous> (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/controllers/taskPlannerController.js:7:28)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)\n    at Object..js (node:internal/modules/cjs/loader:1871:10)\n    at Module.load (node:internal/modules/cjs/loader:1470:32)\n    at Module._load (node:internal/modules/cjs/loader:1290:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)"
+}

@@ -1,0 +1,605 @@
+2025-08-17T11:17:45.777Z [INFO] [ChatService] 聊天服务初始化完成 
+2025-08-17T11:17:45.778Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429465777","sessionId":"test_session_1755429465777","userInput":"你好，我是测试用户"}
+2025-08-17T11:17:47.889Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429465777","sessionId":"test_session_1755429465777","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:17:47.892Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429465777","sessionId":"test_session_1755429465777","error":"Cast to ObjectId failed for value \"test_user_1755429465777\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:17:49.242Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429465777","sessionId":"test_session_1755429465777","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"3464ms"}
+2025-08-17T11:17:49.243Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:17:49.745Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429465777_intent","sessionId":null,"userInput":"今天心情不错"}
+2025-08-17T11:17:51.217Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429465777_intent","sessionId":"session_test_user_1755429465777_intent_1755429469745","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:17:51.217Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429465777_intent","sessionId":"session_test_user_1755429465777_intent_1755429469745","error":"Cast to ObjectId failed for value \"test_user_1755429465777_intent\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:17:53.063Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429465777_intent","sessionId":"session_test_user_1755429465777_intent_1755429469745","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_intent\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"3318ms"}
+2025-08-17T11:17:53.064Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_intent\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:17:53.365Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429465777_intent","sessionId":null,"userInput":"帮我添加一个任务"}
+2025-08-17T11:17:54.364Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429465777_intent","sessionId":"session_test_user_1755429465777_intent_1755429473366","intentType":"task_creation","confidence":0.95}
+2025-08-17T11:17:54.365Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429465777_intent","sessionId":"session_test_user_1755429465777_intent_1755429473366","error":"Cast to ObjectId failed for value \"test_user_1755429465777_intent\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:17:57.623Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429465777_intent","sessionId":"session_test_user_1755429465777_intent_1755429473366","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_intent\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"4258ms"}
+2025-08-17T11:17:57.624Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_intent\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:17:57.926Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429465777_intent","sessionId":null,"userInput":"我今天有什么安排？"}
+2025-08-17T11:17:59.406Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429465777_intent","sessionId":"session_test_user_1755429465777_intent_1755429477926","intentType":"time_scheduling","confidence":0.95}
+2025-08-17T11:17:59.406Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429465777_intent","sessionId":"session_test_user_1755429465777_intent_1755429477926","error":"Cast to ObjectId failed for value \"test_user_1755429465777_intent\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:18:04.537Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429465777_intent","sessionId":"session_test_user_1755429465777_intent_1755429477926","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_intent\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"6611ms"}
+2025-08-17T11:18:04.538Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_intent\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:18:04.839Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429465777_intent","sessionId":null,"userInput":"北京天气怎么样？"}
+2025-08-17T11:18:06.187Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429465777_intent","sessionId":"session_test_user_1755429465777_intent_1755429484839","intentType":"external_tool","confidence":0.95}
+2025-08-17T11:18:06.188Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429465777_intent","sessionId":"session_test_user_1755429465777_intent_1755429484839","error":"Cast to ObjectId failed for value \"test_user_1755429465777_intent\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:18:07.598Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429465777_intent","sessionId":"session_test_user_1755429465777_intent_1755429484839","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_intent\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"2759ms"}
+2025-08-17T11:18:07.600Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_intent\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:18:08.403Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429465777_session","sessionId":"session_test_1755429488403","userInput":"你好"}
+2025-08-17T11:18:09.742Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429465777_session","sessionId":"session_test_1755429488403","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:18:09.742Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429465777_session","sessionId":"session_test_1755429488403","error":"Cast to ObjectId failed for value \"test_user_1755429465777_session\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:18:10.261Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429465777_session","sessionId":"session_test_1755429488403","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_session\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"1857ms"}
+2025-08-17T11:18:10.262Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_session\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:18:10.764Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429465777_db","sessionId":"db_test_1755429490764","userInput":"这是数据库存储测试消息"}
+2025-08-17T11:18:12.362Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429465777_db","sessionId":"db_test_1755429490764","intentType":"normal_chat","confidence":0.8}
+2025-08-17T11:18:12.363Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429465777_db","sessionId":"db_test_1755429490764","error":"Cast to ObjectId failed for value \"test_user_1755429465777_db\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:18:13.351Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429465777_db","sessionId":"db_test_1755429490764","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_db\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"2587ms"}
+2025-08-17T11:18:13.352Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_db\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:18:13.855Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429465777_error","sessionId":null,"userInput":""}
+2025-08-17T11:18:15.427Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429465777_error","sessionId":"session_test_user_1755429465777_error_1755429493855","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:18:15.427Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429465777_error","sessionId":"session_test_user_1755429465777_error_1755429493855","error":"Cast to ObjectId failed for value \"test_user_1755429465777_error\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:18:16.477Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429465777_error","sessionId":"session_test_user_1755429465777_error_1755429493855","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_error\" (type string) at path \"userId\" because of \"BSONError\", content: Path `content` is required.","processingTime":"2622ms"}
+2025-08-17T11:18:16.479Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_error\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:18:16.479Z [INFO] [ChatService] 开始处理用户消息 {"userId":null,"sessionId":null,"userInput":"测试消息"}
+2025-08-17T11:18:17.771Z [INFO] [ChatService] 意图识别完成 {"userId":null,"sessionId":"session_null_1755429496479","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:18:27.776Z [WARN] [ChatService] 获取对话历史失败 {"userId":null,"sessionId":"session_null_1755429496479","error":"Operation `chathistories.find()` buffering timed out after 10000ms"}
+2025-08-17T11:18:28.657Z [ERROR] [ChatService] 消息处理失败 {"userId":null,"sessionId":"session_null_1755429496479","error":"ChatHistory validation failed: userId: Path `userId` is required.","processingTime":"12178ms"}
+2025-08-17T11:18:28.658Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Path `userId` is required., role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:18:28.659Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429465777_error","sessionId":null,"userInput":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+2025-08-17T11:18:30.307Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429465777_error","sessionId":"session_test_user_1755429465777_error_1755429508659","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:18:30.308Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429465777_error","sessionId":"session_test_user_1755429465777_error_1755429508659","error":"Cast to ObjectId failed for value \"test_user_1755429465777_error\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:18:31.362Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429465777_error","sessionId":"session_test_user_1755429465777_error_1755429508659","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_error\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"2703ms"}
+2025-08-17T11:18:31.363Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_error\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:18:31.866Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429465777_perf","sessionId":"perf_session_0","userInput":"这是性能测试消息 1"}
+2025-08-17T11:18:33.358Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429465777_perf","sessionId":"perf_session_0","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:18:33.359Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429465777_perf","sessionId":"perf_session_0","error":"Cast to ObjectId failed for value \"test_user_1755429465777_perf\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:18:34.133Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429465777_perf","sessionId":"perf_session_0","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_perf\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"2267ms"}
+2025-08-17T11:18:34.134Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429465777_perf\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:21:28.630Z [INFO] [ChatService] 聊天服务初始化完成 
+2025-08-17T11:21:28.631Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429688630","sessionId":"test_session_1755429688630","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:21:28.631Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:21:29.133Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429688630_intent","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:21:29.133Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:21:29.433Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429688630_intent","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:21:29.433Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:21:29.734Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429688630_intent","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:21:29.735Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:21:30.036Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429688630_intent","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:21:30.036Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:21:30.839Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429688630_session","sessionId":"session_test_1755429690839","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:21:30.840Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:21:31.341Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429688630_db","sessionId":"db_test_1755429691341","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:21:31.342Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:21:31.844Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429688630_error","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:21:31.845Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:21:31.846Z [INFO] [ChatService] 开始处理用户消息 {"userId":null,"sessionId":null,"userInput":"测试消息"}
+2025-08-17T11:21:33.969Z [INFO] [ChatService] 意图识别完成 {"userId":null,"sessionId":"session_null_1755429691847","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:21:43.977Z [WARN] [ChatService] 获取对话历史失败 {"userId":null,"sessionId":"session_null_1755429691847","error":"Operation `chathistories.find()` buffering timed out after 10000ms"}
+2025-08-17T11:21:55.113Z [ERROR] [ChatService] 消息处理失败 {"userId":null,"sessionId":"session_null_1755429691847","error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms","processingTime":"23268ms"}
+2025-08-17T11:21:55.116Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:21:55.116Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429688630_error","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:21:55.117Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:21:55.618Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429688630_perf","sessionId":"perf_session_0","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:21:55.619Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:22.934Z [INFO] [ChatService] 聊天服务初始化完成 
+2025-08-17T11:23:22.935Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429802934","sessionId":"test_session_1755429802934","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:22.935Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:23.436Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429802934_intent","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:23.436Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:23.737Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429802934_intent","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:23.737Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:24.038Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429802934_intent","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:24.039Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:24.340Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429802934_intent","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:24.340Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:25.143Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429802934_session","sessionId":"session_test_1755429805143","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:25.143Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:25.645Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429802934_db","sessionId":"db_test_1755429805645","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:25.645Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:26.146Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429802934_error","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:26.146Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:26.146Z [INFO] [ChatService] 开始处理用户消息 {"userId":null,"sessionId":null,"userInput":"测试消息"}
+2025-08-17T11:23:27.425Z [INFO] [ChatService] 意图识别完成 {"userId":null,"sessionId":"session_null_1755429806146","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:23:28.028Z [INFO] [ChatService] 消息处理完成 {"userId":null,"sessionId":"session_null_1755429806146","totalProcessingTime":"1866ms","responseLength":32}
+2025-08-17T11:23:28.530Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429802934_perf","sessionId":"perf_session_0","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:28.530Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:55.773Z [INFO] [ChatService] 聊天服务初始化完成 
+2025-08-17T11:23:55.774Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429835774","sessionId":"test_session_1755429835774","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:55.774Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:56.275Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429835774_intent","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:56.275Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:56.577Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429835774_intent","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:56.577Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:56.877Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429835774_intent","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:56.878Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:57.179Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429835774_intent","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:57.179Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:57.983Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429835774_session","sessionId":"session_test_1755429837982","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"1ms"}
+2025-08-17T11:23:57.983Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:58.484Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429835774_db","sessionId":"db_test_1755429838484","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:58.484Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:58.985Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429835774_error","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:58.986Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:58.986Z [ERROR] [ChatService] 无效的用户ID {"userId":null,"sessionId":null}
+2025-08-17T11:23:58.986Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429835774_error","sessionId":null,"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:58.986Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:23:59.486Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429835774_perf","sessionId":"perf_session_0","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer","processingTime":"0ms"}
+2025-08-17T11:23:59.486Z [ERROR] [ChatService] 保存错误消息失败 {"error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:24:51.255Z [INFO] [ChatService] 聊天服务初始化完成 
+2025-08-17T11:24:51.255Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:24:51.255Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429891255","sessionId":"test_session_1755429891255","userInput":"你好，我是测试用户"}
+2025-08-17T11:24:52.720Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429891255","sessionId":"test_session_1755429891255","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:24:52.722Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429891255","sessionId":"test_session_1755429891255","error":"Cast to ObjectId failed for value \"test_user_1755429891255\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:24:53.392Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429891255","sessionId":"test_session_1755429891255","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"2137ms"}
+2025-08-17T11:24:53.392Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:24:53.393Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:24:53.894Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:24:53.894Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429891255_intent","sessionId":null,"userInput":"今天心情不错"}
+2025-08-17T11:24:55.290Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429891255_intent","sessionId":"session_test_user_1755429891255_intent_1755429893894","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:24:55.291Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429891255_intent","sessionId":"session_test_user_1755429891255_intent_1755429893894","error":"Cast to ObjectId failed for value \"test_user_1755429891255_intent\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:24:56.470Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429891255_intent","sessionId":"session_test_user_1755429891255_intent_1755429893894","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_intent\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"2576ms"}
+2025-08-17T11:24:56.470Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:24:56.470Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_intent\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:24:56.773Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:24:56.773Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429891255_intent","sessionId":null,"userInput":"帮我添加一个任务"}
+2025-08-17T11:24:57.872Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429891255_intent","sessionId":"session_test_user_1755429891255_intent_1755429896773","intentType":"task_creation","confidence":0.95}
+2025-08-17T11:24:57.872Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429891255_intent","sessionId":"session_test_user_1755429891255_intent_1755429896773","error":"Cast to ObjectId failed for value \"test_user_1755429891255_intent\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:25:01.107Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429891255_intent","sessionId":"session_test_user_1755429891255_intent_1755429896773","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_intent\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"4335ms"}
+2025-08-17T11:25:01.107Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:01.107Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_intent\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:25:01.409Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:01.410Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429891255_intent","sessionId":null,"userInput":"我今天有什么安排？"}
+2025-08-17T11:25:02.480Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429891255_intent","sessionId":"session_test_user_1755429891255_intent_1755429901410","intentType":"time_scheduling","confidence":0.95}
+2025-08-17T11:25:02.480Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429891255_intent","sessionId":"session_test_user_1755429891255_intent_1755429901410","error":"Cast to ObjectId failed for value \"test_user_1755429891255_intent\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:25:06.258Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429891255_intent","sessionId":"session_test_user_1755429891255_intent_1755429901410","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_intent\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"4849ms"}
+2025-08-17T11:25:06.258Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:06.259Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_intent\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:25:06.560Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:06.560Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429891255_intent","sessionId":null,"userInput":"北京天气怎么样？"}
+2025-08-17T11:25:08.091Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429891255_intent","sessionId":"session_test_user_1755429891255_intent_1755429906560","intentType":"external_tool","confidence":0.95}
+2025-08-17T11:25:08.091Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429891255_intent","sessionId":"session_test_user_1755429891255_intent_1755429906560","error":"Cast to ObjectId failed for value \"test_user_1755429891255_intent\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:25:09.811Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429891255_intent","sessionId":"session_test_user_1755429891255_intent_1755429906560","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_intent\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"3251ms"}
+2025-08-17T11:25:09.811Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:09.812Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_intent\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:25:10.613Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:10.613Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429891255_session","sessionId":"session_test_1755429910613","userInput":"你好"}
+2025-08-17T11:25:12.135Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429891255_session","sessionId":"session_test_1755429910613","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:25:12.135Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429891255_session","sessionId":"session_test_1755429910613","error":"Cast to ObjectId failed for value \"test_user_1755429891255_session\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:25:13.164Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429891255_session","sessionId":"session_test_1755429910613","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_session\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"2551ms"}
+2025-08-17T11:25:13.164Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:13.164Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_session\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:25:13.665Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_db","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:13.665Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429891255_db","sessionId":"db_test_1755429913665","userInput":"这是数据库存储测试消息"}
+2025-08-17T11:25:15.416Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429891255_db","sessionId":"db_test_1755429913665","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:25:15.417Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429891255_db","sessionId":"db_test_1755429913665","error":"Cast to ObjectId failed for value \"test_user_1755429891255_db\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:25:16.666Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429891255_db","sessionId":"db_test_1755429913665","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_db\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"3001ms"}
+2025-08-17T11:25:16.666Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_db","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:16.666Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_db\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:25:17.167Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:17.167Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429891255_error","sessionId":null,"userInput":""}
+2025-08-17T11:25:18.775Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429891255_error","sessionId":"session_test_user_1755429891255_error_1755429917167","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:25:18.776Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429891255_error","sessionId":"session_test_user_1755429891255_error_1755429917167","error":"Cast to ObjectId failed for value \"test_user_1755429891255_error\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:25:20.070Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429891255_error","sessionId":"session_test_user_1755429891255_error_1755429917167","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_error\" (type string) at path \"userId\" because of \"BSONError\", content: Path `content` is required.","processingTime":"2903ms"}
+2025-08-17T11:25:20.070Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:20.071Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_error\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:25:20.071Z [ERROR] [ChatService] 无效的用户ID {"userId":null,"sessionId":null}
+2025-08-17T11:25:20.071Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:20.071Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429891255_error","sessionId":null,"userInput":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+2025-08-17T11:25:22.145Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429891255_error","sessionId":"session_test_user_1755429891255_error_1755429920071","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:25:22.145Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429891255_error","sessionId":"session_test_user_1755429891255_error_1755429920071","error":"Cast to ObjectId failed for value \"test_user_1755429891255_error\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:25:23.139Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429891255_error","sessionId":"session_test_user_1755429891255_error_1755429920071","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_error\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"3068ms"}
+2025-08-17T11:25:23.139Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:23.140Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_error\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:25:23.640Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:23.640Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429891255_perf","sessionId":"perf_session_0","userInput":"这是性能测试消息 1"}
+2025-08-17T11:25:24.851Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429891255_perf","sessionId":"perf_session_0","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:25:24.852Z [WARN] [ChatService] 获取对话历史失败 {"userId":"test_user_1755429891255_perf","sessionId":"perf_session_0","error":"Cast to ObjectId failed for value \"test_user_1755429891255_perf\" (type string) at path \"userId\" for model \"ChatHistory\""}
+2025-08-17T11:25:25.774Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429891255_perf","sessionId":"perf_session_0","error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_perf\" (type string) at path \"userId\" because of \"BSONError\"","processingTime":"2134ms"}
+2025-08-17T11:25:25.774Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429891255_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:25.774Z [ERROR] [ChatService] 保存错误消息失败 {"error":"ChatHistory validation failed: userId: Cast to ObjectId failed for value \"test_user_1755429891255_perf\" (type string) at path \"userId\" because of \"BSONError\", role: `system` is not a valid enum value for path `role`."}
+2025-08-17T11:25:47.942Z [INFO] [ChatService] 聊天服务初始化完成 
+2025-08-17T11:25:47.943Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:47.943Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942","sessionId":"test_session_1755429947942","userInput":"你好，我是测试用户"}
+2025-08-17T11:25:49.316Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942","sessionId":"test_session_1755429947942","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:25:49.840Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755429947942","sessionId":"test_session_1755429947942","totalProcessingTime":"1884ms","responseLength":28}
+2025-08-17T11:25:50.343Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:50.343Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942_intent","sessionId":null,"userInput":"今天心情不错"}
+2025-08-17T11:25:51.380Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942_intent","sessionId":"session_test_user_1755429947942_intent_1755429950343","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:25:52.361Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755429947942_intent","sessionId":"session_test_user_1755429947942_intent_1755429950343","totalProcessingTime":"2016ms","responseLength":61}
+2025-08-17T11:25:52.663Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:52.664Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942_intent","sessionId":null,"userInput":"帮我添加一个任务"}
+2025-08-17T11:25:53.841Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942_intent","sessionId":"session_test_user_1755429947942_intent_1755429952664","intentType":"task_creation","confidence":0.95}
+2025-08-17T11:25:56.513Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755429947942_intent","sessionId":"session_test_user_1755429947942_intent_1755429952664","totalProcessingTime":"3847ms","responseLength":231}
+2025-08-17T11:25:56.814Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:25:56.814Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942_intent","sessionId":null,"userInput":"我今天有什么安排？"}
+2025-08-17T11:26:00.323Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942_intent","sessionId":"session_test_user_1755429947942_intent_1755429956814","intentType":"time_scheduling","confidence":0.95}
+2025-08-17T11:26:03.310Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755429947942_intent","sessionId":"session_test_user_1755429947942_intent_1755429956814","totalProcessingTime":"6494ms","responseLength":237}
+2025-08-17T11:26:03.612Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:26:03.612Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942_intent","sessionId":null,"userInput":"北京天气怎么样？"}
+2025-08-17T11:26:04.711Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942_intent","sessionId":"session_test_user_1755429947942_intent_1755429963612","intentType":"external_tool","confidence":0.95}
+2025-08-17T11:26:06.200Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755429947942_intent","sessionId":"session_test_user_1755429947942_intent_1755429963612","totalProcessingTime":"2578ms","responseLength":89}
+2025-08-17T11:26:07.005Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:26:07.006Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942_session","sessionId":"session_test_1755429967005","userInput":"你好"}
+2025-08-17T11:26:08.216Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942_session","sessionId":"session_test_1755429967005","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:26:09.162Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755429947942_session","sessionId":"session_test_1755429967005","totalProcessingTime":"2152ms","responseLength":21}
+2025-08-17T11:26:09.362Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:26:09.363Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942_session","sessionId":"session_test_1755429967005","userInput":"我想了解一下你的功能"}
+2025-08-17T11:26:10.428Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942_session","sessionId":"session_test_1755429967005","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:26:14.269Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755429947942_session","sessionId":"session_test_1755429967005","totalProcessingTime":"4902ms","responseLength":141}
+2025-08-17T11:26:14.470Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:26:14.470Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942_session","sessionId":"session_test_1755429967005","userInput":"谢谢你的介绍"}
+2025-08-17T11:26:15.649Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942_session","sessionId":"session_test_1755429967005","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:26:16.653Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755429947942_session","sessionId":"session_test_1755429967005","totalProcessingTime":"2180ms","responseLength":49}
+2025-08-17T11:26:16.855Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:26:17.357Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_db","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:26:17.358Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942_db","sessionId":"db_test_1755429977357","userInput":"这是数据库存储测试消息"}
+2025-08-17T11:26:19.179Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942_db","sessionId":"db_test_1755429977357","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:26:20.912Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755429947942_db","sessionId":"db_test_1755429977357","totalProcessingTime":"3552ms","responseLength":78}
+2025-08-17T11:26:22.421Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:26:22.421Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942_error","sessionId":null,"userInput":""}
+2025-08-17T11:26:23.842Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942_error","sessionId":"session_test_user_1755429947942_error_1755429982421","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:26:25.116Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755429947942_error","sessionId":"session_test_user_1755429947942_error_1755429982421","error":"ChatHistory validation failed: content: Path `content` is required.","processingTime":"2695ms"}
+2025-08-17T11:26:25.117Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:26:25.119Z [ERROR] [ChatService] 无效的用户ID {"userId":null,"sessionId":null}
+2025-08-17T11:26:25.119Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:26:25.119Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942_error","sessionId":null,"userInput":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+2025-08-17T11:26:26.672Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942_error","sessionId":"session_test_user_1755429947942_error_1755429985119","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:26:27.512Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755429947942_error","sessionId":"session_test_user_1755429947942_error_1755429985119","totalProcessingTime":"2390ms","responseLength":55}
+2025-08-17T11:26:28.016Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:26:28.017Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942_perf","sessionId":"perf_session_0","userInput":"这是性能测试消息 1"}
+2025-08-17T11:26:29.750Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942_perf","sessionId":"perf_session_0","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:26:30.889Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755429947942_perf","sessionId":"perf_session_0","totalProcessingTime":"2856ms","responseLength":73}
+2025-08-17T11:26:31.190Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:26:31.191Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942_perf","sessionId":"perf_session_1","userInput":"这是性能测试消息 2"}
+2025-08-17T11:26:33.551Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942_perf","sessionId":"perf_session_1","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:26:34.261Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755429947942_perf","sessionId":"perf_session_1","totalProcessingTime":"3066ms","responseLength":51}
+2025-08-17T11:26:34.563Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:26:34.563Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942_perf","sessionId":"perf_session_2","userInput":"这是性能测试消息 3"}
+2025-08-17T11:26:37.238Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942_perf","sessionId":"perf_session_2","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:26:38.327Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755429947942_perf","sessionId":"perf_session_2","totalProcessingTime":"3761ms","responseLength":58}
+2025-08-17T11:26:38.628Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:26:38.629Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942_perf","sessionId":"perf_session_3","userInput":"这是性能测试消息 4"}
+2025-08-17T11:26:40.587Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942_perf","sessionId":"perf_session_3","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:26:41.283Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755429947942_perf","sessionId":"perf_session_3","totalProcessingTime":"2649ms","responseLength":52}
+2025-08-17T11:26:41.585Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755429947942_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:26:41.586Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755429947942_perf","sessionId":"perf_session_4","userInput":"这是性能测试消息 5"}
+2025-08-17T11:26:43.117Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755429947942_perf","sessionId":"perf_session_4","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:26:44.158Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755429947942_perf","sessionId":"perf_session_4","totalProcessingTime":"2569ms","responseLength":64}
+2025-08-17T11:27:10.646Z [INFO] [ChatService] 聊天服务初始化完成 
+2025-08-17T11:27:10.646Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:10.646Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646","sessionId":"test_session_1755430030646","userInput":"你好，我是测试用户"}
+2025-08-17T11:27:12.131Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646","sessionId":"test_session_1755430030646","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:27:12.708Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430030646","sessionId":"test_session_1755430030646","totalProcessingTime":"2054ms","responseLength":28}
+2025-08-17T11:27:13.209Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:13.209Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646_intent","sessionId":null,"userInput":"今天心情不错"}
+2025-08-17T11:27:15.551Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646_intent","sessionId":"session_test_user_1755430030646_intent_1755430033209","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:27:16.760Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430030646_intent","sessionId":"session_test_user_1755430030646_intent_1755430033209","totalProcessingTime":"3548ms","responseLength":74}
+2025-08-17T11:27:17.061Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:17.062Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646_intent","sessionId":null,"userInput":"帮我添加一个任务"}
+2025-08-17T11:27:17.936Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646_intent","sessionId":"session_test_user_1755430030646_intent_1755430037062","intentType":"task_creation","confidence":0.95}
+2025-08-17T11:27:20.834Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430030646_intent","sessionId":"session_test_user_1755430030646_intent_1755430037062","totalProcessingTime":"3770ms","responseLength":194}
+2025-08-17T11:27:21.136Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:21.136Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646_intent","sessionId":null,"userInput":"我今天有什么安排？"}
+2025-08-17T11:27:22.404Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646_intent","sessionId":"session_test_user_1755430030646_intent_1755430041136","intentType":"time_scheduling","confidence":0.95}
+2025-08-17T11:27:25.864Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430030646_intent","sessionId":"session_test_user_1755430030646_intent_1755430041136","totalProcessingTime":"4726ms","responseLength":161}
+2025-08-17T11:27:26.166Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:26.166Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646_intent","sessionId":null,"userInput":"北京天气怎么样？"}
+2025-08-17T11:27:27.400Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646_intent","sessionId":"session_test_user_1755430030646_intent_1755430046166","intentType":"external_tool","confidence":0.95}
+2025-08-17T11:27:28.597Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430030646_intent","sessionId":"session_test_user_1755430030646_intent_1755430046166","totalProcessingTime":"2427ms","responseLength":90}
+2025-08-17T11:27:29.403Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:29.403Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646_session","sessionId":"session_test_1755430049403","userInput":"你好"}
+2025-08-17T11:27:30.672Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646_session","sessionId":"session_test_1755430049403","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:27:31.241Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430030646_session","sessionId":"session_test_1755430049403","totalProcessingTime":"1835ms","responseLength":16}
+2025-08-17T11:27:31.441Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:31.441Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646_session","sessionId":"session_test_1755430049403","userInput":"我想了解一下你的功能"}
+2025-08-17T11:27:32.630Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646_session","sessionId":"session_test_1755430049403","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:27:34.207Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430030646_session","sessionId":"session_test_1755430049403","totalProcessingTime":"2763ms","responseLength":121}
+2025-08-17T11:27:34.408Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:34.408Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646_session","sessionId":"session_test_1755430049403","userInput":"谢谢你的介绍"}
+2025-08-17T11:27:35.500Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646_session","sessionId":"session_test_1755430049403","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:27:37.438Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430030646_session","sessionId":"session_test_1755430049403","totalProcessingTime":"3028ms","responseLength":48}
+2025-08-17T11:27:37.642Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:38.143Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_db","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:38.144Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646_db","sessionId":"db_test_1755430058143","userInput":"这是数据库存储测试消息"}
+2025-08-17T11:27:39.359Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646_db","sessionId":"db_test_1755430058143","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:27:40.496Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430030646_db","sessionId":"db_test_1755430058143","totalProcessingTime":"2346ms","responseLength":61}
+2025-08-17T11:27:42.001Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:42.002Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646_error","sessionId":null,"userInput":""}
+2025-08-17T11:27:45.026Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646_error","sessionId":"session_test_user_1755430030646_error_1755430062002","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:27:45.950Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755430030646_error","sessionId":"session_test_user_1755430030646_error_1755430062002","error":"ChatHistory validation failed: content: Path `content` is required.","processingTime":"3949ms"}
+2025-08-17T11:27:45.950Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:45.952Z [ERROR] [ChatService] 无效的用户ID {"userId":null,"sessionId":null}
+2025-08-17T11:27:45.952Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:45.952Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646_error","sessionId":null,"userInput":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+2025-08-17T11:27:47.235Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646_error","sessionId":"session_test_user_1755430030646_error_1755430065952","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:27:48.222Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430030646_error","sessionId":"session_test_user_1755430030646_error_1755430065952","totalProcessingTime":"2268ms","responseLength":53}
+2025-08-17T11:27:48.724Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:48.724Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646_perf","sessionId":"perf_session_0","userInput":"这是性能测试消息 1"}
+2025-08-17T11:27:50.438Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646_perf","sessionId":"perf_session_0","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:27:51.229Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430030646_perf","sessionId":"perf_session_0","totalProcessingTime":"2502ms","responseLength":35}
+2025-08-17T11:27:51.531Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:51.531Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646_perf","sessionId":"perf_session_1","userInput":"这是性能测试消息 2"}
+2025-08-17T11:27:52.941Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646_perf","sessionId":"perf_session_1","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:27:53.720Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430030646_perf","sessionId":"perf_session_1","totalProcessingTime":"2187ms","responseLength":49}
+2025-08-17T11:27:54.021Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:54.021Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646_perf","sessionId":"perf_session_2","userInput":"这是性能测试消息 3"}
+2025-08-17T11:27:55.377Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646_perf","sessionId":"perf_session_2","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:27:56.332Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430030646_perf","sessionId":"perf_session_2","totalProcessingTime":"2308ms","responseLength":29}
+2025-08-17T11:27:56.633Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:56.633Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646_perf","sessionId":"perf_session_3","userInput":"这是性能测试消息 4"}
+2025-08-17T11:27:58.005Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646_perf","sessionId":"perf_session_3","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:27:58.657Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430030646_perf","sessionId":"perf_session_3","totalProcessingTime":"2021ms","responseLength":43}
+2025-08-17T11:27:58.958Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430030646_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:27:58.958Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430030646_perf","sessionId":"perf_session_4","userInput":"这是性能测试消息 5"}
+2025-08-17T11:28:01.088Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430030646_perf","sessionId":"perf_session_4","intentType":"normal_chat","confidence":0.8}
+2025-08-17T11:28:02.192Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430030646_perf","sessionId":"perf_session_4","totalProcessingTime":"3231ms","responseLength":72}
+2025-08-17T11:28:08.216Z [INFO] [ChatService] 聊天服务初始化完成 
+2025-08-17T11:28:08.216Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:28:08.216Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216","sessionId":"test_session_1755430088216","userInput":"你好，我是测试用户"}
+2025-08-17T11:28:09.816Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216","sessionId":"test_session_1755430088216","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:28:10.577Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430088216","sessionId":"test_session_1755430088216","totalProcessingTime":"2350ms","responseLength":48}
+2025-08-17T11:28:11.078Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:28:11.078Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216_intent","sessionId":null,"userInput":"今天心情不错"}
+2025-08-17T11:28:12.521Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216_intent","sessionId":"session_test_user_1755430088216_intent_1755430091079","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:28:13.117Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430088216_intent","sessionId":"session_test_user_1755430088216_intent_1755430091079","totalProcessingTime":"2036ms","responseLength":31}
+2025-08-17T11:28:13.418Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:28:13.418Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216_intent","sessionId":null,"userInput":"帮我添加一个任务"}
+2025-08-17T11:28:14.622Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216_intent","sessionId":"session_test_user_1755430088216_intent_1755430093418","intentType":"task_creation","confidence":0.95}
+2025-08-17T11:28:19.033Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430088216_intent","sessionId":"session_test_user_1755430088216_intent_1755430093418","totalProcessingTime":"5612ms","responseLength":253}
+2025-08-17T11:28:19.335Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:28:19.335Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216_intent","sessionId":null,"userInput":"我今天有什么安排？"}
+2025-08-17T11:28:21.340Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216_intent","sessionId":"session_test_user_1755430088216_intent_1755430099335","intentType":"time_scheduling","confidence":0.95}
+2025-08-17T11:28:24.723Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430088216_intent","sessionId":"session_test_user_1755430088216_intent_1755430099335","totalProcessingTime":"5360ms","responseLength":293}
+2025-08-17T11:28:25.025Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:28:25.025Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216_intent","sessionId":null,"userInput":"北京天气怎么样？"}
+2025-08-17T11:28:26.372Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216_intent","sessionId":"session_test_user_1755430088216_intent_1755430105025","intentType":"external_tool","confidence":0.95}
+2025-08-17T11:28:27.838Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430088216_intent","sessionId":"session_test_user_1755430088216_intent_1755430105025","totalProcessingTime":"2810ms","responseLength":73}
+2025-08-17T11:28:28.642Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:28:28.642Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216_session","sessionId":"session_test_1755430108642","userInput":"你好"}
+2025-08-17T11:28:29.694Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216_session","sessionId":"session_test_1755430108642","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:28:30.319Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430088216_session","sessionId":"session_test_1755430108642","totalProcessingTime":"1674ms","responseLength":16}
+2025-08-17T11:28:30.519Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:28:30.520Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216_session","sessionId":"session_test_1755430108642","userInput":"我想了解一下你的功能"}
+2025-08-17T11:28:32.011Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216_session","sessionId":"session_test_1755430108642","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:28:38.312Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430088216_session","sessionId":"session_test_1755430108642","totalProcessingTime":"7790ms","responseLength":172}
+2025-08-17T11:28:38.512Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:28:38.512Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216_session","sessionId":"session_test_1755430108642","userInput":"谢谢你的介绍"}
+2025-08-17T11:28:42.303Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216_session","sessionId":"session_test_1755430108642","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:28:43.252Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430088216_session","sessionId":"session_test_1755430108642","totalProcessingTime":"4737ms","responseLength":40}
+2025-08-17T11:28:43.455Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:28:43.957Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_db","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:28:43.957Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216_db","sessionId":"db_test_1755430123957","userInput":"这是数据库存储测试消息"}
+2025-08-17T11:28:45.143Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216_db","sessionId":"db_test_1755430123957","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:28:46.714Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430088216_db","sessionId":"db_test_1755430123957","totalProcessingTime":"2755ms","responseLength":88}
+2025-08-17T11:28:48.220Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:28:48.220Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216_error","sessionId":null,"userInput":""}
+2025-08-17T11:28:50.866Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216_error","sessionId":"session_test_user_1755430088216_error_1755430128220","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:28:51.760Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755430088216_error","sessionId":"session_test_user_1755430088216_error_1755430128220","error":"ChatHistory validation failed: content: Path `content` is required.","processingTime":"3539ms"}
+2025-08-17T11:28:51.760Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:28:51.761Z [ERROR] [ChatService] 无效的用户ID {"userId":null,"sessionId":null}
+2025-08-17T11:28:51.761Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:28:51.761Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216_error","sessionId":null,"userInput":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+2025-08-17T11:28:53.660Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216_error","sessionId":"session_test_user_1755430088216_error_1755430131761","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:28:54.390Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430088216_error","sessionId":"session_test_user_1755430088216_error_1755430131761","totalProcessingTime":"2627ms","responseLength":52}
+2025-08-17T11:28:54.891Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:28:54.891Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216_perf","sessionId":"perf_session_0","userInput":"这是性能测试消息 1"}
+2025-08-17T11:28:56.562Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216_perf","sessionId":"perf_session_0","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:28:57.437Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430088216_perf","sessionId":"perf_session_0","totalProcessingTime":"2543ms","responseLength":67}
+2025-08-17T11:28:57.738Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:28:57.738Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216_perf","sessionId":"perf_session_1","userInput":"这是性能测试消息 2"}
+2025-08-17T11:29:00.270Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216_perf","sessionId":"perf_session_1","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:29:02.222Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430088216_perf","sessionId":"perf_session_1","totalProcessingTime":"4481ms","responseLength":105}
+2025-08-17T11:29:02.521Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:29:02.521Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216_perf","sessionId":"perf_session_2","userInput":"这是性能测试消息 3"}
+2025-08-17T11:29:04.085Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216_perf","sessionId":"perf_session_2","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:29:05.425Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430088216_perf","sessionId":"perf_session_2","totalProcessingTime":"2899ms","responseLength":75}
+2025-08-17T11:29:05.726Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:29:05.726Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216_perf","sessionId":"perf_session_3","userInput":"这是性能测试消息 4"}
+2025-08-17T11:29:07.435Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216_perf","sessionId":"perf_session_3","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:29:08.434Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430088216_perf","sessionId":"perf_session_3","totalProcessingTime":"2704ms","responseLength":67}
+2025-08-17T11:29:08.735Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430088216_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:29:08.735Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430088216_perf","sessionId":"perf_session_4","userInput":"这是性能测试消息 5"}
+2025-08-17T11:29:10.594Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430088216_perf","sessionId":"perf_session_4","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:29:13.299Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430088216_perf","sessionId":"perf_session_4","totalProcessingTime":"4560ms","responseLength":87}
+2025-08-17T11:29:26.963Z [INFO] [ChatService] 聊天服务初始化完成 
+2025-08-17T11:29:26.963Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:29:26.963Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963","sessionId":"test_session_1755430166963","userInput":"你好，我是测试用户"}
+2025-08-17T11:29:28.104Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963","sessionId":"test_session_1755430166963","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:29:29.045Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430166963","sessionId":"test_session_1755430166963","totalProcessingTime":"2067ms","responseLength":28}
+2025-08-17T11:29:29.549Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:29:29.550Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963_intent","sessionId":null,"userInput":"今天心情不错"}
+2025-08-17T11:29:30.575Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963_intent","sessionId":"session_test_user_1755430166963_intent_1755430169550","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:29:31.799Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430166963_intent","sessionId":"session_test_user_1755430166963_intent_1755430169550","totalProcessingTime":"2246ms","responseLength":54}
+2025-08-17T11:29:32.101Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:29:32.101Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963_intent","sessionId":null,"userInput":"帮我添加一个任务"}
+2025-08-17T11:29:33.659Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963_intent","sessionId":"session_test_user_1755430166963_intent_1755430172102","intentType":"task_creation","confidence":0.95}
+2025-08-17T11:29:36.310Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430166963_intent","sessionId":"session_test_user_1755430166963_intent_1755430172102","totalProcessingTime":"4201ms","responseLength":173}
+2025-08-17T11:29:36.612Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:29:36.612Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963_intent","sessionId":null,"userInput":"我今天有什么安排？"}
+2025-08-17T11:29:37.711Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963_intent","sessionId":"session_test_user_1755430166963_intent_1755430176612","intentType":"time_scheduling","confidence":0.95}
+2025-08-17T11:29:40.046Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430166963_intent","sessionId":"session_test_user_1755430166963_intent_1755430176612","totalProcessingTime":"3422ms","responseLength":183}
+2025-08-17T11:29:40.349Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:29:40.349Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963_intent","sessionId":null,"userInput":"北京天气怎么样？"}
+2025-08-17T11:29:41.956Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963_intent","sessionId":"session_test_user_1755430166963_intent_1755430180350","intentType":"external_tool","confidence":0.95}
+2025-08-17T11:29:43.079Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430166963_intent","sessionId":"session_test_user_1755430166963_intent_1755430180350","totalProcessingTime":"2723ms","responseLength":49}
+2025-08-17T11:29:43.883Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:29:43.883Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963_session","sessionId":"session_test_1755430183882","userInput":"你好"}
+2025-08-17T11:29:45.168Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963_session","sessionId":"session_test_1755430183882","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:29:45.578Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430166963_session","sessionId":"session_test_1755430183882","totalProcessingTime":"1694ms","responseLength":23}
+2025-08-17T11:29:45.780Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:29:45.780Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963_session","sessionId":"session_test_1755430183882","userInput":"我想了解一下你的功能"}
+2025-08-17T11:29:47.246Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963_session","sessionId":"session_test_1755430183882","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:29:49.912Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430166963_session","sessionId":"session_test_1755430183882","totalProcessingTime":"4129ms","responseLength":178}
+2025-08-17T11:29:50.114Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:29:50.114Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963_session","sessionId":"session_test_1755430183882","userInput":"谢谢你的介绍"}
+2025-08-17T11:29:51.138Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963_session","sessionId":"session_test_1755430183882","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:29:52.098Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430166963_session","sessionId":"session_test_1755430183882","totalProcessingTime":"1981ms","responseLength":48}
+2025-08-17T11:29:52.301Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:29:52.803Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_db","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:29:52.803Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963_db","sessionId":"db_test_1755430192802","userInput":"这是数据库存储测试消息"}
+2025-08-17T11:29:54.684Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963_db","sessionId":"db_test_1755430192802","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:29:56.289Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430166963_db","sessionId":"db_test_1755430192802","totalProcessingTime":"3478ms","responseLength":78}
+2025-08-17T11:29:57.801Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:29:57.801Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963_error","sessionId":null,"userInput":""}
+2025-08-17T11:29:58.958Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963_error","sessionId":"session_test_user_1755430166963_error_1755430197801","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:30:00.615Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755430166963_error","sessionId":"session_test_user_1755430166963_error_1755430197801","error":"ChatHistory validation failed: content: Path `content` is required.","processingTime":"2814ms"}
+2025-08-17T11:30:00.616Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:30:00.620Z [ERROR] [ChatService] 无效的用户ID {"userId":null,"sessionId":null}
+2025-08-17T11:30:00.620Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:30:00.620Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963_error","sessionId":null,"userInput":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+2025-08-17T11:30:02.471Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963_error","sessionId":"session_test_user_1755430166963_error_1755430200620","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:30:03.300Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430166963_error","sessionId":"session_test_user_1755430166963_error_1755430200620","totalProcessingTime":"2677ms","responseLength":56}
+2025-08-17T11:30:03.802Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:30:03.803Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963_perf","sessionId":"perf_session_0","userInput":"这是性能测试消息 1"}
+2025-08-17T11:30:05.453Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963_perf","sessionId":"perf_session_0","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:30:07.021Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430166963_perf","sessionId":"perf_session_0","totalProcessingTime":"3216ms","responseLength":45}
+2025-08-17T11:30:07.323Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:30:07.323Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963_perf","sessionId":"perf_session_1","userInput":"这是性能测试消息 2"}
+2025-08-17T11:30:08.805Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963_perf","sessionId":"perf_session_1","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:30:10.061Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430166963_perf","sessionId":"perf_session_1","totalProcessingTime":"2735ms","responseLength":48}
+2025-08-17T11:30:10.362Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:30:10.363Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963_perf","sessionId":"perf_session_2","userInput":"这是性能测试消息 3"}
+2025-08-17T11:30:12.315Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963_perf","sessionId":"perf_session_2","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:30:13.331Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430166963_perf","sessionId":"perf_session_2","totalProcessingTime":"2966ms","responseLength":70}
+2025-08-17T11:30:13.632Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:30:13.633Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963_perf","sessionId":"perf_session_3","userInput":"这是性能测试消息 4"}
+2025-08-17T11:30:15.054Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963_perf","sessionId":"perf_session_3","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:30:16.103Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430166963_perf","sessionId":"perf_session_3","totalProcessingTime":"2462ms","responseLength":68}
+2025-08-17T11:30:16.404Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430166963_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:30:16.405Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430166963_perf","sessionId":"perf_session_4","userInput":"这是性能测试消息 5"}
+2025-08-17T11:30:17.725Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430166963_perf","sessionId":"perf_session_4","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:30:19.848Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430166963_perf","sessionId":"perf_session_4","totalProcessingTime":"3437ms","responseLength":158}
+2025-08-17T11:35:58.313Z [INFO] [ChatService] 聊天服务初始化完成 
+2025-08-17T11:35:58.314Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:35:58.314Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314","sessionId":"test_session_1755430558314","userInput":"你好，我是测试用户"}
+2025-08-17T11:36:01.160Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314","sessionId":"test_session_1755430558314","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:36:02.047Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430558314","sessionId":"test_session_1755430558314","totalProcessingTime":"3717ms","responseLength":28}
+2025-08-17T11:36:02.549Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:02.549Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314_intent","sessionId":null,"userInput":"今天心情不错"}
+2025-08-17T11:36:03.556Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314_intent","sessionId":"session_test_user_1755430558314_intent_1755430562549","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:36:05.085Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430558314_intent","sessionId":"session_test_user_1755430558314_intent_1755430562549","totalProcessingTime":"2529ms","responseLength":70}
+2025-08-17T11:36:05.387Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:05.387Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314_intent","sessionId":null,"userInput":"帮我添加一个任务"}
+2025-08-17T11:36:06.625Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314_intent","sessionId":"session_test_user_1755430558314_intent_1755430565387","intentType":"task_creation","confidence":0.95}
+2025-08-17T11:36:09.126Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430558314_intent","sessionId":"session_test_user_1755430558314_intent_1755430565387","totalProcessingTime":"3736ms","responseLength":186}
+2025-08-17T11:36:09.427Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:09.428Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314_intent","sessionId":null,"userInput":"我今天有什么安排？"}
+2025-08-17T11:36:10.605Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314_intent","sessionId":"session_test_user_1755430558314_intent_1755430569428","intentType":"time_scheduling","confidence":0.95}
+2025-08-17T11:36:14.822Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430558314_intent","sessionId":"session_test_user_1755430558314_intent_1755430569428","totalProcessingTime":"5391ms","responseLength":284}
+2025-08-17T11:36:15.124Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_intent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:15.124Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314_intent","sessionId":null,"userInput":"北京天气怎么样？"}
+2025-08-17T11:36:16.677Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314_intent","sessionId":"session_test_user_1755430558314_intent_1755430575124","intentType":"external_tool","confidence":0.95}
+2025-08-17T11:36:17.965Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430558314_intent","sessionId":"session_test_user_1755430558314_intent_1755430575124","totalProcessingTime":"2839ms","responseLength":72}
+2025-08-17T11:36:18.769Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:18.769Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314_session","sessionId":"session_test_1755430578769","userInput":"你好"}
+2025-08-17T11:36:20.163Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314_session","sessionId":"session_test_1755430578769","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:36:20.721Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430558314_session","sessionId":"session_test_1755430578769","totalProcessingTime":"1945ms","responseLength":24}
+2025-08-17T11:36:20.922Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:20.923Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314_session","sessionId":"session_test_1755430578769","userInput":"我想了解一下你的功能"}
+2025-08-17T11:36:24.046Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314_session","sessionId":"session_test_1755430578769","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:36:26.872Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430558314_session","sessionId":"session_test_1755430578769","totalProcessingTime":"5948ms","responseLength":199}
+2025-08-17T11:36:27.073Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:27.073Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314_session","sessionId":"session_test_1755430578769","userInput":"谢谢你的介绍"}
+2025-08-17T11:36:28.239Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314_session","sessionId":"session_test_1755430578769","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:36:29.025Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430558314_session","sessionId":"session_test_1755430578769","totalProcessingTime":"1949ms","responseLength":38}
+2025-08-17T11:36:29.226Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_session","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:29.729Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_db","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:29.729Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314_db","sessionId":"db_test_1755430589728","userInput":"这是数据库存储测试消息"}
+2025-08-17T11:36:31.457Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314_db","sessionId":"db_test_1755430589728","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:36:32.812Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430558314_db","sessionId":"db_test_1755430589728","totalProcessingTime":"3077ms","responseLength":63}
+2025-08-17T11:36:34.322Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:34.323Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314_error","sessionId":null,"userInput":""}
+2025-08-17T11:36:35.694Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314_error","sessionId":"session_test_user_1755430558314_error_1755430594323","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:36:37.184Z [ERROR] [ChatService] 消息处理失败 {"userId":"test_user_1755430558314_error","sessionId":"session_test_user_1755430558314_error_1755430594323","error":"ChatHistory validation failed: content: Path `content` is required.","processingTime":"2862ms"}
+2025-08-17T11:36:37.185Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:37.189Z [ERROR] [ChatService] 无效的用户ID {"userId":null,"sessionId":null}
+2025-08-17T11:36:37.189Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_error","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:37.189Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314_error","sessionId":null,"userInput":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+2025-08-17T11:36:38.733Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314_error","sessionId":"session_test_user_1755430558314_error_1755430597189","intentType":"normal_chat","confidence":0.95}
+2025-08-17T11:36:39.838Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430558314_error","sessionId":"session_test_user_1755430558314_error_1755430597189","totalProcessingTime":"2645ms","responseLength":57}
+2025-08-17T11:36:40.340Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:40.341Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314_perf","sessionId":"perf_session_0","userInput":"这是性能测试消息 1"}
+2025-08-17T11:36:41.994Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314_perf","sessionId":"perf_session_0","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:36:42.934Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430558314_perf","sessionId":"perf_session_0","totalProcessingTime":"2588ms","responseLength":66}
+2025-08-17T11:36:43.236Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:43.237Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314_perf","sessionId":"perf_session_1","userInput":"这是性能测试消息 2"}
+2025-08-17T11:36:44.562Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314_perf","sessionId":"perf_session_1","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:36:45.256Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430558314_perf","sessionId":"perf_session_1","totalProcessingTime":"2017ms","responseLength":52}
+2025-08-17T11:36:45.557Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:45.558Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314_perf","sessionId":"perf_session_2","userInput":"这是性能测试消息 3"}
+2025-08-17T11:36:46.800Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314_perf","sessionId":"perf_session_2","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:36:49.041Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430558314_perf","sessionId":"perf_session_2","totalProcessingTime":"3482ms","responseLength":79}
+2025-08-17T11:36:49.344Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:49.344Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314_perf","sessionId":"perf_session_3","userInput":"这是性能测试消息 4"}
+2025-08-17T11:36:50.980Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314_perf","sessionId":"perf_session_3","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:36:52.291Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430558314_perf","sessionId":"perf_session_3","totalProcessingTime":"2929ms","responseLength":60}
+2025-08-17T11:36:52.592Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"test_user_1755430558314_perf","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:36:52.592Z [INFO] [ChatService] 开始处理用户消息 {"userId":"test_user_1755430558314_perf","sessionId":"perf_session_4","userInput":"这是性能测试消息 5"}
+2025-08-17T11:36:54.545Z [INFO] [ChatService] 意图识别完成 {"userId":"test_user_1755430558314_perf","sessionId":"perf_session_4","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:36:56.418Z [INFO] [ChatService] 消息处理完成 {"userId":"test_user_1755430558314_perf","sessionId":"perf_session_4","totalProcessingTime":"3819ms","responseLength":105}
+2025-08-17T11:37:03.166Z [INFO] [ChatService] 聊天服务初始化完成 
+2025-08-17T11:37:03.707Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:37:03.708Z [INFO] [ChatService] 开始处理用户消息 {"userId":"api_test_user_1755430623171","sessionId":"api_test_session_1755430623687","userInput":"你好，这是API测试消息"}
+2025-08-17T11:37:05.398Z [INFO] [ChatService] 意图识别完成 {"userId":"api_test_user_1755430623171","sessionId":"api_test_session_1755430623687","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:37:15.410Z [WARN] [ChatService] 获取对话历史失败 {"userId":"api_test_user_1755430623171","sessionId":"api_test_session_1755430623687","error":"Operation `chathistories.find()` buffering timed out after 10000ms"}
+2025-08-17T11:37:26.125Z [ERROR] [ChatService] 消息处理失败 {"userId":"api_test_user_1755430623171","sessionId":"api_test_session_1755430623687","error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms","processingTime":"22417ms"}
+2025-08-17T11:37:26.126Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:37:36.131Z [ERROR] [ChatService] 保存错误消息失败 {"error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms"}
+2025-08-17T11:37:37.168Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_sessions","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:37:37.168Z [INFO] [ChatService] 开始处理用户消息 {"userId":"api_test_user_1755430623171_sessions","sessionId":null,"userInput":"创建会话测试消息"}
+2025-08-17T11:37:38.485Z [INFO] [ChatService] 意图识别完成 {"userId":"api_test_user_1755430623171_sessions","sessionId":"session_api_test_user_1755430623171_sessions_1755430657168","intentType":"task_creation","confidence":0.9}
+2025-08-17T11:37:48.487Z [WARN] [ChatService] 获取对话历史失败 {"userId":"api_test_user_1755430623171_sessions","sessionId":"session_api_test_user_1755430623171_sessions_1755430657168","error":"Operation `chathistories.find()` buffering timed out after 10000ms"}
+2025-08-17T11:38:00.903Z [ERROR] [ChatService] 消息处理失败 {"userId":"api_test_user_1755430623171_sessions","sessionId":"session_api_test_user_1755430623171_sessions_1755430657168","error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms","processingTime":"23735ms"}
+2025-08-17T11:38:00.904Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_sessions","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:38:10.910Z [ERROR] [ChatService] 保存错误消息失败 {"error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms"}
+2025-08-17T11:38:11.936Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_sessions","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:38:12.447Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_history","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:38:12.447Z [INFO] [ChatService] 开始处理用户消息 {"userId":"api_test_user_1755430623171_history","sessionId":"history_test_1755430692442","userInput":"第一条消息"}
+2025-08-17T11:38:13.700Z [INFO] [ChatService] 意图识别完成 {"userId":"api_test_user_1755430623171_history","sessionId":"history_test_1755430692442","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:38:23.702Z [WARN] [ChatService] 获取对话历史失败 {"userId":"api_test_user_1755430623171_history","sessionId":"history_test_1755430692442","error":"Operation `chathistories.find()` buffering timed out after 10000ms"}
+2025-08-17T11:38:34.575Z [ERROR] [ChatService] 消息处理失败 {"userId":"api_test_user_1755430623171_history","sessionId":"history_test_1755430692442","error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms","processingTime":"22128ms"}
+2025-08-17T11:38:34.576Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_history","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:38:44.582Z [ERROR] [ChatService] 保存错误消息失败 {"error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms"}
+2025-08-17T11:38:44.890Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_history","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:38:44.890Z [INFO] [ChatService] 开始处理用户消息 {"userId":"api_test_user_1755430623171_history","sessionId":"history_test_1755430692442","userInput":"第二条消息"}
+2025-08-17T11:38:46.373Z [INFO] [ChatService] 意图识别完成 {"userId":"api_test_user_1755430623171_history","sessionId":"history_test_1755430692442","intentType":"normal_chat","confidence":0.8}
+2025-08-17T11:38:56.375Z [WARN] [ChatService] 获取对话历史失败 {"userId":"api_test_user_1755430623171_history","sessionId":"history_test_1755430692442","error":"Operation `chathistories.find()` buffering timed out after 10000ms"}
+2025-08-17T11:39:07.950Z [ERROR] [ChatService] 消息处理失败 {"userId":"api_test_user_1755430623171_history","sessionId":"history_test_1755430692442","error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms","processingTime":"23060ms"}
+2025-08-17T11:39:07.952Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_history","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:39:17.956Z [ERROR] [ChatService] 保存错误消息失败 {"error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms"}
+2025-08-17T11:39:18.269Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_history","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:39:18.270Z [INFO] [ChatService] 开始处理用户消息 {"userId":"api_test_user_1755430623171_history","sessionId":"history_test_1755430692442","userInput":"第三条消息"}
+2025-08-17T11:39:20.446Z [INFO] [ChatService] 意图识别完成 {"userId":"api_test_user_1755430623171_history","sessionId":"history_test_1755430692442","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:39:30.454Z [WARN] [ChatService] 获取对话历史失败 {"userId":"api_test_user_1755430623171_history","sessionId":"history_test_1755430692442","error":"Operation `chathistories.find()` buffering timed out after 10000ms"}
+2025-08-17T11:39:41.959Z [ERROR] [ChatService] 消息处理失败 {"userId":"api_test_user_1755430623171_history","sessionId":"history_test_1755430692442","error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms","processingTime":"23690ms"}
+2025-08-17T11:39:41.960Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_history","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:39:51.968Z [ERROR] [ChatService] 保存错误消息失败 {"error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms"}
+2025-08-17T11:39:53.285Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_history","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:39:53.792Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_stats","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:39:53.792Z [INFO] [ChatService] 开始处理用户消息 {"userId":"api_test_user_1755430623171_stats","sessionId":null,"userInput":"统计测试消息"}
+2025-08-17T11:39:56.231Z [INFO] [ChatService] 意图识别完成 {"userId":"api_test_user_1755430623171_stats","sessionId":"session_api_test_user_1755430623171_stats_1755430793792","intentType":"normal_chat","confidence":0.85}
+2025-08-17T11:40:06.236Z [WARN] [ChatService] 获取对话历史失败 {"userId":"api_test_user_1755430623171_stats","sessionId":"session_api_test_user_1755430623171_stats_1755430793792","error":"Operation `chathistories.find()` buffering timed out after 10000ms"}
+2025-08-17T11:40:42.593Z [ERROR] [ChatService] 消息处理失败 {"userId":"api_test_user_1755430623171_stats","sessionId":"session_api_test_user_1755430623171_stats_1755430793792","error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms","processingTime":"48801ms"}
+2025-08-17T11:40:42.593Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_stats","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:40:52.595Z [ERROR] [ChatService] 保存错误消息失败 {"error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms"}
+2025-08-17T11:41:03.612Z [ERROR] [ChatService] 获取聊天统计失败 {"userId":"api_test_user_1755430623171_stats","error":"Operation `chathistories.aggregate()` buffering timed out after 10000ms"}
+2025-08-17T11:41:04.648Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_concurrent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:41:04.648Z [INFO] [ChatService] 开始处理用户消息 {"userId":"api_test_user_1755430623171_concurrent","sessionId":"concurrent_session_0","userInput":"并发测试消息 1"}
+2025-08-17T11:41:04.653Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_concurrent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:41:04.653Z [INFO] [ChatService] 开始处理用户消息 {"userId":"api_test_user_1755430623171_concurrent","sessionId":"concurrent_session_1","userInput":"并发测试消息 2"}
+2025-08-17T11:41:04.656Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_concurrent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:41:04.656Z [INFO] [ChatService] 开始处理用户消息 {"userId":"api_test_user_1755430623171_concurrent","sessionId":"concurrent_session_2","userInput":"并发测试消息 3"}
+2025-08-17T11:41:06.866Z [INFO] [ChatService] 意图识别完成 {"userId":"api_test_user_1755430623171_concurrent","sessionId":"concurrent_session_0","intentType":"normal_chat","confidence":0.9}
+2025-08-17T11:41:16.872Z [WARN] [ChatService] 获取对话历史失败 {"userId":"api_test_user_1755430623171_concurrent","sessionId":"concurrent_session_0","error":"Operation `chathistories.find()` buffering timed out after 10000ms"}
+2025-08-17T11:41:18.993Z [INFO] [ChatService] 意图识别完成 {"userId":"api_test_user_1755430623171_concurrent","sessionId":"concurrent_session_1","intentType":"normal_chat","confidence":0.8}
+2025-08-17T11:41:28.995Z [WARN] [ChatService] 获取对话历史失败 {"userId":"api_test_user_1755430623171_concurrent","sessionId":"concurrent_session_1","error":"Operation `chathistories.find()` buffering timed out after 10000ms"}
+2025-08-17T11:41:29.516Z [ERROR] [ChatService] 消息处理失败 {"userId":"api_test_user_1755430623171_concurrent","sessionId":"concurrent_session_0","error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms","processingTime":"24869ms"}
+2025-08-17T11:41:29.516Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_concurrent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:41:39.519Z [ERROR] [ChatService] 保存错误消息失败 {"error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms"}
+2025-08-17T11:41:40.413Z [ERROR] [ChatService] 消息处理失败 {"userId":"api_test_user_1755430623171_concurrent","sessionId":"concurrent_session_1","error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms","processingTime":"35760ms"}
+2025-08-17T11:41:40.414Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_concurrent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:41:50.418Z [ERROR] [ChatService] 保存错误消息失败 {"error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms"}
+2025-08-17T11:42:50.312Z [INFO] [ChatService] 意图识别完成 {"userId":"api_test_user_1755430623171_concurrent","sessionId":"concurrent_session_2","intentType":"normal_chat","confidence":0.8}
+2025-08-17T11:43:00.328Z [WARN] [ChatService] 获取对话历史失败 {"userId":"api_test_user_1755430623171_concurrent","sessionId":"concurrent_session_2","error":"Operation `chathistories.find()` buffering timed out after 10000ms"}
+2025-08-17T11:43:54.468Z [ERROR] [ChatService] 消息处理失败 {"userId":"api_test_user_1755430623171_concurrent","sessionId":"concurrent_session_2","error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms","processingTime":"169811ms"}
+2025-08-17T11:43:54.469Z [WARN] [ChatService] userId不是有效的ObjectId格式 {"userId":"api_test_user_1755430623171_concurrent","error":"input must be a 24 character hex string, 12 byte Uint8Array, or an integer"}
+2025-08-17T11:44:04.473Z [ERROR] [ChatService] 保存错误消息失败 {"error":"Operation `chathistories.insertOne()` buffering timed out after 10000ms"}

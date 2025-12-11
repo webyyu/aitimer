@@ -1,0 +1,2 @@
+2025-08-17T11:37:03.171Z [INFO] [APITest] 开始API接口测试 
+2025-08-17T11:44:04.981Z [INFO] [APITest] API接口测试完成 {"total":8,"passed":4,"failed":4,"successRate":"50.0%"}

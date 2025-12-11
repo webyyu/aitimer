@@ -1,0 +1,760 @@
+[2025-09-30 15:18:50.178] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-09-30 15:18:50.185] INFO: 获取智能调度服务状态
+[2025-09-30 15:18:50.185] INFO: 开始意图识别
+  {
+  "userInput": "你好",
+  "inputLength": 2
+}
+[2025-09-30 15:18:50.186] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 362
+}
+[2025-09-30 15:18:50.186] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-30 15:18:52.090] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 574,
+    "completion_tokens": 94,
+    "total_tokens": 668,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-30 15:18:52.090] INFO: 收到模型响应
+  {
+  "responseLength": 255,
+  "responseTime": "1905ms"
+}
+[2025-09-30 15:18:52.091] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户输入为简单的问候语，属于日常交流中的打招呼行为，无明确任务、时间安排或外部信息查询意图。\",\n  \"extracted_info\": {\n    \"keywords\": [\"你好\"],\n    \"entities\": {\n      \"time\": null,..."
+}
+[2025-09-30 15:18:52.091] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-30 15:18:52.091] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "1906ms",
+  "success": true
+}
+[2025-09-30 15:18:52.092] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 1906
+}
+[2025-09-30 15:19:15.393] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-09-30 15:19:15.395] INFO: 获取智能调度服务状态
+[2025-09-30 15:19:15.396] INFO: 开始意图识别
+  {
+  "userInput": "你好",
+  "inputLength": 2
+}
+[2025-09-30 15:19:15.396] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 362
+}
+[2025-09-30 15:19:15.396] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-30 15:19:18.129] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 574,
+    "completion_tokens": 99,
+    "total_tokens": 673,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-30 15:19:18.129] INFO: 收到模型响应
+  {
+  "responseLength": 263,
+  "responseTime": "2733ms"
+}
+[2025-09-30 15:19:18.129] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户输入为简单的问候语'你好'，属于日常交流中的打招呼行为，没有涉及任务创建、日程安排或外部信息查询的需求。\",\n  \"extracted_info\": {\n    \"keywords\": [\"你好\"],\n    \"entities\": {\n      \"time..."
+}
+[2025-09-30 15:19:18.130] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-30 15:19:18.130] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2734ms",
+  "success": true
+}
+[2025-09-30 15:19:18.133] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 2737
+}
+[2025-09-30 15:19:21.436] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "68db844fbe14e85ddfbf57d3",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-09-30 15:19:21.436] INFO: 收到智能调度请求
+  {
+  "userId": "68db844fbe14e85ddfbf57d3",
+  "userInput": "帮我安排一下今天的日程",
+  "sessionId": "session_1759216697033_9f4qaw6cf",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-09-30 15:19:21.436] INFO: 开始智能调度处理
+  {
+  "requestId": "dispatch-1759216761436-3ir5jgigo",
+  "userInput": "帮我安排一下今天的日程",
+  "userId": "68db844fbe14e85ddfbf57d3",
+  "sessionId": "session_1759216697033_9f4qaw6cf",
+  "inputLength": 11
+}
+[2025-09-30 15:19:21.437] INFO: 步骤0: 检测图片输入
+  {
+  "requestId": "dispatch-1759216761436-3ir5jgigo"
+}
+[2025-09-30 15:19:21.437] INFO: 步骤1: 执行意图识别
+  {
+  "requestId": "dispatch-1759216761436-3ir5jgigo"
+}
+[2025-09-30 15:19:21.437] INFO: 开始意图识别
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "inputLength": 11
+}
+[2025-09-30 15:19:21.437] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 371
+}
+[2025-09-30 15:19:21.437] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-30 15:19:23.444] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 579,
+    "completion_tokens": 93,
+    "total_tokens": 672,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-30 15:19:23.444] INFO: 收到模型响应
+  {
+  "responseLength": 249,
+  "responseTime": "2007ms"
+}
+[2025-09-30 15:19:23.444] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户明确请求安排今天的日程，属于时间规划和日程管理类操作。\",\n  \"extracted_info\": {\n    \"keywords\": [\"安排\", \"日程\"],\n    \"entities\": {\n      \"time\": \"今天\",\n     ..."
+}
+[2025-09-30 15:19:23.444] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-30 15:19:23.445] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "2008ms",
+  "success": true
+}
+[2025-09-30 15:19:23.445] INFO: 意图识别完成
+  {
+  "requestId": "dispatch-1759216761436-3ir5jgigo",
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasImageContext": false
+}
+[2025-09-30 15:19:23.445] INFO: 步骤2: 分析多重意图
+  {
+  "requestId": "dispatch-1759216761436-3ir5jgigo"
+}
+[2025-09-30 15:19:23.445] INFO: Action Router 分析完成
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "actionPlan": [
+    {
+      "intent": "TASK_CREATION",
+      "priority": 1
+    },
+    {
+      "intent": "SCHEDULE_PLANNING",
+      "priority": 2
+    }
+  ],
+  "totalActions": 2
+}
+[2025-09-30 15:19:23.446] INFO: 多重意图分析完成
+  {
+  "requestId": "dispatch-1759216761436-3ir5jgigo",
+  "intents": [
+    "TASK_CREATION",
+    "SCHEDULE_PLANNING"
+  ],
+  "count": 2
+}
+[2025-09-30 15:19:23.447] INFO: 步骤3: 执行相应的服务
+  {
+  "requestId": "dispatch-1759216761436-3ir5jgigo"
+}
+[2025-09-30 15:19:23.447] INFO: 执行优先级 1 的服务
+  {
+  "intents": [
+    "TASK_CREATION"
+  ],
+  "count": 1
+}
+[2025-09-30 15:19:23.447] INFO: 开始执行任务创建
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "timeInfo": {
+    "date": "2025-09-30",
+    "timeBlock": null,
+    "specificTime": null
+  },
+  "userId": "68db844fbe14e85ddfbf57d3"
+}
+[2025-09-30 15:19:23.447] INFO: 开始直接创建任务
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "userId": "68db844fbe14e85ddfbf57d3",
+  "timeInfo": {
+    "date": "2025-09-30",
+    "timeBlock": null,
+    "specificTime": null
+  }
+}
+[2025-09-30 15:19:23.448] INFO: 开始意图识别
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "inputLength": 11
+}
+[2025-09-30 15:19:23.448] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 371
+}
+[2025-09-30 15:19:23.448] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-30 15:19:25.367] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 579,
+    "completion_tokens": 96,
+    "total_tokens": 675,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-30 15:19:25.367] INFO: 收到模型响应
+  {
+  "responseLength": 252,
+  "responseTime": "1920ms"
+}
+[2025-09-30 15:19:25.368] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户明确请求安排今天的日程，属于对时间的规划和调度，核心意图是日程管理。\",\n  \"extracted_info\": {\n    \"keywords\": [\"安排\", \"日程\"],\n    \"entities\": {\n      \"time\": \"今天\"..."
+}
+[2025-09-30 15:19:25.368] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-30 15:19:25.368] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "1921ms",
+  "success": true
+}
+[2025-09-30 15:19:25.368] INFO: 意图识别完成（用于信息提取）
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95
+}
+[2025-09-30 15:19:25.368] INFO: 强制设置为任务创建意图
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95
+}
+[2025-09-30 15:19:25.369] INFO: 提取任务信息完成
+  {
+  "title": "安排一下今天的日程",
+  "timeBlock": {
+    "startTime": "14:00",
+    "endTime": "18:00",
+    "timeBlockType": "afternoon"
+  },
+  "date": "2025-09-30",
+  "timeInfoInput": {
+    "date": "2025-09-30",
+    "timeBlock": null,
+    "specificTime": null
+  }
+}
+[2025-09-30 15:19:25.369] INFO: 提取任务信息完成
+  {
+  "taskInfo": {
+    "title": "安排一下今天的日程",
+    "userId": "68db844fbe14e85ddfbf57d3",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "date": "2025-09-30"
+  }
+}
+[2025-09-30 15:19:25.370] INFO: 开始存储任务到数据库
+  {
+  "taskInfo": {
+    "title": "安排一下今天的日程",
+    "userId": "68db844fbe14e85ddfbf57d3",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "date": "2025-09-30"
+  }
+}
+[2025-09-30 15:19:25.374] INFO: 任务存储成功
+  {
+  "taskId": "68db847dbe14e85ddfbf57fb"
+}
+[2025-09-30 15:19:25.374] INFO: 任务直接创建成功
+  {
+  "taskId": "68db847dbe14e85ddfbf57fb",
+  "title": "安排一下今天的日程",
+  "processingTime": "1927ms"
+}
+[2025-09-30 15:19:25.374] INFO: 任务创建完成
+  {
+  "success": true
+}
+[2025-09-30 15:19:25.374] INFO: 优先级 1 的服务执行完成
+  {
+  "results": [
+    "taskCreation"
+  ]
+}
+[2025-09-30 15:19:25.375] INFO: 执行优先级 2 的服务
+  {
+  "intents": [
+    "SCHEDULE_PLANNING"
+  ],
+  "count": 1
+}
+[2025-09-30 15:19:25.375] INFO: 开始执行时间调度
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "targetDate": "2025-09-30",
+  "userId": "68db844fbe14e85ddfbf57d3",
+  "hasPreviousTaskCreation": true
+}
+[2025-09-30 15:19:25.376] INFO: 开始任务调度规划
+  {
+  "userId": "68db844fbe14e85ddfbf57d3",
+  "userInput": "帮我安排一下今天的日程",
+  "targetDate": "2025-09-30",
+  "userContext": {
+    "emotionalState": "neutral",
+    "previousTaskCreation": {
+      "success": true,
+      "message": "任务创建成功",
+      "task": {
+        "timeBlock": {
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "timeBlockType": "afternoon"
+        },
+        "_id": "68db847dbe14e85ddfbf57fb",
+        "title": "安排一下今天的日程",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "date": "2025-09-30",
+        "userId": "68db844fbe14e85ddfbf57d3",
+        "isScheduled": false,
+        "createdAt": "2025-09-30T07:19:25.371Z",
+        "updatedAt": "2025-09-30T07:19:25.371Z",
+        "__v": 0
+      },
+      "intentResult": {
+        "intent": "TASK_CREATION",
+        "confidence": 0.95,
+        "reasoning": "用户明确请求安排今天的日程，属于对时间的规划和调度，核心意图是日程管理。",
+        "extracted_info": {
+          "keywords": [
+            "安排",
+            "日程"
+          ],
+          "entities": {
+            "time": "今天",
+            "location": "",
+            "task": ""
+          }
+        },
+        "original_input": "帮我安排一下今天的日程",
+        "timestamp": "2025-09-30T07:19:25.368Z",
+        "intent_description": "时间调度（日程安排、时间规划）"
+      },
+      "processingTime": 1927
+    }
+  }
+}
+[2025-09-30 15:19:25.451] INFO: 获取用户现有任务
+  {
+  "userId": "68db844fbe14e85ddfbf57d3",
+  "taskCount": 1,
+  "date": "2025-09-30"
+}
+[2025-09-30 15:19:25.454] INFO: 获取用户任务集信息
+  {
+  "userId": "68db844fbe14e85ddfbf57d3",
+  "collectionCount": 1
+}
+[2025-09-30 15:19:25.455] INFO: 构建调度规划Prompt完成
+  {
+  "messagesCount": 2
+}
+[2025-09-30 15:19:25.455] INFO: 调用通义千问API进行调度分析
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "temperature": 0.3
+}
+[2025-09-30 15:19:42.930] INFO: 通义千问API调用成功 (调度分析)
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 1036,
+    "completion_tokens": 717,
+    "total_tokens": 1753,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-30 15:19:42.931] INFO: 通义千问调度分析完成
+  {
+  "responseLength": 1701
+}
+[2025-09-30 15:19:42.931] INFO: 调度建议解析成功
+  {
+  "adjustmentCount": 1,
+  "breakCount": 2
+}
+[2025-09-30 15:19:42.932] INFO: 任务调度规划完成
+  {
+  "userId": "68db844fbe14e85ddfbf57d3",
+  "targetDate": "2025-09-30",
+  "processingTime": "17555ms",
+  "success": true
+}
+[2025-09-30 15:19:42.932] INFO: 时间调度完成
+  {
+  "success": true
+}
+[2025-09-30 15:19:42.932] INFO: 优先级 2 的服务执行完成
+  {
+  "results": [
+    "taskCreation",
+    "schedulePlanning"
+  ]
+}
+[2025-09-30 15:19:42.932] INFO: 服务执行完成
+  {
+  "requestId": "dispatch-1759216761436-3ir5jgigo",
+  "servicesExecuted": [
+    "taskCreation",
+    "schedulePlanning"
+  ],
+  "successCount": 2
+}
+[2025-09-30 15:19:42.932] INFO: 步骤4: 生成统一回复
+  {
+  "requestId": "dispatch-1759216761436-3ir5jgigo"
+}
+[2025-09-30 15:19:42.935] INFO: 获取到用户AI助手名字用于统一回复
+  {
+  "userId": "68db844fbe14e85ddfbf57d3",
+  "assistantName": "AI智能助手"
+}
+[2025-09-30 15:19:42.935] INFO: 开始生成统一回复
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "intentsCount": 2,
+  "executionResultsKeys": [
+    "taskCreation",
+    "schedulePlanning"
+  ],
+  "executionResults": {
+    "taskCreation": {
+      "success": true,
+      "message": "任务创建成功",
+      "task": {
+        "timeBlock": {
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "timeBlockType": "afternoon"
+        },
+        "_id": "68db847dbe14e85ddfbf57fb",
+        "title": "安排一下今天的日程",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "date": "2025-09-30",
+        "userId": "68db844fbe14e85ddfbf57d3",
+        "isScheduled": false,
+        "createdAt": "2025-09-30T07:19:25.371Z",
+        "updatedAt": "2025-09-30T07:19:25.371Z",
+        "__v": 0
+      },
+      "intentResult": {
+        "intent": "TASK_CREATION",
+        "confidence": 0.95,
+        "reasoning": "用户明确请求安排今天的日程，属于对时间的规划和调度，核心意图是日程管理。",
+        "extracted_info": {
+          "keywords": [
+            "安排",
+            "日程"
+          ],
+          "entities": {
+            "time": "今天",
+            "location": "",
+            "task": ""
+          }
+        },
+        "original_input": "帮我安排一下今天的日程",
+        "timestamp": "2025-09-30T07:19:25.368Z",
+        "intent_description": "时间调度（日程安排、时间规划）"
+      },
+      "processingTime": 1927
+    },
+    "schedulePlanning": {
+      "success": true,
+      "data": {
+        "analysis": {
+          "timeConflicts": [],
+          "priorityInsights": "当前任务'安排一下今天的日程'被标记为中等优先级，但其内容具有高战略价值，应视为重要且紧急（象限1），因为它直接影响全天效率与任务完成质量。",
+          "workloadAssessment": "目前仅有一个任务安排在下午时段（14:00-18:00），实际预计耗时仅30分钟，存在大量时间资源浪费。整体工作负载极轻，可高效插入多项任务。",
+          "userStateConsiderations": "用户情绪状态为中性，适合进行计划制定与创造性思考。当前时间为15:19，仍有充足时间优化今日日程。建议尽快完成日程规划任务以释放心理负担并提升后续执行效率。"
+        },
+        "recommendations": {
+          "taskAdjustments": [
+            {
+              "taskId": "68db847dbe14e85ddfbf57fb",
+              "action": "update",
+              "changes": {
+                "title": "安排并确认今日完整日程",
+                "date": "2025-09-30",
+                "time": "15:30",
+                "timeBlock": {
+                  "startTime": "15:30",
+                  "endTime": "16:00",
+                  "timeBlockType": "afternoon"
+                },
+                "estimatedTime": 30,
+                "priority": "high",
+                "quadrant": 1,
+                "reason": "将任务提前至当前时间附近，避免拖延；提升优先级以反映其对全天效率的关键影响；压缩时间段以提高专注度。"
+              }
+            }
+          ],
+          "breakSuggestions": [
+            {
+              "startTime": "16:00",
+              "endTime": "16:15",
+              "type": "short",
+              "activity": "起身活动、喝水、简单拉伸，帮助切换思维状态"
+            },
+            {
+              "startTime": "18:00",
+              "endTime": "18:30",
+              "type": "meal",
+              "activity": "晚餐时间，建议远离屏幕用餐以恢复精力"
+            }
+          ],
+          "optimizationTips": [
+            "建议在16:00后立即列出剩余待办事项，并按四象限法则分类。",
+            "晚上18:30-20:00适合处理学习或反思类任务，可安排复盘或明日预规划。",
+            "利用早晨和上午的黄金时间块处理高难度或创造性任务。",
+            "确保每个任务之间预留5-10分钟过渡时间，防止疲劳累积。"
+          ]
+        },
+        "schedule": {
+          "morning": [],
+          "forenoon": [],
+          "afternoon": [
+            "68db847dbe14e85ddfbf57fb"
+          ],
+          "evening": []
+        },
+        "summary": "已将‘安排今日日程’任务调整为高优先级并重新安排至15:30-16:00，确保及时启动规划流程。建议用户在此时间段内完成全部任务梳理，并据此安排后续行动。当前日程空余较多，具备高度灵活性，适合插入新任务。",
+        "appliedChanges": [],
+        "metadata": {
+          "currentTime": "2025/09/30 15:19:25",
+          "targetDate": "2025-09-30",
+          "existingTaskCount": 1,
+          "collectionCount": 1,
+          "userContext": {
+            "emotionalState": "neutral",
+            "previousTaskCreation": {
+              "success": true,
+              "message": "任务创建成功",
+              "task": {
+                "timeBlock": {
+                  "startTime": "14:00",
+                  "endTime": "18:00",
+                  "timeBlockType": "afternoon"
+                },
+                "_id": "68db847dbe14e85ddfbf57fb",
+                "title": "安排一下今天的日程",
+                "description": "",
+                "priority": "medium",
+                "completed": false,
+                "date": "2025-09-30",
+                "userId": "68db844fbe14e85ddfbf57d3",
+                "isScheduled": false,
+                "createdAt": "2025-09-30T07:19:25.371Z",
+                "updatedAt": "2025-09-30T07:19:25.371Z",
+                "__v": 0
+              },
+              "intentResult": {
+                "intent": "TASK_CREATION",
+                "confidence": 0.95,
+                "reasoning": "用户明确请求安排今天的日程，属于对时间的规划和调度，核心意图是日程管理。",
+                "extracted_info": {
+                  "keywords": [
+                    "安排",
+                    "日程"
+                  ],
+                  "entities": {
+                    "time": "今天",
+                    "location": "",
+                    "task": ""
+                  }
+                },
+                "original_input": "帮我安排一下今天的日程",
+                "timestamp": "2025-09-30T07:19:25.368Z",
+                "intent_description": "时间调度（日程安排、时间规划）"
+              },
+              "processingTime": 1927
+            }
+          },
+          "autoApplied": false,
+          "processingTime": 17555
+        }
+      }
+    }
+  },
+  "assistantName": "AI智能助手"
+}
+[2025-09-30 15:19:42.936] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-09-30 15:19:46.436] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "3500ms",
+  "usage": {
+    "prompt_tokens": 299,
+    "completion_tokens": 52,
+    "total_tokens": 351,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-30 15:19:46.436] INFO: 回复生成完成
+  {
+  "requestId": "dispatch-1759216761436-3ir5jgigo",
+  "responseLength": 85
+}
+[2025-09-30 15:19:46.437] INFO: 智能调度处理完成
+  {
+  "requestId": "dispatch-1759216761436-3ir5jgigo",
+  "userId": "68db844fbe14e85ddfbf57d3",
+  "processingTime": "25001ms",
+  "responseLength": 85,
+  "servicesExecuted": [
+    "taskCreation",
+    "schedulePlanning"
+  ]
+}
+[2025-09-30 15:19:46.437] INFO: 智能调度处理完成
+  {
+  "userId": "68db844fbe14e85ddfbf57d3",
+  "processingTime": 25001,
+  "responseLength": 85,
+  "servicesExecuted": [
+    "taskCreation",
+    "schedulePlanning"
+  ]
+}

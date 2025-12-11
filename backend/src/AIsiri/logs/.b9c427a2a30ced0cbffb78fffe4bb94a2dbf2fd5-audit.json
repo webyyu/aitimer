@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/root/backend/src/AIsiri/logs/.b9c427a2a30ced0cbffb78fffe4bb94a2dbf2fd5-audit.json",
+    "files": [
+        {
+            "date": 1755713117637,
+            "name": "/root/backend/src/AIsiri/logs/exceptions-2025-08-21.log",
+            "hash": "08d9d1b3e3fcc59ba939c202c096e6833de32a59a96eb5e5396922b2e5827c0d"
+        },
+        {
+            "date": 1756301718618,
+            "name": "/root/backend/src/AIsiri/logs/exceptions-2025-08-27.log",
+            "hash": "4c1642a51c8170cca3903603861cc22df9eaad9917fb5fc06458975214cb2ab2"
+        },
+        {
+            "date": 1758289657422,
+            "name": "/root/backend/src/AIsiri/logs/exceptions-2025-09-19.log",
+            "hash": "594edfc450d66f88c447b2e55f6bafad5766d1003efc1ec65929aff5fc71285c"
+        },
+        {
+            "date": 1758297653192,
+            "name": "/root/backend/src/AIsiri/logs/exceptions-2025-09-20.log",
+            "hash": "b8e21e7e56c4ad3f489ed3e96475627f5868e7b6114d9f8416ae7c188017ab26"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,30 @@
+[dotenv@17.2.1] injecting env (9) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[22:06:18.341] [32minfo[39m: 意图识别服务初始化成功 {"model":"qwen-plus","baseURL":"https://dashscope.aliyuncs.com/compatible-mode/v1","hasApiKey":true}
+[22:06:18.349] [32minfo[39m: 意图识别服务初始化成功 {"model":"qwen-plus","baseURL":"https://dashscope.aliyuncs.com/compatible-mode/v1","hasApiKey":true}
+[22:06:18.349] [32minfo[39m: 对话服务初始化成功 {"model":"qwen-plus","baseURL":"https://dashscope.aliyuncs.com/compatible-mode/v1","hasApiKey":true}
+[dotenv@17.2.1] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+[dotenv@17.2.1] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+[22:06:18.442] [32minfo[39m: 意图识别服务初始化成功 {"model":"qwen-plus","baseURL":"https://dashscope.aliyuncs.com/compatible-mode/v1","hasApiKey":true}
+[22:06:18.444] [32minfo[39m: 意图识别服务初始化成功 {"model":"qwen-plus","baseURL":"https://dashscope.aliyuncs.com/compatible-mode/v1","hasApiKey":true}
+[22:06:18.444] [32minfo[39m: 意图识别服务初始化成功 {"model":"qwen-plus","baseURL":"https://dashscope.aliyuncs.com/compatible-mode/v1","hasApiKey":true}
+[22:06:18.445] [32minfo[39m: 对话服务初始化成功 {"model":"qwen-plus","baseURL":"https://dashscope.aliyuncs.com/compatible-mode/v1","hasApiKey":true}
+[22:06:18.445] [32minfo[39m: 意图识别服务初始化成功 {"model":"qwen-plus","baseURL":"https://dashscope.aliyuncs.com/compatible-mode/v1","hasApiKey":true}
+[22:06:18.445] [32minfo[39m: 任务调度规划服务初始化成功 {"model":"qwen-plus","baseURL":"https://dashscope.aliyuncs.com/compatible-mode/v1","hasApiKey":true}
+[22:06:18.445] [32minfo[39m: 智能调度服务初始化完成 {"services":["intentRecognition","conversation","taskRecognition","schedulePlanning"]}
+(node:96519) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:96519) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+[32minfo[39m: 服务器运行在端口 3000 {"service":"aisiri-backend","timestamp":"2025-08-19T14:06:18.460Z"}
+MongoDB Connected: localhost
+[32minfo[39m: [JWT认证] 认证成功，耗时: 14ms, userId: 68a21bf0cdab688c24714231, URL: /api/tasks?userId=68a21bf0cdab688c24714231&date=2025-08-19 {"service":"aisiri-backend","timestamp":"2025-08-19T14:09:10.883Z"}
+[32minfo[39m: 用户 68a21bf0cdab688c24714231 获取到 0 个任务 {"service":"aisiri-backend","timestamp":"2025-08-19T14:09:10.895Z"}
+[32minfo[39m: ::1 - - [19/Aug/2025:14:09:10 +0000] "GET /api/tasks?userId=68a21bf0cdab688c24714231&date=2025-08-19 HTTP/1.1" 304 - "http://localhost:8080/task" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"aisiri-backend","timestamp":"2025-08-19T14:09:10.898Z"}
+[32minfo[39m: [JWT认证] 认证成功，耗时: 2ms, userId: 68a21bf0cdab688c24714231, URL: /api/tasks?userId=68a21bf0cdab688c24714231&date=2025-08-19 {"service":"aisiri-backend","timestamp":"2025-08-19T14:09:10.902Z"}
+[32minfo[39m: 用户 68a21bf0cdab688c24714231 获取到 0 个任务 {"service":"aisiri-backend","timestamp":"2025-08-19T14:09:10.903Z"}
+[32minfo[39m: ::1 - - [19/Aug/2025:14:09:10 +0000] "GET /api/tasks?userId=68a21bf0cdab688c24714231&date=2025-08-19 HTTP/1.1" 304 - "http://localhost:8080/task" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"aisiri-backend","timestamp":"2025-08-19T14:09:10.904Z"}
+[32minfo[39m: [JWT认证] 认证成功，耗时: 2ms, userId: 68a21bf0cdab688c24714231, URL: /api/tasks?userId=68a21bf0cdab688c24714231 {"service":"aisiri-backend","timestamp":"2025-08-19T14:09:10.929Z"}
+[32minfo[39m: 用户 68a21bf0cdab688c24714231 获取到 0 个任务 {"service":"aisiri-backend","timestamp":"2025-08-19T14:09:10.933Z"}
+[32minfo[39m: ::1 - - [19/Aug/2025:14:09:10 +0000] "GET /api/tasks?userId=68a21bf0cdab688c24714231 HTTP/1.1" 304 - "http://localhost:8080/task" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"aisiri-backend","timestamp":"2025-08-19T14:09:10.933Z"}
+[32minfo[39m: [JWT认证] 认证成功，耗时: 1ms, userId: 68a21bf0cdab688c24714231, URL: /api/tasks?userId=68a21bf0cdab688c24714231 {"service":"aisiri-backend","timestamp":"2025-08-19T14:09:10.936Z"}
+[32minfo[39m: 用户 68a21bf0cdab688c24714231 获取到 0 个任务 {"service":"aisiri-backend","timestamp":"2025-08-19T14:09:10.940Z"}
+[32minfo[39m: ::1 - - [19/Aug/2025:14:09:10 +0000] "GET /api/tasks?userId=68a21bf0cdab688c24714231 HTTP/1.1" 304 - "http://localhost:8080/task" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" {"service":"aisiri-backend","timestamp":"2025-08-19T14:09:10.940Z"}

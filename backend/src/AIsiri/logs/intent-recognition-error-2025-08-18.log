@@ -1,0 +1,33 @@
+[2025-08-18 01:09:05.651] ERROR: 智能调度快速测试失败
+  {
+  "error": "SchedulePlanningService is not a constructor",
+  "stack": "TypeError: SchedulePlanningService is not a constructor\n    at new IntelligentDispatchService (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/intelligentDispatchService.js:21:36)\n    at quickTest (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/tests/dispatch-quick-test.js:14:27)\n    at Object.<anonymous> (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/tests/dispatch-quick-test.js:189:3)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)\n    at Object..js (node:internal/modules/cjs/loader:1871:10)\n    at Module.load (node:internal/modules/cjs/loader:1470:32)\n    at Module._load (node:internal/modules/cjs/loader:1290:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)"
+}
+[2025-08-18 19:38:31.420] ERROR: 通义千问API调用失败
+  {
+  "error": "Client network socket disconnected before secure TLS connection was established"
+}
+[2025-08-18 19:38:31.421] ERROR: 意图识别失败
+  {
+  "error": "API调用失败: Client network socket disconnected before secure TLS connection was established",
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "processingTime": "5040ms",
+  "success": false
+}
+[2025-08-18 19:38:31.421] ERROR: 智能调度处理失败
+  {
+  "error": "API调用失败: Client network socket disconnected before secure TLS connection was established",
+  "stack": "Error: API调用失败: Client network socket disconnected before secure TLS connection was established\n    at IntentRecognitionService.callQwenAPI (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/intentRecognitionService.js:155:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async IntentRecognitionService.recognizeIntent (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/intentRecognitionService.js:65:24)\n    at async IntelligentDispatchService.processUserInput (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/intelligentDispatchService.js:43:28)\n    at async IntelligentDispatchController.processIntelligentDispatch (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/controllers/intelligentDispatchController.js:93:22)"
+}
+[2025-08-18 19:38:31.422] ERROR: [智能调度-5ce96275-ce9e-4841-87b1-622a53379a13] 处理失败
+  {
+  "error": "Cannot read properties of undefined (reading 'response')",
+  "stack": "TypeError: Cannot read properties of undefined (reading 'response')\n    at IntelligentDispatchController.processIntelligentDispatch (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/controllers/intelligentDispatchController.js:113:33)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)",
+  "processingTime": "5043ms"
+}
+[2025-08-18 19:41:13.583] ERROR: [智能调度-7a6465aa-f1bd-4736-84e7-fe898a27d5d1] 处理失败
+  {
+  "error": "智能调度处理失败",
+  "stack": "Error: 智能调度处理失败\n    at IntelligentDispatchController.processIntelligentDispatch (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/controllers/intelligentDispatchController.js:130:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)",
+  "processingTime": "6913ms"
+}

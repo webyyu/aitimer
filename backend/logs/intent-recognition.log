@@ -1,0 +1,425 @@
+2025-08-17T11:16:02.014Z [INFO] [IntentRecognition] 意图识别服务初始化完成 
+2025-08-17T11:16:02.017Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_0","userInput":"你好"}
+2025-08-17T11:16:03.549Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_0","intentType":"normal_chat","confidence":0.95,"processingTime":"1532ms"}
+2025-08-17T11:16:03.751Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1","userInput":"今天天气真不错"}
+2025-08-17T11:16:05.078Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1","intentType":"normal_chat","confidence":0.9,"processingTime":"1327ms"}
+2025-08-17T11:16:05.280Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_2","userInput":"我感觉有点累"}
+2025-08-17T11:16:07.554Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_2","intentType":"normal_chat","confidence":0.95,"processingTime":"2274ms"}
+2025-08-17T11:16:07.756Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_3","userInput":"你能陪我聊聊天吗"}
+2025-08-17T11:16:09.455Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_3","intentType":"normal_chat","confidence":0.95,"processingTime":"1699ms"}
+2025-08-17T11:16:09.656Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_4","userInput":"最近工作压力好大"}
+2025-08-17T11:16:11.669Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_4","intentType":"normal_chat","confidence":0.95,"processingTime":"2013ms"}
+2025-08-17T11:16:11.871Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_5","userInput":"谢谢你的帮助"}
+2025-08-17T11:16:13.385Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_5","intentType":"normal_chat","confidence":0.95,"processingTime":"1514ms"}
+2025-08-17T11:16:13.587Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_6","userInput":"我心情不太好"}
+2025-08-17T11:16:14.672Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_6","intentType":"normal_chat","confidence":0.95,"processingTime":"1085ms"}
+2025-08-17T11:16:14.874Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_7","userInput":"你觉得这个想法怎么样？"}
+2025-08-17T11:16:16.924Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_7","intentType":"normal_chat","confidence":0.9,"processingTime":"2050ms"}
+2025-08-17T11:16:17.125Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_0","userInput":"帮我添加一个任务"}
+2025-08-17T11:16:18.538Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_0","intentType":"task_creation","confidence":0.95,"processingTime":"1413ms"}
+2025-08-17T11:16:18.740Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1","userInput":"我要创建一个新的待办事项"}
+2025-08-17T11:16:20.095Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1","intentType":"task_creation","confidence":0.95,"processingTime":"1355ms"}
+2025-08-17T11:16:20.296Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_2","userInput":"提醒我明天下午开会"}
+2025-08-17T11:16:21.881Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_2","intentType":"task_creation","confidence":0.95,"processingTime":"1585ms"}
+2025-08-17T11:16:22.084Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_3","userInput":"新建任务：买菜"}
+2025-08-17T11:16:23.691Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_3","intentType":"task_creation","confidence":0.95,"processingTime":"1607ms"}
+2025-08-17T11:16:23.893Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_4","userInput":"我需要设置一个提醒"}
+2025-08-17T11:16:25.208Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_4","intentType":"task_creation","confidence":0.95,"processingTime":"1315ms"}
+2025-08-17T11:16:25.410Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_5","userInput":"添加待办：取快递"}
+2025-08-17T11:16:27.080Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_5","intentType":"task_creation","confidence":0.95,"processingTime":"1670ms"}
+2025-08-17T11:16:27.283Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_6","userInput":"创建任务：写报告"}
+2025-08-17T11:16:28.994Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_6","intentType":"task_creation","confidence":0.95,"processingTime":"1711ms"}
+2025-08-17T11:16:29.196Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_7","userInput":"帮我记录一下要做的事情"}
+2025-08-17T11:16:30.373Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_7","intentType":"task_creation","confidence":0.95,"processingTime":"1177ms"}
+2025-08-17T11:16:30.575Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_0","userInput":"我今天有什么安排？"}
+2025-08-17T11:16:31.979Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_0","intentType":"time_scheduling","confidence":0.95,"processingTime":"1404ms"}
+2025-08-17T11:16:32.181Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1","userInput":"明天几点有会议？"}
+2025-08-17T11:16:33.356Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1","intentType":"time_scheduling","confidence":0.95,"processingTime":"1175ms"}
+2025-08-17T11:16:33.557Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_2","userInput":"这周的日程怎么样？"}
+2025-08-17T11:16:35.149Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_2","intentType":"time_scheduling","confidence":0.95,"processingTime":"1592ms"}
+2025-08-17T11:16:35.351Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_3","userInput":"帮我看看下午的时间安排"}
+2025-08-17T11:16:36.632Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_3","intentType":"time_scheduling","confidence":0.95,"processingTime":"1280ms"}
+2025-08-17T11:16:36.833Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_4","userInput":"我什么时候有空？"}
+2025-08-17T11:16:47.496Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_4","intentType":"time_scheduling","confidence":0.95,"processingTime":"10663ms"}
+2025-08-17T11:16:47.697Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_5","userInput":"查看我的日程表"}
+2025-08-17T11:16:51.035Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_5","intentType":"time_scheduling","confidence":0.95,"processingTime":"3338ms"}
+2025-08-17T11:16:51.236Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_6","userInput":"今天还有什么任务要完成？"}
+2025-08-17T11:16:52.542Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_6","intentType":"time_scheduling","confidence":0.85,"processingTime":"1306ms"}
+2025-08-17T11:16:52.743Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_7","userInput":"下周一有什么计划？"}
+2025-08-17T11:16:53.895Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_7","intentType":"time_scheduling","confidence":0.95,"processingTime":"1152ms"}
+2025-08-17T11:16:54.097Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_0","userInput":"北京今天天气怎么样？"}
+2025-08-17T11:16:55.929Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_0","intentType":"external_tool","confidence":0.95,"processingTime":"1832ms"}
+2025-08-17T11:16:56.130Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1","userInput":"帮我查一下从家到公司的路线"}
+2025-08-17T11:16:57.432Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1","intentType":"external_tool","confidence":0.95,"processingTime":"1302ms"}
+2025-08-17T11:16:57.634Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_2","userInput":"最近的加油站在哪里？"}
+2025-08-17T11:16:59.959Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_2","intentType":"external_tool","confidence":0.95,"processingTime":"2325ms"}
+2025-08-17T11:17:00.161Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_3","userInput":"我要去天安门广场怎么走？"}
+2025-08-17T11:17:01.537Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_3","intentType":"external_tool","confidence":0.95,"processingTime":"1376ms"}
+2025-08-17T11:17:01.739Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_4","userInput":"查询一下明天的天气预报"}
+2025-08-17T11:17:03.017Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_4","intentType":"external_tool","confidence":0.95,"processingTime":"1278ms"}
+2025-08-17T11:17:03.219Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_5","userInput":"附近有什么好吃的餐厅？"}
+2025-08-17T11:17:05.159Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_5","intentType":"external_tool","confidence":0.95,"processingTime":"1940ms"}
+2025-08-17T11:17:05.360Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_6","userInput":"帮我导航到最近的医院"}
+2025-08-17T11:17:06.459Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_6","intentType":"external_tool","confidence":0.95,"processingTime":"1099ms"}
+2025-08-17T11:17:06.660Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_7","userInput":"实时路况怎么样？"}
+2025-08-17T11:17:07.828Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_7","intentType":"external_tool","confidence":0.95,"processingTime":"1168ms"}
+2025-08-17T11:17:08.032Z [INFO] [IntentRecognition] 开始批量意图识别 {"count":4}
+2025-08-17T11:17:08.032Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"batch_0","userInput":"你好，今天天气不错"}
+2025-08-17T11:17:09.629Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"batch_0","intentType":"normal_chat","confidence":0.9,"processingTime":"1597ms"}
+2025-08-17T11:17:09.731Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"batch_1","userInput":"帮我添加一个任务"}
+2025-08-17T11:17:11.076Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"batch_1","intentType":"task_creation","confidence":0.95,"processingTime":"1345ms"}
+2025-08-17T11:17:11.178Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"batch_2","userInput":"我今天有什么安排？"}
+2025-08-17T11:17:12.942Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"batch_2","intentType":"time_scheduling","confidence":0.95,"processingTime":"1765ms"}
+2025-08-17T11:17:13.043Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"batch_3","userInput":"北京天气怎么样？"}
+2025-08-17T11:17:15.162Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"batch_3","intentType":"external_tool","confidence":0.95,"processingTime":"2119ms"}
+2025-08-17T11:17:15.162Z [INFO] [IntentRecognition] 批量意图识别完成 {"total":4,"successful":4}
+2025-08-17T11:17:15.163Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_0","userInput":"你好，今天天气不错"}
+2025-08-17T11:17:16.772Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_0","intentType":"normal_chat","confidence":0.9,"processingTime":"1609ms"}
+2025-08-17T11:17:16.873Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_1","userInput":"你好，今天天气不错"}
+2025-08-17T11:17:20.062Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_1","intentType":"normal_chat","confidence":0.9,"processingTime":"3189ms"}
+2025-08-17T11:17:20.163Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_2","userInput":"你好，今天天气不错"}
+2025-08-17T11:17:22.219Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_2","intentType":"normal_chat","confidence":0.9,"processingTime":"2056ms"}
+2025-08-17T11:17:22.319Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_3","userInput":"你好，今天天气不错"}
+2025-08-17T11:17:24.416Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_3","intentType":"normal_chat","confidence":0.9,"processingTime":"2097ms"}
+2025-08-17T11:17:24.517Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_4","userInput":"你好，今天天气不错"}
+2025-08-17T11:17:27.271Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_4","intentType":"normal_chat","confidence":0.9,"processingTime":"2754ms"}
+2025-08-17T11:17:27.372Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_5","userInput":"你好，今天天气不错"}
+2025-08-17T11:17:28.663Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_5","intentType":"normal_chat","confidence":0.9,"processingTime":"1291ms"}
+2025-08-17T11:17:28.763Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_6","userInput":"你好，今天天气不错"}
+2025-08-17T11:17:30.401Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_6","intentType":"normal_chat","confidence":0.9,"processingTime":"1638ms"}
+2025-08-17T11:17:30.502Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_7","userInput":"你好，今天天气不错"}
+2025-08-17T11:17:31.832Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_7","intentType":"normal_chat","confidence":0.9,"processingTime":"1330ms"}
+2025-08-17T11:17:31.932Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_8","userInput":"你好，今天天气不错"}
+2025-08-17T11:17:33.526Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_8","intentType":"normal_chat","confidence":0.9,"processingTime":"1594ms"}
+2025-08-17T11:17:33.627Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_9","userInput":"你好，今天天气不错"}
+2025-08-17T11:17:35.177Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_9","intentType":"normal_chat","confidence":0.9,"processingTime":"1550ms"}
+2025-08-17T11:17:45.775Z [INFO] [IntentRecognition] 意图识别服务初始化完成 
+2025-08-17T11:17:45.778Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429465777","userInput":"你好，我是测试用户"}
+2025-08-17T11:17:47.889Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429465777","intentType":"normal_chat","confidence":0.95,"processingTime":"2110ms"}
+2025-08-17T11:17:49.745Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429465777_intent","userInput":"今天心情不错"}
+2025-08-17T11:17:51.216Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429465777_intent","intentType":"normal_chat","confidence":0.95,"processingTime":"1471ms"}
+2025-08-17T11:17:53.366Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429465777_intent","userInput":"帮我添加一个任务"}
+2025-08-17T11:17:54.364Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429465777_intent","intentType":"task_creation","confidence":0.95,"processingTime":"998ms"}
+2025-08-17T11:17:57.926Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429465777_intent","userInput":"我今天有什么安排？"}
+2025-08-17T11:17:59.405Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429465777_intent","intentType":"time_scheduling","confidence":0.95,"processingTime":"1479ms"}
+2025-08-17T11:18:04.839Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429465777_intent","userInput":"北京天气怎么样？"}
+2025-08-17T11:18:06.187Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429465777_intent","intentType":"external_tool","confidence":0.95,"processingTime":"1348ms"}
+2025-08-17T11:18:08.404Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429465777_session","userInput":"你好"}
+2025-08-17T11:18:09.742Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429465777_session","intentType":"normal_chat","confidence":0.95,"processingTime":"1338ms"}
+2025-08-17T11:18:10.765Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429465777_db","userInput":"这是数据库存储测试消息"}
+2025-08-17T11:18:12.361Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429465777_db","intentType":"normal_chat","confidence":0.8,"processingTime":"1596ms"}
+2025-08-17T11:18:13.855Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429465777_error","userInput":""}
+2025-08-17T11:18:15.427Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429465777_error","intentType":"normal_chat","confidence":0.9,"processingTime":"1572ms"}
+2025-08-17T11:18:16.479Z [INFO] [IntentRecognition] 开始意图识别 {"userId":null,"userInput":"测试消息"}
+2025-08-17T11:18:17.770Z [INFO] [IntentRecognition] 意图识别完成 {"userId":null,"intentType":"normal_chat","confidence":0.9,"processingTime":"1291ms"}
+2025-08-17T11:18:28.659Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429465777_error","userInput":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+2025-08-17T11:18:30.307Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429465777_error","intentType":"normal_chat","confidence":0.95,"processingTime":"1648ms"}
+2025-08-17T11:18:31.866Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429465777_perf","userInput":"这是性能测试消息 1"}
+2025-08-17T11:18:33.358Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429465777_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1492ms"}
+2025-08-17T11:21:28.624Z [INFO] [IntentRecognition] 意图识别服务初始化完成 
+2025-08-17T11:21:31.847Z [INFO] [IntentRecognition] 开始意图识别 {"userId":null,"userInput":"测试消息"}
+2025-08-17T11:21:33.969Z [INFO] [IntentRecognition] 意图识别完成 {"userId":null,"intentType":"normal_chat","confidence":0.9,"processingTime":"2122ms"}
+2025-08-17T11:23:22.933Z [INFO] [IntentRecognition] 意图识别服务初始化完成 
+2025-08-17T11:23:26.146Z [INFO] [IntentRecognition] 开始意图识别 {"userId":null,"userInput":"测试消息"}
+2025-08-17T11:23:27.424Z [INFO] [IntentRecognition] 意图识别完成 {"userId":null,"intentType":"normal_chat","confidence":0.9,"processingTime":"1278ms"}
+2025-08-17T11:23:55.771Z [INFO] [IntentRecognition] 意图识别服务初始化完成 
+2025-08-17T11:24:51.253Z [INFO] [IntentRecognition] 意图识别服务初始化完成 
+2025-08-17T11:24:51.255Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429891255","userInput":"你好，我是测试用户"}
+2025-08-17T11:24:52.719Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429891255","intentType":"normal_chat","confidence":0.95,"processingTime":"1464ms"}
+2025-08-17T11:24:53.894Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429891255_intent","userInput":"今天心情不错"}
+2025-08-17T11:24:55.290Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429891255_intent","intentType":"normal_chat","confidence":0.95,"processingTime":"1396ms"}
+2025-08-17T11:24:56.773Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429891255_intent","userInput":"帮我添加一个任务"}
+2025-08-17T11:24:57.872Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429891255_intent","intentType":"task_creation","confidence":0.95,"processingTime":"1099ms"}
+2025-08-17T11:25:01.410Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429891255_intent","userInput":"我今天有什么安排？"}
+2025-08-17T11:25:02.480Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429891255_intent","intentType":"time_scheduling","confidence":0.95,"processingTime":"1070ms"}
+2025-08-17T11:25:06.560Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429891255_intent","userInput":"北京天气怎么样？"}
+2025-08-17T11:25:08.091Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429891255_intent","intentType":"external_tool","confidence":0.95,"processingTime":"1531ms"}
+2025-08-17T11:25:10.613Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429891255_session","userInput":"你好"}
+2025-08-17T11:25:12.134Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429891255_session","intentType":"normal_chat","confidence":0.95,"processingTime":"1521ms"}
+2025-08-17T11:25:13.665Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429891255_db","userInput":"这是数据库存储测试消息"}
+2025-08-17T11:25:15.416Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429891255_db","intentType":"normal_chat","confidence":0.9,"processingTime":"1751ms"}
+2025-08-17T11:25:17.167Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429891255_error","userInput":""}
+2025-08-17T11:25:18.775Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429891255_error","intentType":"normal_chat","confidence":0.9,"processingTime":"1608ms"}
+2025-08-17T11:25:20.071Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429891255_error","userInput":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+2025-08-17T11:25:22.145Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429891255_error","intentType":"normal_chat","confidence":0.95,"processingTime":"2074ms"}
+2025-08-17T11:25:23.640Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429891255_perf","userInput":"这是性能测试消息 1"}
+2025-08-17T11:25:24.851Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429891255_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1211ms"}
+2025-08-17T11:25:47.940Z [INFO] [IntentRecognition] 意图识别服务初始化完成 
+2025-08-17T11:25:47.943Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942","userInput":"你好，我是测试用户"}
+2025-08-17T11:25:49.315Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942","intentType":"normal_chat","confidence":0.95,"processingTime":"1372ms"}
+2025-08-17T11:25:50.343Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942_intent","userInput":"今天心情不错"}
+2025-08-17T11:25:51.380Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942_intent","intentType":"normal_chat","confidence":0.95,"processingTime":"1037ms"}
+2025-08-17T11:25:52.664Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942_intent","userInput":"帮我添加一个任务"}
+2025-08-17T11:25:53.841Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942_intent","intentType":"task_creation","confidence":0.95,"processingTime":"1177ms"}
+2025-08-17T11:25:56.814Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942_intent","userInput":"我今天有什么安排？"}
+2025-08-17T11:26:00.322Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942_intent","intentType":"time_scheduling","confidence":0.95,"processingTime":"3508ms"}
+2025-08-17T11:26:03.612Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942_intent","userInput":"北京天气怎么样？"}
+2025-08-17T11:26:04.711Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942_intent","intentType":"external_tool","confidence":0.95,"processingTime":"1099ms"}
+2025-08-17T11:26:07.006Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942_session","userInput":"你好"}
+2025-08-17T11:26:08.215Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942_session","intentType":"normal_chat","confidence":0.95,"processingTime":"1209ms"}
+2025-08-17T11:26:09.363Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942_session","userInput":"我想了解一下你的功能"}
+2025-08-17T11:26:10.427Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942_session","intentType":"normal_chat","confidence":0.95,"processingTime":"1064ms"}
+2025-08-17T11:26:14.471Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942_session","userInput":"谢谢你的介绍"}
+2025-08-17T11:26:15.649Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942_session","intentType":"normal_chat","confidence":0.95,"processingTime":"1178ms"}
+2025-08-17T11:26:17.358Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942_db","userInput":"这是数据库存储测试消息"}
+2025-08-17T11:26:19.178Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942_db","intentType":"normal_chat","confidence":0.9,"processingTime":"1820ms"}
+2025-08-17T11:26:22.421Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942_error","userInput":""}
+2025-08-17T11:26:23.842Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942_error","intentType":"normal_chat","confidence":0.9,"processingTime":"1421ms"}
+2025-08-17T11:26:25.119Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942_error","userInput":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+2025-08-17T11:26:26.672Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942_error","intentType":"normal_chat","confidence":0.95,"processingTime":"1553ms"}
+2025-08-17T11:26:28.017Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942_perf","userInput":"这是性能测试消息 1"}
+2025-08-17T11:26:29.750Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1733ms"}
+2025-08-17T11:26:31.192Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942_perf","userInput":"这是性能测试消息 2"}
+2025-08-17T11:26:33.551Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"2359ms"}
+2025-08-17T11:26:34.563Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942_perf","userInput":"这是性能测试消息 3"}
+2025-08-17T11:26:37.238Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"2675ms"}
+2025-08-17T11:26:38.629Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942_perf","userInput":"这是性能测试消息 4"}
+2025-08-17T11:26:40.587Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1958ms"}
+2025-08-17T11:26:41.586Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755429947942_perf","userInput":"这是性能测试消息 5"}
+2025-08-17T11:26:43.116Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755429947942_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1530ms"}
+2025-08-17T11:27:10.644Z [INFO] [IntentRecognition] 意图识别服务初始化完成 
+2025-08-17T11:27:10.646Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646","userInput":"你好，我是测试用户"}
+2025-08-17T11:27:12.131Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646","intentType":"normal_chat","confidence":0.95,"processingTime":"1485ms"}
+2025-08-17T11:27:13.209Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646_intent","userInput":"今天心情不错"}
+2025-08-17T11:27:15.551Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646_intent","intentType":"normal_chat","confidence":0.95,"processingTime":"2342ms"}
+2025-08-17T11:27:17.062Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646_intent","userInput":"帮我添加一个任务"}
+2025-08-17T11:27:17.936Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646_intent","intentType":"task_creation","confidence":0.95,"processingTime":"874ms"}
+2025-08-17T11:27:21.136Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646_intent","userInput":"我今天有什么安排？"}
+2025-08-17T11:27:22.404Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646_intent","intentType":"time_scheduling","confidence":0.95,"processingTime":"1268ms"}
+2025-08-17T11:27:26.166Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646_intent","userInput":"北京天气怎么样？"}
+2025-08-17T11:27:27.400Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646_intent","intentType":"external_tool","confidence":0.95,"processingTime":"1234ms"}
+2025-08-17T11:27:29.403Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646_session","userInput":"你好"}
+2025-08-17T11:27:30.672Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646_session","intentType":"normal_chat","confidence":0.95,"processingTime":"1269ms"}
+2025-08-17T11:27:31.441Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646_session","userInput":"我想了解一下你的功能"}
+2025-08-17T11:27:32.630Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646_session","intentType":"normal_chat","confidence":0.95,"processingTime":"1189ms"}
+2025-08-17T11:27:34.408Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646_session","userInput":"谢谢你的介绍"}
+2025-08-17T11:27:35.499Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646_session","intentType":"normal_chat","confidence":0.95,"processingTime":"1091ms"}
+2025-08-17T11:27:38.144Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646_db","userInput":"这是数据库存储测试消息"}
+2025-08-17T11:27:39.359Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646_db","intentType":"normal_chat","confidence":0.9,"processingTime":"1215ms"}
+2025-08-17T11:27:42.002Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646_error","userInput":""}
+2025-08-17T11:27:45.026Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646_error","intentType":"normal_chat","confidence":0.9,"processingTime":"3024ms"}
+2025-08-17T11:27:45.952Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646_error","userInput":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+2025-08-17T11:27:47.235Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646_error","intentType":"normal_chat","confidence":0.95,"processingTime":"1283ms"}
+2025-08-17T11:27:48.724Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646_perf","userInput":"这是性能测试消息 1"}
+2025-08-17T11:27:50.438Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1714ms"}
+2025-08-17T11:27:51.531Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646_perf","userInput":"这是性能测试消息 2"}
+2025-08-17T11:27:52.941Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1410ms"}
+2025-08-17T11:27:54.021Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646_perf","userInput":"这是性能测试消息 3"}
+2025-08-17T11:27:55.376Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1355ms"}
+2025-08-17T11:27:56.633Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646_perf","userInput":"这是性能测试消息 4"}
+2025-08-17T11:27:58.005Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646_perf","intentType":"normal_chat","confidence":0.95,"processingTime":"1372ms"}
+2025-08-17T11:27:58.958Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430030646_perf","userInput":"这是性能测试消息 5"}
+2025-08-17T11:28:01.088Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430030646_perf","intentType":"normal_chat","confidence":0.8,"processingTime":"2130ms"}
+2025-08-17T11:28:08.214Z [INFO] [IntentRecognition] 意图识别服务初始化完成 
+2025-08-17T11:28:08.217Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216","userInput":"你好，我是测试用户"}
+2025-08-17T11:28:09.816Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216","intentType":"normal_chat","confidence":0.95,"processingTime":"1599ms"}
+2025-08-17T11:28:11.079Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216_intent","userInput":"今天心情不错"}
+2025-08-17T11:28:12.521Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216_intent","intentType":"normal_chat","confidence":0.95,"processingTime":"1442ms"}
+2025-08-17T11:28:13.418Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216_intent","userInput":"帮我添加一个任务"}
+2025-08-17T11:28:14.622Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216_intent","intentType":"task_creation","confidence":0.95,"processingTime":"1204ms"}
+2025-08-17T11:28:19.335Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216_intent","userInput":"我今天有什么安排？"}
+2025-08-17T11:28:21.340Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216_intent","intentType":"time_scheduling","confidence":0.95,"processingTime":"2005ms"}
+2025-08-17T11:28:25.025Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216_intent","userInput":"北京天气怎么样？"}
+2025-08-17T11:28:26.372Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216_intent","intentType":"external_tool","confidence":0.95,"processingTime":"1347ms"}
+2025-08-17T11:28:28.642Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216_session","userInput":"你好"}
+2025-08-17T11:28:29.694Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216_session","intentType":"normal_chat","confidence":0.95,"processingTime":"1052ms"}
+2025-08-17T11:28:30.520Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216_session","userInput":"我想了解一下你的功能"}
+2025-08-17T11:28:32.010Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216_session","intentType":"normal_chat","confidence":0.95,"processingTime":"1490ms"}
+2025-08-17T11:28:38.512Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216_session","userInput":"谢谢你的介绍"}
+2025-08-17T11:28:42.303Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216_session","intentType":"normal_chat","confidence":0.95,"processingTime":"3791ms"}
+2025-08-17T11:28:43.957Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216_db","userInput":"这是数据库存储测试消息"}
+2025-08-17T11:28:45.142Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216_db","intentType":"normal_chat","confidence":0.9,"processingTime":"1185ms"}
+2025-08-17T11:28:48.220Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216_error","userInput":""}
+2025-08-17T11:28:50.865Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216_error","intentType":"normal_chat","confidence":0.9,"processingTime":"2645ms"}
+2025-08-17T11:28:51.761Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216_error","userInput":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+2025-08-17T11:28:53.660Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216_error","intentType":"normal_chat","confidence":0.95,"processingTime":"1899ms"}
+2025-08-17T11:28:54.891Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216_perf","userInput":"这是性能测试消息 1"}
+2025-08-17T11:28:56.562Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1671ms"}
+2025-08-17T11:28:57.738Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216_perf","userInput":"这是性能测试消息 2"}
+2025-08-17T11:29:00.270Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"2532ms"}
+2025-08-17T11:29:02.521Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216_perf","userInput":"这是性能测试消息 3"}
+2025-08-17T11:29:04.085Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1564ms"}
+2025-08-17T11:29:05.726Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216_perf","userInput":"这是性能测试消息 4"}
+2025-08-17T11:29:07.435Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1709ms"}
+2025-08-17T11:29:08.735Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430088216_perf","userInput":"这是性能测试消息 5"}
+2025-08-17T11:29:10.594Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430088216_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1858ms"}
+2025-08-17T11:29:26.961Z [INFO] [IntentRecognition] 意图识别服务初始化完成 
+2025-08-17T11:29:26.963Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963","userInput":"你好，我是测试用户"}
+2025-08-17T11:29:28.104Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963","intentType":"normal_chat","confidence":0.95,"processingTime":"1141ms"}
+2025-08-17T11:29:29.550Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963_intent","userInput":"今天心情不错"}
+2025-08-17T11:29:30.574Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963_intent","intentType":"normal_chat","confidence":0.95,"processingTime":"1024ms"}
+2025-08-17T11:29:32.102Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963_intent","userInput":"帮我添加一个任务"}
+2025-08-17T11:29:33.659Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963_intent","intentType":"task_creation","confidence":0.95,"processingTime":"1556ms"}
+2025-08-17T11:29:36.612Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963_intent","userInput":"我今天有什么安排？"}
+2025-08-17T11:29:37.710Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963_intent","intentType":"time_scheduling","confidence":0.95,"processingTime":"1098ms"}
+2025-08-17T11:29:40.350Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963_intent","userInput":"北京天气怎么样？"}
+2025-08-17T11:29:41.956Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963_intent","intentType":"external_tool","confidence":0.95,"processingTime":"1606ms"}
+2025-08-17T11:29:43.884Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963_session","userInput":"你好"}
+2025-08-17T11:29:45.168Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963_session","intentType":"normal_chat","confidence":0.95,"processingTime":"1285ms"}
+2025-08-17T11:29:45.780Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963_session","userInput":"我想了解一下你的功能"}
+2025-08-17T11:29:47.245Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963_session","intentType":"normal_chat","confidence":0.95,"processingTime":"1465ms"}
+2025-08-17T11:29:50.114Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963_session","userInput":"谢谢你的介绍"}
+2025-08-17T11:29:51.138Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963_session","intentType":"normal_chat","confidence":0.95,"processingTime":"1024ms"}
+2025-08-17T11:29:52.803Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963_db","userInput":"这是数据库存储测试消息"}
+2025-08-17T11:29:54.683Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963_db","intentType":"normal_chat","confidence":0.95,"processingTime":"1880ms"}
+2025-08-17T11:29:57.801Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963_error","userInput":""}
+2025-08-17T11:29:58.958Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963_error","intentType":"normal_chat","confidence":0.9,"processingTime":"1157ms"}
+2025-08-17T11:30:00.620Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963_error","userInput":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+2025-08-17T11:30:02.471Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963_error","intentType":"normal_chat","confidence":0.95,"processingTime":"1851ms"}
+2025-08-17T11:30:03.803Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963_perf","userInput":"这是性能测试消息 1"}
+2025-08-17T11:30:05.452Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1649ms"}
+2025-08-17T11:30:07.323Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963_perf","userInput":"这是性能测试消息 2"}
+2025-08-17T11:30:08.805Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1482ms"}
+2025-08-17T11:30:10.363Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963_perf","userInput":"这是性能测试消息 3"}
+2025-08-17T11:30:12.315Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1952ms"}
+2025-08-17T11:30:13.633Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963_perf","userInput":"这是性能测试消息 4"}
+2025-08-17T11:30:15.053Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1420ms"}
+2025-08-17T11:30:16.405Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430166963_perf","userInput":"这是性能测试消息 5"}
+2025-08-17T11:30:17.725Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430166963_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1319ms"}
+2025-08-17T11:34:26.171Z [INFO] [IntentRecognition] 意图识别服务初始化完成 
+2025-08-17T11:34:26.173Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_0","userInput":"你好"}
+2025-08-17T11:34:27.805Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_0","intentType":"normal_chat","confidence":0.95,"processingTime":"1632ms"}
+2025-08-17T11:34:28.008Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1","userInput":"今天天气真不错"}
+2025-08-17T11:34:30.002Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1","intentType":"normal_chat","confidence":0.95,"processingTime":"1993ms"}
+2025-08-17T11:34:30.204Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_2","userInput":"我感觉有点累"}
+2025-08-17T11:34:31.196Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_2","intentType":"normal_chat","confidence":0.95,"processingTime":"992ms"}
+2025-08-17T11:34:31.396Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_3","userInput":"你能陪我聊聊天吗"}
+2025-08-17T11:34:32.516Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_3","intentType":"normal_chat","confidence":0.95,"processingTime":"1120ms"}
+2025-08-17T11:34:32.719Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_4","userInput":"最近工作压力好大"}
+2025-08-17T11:34:33.818Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_4","intentType":"normal_chat","confidence":0.95,"processingTime":"1099ms"}
+2025-08-17T11:34:34.020Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_5","userInput":"谢谢你的帮助"}
+2025-08-17T11:34:35.581Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_5","intentType":"normal_chat","confidence":0.95,"processingTime":"1561ms"}
+2025-08-17T11:34:35.783Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_6","userInput":"我心情不太好"}
+2025-08-17T11:34:37.020Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_6","intentType":"normal_chat","confidence":0.95,"processingTime":"1238ms"}
+2025-08-17T11:34:37.223Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_7","userInput":"你觉得这个想法怎么样？"}
+2025-08-17T11:34:40.064Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_7","intentType":"normal_chat","confidence":0.9,"processingTime":"2841ms"}
+2025-08-17T11:34:40.265Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_0","userInput":"帮我添加一个任务"}
+2025-08-17T11:34:41.405Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_0","intentType":"task_creation","confidence":0.95,"processingTime":"1141ms"}
+2025-08-17T11:34:41.607Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1","userInput":"我要创建一个新的待办事项"}
+2025-08-17T11:34:43.449Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1","intentType":"task_creation","confidence":0.95,"processingTime":"1842ms"}
+2025-08-17T11:34:43.652Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_2","userInput":"提醒我明天下午开会"}
+2025-08-17T11:34:44.720Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_2","intentType":"task_creation","confidence":0.95,"processingTime":"1068ms"}
+2025-08-17T11:34:44.922Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_3","userInput":"新建任务：买菜"}
+2025-08-17T11:34:46.817Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_3","intentType":"task_creation","confidence":0.95,"processingTime":"1895ms"}
+2025-08-17T11:34:47.018Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_4","userInput":"我需要设置一个提醒"}
+2025-08-17T11:34:48.431Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_4","intentType":"task_creation","confidence":0.95,"processingTime":"1413ms"}
+2025-08-17T11:34:48.633Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_5","userInput":"添加待办：取快递"}
+2025-08-17T11:34:50.492Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_5","intentType":"task_creation","confidence":0.95,"processingTime":"1858ms"}
+2025-08-17T11:34:50.692Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_6","userInput":"创建任务：写报告"}
+2025-08-17T11:34:52.070Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_6","intentType":"task_creation","confidence":0.95,"processingTime":"1378ms"}
+2025-08-17T11:34:52.272Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_7","userInput":"帮我记录一下要做的事情"}
+2025-08-17T11:34:53.300Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_7","intentType":"task_creation","confidence":0.95,"processingTime":"1028ms"}
+2025-08-17T11:34:53.503Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_0","userInput":"我今天有什么安排？"}
+2025-08-17T11:34:59.516Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_0","intentType":"time_scheduling","confidence":0.95,"processingTime":"6013ms"}
+2025-08-17T11:34:59.718Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1","userInput":"明天几点有会议？"}
+2025-08-17T11:35:00.731Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1","intentType":"time_scheduling","confidence":0.95,"processingTime":"1013ms"}
+2025-08-17T11:35:00.933Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_2","userInput":"这周的日程怎么样？"}
+2025-08-17T11:35:02.603Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_2","intentType":"time_scheduling","confidence":0.95,"processingTime":"1670ms"}
+2025-08-17T11:35:02.804Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_3","userInput":"帮我看看下午的时间安排"}
+2025-08-17T11:35:04.635Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_3","intentType":"time_scheduling","confidence":0.95,"processingTime":"1831ms"}
+2025-08-17T11:35:04.837Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_4","userInput":"我什么时候有空？"}
+2025-08-17T11:35:06.331Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_4","intentType":"time_scheduling","confidence":0.9,"processingTime":"1494ms"}
+2025-08-17T11:35:06.532Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_5","userInput":"查看我的日程表"}
+2025-08-17T11:35:08.099Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_5","intentType":"time_scheduling","confidence":0.95,"processingTime":"1567ms"}
+2025-08-17T11:35:08.302Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_6","userInput":"今天还有什么任务要完成？"}
+2025-08-17T11:35:10.214Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_6","intentType":"time_scheduling","confidence":0.85,"processingTime":"1913ms"}
+2025-08-17T11:35:10.417Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_7","userInput":"下周一有什么计划？"}
+2025-08-17T11:35:11.734Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_7","intentType":"time_scheduling","confidence":0.95,"processingTime":"1317ms"}
+2025-08-17T11:35:11.936Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_0","userInput":"北京今天天气怎么样？"}
+2025-08-17T11:35:13.746Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_0","intentType":"external_tool","confidence":0.95,"processingTime":"1810ms"}
+2025-08-17T11:35:13.948Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1","userInput":"帮我查一下从家到公司的路线"}
+2025-08-17T11:35:15.046Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1","intentType":"external_tool","confidence":0.95,"processingTime":"1098ms"}
+2025-08-17T11:35:15.247Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_2","userInput":"最近的加油站在哪里？"}
+2025-08-17T11:35:17.248Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_2","intentType":"external_tool","confidence":0.95,"processingTime":"2001ms"}
+2025-08-17T11:35:17.450Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_3","userInput":"我要去天安门广场怎么走？"}
+2025-08-17T11:35:18.879Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_3","intentType":"external_tool","confidence":0.95,"processingTime":"1429ms"}
+2025-08-17T11:35:19.081Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_4","userInput":"查询一下明天的天气预报"}
+2025-08-17T11:35:20.591Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_4","intentType":"external_tool","confidence":0.95,"processingTime":"1510ms"}
+2025-08-17T11:35:20.794Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_5","userInput":"附近有什么好吃的餐厅？"}
+2025-08-17T11:35:22.041Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_5","intentType":"external_tool","confidence":0.95,"processingTime":"1248ms"}
+2025-08-17T11:35:22.243Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_6","userInput":"帮我导航到最近的医院"}
+2025-08-17T11:35:23.553Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_6","intentType":"external_tool","confidence":0.95,"processingTime":"1310ms"}
+2025-08-17T11:35:23.755Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_7","userInput":"实时路况怎么样？"}
+2025-08-17T11:35:25.011Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_7","intentType":"external_tool","confidence":0.95,"processingTime":"1256ms"}
+2025-08-17T11:35:25.214Z [INFO] [IntentRecognition] 开始批量意图识别 {"count":4}
+2025-08-17T11:35:25.215Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"batch_0","userInput":"你好，今天天气不错"}
+2025-08-17T11:35:26.426Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"batch_0","intentType":"normal_chat","confidence":0.9,"processingTime":"1211ms"}
+2025-08-17T11:35:26.527Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"batch_1","userInput":"帮我添加一个任务"}
+2025-08-17T11:35:27.607Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"batch_1","intentType":"task_creation","confidence":0.95,"processingTime":"1080ms"}
+2025-08-17T11:35:27.714Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"batch_2","userInput":"我今天有什么安排？"}
+2025-08-17T11:35:29.570Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"batch_2","intentType":"time_scheduling","confidence":0.95,"processingTime":"1856ms"}
+2025-08-17T11:35:29.672Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"batch_3","userInput":"北京天气怎么样？"}
+2025-08-17T11:35:31.313Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"batch_3","intentType":"external_tool","confidence":0.95,"processingTime":"1642ms"}
+2025-08-17T11:35:31.314Z [INFO] [IntentRecognition] 批量意图识别完成 {"total":4,"successful":4}
+2025-08-17T11:35:31.315Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_0","userInput":"你好，今天天气不错"}
+2025-08-17T11:35:33.195Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_0","intentType":"normal_chat","confidence":0.9,"processingTime":"1880ms"}
+2025-08-17T11:35:33.297Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_1","userInput":"你好，今天天气不错"}
+2025-08-17T11:35:35.172Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_1","intentType":"normal_chat","confidence":0.9,"processingTime":"1875ms"}
+2025-08-17T11:35:35.273Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_2","userInput":"你好，今天天气不错"}
+2025-08-17T11:35:36.761Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_2","intentType":"normal_chat","confidence":0.9,"processingTime":"1488ms"}
+2025-08-17T11:35:36.863Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_3","userInput":"你好，今天天气不错"}
+2025-08-17T11:35:38.320Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_3","intentType":"normal_chat","confidence":0.9,"processingTime":"1457ms"}
+2025-08-17T11:35:38.421Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_4","userInput":"你好，今天天气不错"}
+2025-08-17T11:35:39.944Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_4","intentType":"normal_chat","confidence":0.9,"processingTime":"1523ms"}
+2025-08-17T11:35:40.048Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_5","userInput":"你好，今天天气不错"}
+2025-08-17T11:35:41.693Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_5","intentType":"normal_chat","confidence":0.9,"processingTime":"1645ms"}
+2025-08-17T11:35:41.794Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_6","userInput":"你好，今天天气不错"}
+2025-08-17T11:35:44.064Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_6","intentType":"normal_chat","confidence":0.9,"processingTime":"2270ms"}
+2025-08-17T11:35:44.168Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_7","userInput":"你好，今天天气不错"}
+2025-08-17T11:35:45.112Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_7","intentType":"normal_chat","confidence":0.9,"processingTime":"944ms"}
+2025-08-17T11:35:45.213Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_8","userInput":"你好，今天天气不错"}
+2025-08-17T11:35:46.464Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_8","intentType":"normal_chat","confidence":0.9,"processingTime":"1250ms"}
+2025-08-17T11:35:46.565Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"perf_test_9","userInput":"你好，今天天气不错"}
+2025-08-17T11:35:47.738Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"perf_test_9","intentType":"normal_chat","confidence":0.9,"processingTime":"1173ms"}
+2025-08-17T11:35:58.311Z [INFO] [IntentRecognition] 意图识别服务初始化完成 
+2025-08-17T11:35:58.314Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314","userInput":"你好，我是测试用户"}
+2025-08-17T11:36:01.160Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314","intentType":"normal_chat","confidence":0.95,"processingTime":"2845ms"}
+2025-08-17T11:36:02.549Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314_intent","userInput":"今天心情不错"}
+2025-08-17T11:36:03.555Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314_intent","intentType":"normal_chat","confidence":0.95,"processingTime":"1006ms"}
+2025-08-17T11:36:05.387Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314_intent","userInput":"帮我添加一个任务"}
+2025-08-17T11:36:06.625Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314_intent","intentType":"task_creation","confidence":0.95,"processingTime":"1238ms"}
+2025-08-17T11:36:09.428Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314_intent","userInput":"我今天有什么安排？"}
+2025-08-17T11:36:10.605Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314_intent","intentType":"time_scheduling","confidence":0.95,"processingTime":"1177ms"}
+2025-08-17T11:36:15.124Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314_intent","userInput":"北京天气怎么样？"}
+2025-08-17T11:36:16.677Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314_intent","intentType":"external_tool","confidence":0.95,"processingTime":"1552ms"}
+2025-08-17T11:36:18.770Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314_session","userInput":"你好"}
+2025-08-17T11:36:20.163Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314_session","intentType":"normal_chat","confidence":0.95,"processingTime":"1393ms"}
+2025-08-17T11:36:20.923Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314_session","userInput":"我想了解一下你的功能"}
+2025-08-17T11:36:24.045Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314_session","intentType":"normal_chat","confidence":0.95,"processingTime":"3122ms"}
+2025-08-17T11:36:27.073Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314_session","userInput":"谢谢你的介绍"}
+2025-08-17T11:36:28.238Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314_session","intentType":"normal_chat","confidence":0.95,"processingTime":"1165ms"}
+2025-08-17T11:36:29.729Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314_db","userInput":"这是数据库存储测试消息"}
+2025-08-17T11:36:31.456Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314_db","intentType":"normal_chat","confidence":0.95,"processingTime":"1727ms"}
+2025-08-17T11:36:34.323Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314_error","userInput":""}
+2025-08-17T11:36:35.694Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314_error","intentType":"normal_chat","confidence":0.95,"processingTime":"1371ms"}
+2025-08-17T11:36:37.189Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314_error","userInput":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
+2025-08-17T11:36:38.733Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314_error","intentType":"normal_chat","confidence":0.95,"processingTime":"1544ms"}
+2025-08-17T11:36:40.341Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314_perf","userInput":"这是性能测试消息 1"}
+2025-08-17T11:36:41.994Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1653ms"}
+2025-08-17T11:36:43.237Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314_perf","userInput":"这是性能测试消息 2"}
+2025-08-17T11:36:44.562Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1325ms"}
+2025-08-17T11:36:45.558Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314_perf","userInput":"这是性能测试消息 3"}
+2025-08-17T11:36:46.800Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1242ms"}
+2025-08-17T11:36:49.344Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314_perf","userInput":"这是性能测试消息 4"}
+2025-08-17T11:36:50.980Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1636ms"}
+2025-08-17T11:36:52.592Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"test_user_1755430558314_perf","userInput":"这是性能测试消息 5"}
+2025-08-17T11:36:54.545Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"test_user_1755430558314_perf","intentType":"normal_chat","confidence":0.9,"processingTime":"1953ms"}
+2025-08-17T11:37:03.164Z [INFO] [IntentRecognition] 意图识别服务初始化完成 
+2025-08-17T11:37:03.708Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"api_test_user_1755430623171","userInput":"你好，这是API测试消息"}
+2025-08-17T11:37:05.397Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"api_test_user_1755430623171","intentType":"normal_chat","confidence":0.9,"processingTime":"1689ms"}
+2025-08-17T11:37:37.168Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"api_test_user_1755430623171_sessions","userInput":"创建会话测试消息"}
+2025-08-17T11:37:38.484Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"api_test_user_1755430623171_sessions","intentType":"task_creation","confidence":0.9,"processingTime":"1316ms"}
+2025-08-17T11:38:12.447Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"api_test_user_1755430623171_history","userInput":"第一条消息"}
+2025-08-17T11:38:13.700Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"api_test_user_1755430623171_history","intentType":"normal_chat","confidence":0.9,"processingTime":"1253ms"}
+2025-08-17T11:38:44.890Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"api_test_user_1755430623171_history","userInput":"第二条消息"}
+2025-08-17T11:38:46.373Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"api_test_user_1755430623171_history","intentType":"normal_chat","confidence":0.8,"processingTime":"1483ms"}
+2025-08-17T11:39:18.270Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"api_test_user_1755430623171_history","userInput":"第三条消息"}
+2025-08-17T11:39:20.445Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"api_test_user_1755430623171_history","intentType":"normal_chat","confidence":0.9,"processingTime":"2175ms"}
+2025-08-17T11:39:53.792Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"api_test_user_1755430623171_stats","userInput":"统计测试消息"}
+2025-08-17T11:39:56.231Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"api_test_user_1755430623171_stats","intentType":"normal_chat","confidence":0.85,"processingTime":"2439ms"}
+2025-08-17T11:41:04.648Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"api_test_user_1755430623171_concurrent","userInput":"并发测试消息 1"}
+2025-08-17T11:41:04.654Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"api_test_user_1755430623171_concurrent","userInput":"并发测试消息 2"}
+2025-08-17T11:41:04.656Z [INFO] [IntentRecognition] 开始意图识别 {"userId":"api_test_user_1755430623171_concurrent","userInput":"并发测试消息 3"}
+2025-08-17T11:41:06.866Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"api_test_user_1755430623171_concurrent","intentType":"normal_chat","confidence":0.9,"processingTime":"2218ms"}
+2025-08-17T11:41:18.992Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"api_test_user_1755430623171_concurrent","intentType":"normal_chat","confidence":0.8,"processingTime":"14338ms"}
+2025-08-17T11:42:50.312Z [INFO] [IntentRecognition] 意图识别完成 {"userId":"api_test_user_1755430623171_concurrent","intentType":"normal_chat","confidence":0.8,"processingTime":"105655ms"}

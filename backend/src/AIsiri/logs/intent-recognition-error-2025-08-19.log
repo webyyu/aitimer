@@ -1,0 +1,19 @@
+[2025-08-19 22:13:20.753] ERROR: 对话处理失败
+  {
+  "userId": "68a4866067748b3631c3bd1e",
+  "sessionId": null,
+  "error": "Conversation validation failed: sessionId: Path `sessionId` is required.",
+  "stack": "ValidationError: Conversation validation failed: sessionId: Path `sessionId` is required.\n    at Document.invalidate (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:3358:32)\n    at /Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:3119:17\n    at /Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schemaType.js:1410:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)",
+  "processingTime": "3906ms"
+}
+[2025-08-19 23:06:08.310] ERROR: 通义千问API调用失败
+  {
+  "error": "timeout of 30000ms exceeded"
+}
+[2025-08-19 23:06:08.310] ERROR: 意图识别失败
+  {
+  "error": "API调用超时，请检查网络连接",
+  "userInput": "你好",
+  "processingTime": "30018ms",
+  "success": false
+}

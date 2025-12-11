@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/logs/.a8603cb2b393f9da594adfb97f89a9018a397ac1-audit.json",
+    "files": [
+        {
+            "date": 1755699118379,
+            "name": "/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/logs/rejections-2025-08-20.log",
+            "hash": "274985ccc29c69898bbdd771a28c61bfbdb8aaaddf5162082a8e9bc7692c307b"
+        },
+        {
+            "date": 1755706675597,
+            "name": "/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/logs/rejections-2025-08-21.log",
+            "hash": "6f471c60ed9681c31bed508c2d18a3882a5af8ef9b515027ca015d2114d00b90"
+        }
+    ],
+    "hashType": "sha256"
+}

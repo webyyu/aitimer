@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/logs/.7c6d5869e93c4ddfb766a37668a4b532cad1edd9-audit.json",
+    "files": [
+        {
+            "date": 1755432916785,
+            "name": "/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/logs/exceptions-2025-08-17.log",
+            "hash": "fada8971e7c8924cb730871b02ab2661da24a5febd48d5c3845277d15b160666"
+        },
+        {
+            "date": 1755446534623,
+            "name": "/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/logs/exceptions-2025-08-18.log",
+            "hash": "1759ac3873cb3afb8961a29fc4767d9c0233656f1c42b0a765a2b6f556fd9385"
+        }
+    ],
+    "hashType": "sha256"
+}

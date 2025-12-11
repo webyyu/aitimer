@@ -1,0 +1,4493 @@
+[2025-08-20 00:43:32.710] ERROR: uncaughtException: Cannot find module '../utils/apiClient'
+Require stack:
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/taskRecognitionService.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/controllers/taskRecognitionController.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/routes/taskRecognitionRoutes.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/app.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/server.js
+Error: Cannot find module '../utils/apiClient'
+Require stack:
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/taskRecognitionService.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/controllers/taskRecognitionController.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/routes/taskRecognitionRoutes.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/app.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/taskRecognitionService.js:8:27)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/taskRecognitionService.js",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/controllers/taskRecognitionController.js",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/routes/taskRecognitionRoutes.js",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/app.js",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../utils/apiClient'\nRequire stack:\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/taskRecognitionService.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/controllers/taskRecognitionController.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/routes/taskRecognitionRoutes.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/app.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/taskRecognitionService.js:8:27)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 00:43:32 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 6427,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/bytedance/Desktop/backend(1) 3/backend",
+    "execPath": "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+    "version": "v24.5.0",
+    "argv": [
+      "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/server.js"
+    ],
+    "memoryUsage": {
+      "rss": 106872832,
+      "heapTotal": 62668800,
+      "heapUsed": 40990776,
+      "external": 21683364,
+      "arrayBuffers": 18264987
+    }
+  },
+  "os": {
+    "loadavg": [
+      5.09912109375,
+      4.82373046875,
+      4.5546875
+    ],
+    "uptime": 8804
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1410,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "defaultResolveImpl",
+      "line": 1051,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "resolveForCJSWithHooks",
+      "line": 1056,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 37,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1219,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 238,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1493,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 152,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/taskRecognitionService.js",
+      "function": null,
+      "line": 8,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1738,
+      "method": "_compile",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 00:43:50.927] ERROR: uncaughtException: Cannot find module '../utils/apiClient'
+Require stack:
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/taskRecognitionService.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/controllers/taskRecognitionController.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/routes/taskRecognitionRoutes.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/app.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/server.js
+Error: Cannot find module '../utils/apiClient'
+Require stack:
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/taskRecognitionService.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/controllers/taskRecognitionController.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/routes/taskRecognitionRoutes.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/app.js
+- /Users/bytedance/Desktop/backend(1) 3/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/taskRecognitionService.js:8:27)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/taskRecognitionService.js",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/controllers/taskRecognitionController.js",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/routes/taskRecognitionRoutes.js",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/app.js",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../utils/apiClient'\nRequire stack:\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/taskRecognitionService.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/controllers/taskRecognitionController.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/routes/taskRecognitionRoutes.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/app.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/taskRecognitionService.js:8:27)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 00:43:50 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 6639,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/bytedance/Desktop/backend(1) 3/backend",
+    "execPath": "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+    "version": "v24.5.0",
+    "argv": [
+      "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/server.js"
+    ],
+    "memoryUsage": {
+      "rss": 106315776,
+      "heapTotal": 62668800,
+      "heapUsed": 40746136,
+      "external": 21683364,
+      "arrayBuffers": 18264987
+    }
+  },
+  "os": {
+    "loadavg": [
+      5.00927734375,
+      4.8154296875,
+      4.55615234375
+    ],
+    "uptime": 8822
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1410,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "defaultResolveImpl",
+      "line": 1051,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "resolveForCJSWithHooks",
+      "line": 1056,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 37,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1219,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 238,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1493,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 152,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/taskRecognitionService.js",
+      "function": null,
+      "line": 8,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1738,
+      "method": "_compile",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 02:40:11.637] ERROR: uncaughtException: DASHSCOPE_API_KEY 环境变量未设置
+Error: DASHSCOPE_API_KEY 环境变量未设置
+    at new IntentRecognitionService (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intentRecognitionService.js:25:13)
+    at new IntelligentDispatchService (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js:18:26)
+    at new TaskCreationTest (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:12:28)
+    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:192:16)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14)
+    at Object..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+  {
+  "error": {},
+  "stack": "Error: DASHSCOPE_API_KEY 环境变量未设置\n    at new IntentRecognitionService (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intentRecognitionService.js:25:13)\n    at new IntelligentDispatchService (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js:18:26)\n    at new TaskCreationTest (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:12:28)\n    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:192:16)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)\n    at Object..js (node:internal/modules/cjs/loader:1871:10)\n    at Module.load (node:internal/modules/cjs/loader:1470:32)\n    at Module._load (node:internal/modules/cjs/loader:1290:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 02:40:11 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 51022,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/bytedance/Desktop/backend(1) 3/backend",
+    "execPath": "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+    "version": "v24.5.0",
+    "argv": [
+      "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js"
+    ],
+    "memoryUsage": {
+      "rss": 88670208,
+      "heapTotal": 36716544,
+      "heapUsed": 23795816,
+      "external": 22014628,
+      "arrayBuffers": 18264985
+    }
+  },
+  "os": {
+    "loadavg": [
+      4.1708984375,
+      3.65673828125,
+      3.62451171875
+    ],
+    "uptime": 15803
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intentRecognitionService.js",
+      "function": "new IntentRecognitionService",
+      "line": 25,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 26,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js",
+      "function": "new IntelligentDispatchService",
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js",
+      "function": "new TaskCreationTest",
+      "line": 12,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js",
+      "function": null,
+      "line": 192,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1738,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1871,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1470,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1290,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 238,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+[2025-08-20 03:29:58.577] ERROR: uncaughtException: DASHSCOPE_API_KEY 环境变量未设置
+Error: DASHSCOPE_API_KEY 环境变量未设置
+    at new IntentRecognitionService (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intentRecognitionService.js:25:13)
+    at new IntelligentDispatchService (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js:18:26)
+    at new MCPIntegrationTest (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/mcp-integration-test.js:16:28)
+    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/mcp-integration-test.js:295:16)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14)
+    at Object..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+  {
+  "error": {},
+  "stack": "Error: DASHSCOPE_API_KEY 环境变量未设置\n    at new IntentRecognitionService (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intentRecognitionService.js:25:13)\n    at new IntelligentDispatchService (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js:18:26)\n    at new MCPIntegrationTest (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/mcp-integration-test.js:16:28)\n    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/mcp-integration-test.js:295:16)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)\n    at Object..js (node:internal/modules/cjs/loader:1871:10)\n    at Module.load (node:internal/modules/cjs/loader:1470:32)\n    at Module._load (node:internal/modules/cjs/loader:1290:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 03:29:58 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 82200,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/bytedance/Desktop/backend(1) 3/backend",
+    "execPath": "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+    "version": "v24.5.0",
+    "argv": [
+      "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/mcp-integration-test.js"
+    ],
+    "memoryUsage": {
+      "rss": 88293376,
+      "heapTotal": 36978688,
+      "heapUsed": 23731608,
+      "external": 22014628,
+      "arrayBuffers": 18264985
+    }
+  },
+  "os": {
+    "loadavg": [
+      4.88427734375,
+      5.31591796875,
+      4.54345703125
+    ],
+    "uptime": 18790
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intentRecognitionService.js",
+      "function": "new IntentRecognitionService",
+      "line": 25,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 26,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js",
+      "function": "new IntelligentDispatchService",
+      "line": 18,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 28,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/mcp-integration-test.js",
+      "function": "new MCPIntegrationTest",
+      "line": 16,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/mcp-integration-test.js",
+      "function": null,
+      "line": 295,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1738,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1871,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1470,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1290,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 238,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+[2025-08-20 04:13:49.134] ERROR: uncaughtException: Cannot find module '../../../models/Task'
+Require stack:
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js
+Error: Cannot find module '../../../models/Task'
+Require stack:
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js:4:14)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../../models/Task'\nRequire stack:\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js:4:14)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 04:13:49 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 22284,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/bytedance/Desktop/backend(1) 3/backend",
+    "execPath": "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+    "version": "v24.5.0",
+    "argv": [
+      "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js"
+    ],
+    "memoryUsage": {
+      "rss": 106102784,
+      "heapTotal": 60325888,
+      "heapUsed": 39678968,
+      "external": 40260040,
+      "arrayBuffers": 36936389
+    }
+  },
+  "os": {
+    "loadavg": [
+      5.64892578125,
+      5.24560546875,
+      4.8642578125
+    ],
+    "uptime": 21421
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1410,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "defaultResolveImpl",
+      "line": 1051,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "resolveForCJSWithHooks",
+      "line": 1056,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 37,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1219,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 238,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1493,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 152,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js",
+      "function": null,
+      "line": 4,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1738,
+      "method": "_compile",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 04:14:42.248] ERROR: uncaughtException: Cannot find module '../../../models/Task'
+Require stack:
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js
+Error: Cannot find module '../../../models/Task'
+Require stack:
+- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.require (node:internal/modules/cjs/loader:1493:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../../models/Task'\nRequire stack:\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js:3:14)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 04:14:42 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 23147,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/bytedance/Desktop/backend(1) 3/backend",
+    "execPath": "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+    "version": "v24.5.0",
+    "argv": [
+      "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js"
+    ],
+    "memoryUsage": {
+      "rss": 105857024,
+      "heapTotal": 60588032,
+      "heapUsed": 39793944,
+      "external": 40260040,
+      "arrayBuffers": 36936389
+    }
+  },
+  "os": {
+    "loadavg": [
+      5.376953125,
+      5.31982421875,
+      4.91748046875
+    ],
+    "uptime": 21474
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1410,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "defaultResolveImpl",
+      "line": 1051,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "resolveForCJSWithHooks",
+      "line": 1056,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 37,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1219,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 238,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1493,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 152,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-fix-test.js",
+      "function": null,
+      "line": 3,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1738,
+      "method": "_compile",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 05:10:50.708] ERROR: uncaughtException: DASHSCOPE_API_KEY 环境变量未设置
+Error: DASHSCOPE_API_KEY 环境变量未设置
+    at new IntentRecognitionService (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intentRecognitionService.js:25:13)
+    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/time-extraction-enhanced-test.js:5:23)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14)
+    at Object..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+  {
+  "error": {},
+  "stack": "Error: DASHSCOPE_API_KEY 环境变量未设置\n    at new IntentRecognitionService (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intentRecognitionService.js:25:13)\n    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/time-extraction-enhanced-test.js:5:23)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)\n    at Object..js (node:internal/modules/cjs/loader:1871:10)\n    at Module.load (node:internal/modules/cjs/loader:1470:32)\n    at Module._load (node:internal/modules/cjs/loader:1290:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47",
+  "exception": true,
+  "date": "Wed Aug 20 2025 05:10:50 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 60381,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/bytedance/Desktop/backend(1) 3/backend",
+    "execPath": "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+    "version": "v24.5.0",
+    "argv": [
+      "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/time-extraction-enhanced-test.js"
+    ],
+    "memoryUsage": {
+      "rss": 88244224,
+      "heapTotal": 36192256,
+      "heapUsed": 23501096,
+      "external": 22014372,
+      "arrayBuffers": 18264729
+    }
+  },
+  "os": {
+    "loadavg": [
+      2.9326171875,
+      3.81005859375,
+      4.03662109375
+    ],
+    "uptime": 24842
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intentRecognitionService.js",
+      "function": "new IntentRecognitionService",
+      "line": 25,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 23,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/time-extraction-enhanced-test.js",
+      "function": null,
+      "line": 5,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1738,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1871,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1470,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1290,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 238,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Module.executeUserEntryPoint [as runMain]",
+      "line": 154,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 47,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 33,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:20:41.849] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:20:41 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 35168,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 111128576,
+      "heapTotal": 64057344,
+      "heapUsed": 35494912,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 15788.562
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:20:49.227] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:20:49 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 35312,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 103845888,
+      "heapTotal": 62746624,
+      "heapUsed": 38638016,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 15795.937
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:21:14.949] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:21:14 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 15640,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 104046592,
+      "heapTotal": 62484480,
+      "heapUsed": 38895864,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 15821.656
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:21:16.892] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:21:16 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 35624,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 104116224,
+      "heapTotal": 62484480,
+      "heapUsed": 39154200,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 15823.609
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:21:58.297] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:21:58 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 35384,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 103821312,
+      "heapTotal": 62746624,
+      "heapUsed": 38729664,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 15865.015
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:22:40.342] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:22:40 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 28440,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 110596096,
+      "heapTotal": 64057344,
+      "heapUsed": 36006968,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 15907.062
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:23:36.548] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:23:36 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 35828,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 103571456,
+      "heapTotal": 62746624,
+      "heapUsed": 38541800,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 15963.265
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:23:49.770] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:23:49 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 29976,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 104124416,
+      "heapTotal": 62484480,
+      "heapUsed": 39131640,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 15976.484
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:23:56.127] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:23:56 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 35716,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 110718976,
+      "heapTotal": 64057344,
+      "heapUsed": 36124416,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 15982.843
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:24:56.400] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:24:56 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 36612,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 104361984,
+      "heapTotal": 62746624,
+      "heapUsed": 39148104,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 16043.109
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:25:37.892] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:25:37 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 26912,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 111382528,
+      "heapTotal": 65368064,
+      "heapUsed": 33129448,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 16084.609
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:25:43.490] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:25:43 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 28308,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 111009792,
+      "heapTotal": 64319488,
+      "heapUsed": 35773368,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 16090.203
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:28:21.887] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:28:21 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 36644,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 111820800,
+      "heapTotal": 65105920,
+      "heapUsed": 33044264,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 16248.593
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:28:37.826] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:28:37 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 17860,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 103374848,
+      "heapTotal": 62484480,
+      "heapUsed": 38524496,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 16264.546
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:28:39.960] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:28:39 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 36712,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 104108032,
+      "heapTotal": 62484480,
+      "heapUsed": 38828920,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 16266.671
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:29:12.636] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:29:12 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 35232,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 103976960,
+      "heapTotal": 62746624,
+      "heapUsed": 38808584,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 16299.343
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:31:20.868] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\services\speechRecognitionService.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js:2:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:31:20 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 34508,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 110903296,
+      "heapTotal": 63795200,
+      "heapUsed": 35403008,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 16427.578
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\services\\speechRecognitionService.js",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:32:25.468] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js:6:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js:6:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:32:25 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 35212,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 103751680,
+      "heapTotal": 62746624,
+      "heapUsed": 39021200,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 16492.187
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "function": null,
+      "line": 6,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 13:32:25.466] ERROR: uncaughtException: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+Error: Cannot find module '../../utils/logger'
+Require stack:
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\speechRecognitionRoutes.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js
+- C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\controllers\speechRecognitionController.js:6:16)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+  {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ]
+  },
+  "stack": "Error: Cannot find module '../../utils/logger'\nRequire stack:\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\speechRecognitionRoutes.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js\n- C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)\n    at Module._load (node:internal/modules/cjs/loader:1043:27)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js:6:16)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 13:32:25 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 36468,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 110604288,
+      "heapTotal": 63533056,
+      "heapUsed": 35671440,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 16492.187
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._resolveFilename",
+      "line": 1212,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 27,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1043,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\controllers\\speechRecognitionController.js",
+      "function": null,
+      "line": 6,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 14:33:15.808] ERROR: uncaughtException: jest is not defined
+ReferenceError: jest is not defined
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIsiri\tests\image-analysis-test.js:26:1)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+    at node:internal/main/run_main_module:28:49
+  {
+  "error": {},
+  "stack": "ReferenceError: jest is not defined\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIsiri\\tests\\image-analysis-test.js:26:1)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)\n    at node:internal/main/run_main_module:28:49",
+  "exception": true,
+  "date": "Wed Aug 20 2025 14:33:15 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 35932,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIsiri\\tests",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIsiri\\tests\\image-analysis-test.js"
+    ],
+    "memoryUsage": {
+      "rss": 63217664,
+      "heapTotal": 30756864,
+      "heapUsed": 14780736,
+      "external": 3338940,
+      "arrayBuffers": 65708
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 20142.515
+  },
+  "trace": [
+    {
+      "column": 1,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIsiri\\tests\\image-analysis-test.js",
+      "function": null,
+      "line": 26,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/run_main",
+      "function": "Function.executeUserEntryPoint [as runMain]",
+      "line": 164,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    },
+    {
+      "column": 49,
+      "file": "node:internal/main/run_main_module",
+      "function": null,
+      "line": 28,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+[2025-08-20 19:32:27.736] ERROR: uncaughtException: Missing } in template expression
+C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIsiri\services\schedulePlanningService.js:432
+      throw new Error(`任务不存在或无权限: ${taskId`);
+
+SyntaxError: Missing } in template expression
+    at wrapSafe (node:internal/modules/cjs/loader:1472:18)
+    at Module._compile (node:internal/modules/cjs/loader:1501:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIsiri\services\intelligentDispatchService.js:9:33)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+  {
+  "error": {},
+  "stack": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIsiri\\services\\schedulePlanningService.js:432\n      throw new Error(`任务不存在或无权限: ${taskId`);\n\nSyntaxError: Missing } in template expression\n    at wrapSafe (node:internal/modules/cjs/loader:1472:18)\n    at Module._compile (node:internal/modules/cjs/loader:1501:20)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIsiri\\services\\intelligentDispatchService.js:9:33)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 19:32:27 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 33316,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 110563328,
+      "heapTotal": 63008768,
+      "heapUsed": 39429704,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 38094.453
+  },
+  "trace": [
+    {
+      "column": 18,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapSafe",
+      "line": 1472,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1501,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIsiri\\services\\intelligentDispatchService.js",
+      "function": null,
+      "line": 9,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 20:27:40.923] ERROR: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\node_modules\express\lib\router\route.js:216:15)
+    at proto.<computed> [as post] (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\node_modules\express\lib\router\index.js:521:19)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\imageAnalysisRoutes.js:10:8)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js:23:29)
+  {
+  "error": {},
+  "stack": "Error: Route.post() requires a callback function but got a [object Undefined]\n    at Route.<computed> [as post] (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\route.js:216:15)\n    at proto.<computed> [as post] (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\index.js:521:19)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\imageAnalysisRoutes.js:10:8)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js:23:29)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 20:27:40 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 39328,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 105025536,
+      "heapTotal": 62484480,
+      "heapUsed": 39277992,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 41407.64
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\route.js",
+      "function": "Route.<computed> [as post]",
+      "line": 216,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\index.js",
+      "function": "proto.<computed> [as post]",
+      "line": 521,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 8,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\imageAnalysisRoutes.js",
+      "function": null,
+      "line": 10,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 29,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "function": null,
+      "line": 23,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+[2025-08-20 20:28:00.323] ERROR: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\node_modules\express\lib\router\route.js:216:15)
+    at proto.<computed> [as post] (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\node_modules\express\lib\router\index.js:521:19)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\imageAnalysisRoutes.js:10:8)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js:23:29)
+  {
+  "error": {},
+  "stack": "Error: Route.post() requires a callback function but got a [object Undefined]\n    at Route.<computed> [as post] (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\route.js:216:15)\n    at proto.<computed> [as post] (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\index.js:521:19)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\imageAnalysisRoutes.js:10:8)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js:23:29)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 20:28:00 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 34028,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 104255488,
+      "heapTotal": 62484480,
+      "heapUsed": 38768480,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 41427.031
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\route.js",
+      "function": "Route.<computed> [as post]",
+      "line": 216,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\index.js",
+      "function": "proto.<computed> [as post]",
+      "line": 521,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 8,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\imageAnalysisRoutes.js",
+      "function": null,
+      "line": 10,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 29,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "function": null,
+      "line": 23,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+[2025-08-20 21:28:55.725] ERROR: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\node_modules\express\lib\router\route.js:216:15)
+    at proto.<computed> [as post] (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\node_modules\express\lib\router\index.js:521:19)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\imageAnalysisRoutes.js:13:8)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js:23:29)
+  {
+  "error": {},
+  "stack": "Error: Route.post() requires a callback function but got a [object Undefined]\n    at Route.<computed> [as post] (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\route.js:216:15)\n    at proto.<computed> [as post] (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\index.js:521:19)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\imageAnalysisRoutes.js:13:8)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js:23:29)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 21:28:55 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 30956,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 112017408,
+      "heapTotal": 64843776,
+      "heapUsed": 33201944,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 45082.437
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\route.js",
+      "function": "Route.<computed> [as post]",
+      "line": 216,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\index.js",
+      "function": "proto.<computed> [as post]",
+      "line": 521,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 8,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\imageAnalysisRoutes.js",
+      "function": null,
+      "line": 13,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 29,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "function": null,
+      "line": 23,
+      "method": null,
+      "native": false
+    }
+  ]
+}
+[2025-08-20 21:33:10.180] ERROR: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\node_modules\express\lib\router\route.js:216:15)
+    at proto.<computed> [as post] (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\node_modules\express\lib\router\index.js:521:19)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\AIvoice\routes\imageAnalysisRoutes.js:13:8)
+    at Module._compile (node:internal/modules/cjs/loader:1529:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)
+    at Module.load (node:internal/modules/cjs/loader:1275:32)
+    at Module._load (node:internal/modules/cjs/loader:1096:12)
+    at Module.require (node:internal/modules/cjs/loader:1298:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (C:\Users\wuby\OneDrive\Desktop\backend(1) 3\backend\src\app.js:23:29)
+  {
+  "error": {},
+  "stack": "Error: Route.post() requires a callback function but got a [object Undefined]\n    at Route.<computed> [as post] (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\route.js:216:15)\n    at proto.<computed> [as post] (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\index.js:521:19)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\imageAnalysisRoutes.js:13:8)\n    at Module._compile (node:internal/modules/cjs/loader:1529:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1613:10)\n    at Module.load (node:internal/modules/cjs/loader:1275:32)\n    at Module._load (node:internal/modules/cjs/loader:1096:12)\n    at Module.require (node:internal/modules/cjs/loader:1298:19)\n    at require (node:internal/modules/helpers:182:18)\n    at Object.<anonymous> (C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js:23:29)",
+  "exception": true,
+  "date": "Wed Aug 20 2025 21:33:10 GMT+0800 (香港标准时间)",
+  "process": {
+    "pid": 34036,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v20.19.1",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\server.js"
+    ],
+    "memoryUsage": {
+      "rss": 104734720,
+      "heapTotal": 62746624,
+      "heapUsed": 39378264,
+      "external": 21649155,
+      "arrayBuffers": 18311770
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 45336.89
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\route.js",
+      "function": "Route.<computed> [as post]",
+      "line": 216,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\node_modules\\express\\lib\\router\\index.js",
+      "function": "proto.<computed> [as post]",
+      "line": 521,
+      "method": "<computed> [as post]",
+      "native": false
+    },
+    {
+      "column": 8,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\AIvoice\\routes\\imageAnalysisRoutes.js",
+      "function": null,
+      "line": 13,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1529,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._extensions..js",
+      "line": 1613,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1275,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1096,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1298,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 18,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 182,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 29,
+      "file": "C:\\Users\\wuby\\OneDrive\\Desktop\\backend(1) 3\\backend\\src\\app.js",
+      "function": null,
+      "line": 23,
+      "method": null,
+      "native": false
+    }
+  ]
+}

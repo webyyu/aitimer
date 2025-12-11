@@ -1,0 +1,189 @@
+[2025-10-05 01:58:53.093] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-05 01:58:53.106] INFO: 获取智能调度服务状态
+[2025-10-05 01:58:53.106] INFO: 开始意图识别
+  {
+  "userInput": "你好",
+  "inputLength": 2
+}
+[2025-10-05 01:58:53.106] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 362
+}
+[2025-10-05 01:58:53.106] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-10-05 01:58:55.445] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 574,
+    "completion_tokens": 99,
+    "total_tokens": 673,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-10-05 01:58:55.445] INFO: 收到模型响应
+  {
+  "responseLength": 263,
+  "responseTime": "2339ms"
+}
+[2025-10-05 01:58:55.445] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户输入为简单的问候语'你好'，属于日常交流中的打招呼行为，没有涉及任务创建、日程安排或外部信息查询的需求。\",\n  \"extracted_info\": {\n    \"keywords\": [\"你好\"],\n    \"entities\": {\n      \"time..."
+}
+[2025-10-05 01:58:55.445] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-10-05 01:58:55.446] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2340ms",
+  "success": true
+}
+[2025-10-05 01:58:55.446] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 2341
+}
+[2025-10-05 01:59:19.404] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-05 01:59:19.404] INFO: 获取智能调度服务状态
+[2025-10-05 01:59:19.404] INFO: 开始意图识别
+  {
+  "userInput": "你好",
+  "inputLength": 2
+}
+[2025-10-05 01:59:19.404] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 362
+}
+[2025-10-05 01:59:19.404] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-10-05 01:59:21.195] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 574,
+    "completion_tokens": 99,
+    "total_tokens": 673,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-10-05 01:59:21.196] INFO: 收到模型响应
+  {
+  "responseLength": 263,
+  "responseTime": "1791ms"
+}
+[2025-10-05 01:59:21.196] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户输入为简单的问候语'你好'，属于日常交流中的打招呼行为，没有涉及任务创建、日程安排或外部信息查询的需求。\",\n  \"extracted_info\": {\n    \"keywords\": [\"你好\"],\n    \"entities\": {\n      \"time..."
+}
+[2025-10-05 01:59:21.196] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-10-05 01:59:21.196] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "1792ms",
+  "success": true
+}
+[2025-10-05 01:59:21.196] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 1792
+}
+[2025-10-05 01:59:24.540] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-10-05 01:59:24.542] INFO: 获取智能调度服务状态
+[2025-10-05 01:59:24.542] INFO: 开始意图识别
+  {
+  "userInput": "你好",
+  "inputLength": 2
+}
+[2025-10-05 01:59:24.542] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 362
+}
+[2025-10-05 01:59:24.543] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-10-05 01:59:26.959] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 574,
+    "completion_tokens": 96,
+    "total_tokens": 670,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-10-05 01:59:26.959] INFO: 收到模型响应
+  {
+  "responseLength": 257,
+  "responseTime": "2417ms"
+}
+[2025-10-05 01:59:26.960] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户输入为简单的问候语'你好'，属于日常交流中的打招呼行为，没有涉及任务创建、日程安排或外部信息查询的需求。\",\n  \"extracted_info\": {\n    \"keywords\": [\"你好\"],\n    \"entities\": {\n      \"time..."
+}
+[2025-10-05 01:59:26.960] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-10-05 01:59:26.960] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2418ms",
+  "success": true
+}
+[2025-10-05 01:59:26.961] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 2419
+}

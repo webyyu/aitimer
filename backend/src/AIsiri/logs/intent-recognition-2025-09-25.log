@@ -1,0 +1,3248 @@
+[2025-09-25 07:41:57.084] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-09-25 07:41:57.086] INFO: 获取智能调度服务状态
+[2025-09-25 07:41:57.086] INFO: 开始意图识别
+  {
+  "userInput": "你好",
+  "inputLength": 2
+}
+[2025-09-25 07:41:57.086] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 362
+}
+[2025-09-25 07:41:57.086] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 07:42:00.159] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 574,
+    "completion_tokens": 99,
+    "total_tokens": 673,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:42:00.159] INFO: 收到模型响应
+  {
+  "responseLength": 263,
+  "responseTime": "3073ms"
+}
+[2025-09-25 07:42:00.159] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户输入为简单的问候语'你好'，属于日常交流中的打招呼行为，没有涉及任务创建、日程安排或外部信息查询的需求。\",\n  \"extracted_info\": {\n    \"keywords\": [\"你好\"],\n    \"entities\": {\n      \"time..."
+}
+[2025-09-25 07:42:00.160] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 07:42:00.160] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "3074ms",
+  "success": true
+}
+[2025-09-25 07:42:00.160] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 3074
+}
+[2025-09-25 07:42:01.714] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "68d481b44943b00848176d89",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-09-25 07:42:01.717] INFO: 收到智能调度请求
+  {
+  "userId": "68d481b44943b00848176d89",
+  "userInput": "我今天感觉有点累，需要一些鼓励",
+  "sessionId": "session_1758757266445_n9z3lcqfg",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-09-25 07:42:01.718] INFO: 开始智能调度处理
+  {
+  "requestId": "dispatch-1758757321717-7qafeghv3",
+  "userInput": "我今天感觉有点累，需要一些鼓励",
+  "userId": "68d481b44943b00848176d89",
+  "sessionId": "session_1758757266445_n9z3lcqfg",
+  "inputLength": 15
+}
+[2025-09-25 07:42:01.718] INFO: 步骤0: 检测图片输入
+  {
+  "requestId": "dispatch-1758757321717-7qafeghv3"
+}
+[2025-09-25 07:42:01.718] INFO: 步骤1: 执行意图识别
+  {
+  "requestId": "dispatch-1758757321717-7qafeghv3"
+}
+[2025-09-25 07:42:01.718] INFO: 开始意图识别
+  {
+  "userInput": "我今天感觉有点累，需要一些鼓励",
+  "inputLength": 15
+}
+[2025-09-25 07:42:01.718] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 375
+}
+[2025-09-25 07:42:01.719] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 07:42:06.068] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 582,
+    "completion_tokens": 101,
+    "total_tokens": 683,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:42:06.069] INFO: 收到模型响应
+  {
+  "responseLength": 263,
+  "responseTime": "4350ms"
+}
+[2025-09-25 07:42:06.069] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了当前的情绪状态（感觉累）并请求鼓励，属于情感支持类对话，无明确任务、时间安排或外部信息查询需求。\",\n  \"extracted_info\": {\n    \"keywords\": [\"累\", \"鼓励\"],\n    \"entities\": {\n      \"..."
+}
+[2025-09-25 07:42:06.069] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 07:42:06.069] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "4351ms",
+  "success": true
+}
+[2025-09-25 07:42:06.070] INFO: 意图识别完成
+  {
+  "requestId": "dispatch-1758757321717-7qafeghv3",
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasImageContext": false
+}
+[2025-09-25 07:42:06.070] INFO: 步骤2: 分析多重意图
+  {
+  "requestId": "dispatch-1758757321717-7qafeghv3"
+}
+[2025-09-25 07:42:06.071] INFO: Action Router 分析完成
+  {
+  "userInput": "我今天感觉有点累，需要一些鼓励",
+  "actionPlan": [
+    {
+      "intent": "TASK_CREATION",
+      "priority": 1
+    },
+    {
+      "intent": "EXTERNAL_TOOL",
+      "priority": 1
+    },
+    {
+      "intent": "CONVERSATION",
+      "priority": 3
+    }
+  ],
+  "totalActions": 3
+}
+[2025-09-25 07:42:06.071] INFO: 多重意图分析完成
+  {
+  "requestId": "dispatch-1758757321717-7qafeghv3",
+  "intents": [
+    "TASK_CREATION",
+    "EXTERNAL_TOOL",
+    "CONVERSATION"
+  ],
+  "count": 3
+}
+[2025-09-25 07:42:06.071] INFO: 步骤3: 执行相应的服务
+  {
+  "requestId": "dispatch-1758757321717-7qafeghv3"
+}
+[2025-09-25 07:42:06.071] INFO: 执行优先级 1 的服务
+  {
+  "intents": [
+    "TASK_CREATION",
+    "EXTERNAL_TOOL"
+  ],
+  "count": 2
+}
+[2025-09-25 07:42:06.072] INFO: 开始执行任务创建
+  {
+  "userInput": "我今天感觉有点累，需要一些鼓励",
+  "timeInfo": {
+    "date": "2025-09-24",
+    "timeBlock": null,
+    "specificTime": null
+  },
+  "userId": "68d481b44943b00848176d89"
+}
+[2025-09-25 07:42:06.072] INFO: 开始直接创建任务
+  {
+  "userInput": "我今天感觉有点累，需要一些鼓励",
+  "userId": "68d481b44943b00848176d89",
+  "timeInfo": {
+    "date": "2025-09-24",
+    "timeBlock": null,
+    "specificTime": null
+  }
+}
+[2025-09-25 07:42:06.072] INFO: 开始意图识别
+  {
+  "userInput": "我今天感觉有点累，需要一些鼓励",
+  "inputLength": 15
+}
+[2025-09-25 07:42:06.072] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 375
+}
+[2025-09-25 07:42:06.072] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 07:42:06.075] INFO: 开始执行外部工具调用
+  {
+  "userInput": "我今天感觉有点累，需要一些鼓励",
+  "toolType": "unknown",
+  "userId": "68d481b44943b00848176d89"
+}
+[2025-09-25 07:42:06.075] INFO: 外部工具调用完成
+  {
+  "success": false
+}
+[2025-09-25 07:42:10.367] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 582,
+    "completion_tokens": 107,
+    "total_tokens": 689,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:42:10.368] INFO: 收到模型响应
+  {
+  "responseLength": 274,
+  "responseTime": "4296ms"
+}
+[2025-09-25 07:42:10.368] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了当前的情绪状态（感觉累）并寻求情感支持（需要鼓励），属于情绪倾诉和日常交流，没有提及具体任务、时间安排或外部信息查询。\",\n  \"extracted_info\": {\n    \"keywords\": [\"累\", \"鼓励\"],\n    \"entities\"..."
+}
+[2025-09-25 07:42:10.368] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 07:42:10.368] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "4296ms",
+  "success": true
+}
+[2025-09-25 07:42:10.369] INFO: 意图识别完成（用于信息提取）
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95
+}
+[2025-09-25 07:42:10.369] INFO: 强制设置为任务创建意图
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95
+}
+[2025-09-25 07:42:10.369] INFO: 提取任务信息完成
+  {
+  "title": "我今天感觉点累，需要一些鼓励",
+  "timeBlock": {
+    "startTime": "14:00",
+    "endTime": "18:00",
+    "timeBlockType": "afternoon"
+  },
+  "date": "2025-09-24",
+  "timeInfoInput": {
+    "date": "2025-09-24",
+    "timeBlock": null,
+    "specificTime": null
+  }
+}
+[2025-09-25 07:42:10.370] INFO: 提取任务信息完成
+  {
+  "taskInfo": {
+    "title": "我今天感觉点累，需要一些鼓励",
+    "userId": "68d481b44943b00848176d89",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "date": "2025-09-24"
+  }
+}
+[2025-09-25 07:42:10.370] INFO: 开始存储任务到数据库
+  {
+  "taskInfo": {
+    "title": "我今天感觉点累，需要一些鼓励",
+    "userId": "68d481b44943b00848176d89",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "date": "2025-09-24"
+  }
+}
+[2025-09-25 07:42:10.375] INFO: 任务存储成功
+  {
+  "taskId": "68d481d2be14e85ddfbf5736"
+}
+[2025-09-25 07:42:10.375] INFO: 任务直接创建成功
+  {
+  "taskId": "68d481d2be14e85ddfbf5736",
+  "title": "我今天感觉点累，需要一些鼓励",
+  "processingTime": "4303ms"
+}
+[2025-09-25 07:42:10.376] INFO: 任务创建完成
+  {
+  "success": true
+}
+[2025-09-25 07:42:10.376] INFO: 优先级 1 的服务执行完成
+  {
+  "results": [
+    "externalTool",
+    "taskCreation"
+  ]
+}
+[2025-09-25 07:42:10.377] INFO: 执行优先级 3 的服务
+  {
+  "intents": [
+    "CONVERSATION"
+  ],
+  "count": 1
+}
+[2025-09-25 07:42:10.377] INFO: 开始执行对话处理
+  {
+  "userInput": "我今天感觉有点累，需要一些鼓励",
+  "userId": "68d481b44943b00848176d89",
+  "sessionId": "session_1758757266445_n9z3lcqfg",
+  "hasPreviousResults": true
+}
+[2025-09-25 07:42:10.377] INFO: 开始处理对话
+  {
+  "userId": "68d481b44943b00848176d89",
+  "sessionId": "session_1758757266445_n9z3lcqfg",
+  "messageLength": 15
+}
+[2025-09-25 07:42:10.378] INFO: 开始意图识别 我今天感觉有点累，需要一些鼓励...
+  {
+  "userId": "68d481b44943b00848176d89"
+}
+[2025-09-25 07:42:10.378] INFO: 开始意图识别
+  {
+  "userInput": "我今天感觉有点累，需要一些鼓励",
+  "inputLength": 15
+}
+[2025-09-25 07:42:10.378] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 375
+}
+[2025-09-25 07:42:10.379] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 07:42:13.512] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 582,
+    "completion_tokens": 100,
+    "total_tokens": 682,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:42:13.513] INFO: 收到模型响应
+  {
+  "responseLength": 261,
+  "responseTime": "3135ms"
+}
+[2025-09-25 07:42:13.513] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了当前的情绪状态（感觉累）并请求鼓励，属于情感支持类对话，无明确任务、时间安排或外部工具需求。\",\n  \"extracted_info\": {\n    \"keywords\": [\"累\", \"鼓励\"],\n    \"entities\": {\n      \"ti..."
+}
+[2025-09-25 07:42:13.513] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 07:42:13.513] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "3135ms",
+  "success": true
+}
+[2025-09-25 07:42:13.516] INFO: 获取到用户AI助手名字
+  {
+  "userId": "68d481b44943b00848176d89",
+  "assistantName": "AI智能助手"
+}
+[2025-09-25 07:42:13.521] INFO: 用户消息已保存
+  {
+  "messageId": "68d481d5be14e85ddfbf573f",
+  "intent": "CONVERSATION",
+  "confidence": 0.95
+}
+[2025-09-25 07:42:13.524] INFO: 检测到用户情绪
+  {
+  "userId": "68d481b44943b00848176d89",
+  "emotion": "tired",
+  "keywords": [
+    "累",
+    "鼓励"
+  ]
+}
+[2025-09-25 07:42:13.525] INFO: 开始生成AI回应
+  {
+  "userId": "68d481b44943b00848176d89",
+  "historyCount": 1
+}
+[2025-09-25 07:42:13.525] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-09-25 07:42:16.086] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "2561ms",
+  "usage": {
+    "prompt_tokens": 581,
+    "completion_tokens": 68,
+    "total_tokens": 649,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:42:16.090] INFO: 对话处理完成
+  {
+  "userId": "68d481b44943b00848176d89",
+  "sessionId": "session_1758757266445_n9z3lcqfg",
+  "userMessageId": "68d481d5be14e85ddfbf573f",
+  "assistantMessageId": "68d481d8be14e85ddfbf5742",
+  "totalTime": "5712ms",
+  "emotion": "tired",
+  "intent": "CONVERSATION"
+}
+[2025-09-25 07:42:16.092] INFO: 对话处理完成
+  {
+  "success": true
+}
+[2025-09-25 07:42:16.092] INFO: 优先级 3 的服务执行完成
+  {
+  "results": [
+    "externalTool",
+    "taskCreation",
+    "conversation"
+  ]
+}
+[2025-09-25 07:42:16.093] INFO: 服务执行完成
+  {
+  "requestId": "dispatch-1758757321717-7qafeghv3",
+  "servicesExecuted": [
+    "externalTool",
+    "taskCreation",
+    "conversation"
+  ],
+  "successCount": 2
+}
+[2025-09-25 07:42:16.093] INFO: 步骤4: 生成统一回复
+  {
+  "requestId": "dispatch-1758757321717-7qafeghv3"
+}
+[2025-09-25 07:42:16.095] INFO: 获取到用户AI助手名字用于统一回复
+  {
+  "userId": "68d481b44943b00848176d89",
+  "assistantName": "AI智能助手"
+}
+[2025-09-25 07:42:16.096] INFO: 开始生成统一回复
+  {
+  "userInput": "我今天感觉有点累，需要一些鼓励",
+  "intentsCount": 3,
+  "executionResultsKeys": [
+    "externalTool",
+    "taskCreation",
+    "conversation"
+  ],
+  "executionResults": {
+    "externalTool": {
+      "success": false,
+      "type": "unknown",
+      "message": "不支持的工具类型: unknown",
+      "data": {
+        "toolType": "unknown",
+        "query": "我今天感觉有点累，需要一些鼓励"
+      }
+    },
+    "taskCreation": {
+      "success": true,
+      "message": "任务创建成功",
+      "task": {
+        "timeBlock": {
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "timeBlockType": "afternoon"
+        },
+        "_id": "68d481d2be14e85ddfbf5736",
+        "title": "我今天感觉点累，需要一些鼓励",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "date": "2025-09-24",
+        "userId": "68d481b44943b00848176d89",
+        "isScheduled": false,
+        "createdAt": "2025-09-24T23:42:10.371Z",
+        "updatedAt": "2025-09-24T23:42:10.371Z",
+        "__v": 0
+      },
+      "intentResult": {
+        "intent": "TASK_CREATION",
+        "confidence": 0.95,
+        "reasoning": "用户表达了当前的情绪状态（感觉累）并寻求情感支持（需要鼓励），属于情绪倾诉和日常交流，没有提及具体任务、时间安排或外部信息查询。",
+        "extracted_info": {
+          "keywords": [
+            "累",
+            "鼓励"
+          ],
+          "entities": {
+            "time": "今天",
+            "location": "",
+            "task": ""
+          }
+        },
+        "original_input": "我今天感觉有点累，需要一些鼓励",
+        "timestamp": "2025-09-24T23:42:10.368Z",
+        "intent_description": "正常对话（情绪安慰、聊天）"
+      },
+      "processingTime": 4303
+    },
+    "conversation": {
+      "success": true,
+      "data": {
+        "sessionId": "session_1758757266445_n9z3lcqfg",
+        "userMessage": {
+          "id": "68d481d5be14e85ddfbf573f",
+          "content": "我今天感觉有点累，需要一些鼓励",
+          "timestamp": "2025-09-24T23:42:13.518Z",
+          "intent": "CONVERSATION",
+          "confidence": 0.95
+        },
+        "assistantMessage": {
+          "id": "68d481d8be14e85ddfbf5742",
+          "content": "抱抱~听到你累了，我有点心疼呢 🫂 亲爱的，辛苦了！每个人都会有这样的时刻，允许自己慢下来也没关系的。AI智能助手在这里陪着你，给你加油打气 ✨ 要不要说说是什么让你觉得累呀？有时候说出来，心里会轻松一些哦 💛",
+          "timestamp": "2025-09-24T23:42:16.088Z",
+          "emotion": "tired"
+        },
+        "metadata": {
+          "processingTime": 5712,
+          "intentInfo": {
+            "intent": "CONVERSATION",
+            "confidence": 0.95,
+            "reasoning": "用户表达了当前的情绪状态（感觉累）并请求鼓励，属于情感支持类对话，无明确任务、时间安排或外部工具需求。"
+          },
+          "conversationStats": {
+            "historyCount": 1,
+            "emotion": "tired"
+          }
+        }
+      }
+    }
+  },
+  "assistantName": "AI智能助手"
+}
+[2025-09-25 07:42:16.096] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-09-25 07:42:17.722] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "1626ms",
+  "usage": {
+    "prompt_tokens": 324,
+    "completion_tokens": 47,
+    "total_tokens": 371,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:42:17.723] INFO: 回复生成完成
+  {
+  "requestId": "dispatch-1758757321717-7qafeghv3",
+  "responseLength": 77
+}
+[2025-09-25 07:42:17.723] INFO: 智能调度处理完成
+  {
+  "requestId": "dispatch-1758757321717-7qafeghv3",
+  "userId": "68d481b44943b00848176d89",
+  "processingTime": "16006ms",
+  "responseLength": 77,
+  "servicesExecuted": [
+    "externalTool",
+    "taskCreation",
+    "conversation"
+  ]
+}
+[2025-09-25 07:42:17.723] INFO: 智能调度处理完成
+  {
+  "userId": "68d481b44943b00848176d89",
+  "processingTime": 16006,
+  "responseLength": 77,
+  "servicesExecuted": [
+    "externalTool",
+    "taskCreation",
+    "conversation"
+  ]
+}
+[2025-09-25 07:42:18.621] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-09-25 07:42:18.622] INFO: 获取智能调度服务状态
+[2025-09-25 07:42:18.622] INFO: 开始意图识别
+  {
+  "userInput": "你好",
+  "inputLength": 2
+}
+[2025-09-25 07:42:18.622] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 362
+}
+[2025-09-25 07:42:18.622] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 07:42:20.733] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 574,
+    "completion_tokens": 99,
+    "total_tokens": 673,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:42:20.734] INFO: 收到模型响应
+  {
+  "responseLength": 263,
+  "responseTime": "2112ms"
+}
+[2025-09-25 07:42:20.734] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户输入为简单的问候语'你好'，属于日常交流中的打招呼行为，没有涉及任务创建、日程安排或外部信息查询的需求。\",\n  \"extracted_info\": {\n    \"keywords\": [\"你好\"],\n    \"entities\": {\n      \"time..."
+}
+[2025-09-25 07:42:20.734] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 07:42:20.734] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2112ms",
+  "success": true
+}
+[2025-09-25 07:42:20.734] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 2113
+}
+[2025-09-25 07:42:31.394] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "68d481b44943b00848176d89",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-09-25 07:42:31.396] INFO: 收到智能调度请求
+  {
+  "userId": "68d481b44943b00848176d89",
+  "userInput": "帮我安排一下今天的日程",
+  "sessionId": "session_1758757266445_n9z3lcqfg",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-09-25 07:42:31.396] INFO: 开始智能调度处理
+  {
+  "requestId": "dispatch-1758757351396-cy6a2of7n",
+  "userInput": "帮我安排一下今天的日程",
+  "userId": "68d481b44943b00848176d89",
+  "sessionId": "session_1758757266445_n9z3lcqfg",
+  "inputLength": 11
+}
+[2025-09-25 07:42:31.396] INFO: 步骤0: 检测图片输入
+  {
+  "requestId": "dispatch-1758757351396-cy6a2of7n"
+}
+[2025-09-25 07:42:31.396] INFO: 步骤1: 执行意图识别
+  {
+  "requestId": "dispatch-1758757351396-cy6a2of7n"
+}
+[2025-09-25 07:42:31.397] INFO: 开始意图识别
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "inputLength": 11
+}
+[2025-09-25 07:42:31.397] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 371
+}
+[2025-09-25 07:42:31.397] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 07:42:33.845] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 579,
+    "completion_tokens": 93,
+    "total_tokens": 672,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:42:33.845] INFO: 收到模型响应
+  {
+  "responseLength": 249,
+  "responseTime": "2448ms"
+}
+[2025-09-25 07:42:33.845] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户明确请求安排今天的日程，属于时间规划和日程管理类操作。\",\n  \"extracted_info\": {\n    \"keywords\": [\"安排\", \"日程\"],\n    \"entities\": {\n      \"time\": \"今天\",\n     ..."
+}
+[2025-09-25 07:42:33.846] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 07:42:33.846] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "2449ms",
+  "success": true
+}
+[2025-09-25 07:42:33.846] INFO: 意图识别完成
+  {
+  "requestId": "dispatch-1758757351396-cy6a2of7n",
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasImageContext": false
+}
+[2025-09-25 07:42:33.846] INFO: 步骤2: 分析多重意图
+  {
+  "requestId": "dispatch-1758757351396-cy6a2of7n"
+}
+[2025-09-25 07:42:33.847] INFO: Action Router 分析完成
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "actionPlan": [
+    {
+      "intent": "TASK_CREATION",
+      "priority": 1
+    },
+    {
+      "intent": "SCHEDULE_PLANNING",
+      "priority": 2
+    }
+  ],
+  "totalActions": 2
+}
+[2025-09-25 07:42:33.847] INFO: 多重意图分析完成
+  {
+  "requestId": "dispatch-1758757351396-cy6a2of7n",
+  "intents": [
+    "TASK_CREATION",
+    "SCHEDULE_PLANNING"
+  ],
+  "count": 2
+}
+[2025-09-25 07:42:33.847] INFO: 步骤3: 执行相应的服务
+  {
+  "requestId": "dispatch-1758757351396-cy6a2of7n"
+}
+[2025-09-25 07:42:33.848] INFO: 执行优先级 1 的服务
+  {
+  "intents": [
+    "TASK_CREATION"
+  ],
+  "count": 1
+}
+[2025-09-25 07:42:33.848] INFO: 开始执行任务创建
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "timeInfo": {
+    "date": "2025-09-24",
+    "timeBlock": null,
+    "specificTime": null
+  },
+  "userId": "68d481b44943b00848176d89"
+}
+[2025-09-25 07:42:33.848] INFO: 开始直接创建任务
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "userId": "68d481b44943b00848176d89",
+  "timeInfo": {
+    "date": "2025-09-24",
+    "timeBlock": null,
+    "specificTime": null
+  }
+}
+[2025-09-25 07:42:33.848] INFO: 开始意图识别
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "inputLength": 11
+}
+[2025-09-25 07:42:33.849] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 371
+}
+[2025-09-25 07:42:33.849] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 07:42:36.048] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 579,
+    "completion_tokens": 98,
+    "total_tokens": 677,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:42:36.048] INFO: 收到模型响应
+  {
+  "responseLength": 256,
+  "responseTime": "2200ms"
+}
+[2025-09-25 07:42:36.049] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户明确请求安排今天的日程，属于对时间的规划和调度，核心意图是日程管理。\",\n  \"extracted_info\": {\n    \"keywords\": [\"安排\", \"日程\"],\n    \"entities\": {\n      \"time\": \"今天\"..."
+}
+[2025-09-25 07:42:36.049] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 07:42:36.049] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "2201ms",
+  "success": true
+}
+[2025-09-25 07:42:36.049] INFO: 意图识别完成（用于信息提取）
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95
+}
+[2025-09-25 07:42:36.050] INFO: 强制设置为任务创建意图
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95
+}
+[2025-09-25 07:42:36.050] INFO: 提取任务信息完成
+  {
+  "title": "安排一下今天的日程",
+  "timeBlock": {
+    "startTime": "14:00",
+    "endTime": "18:00",
+    "timeBlockType": "afternoon"
+  },
+  "date": "2025-09-24",
+  "timeInfoInput": {
+    "date": "2025-09-24",
+    "timeBlock": null,
+    "specificTime": null
+  }
+}
+[2025-09-25 07:42:36.050] INFO: 提取任务信息完成
+  {
+  "taskInfo": {
+    "title": "安排一下今天的日程",
+    "userId": "68d481b44943b00848176d89",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "date": "2025-09-24"
+  }
+}
+[2025-09-25 07:42:36.051] INFO: 开始存储任务到数据库
+  {
+  "taskInfo": {
+    "title": "安排一下今天的日程",
+    "userId": "68d481b44943b00848176d89",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "date": "2025-09-24"
+  }
+}
+[2025-09-25 07:42:36.057] INFO: 任务存储成功
+  {
+  "taskId": "68d481ec4943b00848176db2"
+}
+[2025-09-25 07:42:36.057] INFO: 任务直接创建成功
+  {
+  "taskId": "68d481ec4943b00848176db2",
+  "title": "安排一下今天的日程",
+  "processingTime": "2209ms"
+}
+[2025-09-25 07:42:36.057] INFO: 任务创建完成
+  {
+  "success": true
+}
+[2025-09-25 07:42:36.058] INFO: 优先级 1 的服务执行完成
+  {
+  "results": [
+    "taskCreation"
+  ]
+}
+[2025-09-25 07:42:36.058] INFO: 执行优先级 2 的服务
+  {
+  "intents": [
+    "SCHEDULE_PLANNING"
+  ],
+  "count": 1
+}
+[2025-09-25 07:42:36.058] INFO: 开始执行时间调度
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "targetDate": "2025-09-24",
+  "userId": "68d481b44943b00848176d89",
+  "hasPreviousTaskCreation": true
+}
+[2025-09-25 07:42:36.059] INFO: 开始任务调度规划
+  {
+  "userId": "68d481b44943b00848176d89",
+  "userInput": "帮我安排一下今天的日程",
+  "targetDate": "2025-09-24",
+  "userContext": {
+    "emotionalState": "neutral",
+    "previousTaskCreation": {
+      "success": true,
+      "message": "任务创建成功",
+      "task": {
+        "timeBlock": {
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "timeBlockType": "afternoon"
+        },
+        "_id": "68d481ec4943b00848176db2",
+        "title": "安排一下今天的日程",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "date": "2025-09-24",
+        "userId": "68d481b44943b00848176d89",
+        "isScheduled": false,
+        "createdAt": "2025-09-24T23:42:36.052Z",
+        "updatedAt": "2025-09-24T23:42:36.052Z",
+        "__v": 0
+      },
+      "intentResult": {
+        "intent": "TASK_CREATION",
+        "confidence": 0.95,
+        "reasoning": "用户明确请求安排今天的日程，属于对时间的规划和调度，核心意图是日程管理。",
+        "extracted_info": {
+          "keywords": [
+            "安排",
+            "日程"
+          ],
+          "entities": {
+            "time": "今天",
+            "location": null,
+            "task": null
+          }
+        },
+        "original_input": "帮我安排一下今天的日程",
+        "timestamp": "2025-09-24T23:42:36.049Z",
+        "intent_description": "时间调度（日程安排、时间规划）"
+      },
+      "processingTime": 2209
+    }
+  }
+}
+[2025-09-25 07:42:36.069] INFO: 获取用户现有任务
+  {
+  "userId": "68d481b44943b00848176d89",
+  "taskCount": 2,
+  "date": "2025-09-24"
+}
+[2025-09-25 07:42:36.073] INFO: 获取用户任务集信息
+  {
+  "userId": "68d481b44943b00848176d89",
+  "collectionCount": 1
+}
+[2025-09-25 07:42:36.074] INFO: 构建调度规划Prompt完成
+  {
+  "messagesCount": 2
+}
+[2025-09-25 07:42:36.075] INFO: 调用通义千问API进行调度分析
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "temperature": 0.3
+}
+[2025-09-25 07:42:59.133] INFO: 通义千问API调用成功 (调度分析)
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 1231,
+    "completion_tokens": 1105,
+    "total_tokens": 2336,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:42:59.133] INFO: 通义千问调度分析完成
+  {
+  "responseLength": 2590
+}
+[2025-09-25 07:42:59.134] INFO: 调度建议解析成功
+  {
+  "adjustmentCount": 2,
+  "breakCount": 3
+}
+[2025-09-25 07:42:59.134] INFO: 任务调度规划完成
+  {
+  "userId": "68d481b44943b00848176d89",
+  "targetDate": "2025-09-24",
+  "processingTime": "23076ms",
+  "success": true
+}
+[2025-09-25 07:42:59.135] INFO: 时间调度完成
+  {
+  "success": true
+}
+[2025-09-25 07:42:59.135] INFO: 优先级 2 的服务执行完成
+  {
+  "results": [
+    "taskCreation",
+    "schedulePlanning"
+  ]
+}
+[2025-09-25 07:42:59.135] INFO: 服务执行完成
+  {
+  "requestId": "dispatch-1758757351396-cy6a2of7n",
+  "servicesExecuted": [
+    "taskCreation",
+    "schedulePlanning"
+  ],
+  "successCount": 2
+}
+[2025-09-25 07:42:59.135] INFO: 步骤4: 生成统一回复
+  {
+  "requestId": "dispatch-1758757351396-cy6a2of7n"
+}
+[2025-09-25 07:42:59.137] INFO: 获取到用户AI助手名字用于统一回复
+  {
+  "userId": "68d481b44943b00848176d89",
+  "assistantName": "AI智能助手"
+}
+[2025-09-25 07:42:59.139] INFO: 开始生成统一回复
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "intentsCount": 2,
+  "executionResultsKeys": [
+    "taskCreation",
+    "schedulePlanning"
+  ],
+  "executionResults": {
+    "taskCreation": {
+      "success": true,
+      "message": "任务创建成功",
+      "task": {
+        "timeBlock": {
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "timeBlockType": "afternoon"
+        },
+        "_id": "68d481ec4943b00848176db2",
+        "title": "安排一下今天的日程",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "date": "2025-09-24",
+        "userId": "68d481b44943b00848176d89",
+        "isScheduled": false,
+        "createdAt": "2025-09-24T23:42:36.052Z",
+        "updatedAt": "2025-09-24T23:42:36.052Z",
+        "__v": 0
+      },
+      "intentResult": {
+        "intent": "TASK_CREATION",
+        "confidence": 0.95,
+        "reasoning": "用户明确请求安排今天的日程，属于对时间的规划和调度，核心意图是日程管理。",
+        "extracted_info": {
+          "keywords": [
+            "安排",
+            "日程"
+          ],
+          "entities": {
+            "time": "今天",
+            "location": null,
+            "task": null
+          }
+        },
+        "original_input": "帮我安排一下今天的日程",
+        "timestamp": "2025-09-24T23:42:36.049Z",
+        "intent_description": "时间调度（日程安排、时间规划）"
+      },
+      "processingTime": 2209
+    },
+    "schedulePlanning": {
+      "success": true,
+      "data": {
+        "analysis": {
+          "timeConflicts": [
+            "任务 '我今天感觉点累，需要一些鼓励' 和 '安排一下今天的日程' 都被安排在下午14:00-18:00之间，存在时间重叠，需重新分配时段以避免冲突。"
+          ],
+          "priorityInsights": "当前两个任务均为中等优先级且未按四象限分类。考虑到用户情绪状态为中性但表达疲劳感，'需要鼓励'应视为心理支持类任务，建议提升其情感价值权重，归入象限2（重要不紧急），而'安排日程'是今日执行前提，应设为高优先级并归入象限1。",
+          "workloadAssessment": "总预计耗时60分钟，集中在下午时段，其他时间段空闲，整体工作负载较轻但分布不均，存在上午资源闲置、下午轻微拥堵现象。",
+          "userStateConsiderations": "用户表示‘有点累’，说明精力水平偏低，应在日程中优先安排认知负荷低的任务，并插入适当休息与正向激励环节，帮助恢复状态。建议将关键规划任务放在精力回升时段，并搭配鼓励性内容同步进行。"
+        },
+        "recommendations": {
+          "taskAdjustments": [
+            {
+              "taskId": "68d481ec4943b00848176db2",
+              "action": "update",
+              "changes": {
+                "title": "安排一下今天的日程",
+                "date": "2025-09-24",
+                "time": "08:00",
+                "timeBlock": {
+                  "startTime": "08:00",
+                  "endTime": "08:30",
+                  "timeBlockType": "morning"
+                },
+                "estimatedTime": 30,
+                "priority": "high",
+                "quadrant": 1,
+                "reason": "日程规划是全天行动的基础，应尽早完成；早晨思维清晰，适合做决策类任务。调整至早上可为后续活动提供明确指引。"
+              }
+            },
+            {
+              "taskId": "68d481d2be14e85ddfbf5736",
+              "action": "reschedule",
+              "changes": {
+                "title": "我今天感觉点累，需要一些鼓励",
+                "date": "2025-09-24",
+                "time": "08:30",
+                "timeBlock": {
+                  "startTime": "08:30",
+                  "endTime": "08:45",
+                  "timeBlockType": "morning"
+                },
+                "estimatedTime": 15,
+                "priority": "medium",
+                "quadrant": 2,
+                "reason": "将鼓励任务前置并与日程安排衔接，可在启动工作前给予心理支持，增强动力。缩短时间为15分钟，聚焦积极肯定和能量唤醒，更符合实际需求。"
+              }
+            }
+          ],
+          "breakSuggestions": [
+            {
+              "startTime": "10:00",
+              "endTime": "10:15",
+              "type": "short",
+              "activity": "起身拉伸或深呼吸练习，缓解久坐疲劳"
+            },
+            {
+              "startTime": "12:00",
+              "endTime": "12:30",
+              "type": "meal",
+              "activity": "享用营养午餐，远离屏幕进食，帮助大脑放松"
+            },
+            {
+              "startTime": "15:00",
+              "endTime": "15:15",
+              "type": "short",
+              "activity": "喝杯温水，听一首喜欢的音乐，提振精神"
+            }
+          ],
+          "optimizationTips": [
+            "将高价值任务前置：利用早晨黄金时间处理最重要事项。",
+            "鼓励与规划结合：先理清目标，再注入动力，形成正向启动循环。",
+            "碎片任务集中处理：如回复消息、查看邮件等可统一放在上午尾声或下午初段。",
+            "每工作50分钟安排一次短休，维持注意力稳定性。"
+          ]
+        },
+        "schedule": {
+          "morning": [
+            "68d481ec4943b00848176db2",
+            "68d481d2be14e85ddfbf5736"
+          ],
+          "forenoon": [],
+          "afternoon": [],
+          "evening": []
+        },
+        "summary": "已为您优化今日日程：将‘安排日程’提前至早上8:00-8:30作为启动核心任务，紧接15分钟鼓励与自我激励环节，帮助您以清晰思路和积极心态开启一天。原下午冲突任务已重新调度，避免重叠。建议上午保持专注，午后灵活安排执行类事务，并遵循推荐休息节奏保护精力。整体结构更合理，兼顾效率与身心健康。",
+        "appliedChanges": [],
+        "metadata": {
+          "currentTime": "2025/09/25 07:42:36",
+          "targetDate": "2025-09-24",
+          "existingTaskCount": 2,
+          "collectionCount": 1,
+          "userContext": {
+            "emotionalState": "neutral",
+            "previousTaskCreation": {
+              "success": true,
+              "message": "任务创建成功",
+              "task": {
+                "timeBlock": {
+                  "startTime": "14:00",
+                  "endTime": "18:00",
+                  "timeBlockType": "afternoon"
+                },
+                "_id": "68d481ec4943b00848176db2",
+                "title": "安排一下今天的日程",
+                "description": "",
+                "priority": "medium",
+                "completed": false,
+                "date": "2025-09-24",
+                "userId": "68d481b44943b00848176d89",
+                "isScheduled": false,
+                "createdAt": "2025-09-24T23:42:36.052Z",
+                "updatedAt": "2025-09-24T23:42:36.052Z",
+                "__v": 0
+              },
+              "intentResult": {
+                "intent": "TASK_CREATION",
+                "confidence": 0.95,
+                "reasoning": "用户明确请求安排今天的日程，属于对时间的规划和调度，核心意图是日程管理。",
+                "extracted_info": {
+                  "keywords": [
+                    "安排",
+                    "日程"
+                  ],
+                  "entities": {
+                    "time": "今天",
+                    "location": null,
+                    "task": null
+                  }
+                },
+                "original_input": "帮我安排一下今天的日程",
+                "timestamp": "2025-09-24T23:42:36.049Z",
+                "intent_description": "时间调度（日程安排、时间规划）"
+              },
+              "processingTime": 2209
+            }
+          },
+          "autoApplied": false,
+          "processingTime": 23076
+        }
+      }
+    }
+  },
+  "assistantName": "AI智能助手"
+}
+[2025-09-25 07:42:59.140] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-09-25 07:43:01.967] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "2828ms",
+  "usage": {
+    "prompt_tokens": 299,
+    "completion_tokens": 45,
+    "total_tokens": 344,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:43:01.968] INFO: 回复生成完成
+  {
+  "requestId": "dispatch-1758757351396-cy6a2of7n",
+  "responseLength": 79
+}
+[2025-09-25 07:43:01.968] INFO: 智能调度处理完成
+  {
+  "requestId": "dispatch-1758757351396-cy6a2of7n",
+  "userId": "68d481b44943b00848176d89",
+  "processingTime": "30572ms",
+  "responseLength": 79,
+  "servicesExecuted": [
+    "taskCreation",
+    "schedulePlanning"
+  ]
+}
+[2025-09-25 07:43:01.968] INFO: 智能调度处理完成
+  {
+  "userId": "68d481b44943b00848176d89",
+  "processingTime": 30573,
+  "responseLength": 79,
+  "servicesExecuted": [
+    "taskCreation",
+    "schedulePlanning"
+  ]
+}
+[2025-09-25 07:43:04.904] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-09-25 07:43:04.904] INFO: 获取智能调度服务状态
+[2025-09-25 07:43:04.905] INFO: 开始意图识别
+  {
+  "userInput": "你好",
+  "inputLength": 2
+}
+[2025-09-25 07:43:04.905] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 362
+}
+[2025-09-25 07:43:04.905] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 07:43:07.232] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 574,
+    "completion_tokens": 100,
+    "total_tokens": 674,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:43:07.232] INFO: 收到模型响应
+  {
+  "responseLength": 265,
+  "responseTime": "2327ms"
+}
+[2025-09-25 07:43:07.232] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户输入为简单的问候语'你好'，属于日常交流中的基本打招呼方式，没有涉及任务创建、日程安排或外部信息查询的需求。\",\n  \"extracted_info\": {\n    \"keywords\": [\"你好\"],\n    \"entities\": {\n      \"ti..."
+}
+[2025-09-25 07:43:07.232] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 07:43:07.233] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2327ms",
+  "success": true
+}
+[2025-09-25 07:43:07.233] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 2329
+}
+[2025-09-25 07:43:15.221] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "68d481b44943b00848176d89",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-09-25 07:43:15.221] INFO: 收到智能调度请求
+  {
+  "userId": "68d481b44943b00848176d89",
+  "userInput": "帮我创建一个新任务",
+  "sessionId": "session_1758757266445_n9z3lcqfg",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-09-25 07:43:15.221] INFO: 开始智能调度处理
+  {
+  "requestId": "dispatch-1758757395221-du5ywwbdu",
+  "userInput": "帮我创建一个新任务",
+  "userId": "68d481b44943b00848176d89",
+  "sessionId": "session_1758757266445_n9z3lcqfg",
+  "inputLength": 9
+}
+[2025-09-25 07:43:15.222] INFO: 步骤0: 检测图片输入
+  {
+  "requestId": "dispatch-1758757395221-du5ywwbdu"
+}
+[2025-09-25 07:43:15.222] INFO: 步骤1: 执行意图识别
+  {
+  "requestId": "dispatch-1758757395221-du5ywwbdu"
+}
+[2025-09-25 07:43:15.222] INFO: 开始意图识别
+  {
+  "userInput": "帮我创建一个新任务",
+  "inputLength": 9
+}
+[2025-09-25 07:43:15.222] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 369
+}
+[2025-09-25 07:43:15.222] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 07:43:16.919] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 578,
+    "completion_tokens": 85,
+    "total_tokens": 663,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:43:16.919] INFO: 收到模型响应
+  {
+  "responseLength": 240,
+  "responseTime": "1697ms"
+}
+[2025-09-25 07:43:16.919] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"TASK_CREATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户明确表达要创建一个新任务，属于任务新增意图。\",\n  \"extracted_info\": {\n    \"keywords\": [\"创建\", \"任务\"],\n    \"entities\": {\n      \"time\": null,\n      \"locatio..."
+}
+[2025-09-25 07:43:16.920] INFO: 意图识别结果解析成功
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 07:43:16.920] INFO: 意图识别完成
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95,
+  "processingTime": "1698ms",
+  "success": true
+}
+[2025-09-25 07:43:16.921] INFO: 意图识别完成
+  {
+  "requestId": "dispatch-1758757395221-du5ywwbdu",
+  "intent": "TASK_CREATION",
+  "confidence": 0.95,
+  "hasImageContext": false
+}
+[2025-09-25 07:43:16.921] INFO: 步骤2: 分析多重意图
+  {
+  "requestId": "dispatch-1758757395221-du5ywwbdu"
+}
+[2025-09-25 07:43:16.921] INFO: Action Router 分析完成
+  {
+  "userInput": "帮我创建一个新任务",
+  "actionPlan": [
+    {
+      "intent": "TASK_CREATION",
+      "priority": 1
+    }
+  ],
+  "totalActions": 1
+}
+[2025-09-25 07:43:16.921] INFO: 多重意图分析完成
+  {
+  "requestId": "dispatch-1758757395221-du5ywwbdu",
+  "intents": [
+    "TASK_CREATION"
+  ],
+  "count": 1
+}
+[2025-09-25 07:43:16.921] INFO: 步骤3: 执行相应的服务
+  {
+  "requestId": "dispatch-1758757395221-du5ywwbdu"
+}
+[2025-09-25 07:43:16.922] INFO: 执行优先级 1 的服务
+  {
+  "intents": [
+    "TASK_CREATION"
+  ],
+  "count": 1
+}
+[2025-09-25 07:43:16.922] INFO: 开始执行任务创建
+  {
+  "userInput": "帮我创建一个新任务",
+  "timeInfo": {
+    "date": null,
+    "timeBlock": null,
+    "specificTime": null
+  },
+  "userId": "68d481b44943b00848176d89"
+}
+[2025-09-25 07:43:16.922] INFO: 开始直接创建任务
+  {
+  "userInput": "帮我创建一个新任务",
+  "userId": "68d481b44943b00848176d89",
+  "timeInfo": {
+    "date": null,
+    "timeBlock": null,
+    "specificTime": null
+  }
+}
+[2025-09-25 07:43:16.922] INFO: 开始意图识别
+  {
+  "userInput": "帮我创建一个新任务",
+  "inputLength": 9
+}
+[2025-09-25 07:43:16.922] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 369
+}
+[2025-09-25 07:43:16.923] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 07:43:18.842] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 578,
+    "completion_tokens": 84,
+    "total_tokens": 662,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:43:18.843] INFO: 收到模型响应
+  {
+  "responseLength": 238,
+  "responseTime": "1921ms"
+}
+[2025-09-25 07:43:18.843] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"TASK_CREATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户明确表达要创建新任务，属于任务新增意图。\",\n  \"extracted_info\": {\n    \"keywords\": [\"创建\", \"任务\"],\n    \"entities\": {\n      \"time\": null,\n      \"location\"..."
+}
+[2025-09-25 07:43:18.843] INFO: 意图识别结果解析成功
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 07:43:18.843] INFO: 意图识别完成
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95,
+  "processingTime": "1921ms",
+  "success": true
+}
+[2025-09-25 07:43:18.843] INFO: 意图识别完成（用于信息提取）
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95
+}
+[2025-09-25 07:43:18.844] INFO: 强制设置为任务创建意图
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95
+}
+[2025-09-25 07:43:18.844] INFO: 提取任务信息完成
+  {
+  "title": "创建一个新任务",
+  "timeBlock": {
+    "startTime": "14:00",
+    "endTime": "18:00",
+    "timeBlockType": "afternoon"
+  },
+  "timeInfoInput": {
+    "date": null,
+    "timeBlock": null,
+    "specificTime": null
+  }
+}
+[2025-09-25 07:43:18.844] INFO: 提取任务信息完成
+  {
+  "taskInfo": {
+    "title": "创建一个新任务",
+    "userId": "68d481b44943b00848176d89",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    }
+  }
+}
+[2025-09-25 07:43:18.844] INFO: 开始存储任务到数据库
+  {
+  "taskInfo": {
+    "title": "创建一个新任务",
+    "userId": "68d481b44943b00848176d89",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    }
+  }
+}
+[2025-09-25 07:43:18.848] INFO: 任务存储成功
+  {
+  "taskId": "68d48216be14e85ddfbf576a"
+}
+[2025-09-25 07:43:18.849] INFO: 任务直接创建成功
+  {
+  "taskId": "68d48216be14e85ddfbf576a",
+  "title": "创建一个新任务",
+  "processingTime": "1926ms"
+}
+[2025-09-25 07:43:18.849] INFO: 任务创建完成
+  {
+  "success": true
+}
+[2025-09-25 07:43:18.849] INFO: 优先级 1 的服务执行完成
+  {
+  "results": [
+    "taskCreation"
+  ]
+}
+[2025-09-25 07:43:18.849] INFO: 服务执行完成
+  {
+  "requestId": "dispatch-1758757395221-du5ywwbdu",
+  "servicesExecuted": [
+    "taskCreation"
+  ],
+  "successCount": 1
+}
+[2025-09-25 07:43:18.849] INFO: 步骤4: 生成统一回复
+  {
+  "requestId": "dispatch-1758757395221-du5ywwbdu"
+}
+[2025-09-25 07:43:18.851] INFO: 获取到用户AI助手名字用于统一回复
+  {
+  "userId": "68d481b44943b00848176d89",
+  "assistantName": "AI智能助手"
+}
+[2025-09-25 07:43:18.852] INFO: 开始生成统一回复
+  {
+  "userInput": "帮我创建一个新任务",
+  "intentsCount": 1,
+  "executionResultsKeys": [
+    "taskCreation"
+  ],
+  "executionResults": {
+    "taskCreation": {
+      "success": true,
+      "message": "任务创建成功",
+      "task": {
+        "timeBlock": {
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "timeBlockType": "afternoon"
+        },
+        "_id": "68d48216be14e85ddfbf576a",
+        "title": "创建一个新任务",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "userId": "68d481b44943b00848176d89",
+        "isScheduled": false,
+        "createdAt": "2025-09-24T23:43:18.845Z",
+        "updatedAt": "2025-09-24T23:43:18.845Z",
+        "__v": 0
+      },
+      "intentResult": {
+        "intent": "TASK_CREATION",
+        "confidence": 0.95,
+        "reasoning": "用户明确表达要创建新任务，属于任务新增意图。",
+        "extracted_info": {
+          "keywords": [
+            "创建",
+            "任务"
+          ],
+          "entities": {
+            "time": null,
+            "location": null,
+            "task": null
+          }
+        },
+        "original_input": "帮我创建一个新任务",
+        "timestamp": "2025-09-24T23:43:18.843Z",
+        "intent_description": "任务新增（待办事项、习惯养成）"
+      },
+      "processingTime": 1926
+    }
+  },
+  "assistantName": "AI智能助手"
+}
+[2025-09-25 07:43:18.853] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-09-25 07:43:20.213] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "1360ms",
+  "usage": {
+    "prompt_tokens": 271,
+    "completion_tokens": 44,
+    "total_tokens": 315,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:43:20.213] INFO: 回复生成完成
+  {
+  "requestId": "dispatch-1758757395221-du5ywwbdu",
+  "responseLength": 77
+}
+[2025-09-25 07:43:20.214] INFO: 智能调度处理完成
+  {
+  "requestId": "dispatch-1758757395221-du5ywwbdu",
+  "userId": "68d481b44943b00848176d89",
+  "processingTime": "4992ms",
+  "responseLength": 77,
+  "servicesExecuted": [
+    "taskCreation"
+  ]
+}
+[2025-09-25 07:43:20.214] INFO: 智能调度处理完成
+  {
+  "userId": "68d481b44943b00848176d89",
+  "processingTime": 4993,
+  "responseLength": 77,
+  "servicesExecuted": [
+    "taskCreation"
+  ]
+}
+[2025-09-25 07:43:22.722] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "68d481b44943b00848176d89",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-09-25 07:43:22.723] INFO: 收到智能调度请求
+  {
+  "userId": "68d481b44943b00848176d89",
+  "userInput": "我想养成一个新的学习习惯",
+  "sessionId": "session_1758757266445_n9z3lcqfg",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-09-25 07:43:22.723] INFO: 开始智能调度处理
+  {
+  "requestId": "dispatch-1758757402723-05vms0go4",
+  "userInput": "我想养成一个新的学习习惯",
+  "userId": "68d481b44943b00848176d89",
+  "sessionId": "session_1758757266445_n9z3lcqfg",
+  "inputLength": 12
+}
+[2025-09-25 07:43:22.723] INFO: 步骤0: 检测图片输入
+  {
+  "requestId": "dispatch-1758757402723-05vms0go4"
+}
+[2025-09-25 07:43:22.724] INFO: 步骤1: 执行意图识别
+  {
+  "requestId": "dispatch-1758757402723-05vms0go4"
+}
+[2025-09-25 07:43:22.724] INFO: 开始意图识别
+  {
+  "userInput": "我想养成一个新的学习习惯",
+  "inputLength": 12
+}
+[2025-09-25 07:43:22.724] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 372
+}
+[2025-09-25 07:43:22.725] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 07:43:24.736] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 578,
+    "completion_tokens": 93,
+    "total_tokens": 671,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:43:24.736] INFO: 收到模型响应
+  {
+  "responseLength": 255,
+  "responseTime": "2012ms"
+}
+[2025-09-25 07:43:24.736] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"TASK_CREATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了想要养成新的学习习惯，属于创建长期任务或待办事项的意图。\",\n  \"extracted_info\": {\n    \"keywords\": [\"养成\", \"学习习惯\"],\n    \"entities\": {\n      \"time\": \"\",\n     ..."
+}
+[2025-09-25 07:43:24.736] INFO: 意图识别结果解析成功
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 07:43:24.737] INFO: 意图识别完成
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95,
+  "processingTime": "2013ms",
+  "success": true
+}
+[2025-09-25 07:43:24.737] INFO: 意图识别完成
+  {
+  "requestId": "dispatch-1758757402723-05vms0go4",
+  "intent": "TASK_CREATION",
+  "confidence": 0.95,
+  "hasImageContext": false
+}
+[2025-09-25 07:43:24.737] INFO: 步骤2: 分析多重意图
+  {
+  "requestId": "dispatch-1758757402723-05vms0go4"
+}
+[2025-09-25 07:43:24.737] INFO: Action Router 分析完成
+  {
+  "userInput": "我想养成一个新的学习习惯",
+  "actionPlan": [
+    {
+      "intent": "TASK_CREATION",
+      "priority": 1
+    }
+  ],
+  "totalActions": 1
+}
+[2025-09-25 07:43:24.738] INFO: 多重意图分析完成
+  {
+  "requestId": "dispatch-1758757402723-05vms0go4",
+  "intents": [
+    "TASK_CREATION"
+  ],
+  "count": 1
+}
+[2025-09-25 07:43:24.738] INFO: 步骤3: 执行相应的服务
+  {
+  "requestId": "dispatch-1758757402723-05vms0go4"
+}
+[2025-09-25 07:43:24.738] INFO: 执行优先级 1 的服务
+  {
+  "intents": [
+    "TASK_CREATION"
+  ],
+  "count": 1
+}
+[2025-09-25 07:43:24.738] INFO: 开始执行任务创建
+  {
+  "userInput": "我想养成一个新的学习习惯",
+  "timeInfo": {
+    "date": null,
+    "timeBlock": null,
+    "specificTime": null
+  },
+  "userId": "68d481b44943b00848176d89"
+}
+[2025-09-25 07:43:24.739] INFO: 开始直接创建任务
+  {
+  "userInput": "我想养成一个新的学习习惯",
+  "userId": "68d481b44943b00848176d89",
+  "timeInfo": {
+    "date": null,
+    "timeBlock": null,
+    "specificTime": null
+  }
+}
+[2025-09-25 07:43:24.739] INFO: 开始意图识别
+  {
+  "userInput": "我想养成一个新的学习习惯",
+  "inputLength": 12
+}
+[2025-09-25 07:43:24.739] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 372
+}
+[2025-09-25 07:43:24.739] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 07:43:27.620] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 578,
+    "completion_tokens": 99,
+    "total_tokens": 677,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:43:27.621] INFO: 收到模型响应
+  {
+  "responseLength": 265,
+  "responseTime": "2881ms"
+}
+[2025-09-25 07:43:27.621] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"TASK_CREATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了想要养成新的学习习惯，属于创建长期任务或待办事项的意图，符合任务新增的定义。\",\n  \"extracted_info\": {\n    \"keywords\": [\"养成\", \"学习习惯\"],\n    \"entities\": {\n      \"time\":..."
+}
+[2025-09-25 07:43:27.621] INFO: 意图识别结果解析成功
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 07:43:27.621] INFO: 意图识别完成
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95,
+  "processingTime": "2882ms",
+  "success": true
+}
+[2025-09-25 07:43:27.622] INFO: 意图识别完成（用于信息提取）
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95
+}
+[2025-09-25 07:43:27.622] INFO: 强制设置为任务创建意图
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95
+}
+[2025-09-25 07:43:27.622] INFO: 提取任务信息完成
+  {
+  "title": "学习",
+  "timeBlock": {
+    "startTime": "14:00",
+    "endTime": "18:00",
+    "timeBlockType": "afternoon"
+  },
+  "timeInfoInput": {
+    "date": null,
+    "timeBlock": null,
+    "specificTime": null
+  }
+}
+[2025-09-25 07:43:27.623] INFO: 提取任务信息完成
+  {
+  "taskInfo": {
+    "title": "学习",
+    "userId": "68d481b44943b00848176d89",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    }
+  }
+}
+[2025-09-25 07:43:27.623] INFO: 开始存储任务到数据库
+  {
+  "taskInfo": {
+    "title": "学习",
+    "userId": "68d481b44943b00848176d89",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    }
+  }
+}
+[2025-09-25 07:43:27.627] INFO: 任务存储成功
+  {
+  "taskId": "68d4821f4943b00848176dcf"
+}
+[2025-09-25 07:43:27.628] INFO: 任务直接创建成功
+  {
+  "taskId": "68d4821f4943b00848176dcf",
+  "title": "学习",
+  "processingTime": "2889ms"
+}
+[2025-09-25 07:43:27.628] INFO: 任务创建完成
+  {
+  "success": true
+}
+[2025-09-25 07:43:27.628] INFO: 优先级 1 的服务执行完成
+  {
+  "results": [
+    "taskCreation"
+  ]
+}
+[2025-09-25 07:43:27.628] INFO: 服务执行完成
+  {
+  "requestId": "dispatch-1758757402723-05vms0go4",
+  "servicesExecuted": [
+    "taskCreation"
+  ],
+  "successCount": 1
+}
+[2025-09-25 07:43:27.629] INFO: 步骤4: 生成统一回复
+  {
+  "requestId": "dispatch-1758757402723-05vms0go4"
+}
+[2025-09-25 07:43:27.631] INFO: 获取到用户AI助手名字用于统一回复
+  {
+  "userId": "68d481b44943b00848176d89",
+  "assistantName": "AI智能助手"
+}
+[2025-09-25 07:43:27.632] INFO: 开始生成统一回复
+  {
+  "userInput": "我想养成一个新的学习习惯",
+  "intentsCount": 1,
+  "executionResultsKeys": [
+    "taskCreation"
+  ],
+  "executionResults": {
+    "taskCreation": {
+      "success": true,
+      "message": "任务创建成功",
+      "task": {
+        "timeBlock": {
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "timeBlockType": "afternoon"
+        },
+        "_id": "68d4821f4943b00848176dcf",
+        "title": "学习",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "userId": "68d481b44943b00848176d89",
+        "isScheduled": false,
+        "createdAt": "2025-09-24T23:43:27.624Z",
+        "updatedAt": "2025-09-24T23:43:27.624Z",
+        "__v": 0
+      },
+      "intentResult": {
+        "intent": "TASK_CREATION",
+        "confidence": 0.95,
+        "reasoning": "用户表达了想要养成新的学习习惯，属于创建长期任务或待办事项的意图，符合任务新增的定义。",
+        "extracted_info": {
+          "keywords": [
+            "养成",
+            "学习习惯"
+          ],
+          "entities": {
+            "time": "",
+            "location": "",
+            "task": "养成一个新的学习习惯"
+          }
+        },
+        "original_input": "我想养成一个新的学习习惯",
+        "timestamp": "2025-09-24T23:43:27.621Z",
+        "intent_description": "任务新增（待办事项、习惯养成）"
+      },
+      "processingTime": 2889
+    }
+  },
+  "assistantName": "AI智能助手"
+}
+[2025-09-25 07:43:27.632] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-09-25 07:43:30.209] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "2577ms",
+  "usage": {
+    "prompt_tokens": 268,
+    "completion_tokens": 56,
+    "total_tokens": 324,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:43:30.209] INFO: 回复生成完成
+  {
+  "requestId": "dispatch-1758757402723-05vms0go4",
+  "responseLength": 93
+}
+[2025-09-25 07:43:30.210] INFO: 智能调度处理完成
+  {
+  "requestId": "dispatch-1758757402723-05vms0go4",
+  "userId": "68d481b44943b00848176d89",
+  "processingTime": "7486ms",
+  "responseLength": 93,
+  "servicesExecuted": [
+    "taskCreation"
+  ]
+}
+[2025-09-25 07:43:30.210] INFO: 智能调度处理完成
+  {
+  "userId": "68d481b44943b00848176d89",
+  "processingTime": 7487,
+  "responseLength": 93,
+  "servicesExecuted": [
+    "taskCreation"
+  ]
+}
+[2025-09-25 07:47:39.041] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-09-25 07:47:39.041] INFO: 获取智能调度服务状态
+[2025-09-25 07:47:39.041] INFO: 开始意图识别
+  {
+  "userInput": "你好",
+  "inputLength": 2
+}
+[2025-09-25 07:47:39.042] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 362
+}
+[2025-09-25 07:47:39.042] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 07:47:46.170] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 574,
+    "completion_tokens": 99,
+    "total_tokens": 673,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 07:47:46.171] INFO: 收到模型响应
+  {
+  "responseLength": 263,
+  "responseTime": "7129ms"
+}
+[2025-09-25 07:47:46.171] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户输入为简单的问候语'你好'，属于日常交流中的打招呼行为，没有涉及任务创建、日程安排或外部信息查询的需求。\",\n  \"extracted_info\": {\n    \"keywords\": [\"你好\"],\n    \"entities\": {\n      \"time..."
+}
+[2025-09-25 07:47:46.171] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 07:47:46.171] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "7130ms",
+  "success": true
+}
+[2025-09-25 07:47:46.171] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 7130
+}
+[2025-09-25 09:34:11.803] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-09-25 09:34:11.803] INFO: 获取智能调度服务状态
+[2025-09-25 09:34:11.804] INFO: 开始意图识别
+  {
+  "userInput": "你好",
+  "inputLength": 2
+}
+[2025-09-25 09:34:11.804] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 362
+}
+[2025-09-25 09:34:11.804] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 09:34:14.473] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 574,
+    "completion_tokens": 100,
+    "total_tokens": 674,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 09:34:14.474] INFO: 收到模型响应
+  {
+  "responseLength": 265,
+  "responseTime": "2670ms"
+}
+[2025-09-25 09:34:14.474] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户输入为简单的问候语'你好'，属于日常交流中的基本打招呼方式，没有涉及任务创建、日程安排或外部信息查询的需求。\",\n  \"extracted_info\": {\n    \"keywords\": [\"你好\"],\n    \"entities\": {\n      \"ti..."
+}
+[2025-09-25 09:34:14.474] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 09:34:14.475] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2671ms",
+  "success": true
+}
+[2025-09-25 09:34:14.475] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 2672
+}
+[2025-09-25 09:34:16.055] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-09-25 09:34:16.056] INFO: 收到智能调度请求
+  {
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "userInput": "帮我安排一下今天的日程",
+  "sessionId": "session_1758763987788_5smabn9tu",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-09-25 09:34:16.056] INFO: 开始智能调度处理
+  {
+  "requestId": "dispatch-1758764056056-pbfhqcgrc",
+  "userInput": "帮我安排一下今天的日程",
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "sessionId": "session_1758763987788_5smabn9tu",
+  "inputLength": 11
+}
+[2025-09-25 09:34:16.056] INFO: 步骤0: 检测图片输入
+  {
+  "requestId": "dispatch-1758764056056-pbfhqcgrc"
+}
+[2025-09-25 09:34:16.056] INFO: 步骤1: 执行意图识别
+  {
+  "requestId": "dispatch-1758764056056-pbfhqcgrc"
+}
+[2025-09-25 09:34:16.057] INFO: 开始意图识别
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "inputLength": 11
+}
+[2025-09-25 09:34:16.057] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 371
+}
+[2025-09-25 09:34:16.057] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 09:34:18.555] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 579,
+    "completion_tokens": 93,
+    "total_tokens": 672,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 09:34:18.555] INFO: 收到模型响应
+  {
+  "responseLength": 249,
+  "responseTime": "2499ms"
+}
+[2025-09-25 09:34:18.555] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户明确请求安排今天的日程，属于时间规划和日程管理类操作。\",\n  \"extracted_info\": {\n    \"keywords\": [\"安排\", \"日程\"],\n    \"entities\": {\n      \"time\": \"今天\",\n     ..."
+}
+[2025-09-25 09:34:18.555] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 09:34:18.556] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "2499ms",
+  "success": true
+}
+[2025-09-25 09:34:18.556] INFO: 意图识别完成
+  {
+  "requestId": "dispatch-1758764056056-pbfhqcgrc",
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasImageContext": false
+}
+[2025-09-25 09:34:18.556] INFO: 步骤2: 分析多重意图
+  {
+  "requestId": "dispatch-1758764056056-pbfhqcgrc"
+}
+[2025-09-25 09:34:18.556] INFO: Action Router 分析完成
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "actionPlan": [
+    {
+      "intent": "TASK_CREATION",
+      "priority": 1
+    },
+    {
+      "intent": "SCHEDULE_PLANNING",
+      "priority": 2
+    }
+  ],
+  "totalActions": 2
+}
+[2025-09-25 09:34:18.557] INFO: 多重意图分析完成
+  {
+  "requestId": "dispatch-1758764056056-pbfhqcgrc",
+  "intents": [
+    "TASK_CREATION",
+    "SCHEDULE_PLANNING"
+  ],
+  "count": 2
+}
+[2025-09-25 09:34:18.557] INFO: 步骤3: 执行相应的服务
+  {
+  "requestId": "dispatch-1758764056056-pbfhqcgrc"
+}
+[2025-09-25 09:34:18.557] INFO: 执行优先级 1 的服务
+  {
+  "intents": [
+    "TASK_CREATION"
+  ],
+  "count": 1
+}
+[2025-09-25 09:34:18.557] INFO: 开始执行任务创建
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "timeInfo": {
+    "date": "2025-09-25",
+    "timeBlock": null,
+    "specificTime": null
+  },
+  "userId": "68d49c06be14e85ddfbf57ac"
+}
+[2025-09-25 09:34:18.558] INFO: 开始直接创建任务
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "timeInfo": {
+    "date": "2025-09-25",
+    "timeBlock": null,
+    "specificTime": null
+  }
+}
+[2025-09-25 09:34:18.558] INFO: 开始意图识别
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "inputLength": 11
+}
+[2025-09-25 09:34:18.558] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 371
+}
+[2025-09-25 09:34:18.558] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 09:34:21.432] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 579,
+    "completion_tokens": 91,
+    "total_tokens": 670,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 09:34:21.433] INFO: 收到模型响应
+  {
+  "responseLength": 245,
+  "responseTime": "2875ms"
+}
+[2025-09-25 09:34:21.433] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户明确请求安排今天的日程，属于时间规划和日程管理类操作。\",\n  \"extracted_info\": {\n    \"keywords\": [\"安排\", \"日程\"],\n    \"entities\": {\n      \"time\": \"今天\",\n     ..."
+}
+[2025-09-25 09:34:21.433] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 09:34:21.433] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "2875ms",
+  "success": true
+}
+[2025-09-25 09:34:21.434] INFO: 意图识别完成（用于信息提取）
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95
+}
+[2025-09-25 09:34:21.434] INFO: 强制设置为任务创建意图
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95
+}
+[2025-09-25 09:34:21.434] INFO: 提取任务信息完成
+  {
+  "title": "安排一下今天的日程",
+  "timeBlock": {
+    "startTime": "14:00",
+    "endTime": "18:00",
+    "timeBlockType": "afternoon"
+  },
+  "date": "2025-09-25",
+  "timeInfoInput": {
+    "date": "2025-09-25",
+    "timeBlock": null,
+    "specificTime": null
+  }
+}
+[2025-09-25 09:34:21.434] INFO: 提取任务信息完成
+  {
+  "taskInfo": {
+    "title": "安排一下今天的日程",
+    "userId": "68d49c06be14e85ddfbf57ac",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "date": "2025-09-25"
+  }
+}
+[2025-09-25 09:34:21.435] INFO: 开始存储任务到数据库
+  {
+  "taskInfo": {
+    "title": "安排一下今天的日程",
+    "userId": "68d49c06be14e85ddfbf57ac",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "date": "2025-09-25"
+  }
+}
+[2025-09-25 09:34:21.439] INFO: 任务存储成功
+  {
+  "taskId": "68d49c1d4943b00848176e0f"
+}
+[2025-09-25 09:34:21.439] INFO: 任务直接创建成功
+  {
+  "taskId": "68d49c1d4943b00848176e0f",
+  "title": "安排一下今天的日程",
+  "processingTime": "2882ms"
+}
+[2025-09-25 09:34:21.440] INFO: 任务创建完成
+  {
+  "success": true
+}
+[2025-09-25 09:34:21.440] INFO: 优先级 1 的服务执行完成
+  {
+  "results": [
+    "taskCreation"
+  ]
+}
+[2025-09-25 09:34:21.440] INFO: 执行优先级 2 的服务
+  {
+  "intents": [
+    "SCHEDULE_PLANNING"
+  ],
+  "count": 1
+}
+[2025-09-25 09:34:21.440] INFO: 开始执行时间调度
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "targetDate": "2025-09-25",
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "hasPreviousTaskCreation": true
+}
+[2025-09-25 09:34:21.441] INFO: 开始任务调度规划
+  {
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "userInput": "帮我安排一下今天的日程",
+  "targetDate": "2025-09-25",
+  "userContext": {
+    "emotionalState": "neutral",
+    "previousTaskCreation": {
+      "success": true,
+      "message": "任务创建成功",
+      "task": {
+        "timeBlock": {
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "timeBlockType": "afternoon"
+        },
+        "_id": "68d49c1d4943b00848176e0f",
+        "title": "安排一下今天的日程",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "date": "2025-09-25",
+        "userId": "68d49c06be14e85ddfbf57ac",
+        "isScheduled": false,
+        "createdAt": "2025-09-25T01:34:21.436Z",
+        "updatedAt": "2025-09-25T01:34:21.436Z",
+        "__v": 0
+      },
+      "intentResult": {
+        "intent": "TASK_CREATION",
+        "confidence": 0.95,
+        "reasoning": "用户明确请求安排今天的日程，属于时间规划和日程管理类操作。",
+        "extracted_info": {
+          "keywords": [
+            "安排",
+            "日程"
+          ],
+          "entities": {
+            "time": "今天",
+            "location": "",
+            "task": ""
+          }
+        },
+        "original_input": "帮我安排一下今天的日程",
+        "timestamp": "2025-09-25T01:34:21.433Z",
+        "intent_description": "时间调度（日程安排、时间规划）"
+      },
+      "processingTime": 2882
+    }
+  }
+}
+[2025-09-25 09:34:21.444] INFO: 获取用户现有任务
+  {
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "taskCount": 1,
+  "date": "2025-09-25"
+}
+[2025-09-25 09:34:21.448] INFO: 获取用户任务集信息
+  {
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "collectionCount": 1
+}
+[2025-09-25 09:34:21.449] INFO: 构建调度规划Prompt完成
+  {
+  "messagesCount": 2
+}
+[2025-09-25 09:34:21.449] INFO: 调用通义千问API进行调度分析
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "temperature": 0.3
+}
+[2025-09-25 09:34:44.846] INFO: 通义千问API调用成功 (调度分析)
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 1048,
+    "completion_tokens": 696,
+    "total_tokens": 1744,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 09:34:44.846] INFO: 通义千问调度分析完成
+  {
+  "responseLength": 1643
+}
+[2025-09-25 09:34:44.847] INFO: 调度建议解析成功
+  {
+  "adjustmentCount": 1,
+  "breakCount": 2
+}
+[2025-09-25 09:34:44.847] INFO: 任务调度规划完成
+  {
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "targetDate": "2025-09-25",
+  "processingTime": "23407ms",
+  "success": true
+}
+[2025-09-25 09:34:44.847] INFO: 时间调度完成
+  {
+  "success": true
+}
+[2025-09-25 09:34:44.847] INFO: 优先级 2 的服务执行完成
+  {
+  "results": [
+    "taskCreation",
+    "schedulePlanning"
+  ]
+}
+[2025-09-25 09:34:44.847] INFO: 服务执行完成
+  {
+  "requestId": "dispatch-1758764056056-pbfhqcgrc",
+  "servicesExecuted": [
+    "taskCreation",
+    "schedulePlanning"
+  ],
+  "successCount": 2
+}
+[2025-09-25 09:34:44.848] INFO: 步骤4: 生成统一回复
+  {
+  "requestId": "dispatch-1758764056056-pbfhqcgrc"
+}
+[2025-09-25 09:34:44.850] INFO: 获取到用户AI助手名字用于统一回复
+  {
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "assistantName": "AI智能助手"
+}
+[2025-09-25 09:34:44.851] INFO: 开始生成统一回复
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "intentsCount": 2,
+  "executionResultsKeys": [
+    "taskCreation",
+    "schedulePlanning"
+  ],
+  "executionResults": {
+    "taskCreation": {
+      "success": true,
+      "message": "任务创建成功",
+      "task": {
+        "timeBlock": {
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "timeBlockType": "afternoon"
+        },
+        "_id": "68d49c1d4943b00848176e0f",
+        "title": "安排一下今天的日程",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "date": "2025-09-25",
+        "userId": "68d49c06be14e85ddfbf57ac",
+        "isScheduled": false,
+        "createdAt": "2025-09-25T01:34:21.436Z",
+        "updatedAt": "2025-09-25T01:34:21.436Z",
+        "__v": 0
+      },
+      "intentResult": {
+        "intent": "TASK_CREATION",
+        "confidence": 0.95,
+        "reasoning": "用户明确请求安排今天的日程，属于时间规划和日程管理类操作。",
+        "extracted_info": {
+          "keywords": [
+            "安排",
+            "日程"
+          ],
+          "entities": {
+            "time": "今天",
+            "location": "",
+            "task": ""
+          }
+        },
+        "original_input": "帮我安排一下今天的日程",
+        "timestamp": "2025-09-25T01:34:21.433Z",
+        "intent_description": "时间调度（日程安排、时间规划）"
+      },
+      "processingTime": 2882
+    },
+    "schedulePlanning": {
+      "success": true,
+      "data": {
+        "analysis": {
+          "timeConflicts": [],
+          "priorityInsights": "当前任务‘安排一下今天的日程’优先级为中等，但其内容具有高重要性，应视为象限1（重要且紧急）任务，需优先处理以确保全天效率。",
+          "workloadAssessment": "目前仅有一个任务被安排在下午，整体上午和上午时间段为空，存在大量可用时间资源，工作负载较轻，适合提前处理关键任务。",
+          "userStateConsiderations": "用户情绪状态为中性，无明显疲劳或压力迹象，适合在上午精力充沛时段安排核心规划类任务。"
+        },
+        "recommendations": {
+          "taskAdjustments": [
+            {
+              "taskId": "68d49c1d4943b00848176e0f",
+              "action": "reschedule",
+              "changes": {
+                "title": "安排一下今天的日程",
+                "date": "2025-09-25",
+                "time": "09:30",
+                "timeBlock": {
+                  "startTime": "09:30",
+                  "endTime": "10:00",
+                  "timeBlockType": "forenoon"
+                },
+                "estimatedTime": 30,
+                "priority": "high",
+                "quadrant": 1,
+                "reason": "该任务是今日所有活动的基础，应尽早完成并提升优先级至高，以便后续安排其他事项；原定下午时间过晚，不利于全天规划。"
+              }
+            }
+          ],
+          "breakSuggestions": [
+            {
+              "startTime": "12:00",
+              "endTime": "12:30",
+              "type": "meal",
+              "activity": "午餐与短暂散步，帮助恢复下午精力"
+            },
+            {
+              "startTime": "15:30",
+              "endTime": "15:45",
+              "type": "short",
+              "activity": "短暂休息，起身活动或闭目养神"
+            }
+          ],
+          "optimizationTips": [
+            "将每日最重要的规划任务安排在上午9:00-11:00之间，利用黄金思维时段提高决策质量。",
+            "建议在完成日程安排后，立即列出待办清单并按四象限法分类，增强执行力。",
+            "空余时间段可预留用于突发任务或深度工作，避免过度排满导致应变能力下降。"
+          ]
+        },
+        "schedule": {
+          "morning": [],
+          "forenoon": [
+            "68d49c1d4943b00848176e0f"
+          ],
+          "afternoon": [],
+          "evening": []
+        },
+        "summary": "已将‘安排一下今天的日程’任务从原下午14:00调整至上午9:30-10:00，优先级提升为高，归入象限1。此举有助于您尽早建立清晰的日程框架，提升全天效率。建议在此之后补充具体任务，并合理利用空闲时间段。已为您添加两段休息建议以保持精力平衡。",
+        "appliedChanges": [],
+        "metadata": {
+          "currentTime": "2025/09/25 09:34:21",
+          "targetDate": "2025-09-25",
+          "existingTaskCount": 1,
+          "collectionCount": 1,
+          "userContext": {
+            "emotionalState": "neutral",
+            "previousTaskCreation": {
+              "success": true,
+              "message": "任务创建成功",
+              "task": {
+                "timeBlock": {
+                  "startTime": "14:00",
+                  "endTime": "18:00",
+                  "timeBlockType": "afternoon"
+                },
+                "_id": "68d49c1d4943b00848176e0f",
+                "title": "安排一下今天的日程",
+                "description": "",
+                "priority": "medium",
+                "completed": false,
+                "date": "2025-09-25",
+                "userId": "68d49c06be14e85ddfbf57ac",
+                "isScheduled": false,
+                "createdAt": "2025-09-25T01:34:21.436Z",
+                "updatedAt": "2025-09-25T01:34:21.436Z",
+                "__v": 0
+              },
+              "intentResult": {
+                "intent": "TASK_CREATION",
+                "confidence": 0.95,
+                "reasoning": "用户明确请求安排今天的日程，属于时间规划和日程管理类操作。",
+                "extracted_info": {
+                  "keywords": [
+                    "安排",
+                    "日程"
+                  ],
+                  "entities": {
+                    "time": "今天",
+                    "location": "",
+                    "task": ""
+                  }
+                },
+                "original_input": "帮我安排一下今天的日程",
+                "timestamp": "2025-09-25T01:34:21.433Z",
+                "intent_description": "时间调度（日程安排、时间规划）"
+              },
+              "processingTime": 2882
+            }
+          },
+          "autoApplied": false,
+          "processingTime": 23407
+        }
+      }
+    }
+  },
+  "assistantName": "AI智能助手"
+}
+[2025-09-25 09:34:44.852] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-09-25 09:34:46.857] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "2004ms",
+  "usage": {
+    "prompt_tokens": 299,
+    "completion_tokens": 50,
+    "total_tokens": 349,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 09:34:46.857] INFO: 回复生成完成
+  {
+  "requestId": "dispatch-1758764056056-pbfhqcgrc",
+  "responseLength": 84
+}
+[2025-09-25 09:34:46.857] INFO: 智能调度处理完成
+  {
+  "requestId": "dispatch-1758764056056-pbfhqcgrc",
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "processingTime": "30801ms",
+  "responseLength": 84,
+  "servicesExecuted": [
+    "taskCreation",
+    "schedulePlanning"
+  ]
+}
+[2025-09-25 09:34:46.858] INFO: 智能调度处理完成
+  {
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "processingTime": 30802,
+  "responseLength": 84,
+  "servicesExecuted": [
+    "taskCreation",
+    "schedulePlanning"
+  ]
+}
+[2025-09-25 09:35:29.506] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "ip": "::ffff:127.0.0.1"
+}
+[2025-09-25 09:35:29.506] INFO: 收到智能调度请求
+  {
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "userInput": "我想制定一个学习目标计划",
+  "sessionId": "session_1758763987788_5smabn9tu",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-09-25 09:35:29.506] INFO: 开始智能调度处理
+  {
+  "requestId": "dispatch-1758764129506-tmggp33lg",
+  "userInput": "我想制定一个学习目标计划",
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "sessionId": "session_1758763987788_5smabn9tu",
+  "inputLength": 12
+}
+[2025-09-25 09:35:29.506] INFO: 步骤0: 检测图片输入
+  {
+  "requestId": "dispatch-1758764129506-tmggp33lg"
+}
+[2025-09-25 09:35:29.506] INFO: 步骤1: 执行意图识别
+  {
+  "requestId": "dispatch-1758764129506-tmggp33lg"
+}
+[2025-09-25 09:35:29.507] INFO: 开始意图识别
+  {
+  "userInput": "我想制定一个学习目标计划",
+  "inputLength": 12
+}
+[2025-09-25 09:35:29.507] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 372
+}
+[2025-09-25 09:35:29.507] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 09:35:34.761] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 579,
+    "completion_tokens": 106,
+    "total_tokens": 685,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 09:35:34.761] INFO: 收到模型响应
+  {
+  "responseLength": 277,
+  "responseTime": "5255ms"
+}
+[2025-09-25 09:35:34.761] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了想要制定学习目标计划的意图，这涉及对未来的安排和规划，属于时间调度和计划类需求。\",\n  \"extracted_info\": {\n    \"keywords\": [\"制定\", \"学习目标\", \"计划\"],\n    \"entities\": {\n ..."
+}
+[2025-09-25 09:35:34.762] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 09:35:34.762] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "5256ms",
+  "success": true
+}
+[2025-09-25 09:35:34.762] INFO: 意图识别完成
+  {
+  "requestId": "dispatch-1758764129506-tmggp33lg",
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasImageContext": false
+}
+[2025-09-25 09:35:34.762] INFO: 步骤2: 分析多重意图
+  {
+  "requestId": "dispatch-1758764129506-tmggp33lg"
+}
+[2025-09-25 09:35:34.762] INFO: Action Router 分析完成
+  {
+  "userInput": "我想制定一个学习目标计划",
+  "actionPlan": [
+    {
+      "intent": "CONVERSATION",
+      "priority": 3
+    }
+  ],
+  "totalActions": 1
+}
+[2025-09-25 09:35:34.763] INFO: 多重意图分析完成
+  {
+  "requestId": "dispatch-1758764129506-tmggp33lg",
+  "intents": [
+    "CONVERSATION"
+  ],
+  "count": 1
+}
+[2025-09-25 09:35:34.763] INFO: 步骤3: 执行相应的服务
+  {
+  "requestId": "dispatch-1758764129506-tmggp33lg"
+}
+[2025-09-25 09:35:34.763] INFO: 执行优先级 3 的服务
+  {
+  "intents": [
+    "CONVERSATION"
+  ],
+  "count": 1
+}
+[2025-09-25 09:35:34.763] INFO: 开始执行对话处理
+  {
+  "userInput": "我想制定一个学习目标计划",
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "sessionId": "session_1758763987788_5smabn9tu",
+  "hasPreviousResults": false
+}
+[2025-09-25 09:35:34.763] INFO: 开始处理对话
+  {
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "sessionId": "session_1758763987788_5smabn9tu",
+  "messageLength": 12
+}
+[2025-09-25 09:35:34.764] INFO: 开始意图识别 我想制定一个学习目标计划...
+  {
+  "userId": "68d49c06be14e85ddfbf57ac"
+}
+[2025-09-25 09:35:34.764] INFO: 开始意图识别
+  {
+  "userInput": "我想制定一个学习目标计划",
+  "inputLength": 12
+}
+[2025-09-25 09:35:34.764] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 372
+}
+[2025-09-25 09:35:34.764] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-09-25 09:35:36.972] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 579,
+    "completion_tokens": 106,
+    "total_tokens": 685,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 09:35:36.973] INFO: 收到模型响应
+  {
+  "responseLength": 277,
+  "responseTime": "2208ms"
+}
+[2025-09-25 09:35:36.973] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了想要制定学习目标计划的意图，这涉及对未来的安排和规划，属于时间调度和计划类需求。\",\n  \"extracted_info\": {\n    \"keywords\": [\"制定\", \"学习目标\", \"计划\"],\n    \"entities\": {\n ..."
+}
+[2025-09-25 09:35:36.973] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-09-25 09:35:36.973] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "2209ms",
+  "success": true
+}
+[2025-09-25 09:35:36.974] WARN: 消息意图不是对话类型
+  {
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95
+}
+[2025-09-25 09:35:36.975] INFO: 对话处理完成
+  {
+  "success": false
+}
+[2025-09-25 09:35:36.975] INFO: 优先级 3 的服务执行完成
+  {
+  "results": [
+    "conversation"
+  ]
+}
+[2025-09-25 09:35:36.975] INFO: 服务执行完成
+  {
+  "requestId": "dispatch-1758764129506-tmggp33lg",
+  "servicesExecuted": [
+    "conversation"
+  ],
+  "successCount": 0
+}
+[2025-09-25 09:35:36.975] INFO: 步骤4: 生成统一回复
+  {
+  "requestId": "dispatch-1758764129506-tmggp33lg"
+}
+[2025-09-25 09:35:36.978] INFO: 获取到用户AI助手名字用于统一回复
+  {
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "assistantName": "AI智能助手"
+}
+[2025-09-25 09:35:36.978] INFO: 开始生成统一回复
+  {
+  "userInput": "我想制定一个学习目标计划",
+  "intentsCount": 1,
+  "executionResultsKeys": [
+    "conversation"
+  ],
+  "executionResults": {
+    "conversation": {
+      "success": false,
+      "error": "该消息不属于对话类型，请使用相应的功能模块处理",
+      "intent": "SCHEDULE_PLANNING",
+      "suggestion": "请使用日程规划功能来安排和优化您的时间"
+    }
+  },
+  "assistantName": "AI智能助手"
+}
+[2025-09-25 09:35:36.978] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-09-25 09:35:40.055] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "3076ms",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 54,
+    "total_tokens": 318,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-09-25 09:35:40.055] INFO: 回复生成完成
+  {
+  "requestId": "dispatch-1758764129506-tmggp33lg",
+  "responseLength": 98
+}
+[2025-09-25 09:35:40.056] INFO: 智能调度处理完成
+  {
+  "requestId": "dispatch-1758764129506-tmggp33lg",
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "processingTime": "10549ms",
+  "responseLength": 98,
+  "servicesExecuted": [
+    "conversation"
+  ]
+}
+[2025-09-25 09:35:40.056] INFO: 智能调度处理完成
+  {
+  "userId": "68d49c06be14e85ddfbf57ac",
+  "processingTime": 10550,
+  "responseLength": 98,
+  "servicesExecuted": [
+    "conversation"
+  ]
+}

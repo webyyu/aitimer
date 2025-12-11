@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\wuby\\OneDrive\\Desktop\\timer3\\backend\\src\\AIsiri\\logs\\.ce090b192f8517d0027aed4008bba8b5285df01f-audit.json",
+    "files": [
+        {
+            "date": 1755524210853,
+            "name": "C:\\Users\\wuby\\OneDrive\\Desktop\\timer3\\backend\\src\\AIsiri\\logs\\intent-recognition-2025-08-18.log",
+            "hash": "cd0fc4c8d2f9595fd45e3f80efe9f57056dffeda2a2f631553489908f27364d9"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,29 @@
+2025-08-17T11:17:45.777Z [INFO] [ChatTest] 开始聊天服务测试 
+2025-08-17T11:18:34.635Z [INFO] [ChatTest] 聊天服务测试完成 {"total":6,"passed":1,"failed":5,"successRate":"16.7%"}
+2025-08-17T11:21:28.630Z [INFO] [ChatTest] 开始聊天服务测试 
+2025-08-17T11:21:56.120Z [INFO] [ChatTest] 聊天服务测试完成 {"total":6,"passed":1,"failed":5,"successRate":"16.7%"}
+2025-08-17T11:22:06.122Z [ERROR] [ChatTest] 测试数据清理失败 {"error":"Operation `chathistories.deleteMany()` buffering timed out after 10000ms"}
+2025-08-17T11:23:22.934Z [INFO] [ChatTest] 开始聊天服务测试 
+2025-08-17T11:23:29.031Z [INFO] [ChatTest] 聊天服务测试完成 {"total":6,"passed":0,"failed":6,"successRate":"0.0%"}
+2025-08-17T11:23:29.047Z [INFO] [ChatTest] 测试数据清理完成 {"deletedCount":0}
+2025-08-17T11:23:55.774Z [INFO] [ChatTest] 开始聊天服务测试 
+2025-08-17T11:23:59.988Z [INFO] [ChatTest] 聊天服务测试完成 {"total":6,"passed":1,"failed":5,"successRate":"16.7%"}
+2025-08-17T11:23:59.993Z [INFO] [ChatTest] 测试数据清理完成 {"deletedCount":0}
+2025-08-17T11:24:51.255Z [INFO] [ChatTest] 开始聊天服务测试 
+2025-08-17T11:25:26.276Z [INFO] [ChatTest] 聊天服务测试完成 {"total":6,"passed":1,"failed":5,"successRate":"16.7%"}
+2025-08-17T11:25:26.285Z [INFO] [ChatTest] 测试数据清理完成 {"deletedCount":0}
+2025-08-17T11:25:47.942Z [INFO] [ChatTest] 开始聊天服务测试 
+2025-08-17T11:26:44.962Z [INFO] [ChatTest] 聊天服务测试完成 {"total":6,"passed":5,"failed":1,"successRate":"83.3%"}
+2025-08-17T11:26:44.969Z [INFO] [ChatTest] 测试数据清理完成 {"deletedCount":0}
+2025-08-17T11:27:10.646Z [INFO] [ChatTest] 开始聊天服务测试 
+2025-08-17T11:28:02.997Z [INFO] [ChatTest] 聊天服务测试完成 {"total":6,"passed":5,"failed":1,"successRate":"83.3%"}
+2025-08-17T11:28:03.029Z [INFO] [ChatTest] 测试数据清理完成 {"deletedCount":62}
+2025-08-17T11:28:08.216Z [INFO] [ChatTest] 开始聊天服务测试 
+2025-08-17T11:29:14.101Z [INFO] [ChatTest] 聊天服务测试完成 {"total":6,"passed":5,"failed":1,"successRate":"83.3%"}
+2025-08-17T11:29:14.108Z [INFO] [ChatTest] 测试数据清理完成 {"deletedCount":31}
+2025-08-17T11:29:26.963Z [INFO] [ChatTest] 开始聊天服务测试 
+2025-08-17T11:30:20.651Z [INFO] [ChatTest] 聊天服务测试完成 {"total":6,"passed":5,"failed":1,"successRate":"83.3%"}
+2025-08-17T11:30:20.662Z [INFO] [ChatTest] 测试数据清理完成 {"deletedCount":31}
+2025-08-17T11:35:58.314Z [INFO] [ChatTest] 开始聊天服务测试 
+2025-08-17T11:36:57.222Z [INFO] [ChatTest] 聊天服务测试完成 {"total":6,"passed":5,"failed":1,"successRate":"83.3%"}
+2025-08-17T11:36:57.236Z [INFO] [ChatTest] 测试数据清理完成 {"deletedCount":31}

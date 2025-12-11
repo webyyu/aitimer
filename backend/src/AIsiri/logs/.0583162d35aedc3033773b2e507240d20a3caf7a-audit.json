@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "/root/backend/src/AIsiri/logs/.0583162d35aedc3033773b2e507240d20a3caf7a-audit.json",
+    "files": [
+        {
+            "date": 1755713117631,
+            "name": "/root/backend/src/AIsiri/logs/intent-recognition-error-2025-08-21.log",
+            "hash": "57055d2c52cc8a341a26c2f07fbdbbde97e7ca4dfe52399478280f1ce0a6d5cf"
+        },
+        {
+            "date": 1756301718615,
+            "name": "/root/backend/src/AIsiri/logs/intent-recognition-error-2025-08-27.log",
+            "hash": "a3be22d0cdd9486d2dbae2f61cb5cb98a40da567ddb3f9f88c17cdd8786e0071"
+        },
+        {
+            "date": 1758289657418,
+            "name": "/root/backend/src/AIsiri/logs/intent-recognition-error-2025-09-19.log",
+            "hash": "d233b86050823341435a73d30e3125013b1b8f083fc5b9ba548b980c975bc690"
+        },
+        {
+            "date": 1758297653190,
+            "name": "/root/backend/src/AIsiri/logs/intent-recognition-error-2025-09-20.log",
+            "hash": "530b7f11c43589d2a8a26a78688e8cf825fc2f02d72e4d7ef352fd414025f638"
+        }
+    ],
+    "hashType": "sha256"
+}

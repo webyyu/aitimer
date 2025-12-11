@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\wuby\\OneDrive\\Desktop\\已完成\\ai秘书\\backup\\backend\\src\\AIsiri\\logs\\.e669837b03316862b2694bb2d8e860cb4dabb2f8-audit.json",
+    "files": [
+        {
+            "date": 1762507164723,
+            "name": "C:\\Users\\wuby\\OneDrive\\Desktop\\已完成\\ai秘书\\backup\\backend\\src\\AIsiri\\logs\\exceptions-2025-11-07.log",
+            "hash": "01dd097d2b064b0b5908f3ba655d20718aee40b57515104d343016584b810653"
+        }
+    ],
+    "hashType": "sha256"
+}

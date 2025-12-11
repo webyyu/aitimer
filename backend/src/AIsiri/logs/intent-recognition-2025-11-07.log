@@ -1,0 +1,126 @@
+[2025-11-07 17:19:24.755] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-11-07 17:19:25.249] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-11-07 17:19:25.250] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-11-07 17:19:32.068] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-11-07 17:19:32.142] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-11-07 17:19:32.143] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-11-07 17:19:32.144] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-11-07 17:19:32.144] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-11-07 17:19:32.145] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-11-07 17:19:32.146] INFO: 智能调度服务初始化完成
+  {
+  "services": [
+    "intentRecognition",
+    "conversation",
+    "taskRecognition",
+    "schedulePlanning"
+  ]
+}
+[2025-11-07 17:21:24.974] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-11-07 17:21:24.976] INFO: 获取智能调度服务状态
+[2025-11-07 17:21:24.977] INFO: 开始意图识别
+  {
+  "userInput": "你好",
+  "inputLength": 2
+}
+[2025-11-07 17:21:24.978] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 714,
+  "userPromptLength": 362
+}
+[2025-11-07 17:21:24.979] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-11-07 17:21:27.471] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 574,
+    "completion_tokens": 96,
+    "total_tokens": 670,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-11-07 17:21:27.472] INFO: 收到模型响应
+  {
+  "responseLength": 257,
+  "responseTime": "2495ms"
+}
+[2025-11-07 17:21:27.473] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户输入为简单的问候语'你好'，属于日常交流中的打招呼行为，没有涉及任务创建、日程安排或外部信息查询的需求。\",\n  \"extracted_info\": {\n    \"keywords\": [\"你好\"],\n    \"entities\": {\n      \"time..."
+}
+[2025-11-07 17:21:27.475] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-11-07 17:21:27.476] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2499ms",
+  "success": true
+}
+[2025-11-07 17:21:27.476] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 2501
+}

@@ -1,0 +1,4 @@
+2025-08-17T11:16:02.017Z [INFO] [IntentTest] 开始意图识别测试 
+2025-08-17T11:17:08.032Z [INFO] [IntentTest] 意图识别测试完成 {"total":32,"correct":32,"accuracy":"100.0%"}
+2025-08-17T11:34:26.172Z [INFO] [IntentTest] 开始意图识别测试 
+2025-08-17T11:35:25.214Z [INFO] [IntentTest] 意图识别测试完成 {"total":32,"correct":32,"accuracy":"100.0%"}

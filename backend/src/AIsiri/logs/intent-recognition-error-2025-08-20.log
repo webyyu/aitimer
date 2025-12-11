@@ -1,0 +1,1537 @@
+[2025-08-20 02:40:55.197] ERROR: 任务存储失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "taskInfo": {
+    "title": "打电话给我妈",
+    "userId": "68a21bf0cdab688c24714231",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-20"
+  }
+}
+[2025-08-20 02:40:55.198] ERROR: 任务直接创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "userInput": "我今天好累呀，但是我明天还要打个电话给我妈",
+  "processingTime": "12381ms"
+}
+[2025-08-20 02:40:55.199] ERROR: 任务创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:41:07.398] ERROR: 对话处理失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "sessionId": "test_session_1755628840358_1755628840358",
+  "error": "Operation `conversations.insertOne()` buffering timed out after 10000ms",
+  "stack": "MongooseError: Operation `conversations.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)\n    at listOnTimeout (node:internal/timers:608:17)\n    at process.processTimers (node:internal/timers:543:7)",
+  "processingTime": "12196ms"
+}
+[2025-08-20 02:41:07.399] ERROR: 对话处理失败
+  {
+  "error": "Operation `conversations.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:41:22.947] ERROR: 任务存储失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "taskInfo": {
+    "title": "和同事开会",
+    "userId": "68a21bf0cdab688c24714231",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-20"
+  }
+}
+[2025-08-20 02:41:22.948] ERROR: 任务直接创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "userInput": "帮我记一下，明天下午四点和同事开会",
+  "processingTime": "12078ms"
+}
+[2025-08-20 02:41:22.948] ERROR: 任务创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:41:33.000] ERROR: 获取用户任务失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "targetDate": "2025-08-19",
+  "error": "Operation `tasks.find()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:41:33.001] ERROR: 任务调度规划失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "targetDate": "2025-08-19",
+  "error": "Operation `tasks.find()` buffering timed out after 10000ms",
+  "stack": "MongooseError: Operation `tasks.find()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)\n    at listOnTimeout (node:internal/timers:608:17)\n    at process.processTimers (node:internal/timers:543:7)",
+  "processingTime": "10050ms"
+}
+[2025-08-20 02:41:33.001] ERROR: 时间调度失败
+  {
+  "error": "Operation `tasks.find()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:41:49.951] ERROR: 任务存储失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "taskInfo": {
+    "title": "拿快递",
+    "userId": "68a21bf0cdab688c24714231",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    }
+  }
+}
+[2025-08-20 02:41:49.952] ERROR: 任务直接创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "userInput": "我等下去拿个快递，大概三点钟",
+  "processingTime": "11744ms"
+}
+[2025-08-20 02:41:49.952] ERROR: 任务创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:42:07.293] ERROR: 任务存储失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "taskInfo": {
+    "title": "我压力好大，明天还有个重要的考试",
+    "userId": "68a21bf0cdab688c24714231",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-20"
+  }
+}
+[2025-08-20 02:42:07.293] ERROR: 任务直接创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "userInput": "我压力好大，明天还有个重要的考试",
+  "processingTime": "12294ms"
+}
+[2025-08-20 02:42:07.294] ERROR: 任务创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:42:19.738] ERROR: 对话处理失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "sessionId": "test_session_1755628840358_1755628911685",
+  "error": "Operation `conversations.insertOne()` buffering timed out after 10000ms",
+  "stack": "MongooseError: Operation `conversations.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)\n    at listOnTimeout (node:internal/timers:608:17)\n    at process.processTimers (node:internal/timers:543:7)",
+  "processingTime": "12442ms"
+}
+[2025-08-20 02:42:19.738] ERROR: 对话处理失败
+  {
+  "error": "Operation `conversations.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:42:27.316] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: title: Cast to string failed for value \"[ '开会', '拿快递', '去健身' ]\" (type Array) at path \"title\"",
+  "taskInfo": {
+    "title": [
+      "开会",
+      "拿快递",
+      "去健身"
+    ],
+    "userId": "68a21bf0cdab688c24714231",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    }
+  }
+}
+[2025-08-20 02:42:27.316] ERROR: 任务直接创建失败
+  {
+  "error": "Task validation failed: title: Cast to string failed for value \"[ '开会', '拿快递', '去健身' ]\" (type Array) at path \"title\"",
+  "userInput": "我下午三点要开会，四点要拿快递，五点还要去健身",
+  "processingTime": "1688ms"
+}
+[2025-08-20 02:42:27.316] ERROR: 任务创建失败
+  {
+  "error": "Task validation failed: title: Cast to string failed for value \"[ '开会', '拿快递', '去健身' ]\" (type Array) at path \"title\""
+}
+[2025-08-20 02:42:37.318] ERROR: 获取用户任务失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "targetDate": "2025-08-19",
+  "error": "Operation `tasks.find()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:42:37.318] ERROR: 任务调度规划失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "targetDate": "2025-08-19",
+  "error": "Operation `tasks.find()` buffering timed out after 10000ms",
+  "stack": "MongooseError: Operation `tasks.find()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)\n    at listOnTimeout (node:internal/timers:608:17)\n    at process.processTimers (node:internal/timers:543:7)",
+  "processingTime": "10002ms"
+}
+[2025-08-20 02:42:37.318] ERROR: 时间调度失败
+  {
+  "error": "Operation `tasks.find()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:44:24.059] ERROR: 任务存储失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "taskInfo": {
+    "title": "打电话给我妈",
+    "userId": "68a21bf0cdab688c24714231",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-20"
+  }
+}
+[2025-08-20 02:44:24.060] ERROR: 任务直接创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "userInput": "我今天好累呀，但是我明天还要打个电话给我妈",
+  "processingTime": "12967ms"
+}
+[2025-08-20 02:44:24.061] ERROR: 任务创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:44:37.034] ERROR: 对话处理失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "sessionId": "specific_test_1755629047988_1755629047988",
+  "error": "Operation `conversations.insertOne()` buffering timed out after 10000ms",
+  "stack": "MongooseError: Operation `conversations.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)\n    at listOnTimeout (node:internal/timers:608:17)\n    at process.processTimers (node:internal/timers:543:7)",
+  "processingTime": "12968ms"
+}
+[2025-08-20 02:44:37.035] ERROR: 对话处理失败
+  {
+  "error": "Operation `conversations.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:46:26.657] ERROR: 任务存储失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "taskInfo": {
+    "title": "打电话给我妈",
+    "userId": "68a21bf0cdab688c24714231",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-20"
+  }
+}
+[2025-08-20 02:46:26.657] ERROR: 任务直接创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "userInput": "我今天好累呀，但是我明天还要打个电话给我妈",
+  "processingTime": "12480ms"
+}
+[2025-08-20 02:46:26.657] ERROR: 任务创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:46:39.569] ERROR: 对话处理失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "sessionId": "specific_test_1755629172158_1755629172158",
+  "error": "Operation `conversations.insertOne()` buffering timed out after 10000ms",
+  "stack": "MongooseError: Operation `conversations.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)\n    at listOnTimeout (node:internal/timers:608:17)\n    at process.processTimers (node:internal/timers:543:7)",
+  "processingTime": "12909ms"
+}
+[2025-08-20 02:46:39.570] ERROR: 对话处理失败
+  {
+  "error": "Operation `conversations.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:49:42.482] ERROR: 任务存储失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "taskInfo": {
+    "title": "打电话给我妈",
+    "userId": "68a21bf0cdab688c24714231",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-20"
+  }
+}
+[2025-08-20 02:49:42.483] ERROR: 任务直接创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "userInput": "我今天好累呀，但是我明天还要打个电话给我妈",
+  "processingTime": "11774ms"
+}
+[2025-08-20 02:49:42.484] ERROR: 任务创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:49:54.324] ERROR: 对话处理失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "sessionId": "test_session_1755629368389_1755629368390",
+  "error": "Operation `conversations.insertOne()` buffering timed out after 10000ms",
+  "stack": "MongooseError: Operation `conversations.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)\n    at listOnTimeout (node:internal/timers:608:17)\n    at process.processTimers (node:internal/timers:543:7)",
+  "processingTime": "11838ms"
+}
+[2025-08-20 02:49:54.325] ERROR: 对话处理失败
+  {
+  "error": "Operation `conversations.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:50:11.061] ERROR: 任务存储失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "taskInfo": {
+    "title": "和同事开会",
+    "userId": "68a21bf0cdab688c24714231",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-20"
+  }
+}
+[2025-08-20 02:50:11.061] ERROR: 任务直接创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "userInput": "帮我记一下，明天下午四点和同事开会",
+  "processingTime": "12385ms"
+}
+[2025-08-20 02:50:11.062] ERROR: 任务创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:50:21.121] ERROR: 获取用户任务失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "targetDate": "2025-08-19",
+  "error": "Operation `tasks.find()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:50:21.122] ERROR: 任务调度规划失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "targetDate": "2025-08-19",
+  "error": "Operation `tasks.find()` buffering timed out after 10000ms",
+  "stack": "MongooseError: Operation `tasks.find()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)\n    at listOnTimeout (node:internal/timers:608:17)\n    at process.processTimers (node:internal/timers:543:7)",
+  "processingTime": "10059ms"
+}
+[2025-08-20 02:50:21.123] ERROR: 时间调度失败
+  {
+  "error": "Operation `tasks.find()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:50:37.473] ERROR: 任务存储失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "taskInfo": {
+    "title": "拿快递",
+    "userId": "68a21bf0cdab688c24714231",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    }
+  }
+}
+[2025-08-20 02:50:37.474] ERROR: 任务直接创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "userInput": "我等下去拿个快递，大概三点钟",
+  "processingTime": "12353ms"
+}
+[2025-08-20 02:50:37.474] ERROR: 任务创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:50:53.367] ERROR: 任务存储失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "taskInfo": {
+    "title": "我压力好大，明天还有个重要的考试",
+    "userId": "68a21bf0cdab688c24714231",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-20"
+  }
+}
+[2025-08-20 02:50:53.368] ERROR: 任务直接创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "userInput": "我压力好大，明天还有个重要的考试",
+  "processingTime": "11994ms"
+}
+[2025-08-20 02:50:53.368] ERROR: 任务创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:51:05.633] ERROR: 对话处理失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "sessionId": "test_session_1755629368389_1755629439175",
+  "error": "Operation `conversations.insertOne()` buffering timed out after 10000ms",
+  "stack": "MongooseError: Operation `conversations.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)\n    at listOnTimeout (node:internal/timers:608:17)\n    at process.processTimers (node:internal/timers:543:7)",
+  "processingTime": "12263ms"
+}
+[2025-08-20 02:51:05.634] ERROR: 对话处理失败
+  {
+  "error": "Operation `conversations.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:51:21.356] ERROR: 任务存储失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "taskInfo": {
+    "title": "开会",
+    "userId": "68a21bf0cdab688c24714231",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    }
+  }
+}
+[2025-08-20 02:51:21.357] ERROR: 任务直接创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "userInput": "我下午三点要开会，四点要拿快递，五点还要去健身",
+  "processingTime": "12297ms"
+}
+[2025-08-20 02:51:21.358] ERROR: 任务创建失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:51:31.370] ERROR: 获取用户任务失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "targetDate": "2025-08-19",
+  "error": "Operation `tasks.find()` buffering timed out after 10000ms"
+}
+[2025-08-20 02:51:31.371] ERROR: 任务调度规划失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "targetDate": "2025-08-19",
+  "error": "Operation `tasks.find()` buffering timed out after 10000ms",
+  "stack": "MongooseError: Operation `tasks.find()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:187:23)\n    at listOnTimeout (node:internal/timers:608:17)\n    at process.processTimers (node:internal/timers:543:7)",
+  "processingTime": "10005ms"
+}
+[2025-08-20 02:51:31.371] ERROR: 时间调度失败
+  {
+  "error": "Operation `tasks.find()` buffering timed out after 10000ms"
+}
+[2025-08-20 03:24:16.857] ERROR: 天气查询失败
+  {
+  "error": "Cannot find module '../../../mcp'\nRequire stack:\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/gaodeMcpClient.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js"
+}
+[2025-08-20 03:25:23.409] ERROR: 天气查询失败
+  {
+  "error": "Cannot find module '../../../mcp'\nRequire stack:\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/gaodeMcpClient.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js"
+}
+[2025-08-20 03:30:34.307] ERROR: 数据库连接失败
+  {
+  "error": "connectDB is not a function"
+}
+[2025-08-20 03:30:34.308] ERROR: 数据库断开连接失败
+  {
+  "error": "disconnectDB is not a function"
+}
+[2025-08-20 03:31:05.633] ERROR: 天气查询失败
+  {
+  "error": "Cannot find module '../../../mcp'\nRequire stack:\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/gaodeMcpClient.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/mcp-integration-test.js"
+}
+[2025-08-20 03:31:30.016] ERROR: 外部工具调用失败
+  {
+  "error": "Cannot find module '../../../mcp'\nRequire stack:\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/gaodeMcpClient.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/mcp-integration-test.js",
+  "toolType": "weather",
+  "userInput": "我很开心，今天天气真好"
+}
+[2025-08-20 03:31:42.705] ERROR: 外部工具调用失败
+  {
+  "error": "Cannot find module '../../../mcp'\nRequire stack:\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/gaodeMcpClient.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/mcp-integration-test.js",
+  "toolType": "route",
+  "userInput": "从我公司到虹桥机场需要多久？"
+}
+[2025-08-20 03:31:49.908] ERROR: 外部工具调用失败
+  {
+  "error": "Cannot find module '../../../mcp'\nRequire stack:\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/gaodeMcpClient.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/mcp-integration-test.js",
+  "toolType": "unknown",
+  "userInput": "去浦东机场怎么走？"
+}
+[2025-08-20 03:31:59.478] ERROR: 外部工具调用失败
+  {
+  "error": "Cannot find module '../../../mcp'\nRequire stack:\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/gaodeMcpClient.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js\n- /Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/mcp-integration-test.js",
+  "toolType": "weather",
+  "userInput": "今天天气怎么样？"
+}
+[2025-08-20 04:03:19.242] ERROR: unhandledRejection: connectDB is not a function
+TypeError: connectDB is not a function
+    at TaskCreationTest.initializeDatabase (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:67:13)
+    at TaskCreationTest.runAllTests (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:93:16)
+    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:259:10)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14)
+    at Object..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+  {
+  "error": {},
+  "stack": "TypeError: connectDB is not a function\n    at TaskCreationTest.initializeDatabase (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:67:13)\n    at TaskCreationTest.runAllTests (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:93:16)\n    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:259:10)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)\n    at Object..js (node:internal/modules/cjs/loader:1871:10)\n    at Module.load (node:internal/modules/cjs/loader:1470:32)\n    at Module._load (node:internal/modules/cjs/loader:1290:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)",
+  "rejection": true,
+  "date": "Wed Aug 20 2025 04:03:19 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 13019,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/bytedance/Desktop/backend(1) 3/backend",
+    "execPath": "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+    "version": "v24.5.0",
+    "argv": [
+      "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js"
+    ],
+    "memoryUsage": {
+      "rss": 108609536,
+      "heapTotal": 61571072,
+      "heapUsed": 41922616,
+      "external": 39834304,
+      "arrayBuffers": 36510653
+    }
+  },
+  "os": {
+    "loadavg": [
+      6.79443359375,
+      5.8251953125,
+      4.7275390625
+    ],
+    "uptime": 20791
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js",
+      "function": "TaskCreationTest.initializeDatabase",
+      "line": 67,
+      "method": "initializeDatabase",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js",
+      "function": "TaskCreationTest.runAllTests",
+      "line": 93,
+      "method": "runAllTests",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js",
+      "function": null,
+      "line": 259,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1738,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1871,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1470,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1290,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 238,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Module.executeUserEntryPoint [as runMain]",
+      "line": 154,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 04:04:20.010] ERROR: unhandledRejection: connectDB is not a function
+TypeError: connectDB is not a function
+    at TaskCreationTest.initializeDatabase (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:67:13)
+    at TaskCreationTest.runAllTests (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:93:16)
+    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:259:10)
+    at Module._compile (node:internal/modules/cjs/loader:1738:14)
+    at Object..js (node:internal/modules/cjs/loader:1871:10)
+    at Module.load (node:internal/modules/cjs/loader:1470:32)
+    at Module._load (node:internal/modules/cjs/loader:1290:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+  {
+  "error": {},
+  "stack": "TypeError: connectDB is not a function\n    at TaskCreationTest.initializeDatabase (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:67:13)\n    at TaskCreationTest.runAllTests (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:93:16)\n    at Object.<anonymous> (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js:259:10)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)\n    at Object..js (node:internal/modules/cjs/loader:1871:10)\n    at Module.load (node:internal/modules/cjs/loader:1470:32)\n    at Module._load (node:internal/modules/cjs/loader:1290:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)",
+  "rejection": true,
+  "date": "Wed Aug 20 2025 04:04:20 GMT+0800 (中国标准时间)",
+  "process": {
+    "pid": 14761,
+    "uid": 501,
+    "gid": 20,
+    "cwd": "/Users/bytedance/Desktop/backend(1) 3/backend",
+    "execPath": "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+    "version": "v24.5.0",
+    "argv": [
+      "/opt/homebrew/Cellar/node/24.5.0/bin/node",
+      "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js"
+    ],
+    "memoryUsage": {
+      "rss": 108396544,
+      "heapTotal": 61571072,
+      "heapUsed": 42010600,
+      "external": 39834304,
+      "arrayBuffers": 36510653
+    }
+  },
+  "os": {
+    "loadavg": [
+      5.212890625,
+      5.59765625,
+      4.71923828125
+    ],
+    "uptime": 20852
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js",
+      "function": "TaskCreationTest.initializeDatabase",
+      "line": 67,
+      "method": "initializeDatabase",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js",
+      "function": "TaskCreationTest.runAllTests",
+      "line": 93,
+      "method": "runAllTests",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/tests/task-creation-test.js",
+      "function": null,
+      "line": 259,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._compile",
+      "line": 1738,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Object..js",
+      "line": 1871,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 32,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.load",
+      "line": 1470,
+      "method": "load",
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module._load",
+      "line": 1290,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 238,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 5,
+      "file": "node:internal/modules/run_main",
+      "function": "Module.executeUserEntryPoint [as runMain]",
+      "line": 154,
+      "method": "executeUserEntryPoint [as runMain]",
+      "native": false
+    }
+  ]
+}
+[2025-08-20 04:08:22.986] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test_user_id\" (type string) at path \"userId\" because of \"BSONError\"",
+  "taskInfo": {
+    "title": "考试",
+    "userId": "test_user_id",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-21"
+  }
+}
+[2025-08-20 04:08:22.986] ERROR: 任务直接创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test_user_id\" (type string) at path \"userId\" because of \"BSONError\"",
+  "userInput": "我压力好大，明天还有个重要的考试。",
+  "processingTime": "2944ms"
+}
+[2025-08-20 04:08:24.946] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test_user_id\" (type string) at path \"userId\" because of \"BSONError\"",
+  "taskInfo": {
+    "title": "开会",
+    "userId": "test_user_id",
+    "timeBlock": {
+      "startTime": "10:00",
+      "endTime": "11:00",
+      "timeBlockType": "morning"
+    },
+    "targetDate": "2025-08-21"
+  }
+}
+[2025-08-20 04:08:24.947] ERROR: 任务直接创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test_user_id\" (type string) at path \"userId\" because of \"BSONError\"",
+  "userInput": "提醒我明天上午10点开会。",
+  "processingTime": "1959ms"
+}
+[2025-08-20 04:08:27.564] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test_user_id\" (type string) at path \"userId\" because of \"BSONError\"",
+  "taskInfo": {
+    "title": "检查",
+    "userId": "test_user_id",
+    "timeBlock": {
+      "startTime": "15:00",
+      "endTime": "16:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-21"
+  }
+}
+[2025-08-20 04:08:27.564] ERROR: 任务直接创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test_user_id\" (type string) at path \"userId\" because of \"BSONError\"",
+  "userInput": "下午3点要去医院检查。",
+  "processingTime": "2616ms"
+}
+[2025-08-20 04:08:29.443] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test_user_id\" (type string) at path \"userId\" because of \"BSONError\"",
+  "taskInfo": {
+    "title": "整理文档",
+    "userId": "test_user_id",
+    "timeBlock": {
+      "startTime": "08:00",
+      "endTime": "12:00",
+      "timeBlockType": "morning"
+    },
+    "targetDate": "2025-08-21"
+  }
+}
+[2025-08-20 04:08:29.443] ERROR: 任务直接创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test_user_id\" (type string) at path \"userId\" because of \"BSONError\"",
+  "userInput": "明天上午要整理文档。",
+  "processingTime": "1878ms"
+}
+[2025-08-20 04:08:31.476] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test_user_id\" (type string) at path \"userId\" because of \"BSONError\"",
+  "taskInfo": {
+    "title": "面试",
+    "userId": "test_user_id",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-21"
+  }
+}
+[2025-08-20 04:08:31.476] ERROR: 任务直接创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test_user_id\" (type string) at path \"userId\" because of \"BSONError\"",
+  "userInput": "我很焦虑，后天还要参加面试。",
+  "processingTime": "2032ms"
+}
+[2025-08-20 04:12:11.857] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: timeBlock.timeBlockType: `allday` is not a valid enum value for path `timeBlock.timeBlockType`.",
+  "taskInfo": {
+    "title": "重要考试",
+    "userId": "68a4da99623b46a97c3d421e",
+    "timeBlock": {
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "timeBlockType": "allday"
+    },
+    "targetDate": "2025-08-21"
+  }
+}
+[2025-08-20 04:12:11.857] ERROR: 任务直接创建失败
+  {
+  "error": "Task validation failed: timeBlock.timeBlockType: `allday` is not a valid enum value for path `timeBlock.timeBlockType`.",
+  "userInput": "我压力好大，明天还有个重要的考试。",
+  "processingTime": "2078ms"
+}
+[2025-08-20 04:12:23.548] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: timeBlock.timeBlockType: `allday` is not a valid enum value for path `timeBlock.timeBlockType`.",
+  "taskInfo": {
+    "title": "参加面试",
+    "userId": "68a4daa4623b46a97c3d4222",
+    "timeBlock": {
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "timeBlockType": "allday"
+    },
+    "targetDate": "2025-08-21"
+  }
+}
+[2025-08-20 04:12:23.549] ERROR: 任务直接创建失败
+  {
+  "error": "Task validation failed: timeBlock.timeBlockType: `allday` is not a valid enum value for path `timeBlock.timeBlockType`.",
+  "userInput": "我很焦虑，后天还要参加面试。",
+  "processingTime": "3160ms"
+}
+[2025-08-20 04:24:20.198] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-id\" (type string) at path \"userId\" because of \"BSONError\"",
+  "taskInfo": {
+    "title": "重要考试",
+    "userId": "test-user-id",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    }
+  }
+}
+[2025-08-20 04:24:20.198] ERROR: 任务识别和存储失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-id\" (type string) at path \"userId\" because of \"BSONError\"",
+  "userInput": "我压力好大，明天还有个重要的考试",
+  "processingTime": "2771ms"
+}
+[2025-08-20 04:24:54.851] ERROR: 任务存储失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "taskInfo": {
+    "title": "重要考试",
+    "userId": "507f1f77bcf86cd799439011",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    }
+  }
+}
+[2025-08-20 04:24:54.852] ERROR: 任务识别和存储失败
+  {
+  "error": "Operation `tasks.insertOne()` buffering timed out after 10000ms",
+  "userInput": "我压力好大，明天还有个重要的考试",
+  "processingTime": "11881ms"
+}
+[2025-08-20 04:41:25.286] ERROR: 对话处理失败
+  {
+  "userId": "test-user-1755636064055",
+  "sessionId": null,
+  "error": "Conversation validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\", sessionId: Path `sessionId` is required.",
+  "stack": "ValidationError: Conversation validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\", sessionId: Path `sessionId` is required.\n    at Document.invalidate (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:3358:32)\n    at model.$set (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:1480:12)\n    at model.$set (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:1132:16)\n    at model.Document (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:178:12)\n    at model.Model (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/model.js:127:12)\n    at new model (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/model.js:4837:15)\n    at conversationSchema.statics.createUserMessage (/Users/bytedance/Desktop/backend(1) 3/backend/src/models/Conversation.js:155:19)\n    at ConversationService.processConversation (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/conversationService.js:88:46)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async IntelligentDispatchService.executeConversation (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js:665:12)",
+  "processingTime": "2601ms"
+}
+[2025-08-20 04:41:25.286] ERROR: 对话处理失败
+  {
+  "error": "Conversation validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\", sessionId: Path `sessionId` is required."
+}
+[2025-08-20 04:41:30.610] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\"",
+  "taskInfo": {
+    "title": "感觉很郁闷，不知道该做什么",
+    "userId": "test-user-1755636064055",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    }
+  }
+}
+[2025-08-20 04:41:30.611] ERROR: 任务直接创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\"",
+  "userInput": "感觉很郁闷，不知道该做什么",
+  "processingTime": "1911ms"
+}
+[2025-08-20 04:41:30.612] ERROR: 任务创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\""
+}
+[2025-08-20 04:41:32.739] ERROR: 对话处理失败
+  {
+  "userId": "test-user-1755636064055",
+  "sessionId": null,
+  "error": "Conversation validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\", sessionId: Path `sessionId` is required.",
+  "stack": "ValidationError: Conversation validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\", sessionId: Path `sessionId` is required.\n    at Document.invalidate (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:3358:32)\n    at model.$set (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:1480:12)\n    at model.$set (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:1132:16)\n    at model.Document (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:178:12)\n    at model.Model (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/model.js:127:12)\n    at new model (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/model.js:4837:15)\n    at conversationSchema.statics.createUserMessage (/Users/bytedance/Desktop/backend(1) 3/backend/src/models/Conversation.js:155:19)\n    at ConversationService.processConversation (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/conversationService.js:88:46)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async IntelligentDispatchService.executeConversation (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js:665:12)",
+  "processingTime": "2124ms"
+}
+[2025-08-20 04:41:32.740] ERROR: 对话处理失败
+  {
+  "error": "Conversation validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\", sessionId: Path `sessionId` is required."
+}
+[2025-08-20 04:41:39.303] ERROR: 对话处理失败
+  {
+  "userId": "test-user-1755636064055",
+  "sessionId": null,
+  "error": "Conversation validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\", sessionId: Path `sessionId` is required.",
+  "stack": "ValidationError: Conversation validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\", sessionId: Path `sessionId` is required.\n    at Document.invalidate (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:3358:32)\n    at model.$set (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:1480:12)\n    at model.$set (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:1132:16)\n    at model.Document (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:178:12)\n    at model.Model (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/model.js:127:12)\n    at new model (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/model.js:4837:15)\n    at conversationSchema.statics.createUserMessage (/Users/bytedance/Desktop/backend(1) 3/backend/src/models/Conversation.js:155:19)\n    at ConversationService.processConversation (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/conversationService.js:88:46)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async IntelligentDispatchService.executeConversation (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js:665:12)",
+  "processingTime": "2121ms"
+}
+[2025-08-20 04:41:39.303] ERROR: 对话处理失败
+  {
+  "error": "Conversation validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\", sessionId: Path `sessionId` is required."
+}
+[2025-08-20 04:41:45.016] ERROR: 对话处理失败
+  {
+  "userId": "test-user-1755636064055",
+  "sessionId": null,
+  "error": "Conversation validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\", sessionId: Path `sessionId` is required.",
+  "stack": "ValidationError: Conversation validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\", sessionId: Path `sessionId` is required.\n    at Document.invalidate (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:3358:32)\n    at model.$set (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:1480:12)\n    at model.$set (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:1132:16)\n    at model.Document (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:178:12)\n    at model.Model (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/model.js:127:12)\n    at new model (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/model.js:4837:15)\n    at conversationSchema.statics.createUserMessage (/Users/bytedance/Desktop/backend(1) 3/backend/src/models/Conversation.js:155:19)\n    at ConversationService.processConversation (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/conversationService.js:88:46)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async IntelligentDispatchService.executeConversation (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js:665:12)",
+  "processingTime": "1837ms"
+}
+[2025-08-20 04:41:45.017] ERROR: 对话处理失败
+  {
+  "error": "Conversation validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\", sessionId: Path `sessionId` is required."
+}
+[2025-08-20 04:41:51.021] ERROR: 对话处理失败
+  {
+  "userId": "test-user-1755636064055",
+  "sessionId": null,
+  "error": "Conversation validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\", sessionId: Path `sessionId` is required.",
+  "stack": "ValidationError: Conversation validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\", sessionId: Path `sessionId` is required.\n    at Document.invalidate (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:3358:32)\n    at model.$set (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:1480:12)\n    at model.$set (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:1132:16)\n    at model.Document (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/document.js:178:12)\n    at model.Model (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/model.js:127:12)\n    at new model (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/model.js:4837:15)\n    at conversationSchema.statics.createUserMessage (/Users/bytedance/Desktop/backend(1) 3/backend/src/models/Conversation.js:155:19)\n    at ConversationService.processConversation (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/conversationService.js:88:46)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async IntelligentDispatchService.executeConversation (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/intelligentDispatchService.js:665:12)",
+  "processingTime": "2485ms"
+}
+[2025-08-20 04:41:51.022] ERROR: 对话处理失败
+  {
+  "error": "Conversation validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\", sessionId: Path `sessionId` is required."
+}
+[2025-08-20 04:41:59.064] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\"",
+  "taskInfo": {
+    "title": "放松",
+    "userId": "test-user-1755636064055",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-19"
+  }
+}
+[2025-08-20 04:41:59.064] ERROR: 任务直接创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\"",
+  "userInput": "我今天心情不好，帮我安排一个任务放松一下",
+  "processingTime": "2099ms"
+}
+[2025-08-20 04:41:59.065] ERROR: 任务创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" because of \"BSONError\""
+}
+[2025-08-20 04:41:59.074] ERROR: 获取用户任务失败
+  {
+  "userId": "test-user-1755636064055",
+  "targetDate": "2025-08-19",
+  "error": "Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" for model \"Task\""
+}
+[2025-08-20 04:41:59.075] ERROR: 任务调度规划失败
+  {
+  "userId": "test-user-1755636064055",
+  "targetDate": "2025-08-19",
+  "error": "Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" for model \"Task\"",
+  "stack": "CastError: Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" for model \"Task\"\n    at SchemaObjectId.cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)\n    at SchemaType.applySetters (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schemaType.js:1258:12)\n    at SchemaType.castForQuery (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schemaType.js:1680:17)\n    at cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/cast.js:390:32)\n    at Query.cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:5055:12)\n    at Query._castConditions (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:2351:10)\n    at model.Query._find (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:2378:8)\n    at model.Query.exec (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:4604:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async SchedulePlanningService.getUserTasks (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/schedulePlanningService.js:196:21)",
+  "processingTime": "8ms"
+}
+[2025-08-20 04:41:59.075] ERROR: 时间调度失败
+  {
+  "error": "Cast to ObjectId failed for value \"test-user-1755636064055\" (type string) at path \"userId\" for model \"Task\""
+}
+[2025-08-20 04:48:20.059] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-id\" (type string) at path \"userId\" because of \"BSONError\"",
+  "taskInfo": {
+    "title": "我今天下午需要去虹桥机场，请你帮我安排一下时间看一下需要多久",
+    "userId": "test-user-id",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-19"
+  }
+}
+[2025-08-20 04:48:20.059] ERROR: 任务直接创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-id\" (type string) at path \"userId\" because of \"BSONError\"",
+  "userInput": "我今天下午需要去虹桥机场，请你帮我安排一下时间看一下需要多久",
+  "processingTime": "2530ms"
+}
+[2025-08-20 04:48:20.059] ERROR: 任务创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-id\" (type string) at path \"userId\" because of \"BSONError\""
+}
+[2025-08-20 04:48:20.100] ERROR: 获取用户任务失败
+  {
+  "userId": "test-user-id",
+  "targetDate": "2025-08-19",
+  "error": "Cast to ObjectId failed for value \"test-user-id\" (type string) at path \"userId\" for model \"Task\""
+}
+[2025-08-20 04:48:20.101] ERROR: 任务调度规划失败
+  {
+  "userId": "test-user-id",
+  "targetDate": "2025-08-19",
+  "error": "Cast to ObjectId failed for value \"test-user-id\" (type string) at path \"userId\" for model \"Task\"",
+  "stack": "CastError: Cast to ObjectId failed for value \"test-user-id\" (type string) at path \"userId\" for model \"Task\"\n    at SchemaObjectId.cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)\n    at SchemaType.applySetters (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schemaType.js:1258:12)\n    at SchemaType.castForQuery (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schemaType.js:1680:17)\n    at cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/cast.js:390:32)\n    at Query.cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:5055:12)\n    at Query._castConditions (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:2351:10)\n    at model.Query._find (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:2378:8)\n    at model.Query.exec (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:4604:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async SchedulePlanningService.getUserTasks (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/schedulePlanningService.js:196:21)",
+  "processingTime": "40ms"
+}
+[2025-08-20 04:48:20.101] ERROR: 时间调度失败
+  {
+  "error": "Cast to ObjectId failed for value \"test-user-id\" (type string) at path \"userId\" for model \"Task\""
+}
+[2025-08-20 04:50:58.507] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-id\" (type string) at path \"userId\" because of \"BSONError\"",
+  "taskInfo": {
+    "title": "前往虹桥机场",
+    "userId": "test-user-id",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-19"
+  }
+}
+[2025-08-20 04:57:11.578] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" because of \"BSONError\"",
+  "taskInfo": {
+    "title": "前往虹桥机场",
+    "userId": "test-user-123",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-19"
+  }
+}
+[2025-08-20 04:57:11.579] ERROR: 任务直接创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" because of \"BSONError\"",
+  "userInput": "我今天下午需要去虹桥机场，请你帮我安排一下时间看一下需要多久",
+  "processingTime": "2802ms"
+}
+[2025-08-20 04:57:11.579] ERROR: 任务创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" because of \"BSONError\""
+}
+[2025-08-20 04:57:11.617] ERROR: 获取用户任务失败
+  {
+  "userId": "test-user-123",
+  "targetDate": "2025-08-19",
+  "error": "Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\""
+}
+[2025-08-20 04:57:11.618] ERROR: 任务调度规划失败
+  {
+  "userId": "test-user-123",
+  "targetDate": "2025-08-19",
+  "error": "Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\"",
+  "stack": "CastError: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\"\n    at SchemaObjectId.cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)\n    at SchemaType.applySetters (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schemaType.js:1258:12)\n    at SchemaType.castForQuery (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schemaType.js:1680:17)\n    at cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/cast.js:390:32)\n    at Query.cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:5055:12)\n    at Query._castConditions (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:2351:10)\n    at model.Query._find (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:2378:8)\n    at model.Query.exec (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:4604:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async SchedulePlanningService.getUserTasks (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/schedulePlanningService.js:196:21)",
+  "processingTime": "37ms"
+}
+[2025-08-20 04:57:11.618] ERROR: 时间调度失败
+  {
+  "error": "Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\""
+}
+[2025-08-20 04:57:59.855] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" because of \"BSONError\"",
+  "taskInfo": {
+    "title": "前往虹桥机场",
+    "userId": "test-user-123",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-19"
+  }
+}
+[2025-08-20 04:57:59.855] ERROR: 任务直接创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" because of \"BSONError\"",
+  "userInput": "我今天下午需要去虹桥机场，请你帮我安排一下时间看一下需要多久",
+  "processingTime": "1958ms"
+}
+[2025-08-20 04:57:59.856] ERROR: 任务创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" because of \"BSONError\""
+}
+[2025-08-20 04:57:59.884] ERROR: 获取用户任务失败
+  {
+  "userId": "test-user-123",
+  "targetDate": "2025-08-19",
+  "error": "Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\""
+}
+[2025-08-20 04:57:59.885] ERROR: 任务调度规划失败
+  {
+  "userId": "test-user-123",
+  "targetDate": "2025-08-19",
+  "error": "Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\"",
+  "stack": "CastError: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\"\n    at SchemaObjectId.cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)\n    at SchemaType.applySetters (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schemaType.js:1258:12)\n    at SchemaType.castForQuery (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schemaType.js:1680:17)\n    at cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/cast.js:390:32)\n    at Query.cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:5055:12)\n    at Query._castConditions (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:2351:10)\n    at model.Query._find (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:2378:8)\n    at model.Query.exec (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:4604:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async SchedulePlanningService.getUserTasks (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/schedulePlanningService.js:196:21)",
+  "processingTime": "27ms"
+}
+[2025-08-20 04:57:59.885] ERROR: 时间调度失败
+  {
+  "error": "Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\""
+}
+[2025-08-20 04:58:32.870] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" because of \"BSONError\"",
+  "taskInfo": {
+    "title": "前往虹桥机场",
+    "userId": "test-user-123",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-19"
+  }
+}
+[2025-08-20 04:58:32.870] ERROR: 任务直接创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" because of \"BSONError\"",
+  "userInput": "我今天下午需要去虹桥机场，请你帮我安排一下时间看一下需要多久",
+  "processingTime": "2124ms"
+}
+[2025-08-20 04:58:32.870] ERROR: 任务创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" because of \"BSONError\""
+}
+[2025-08-20 04:58:32.935] ERROR: 获取用户任务失败
+  {
+  "userId": "test-user-123",
+  "targetDate": "2025-08-19",
+  "error": "Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\""
+}
+[2025-08-20 04:58:32.935] ERROR: 任务调度规划失败
+  {
+  "userId": "test-user-123",
+  "targetDate": "2025-08-19",
+  "error": "Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\"",
+  "stack": "CastError: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\"\n    at SchemaObjectId.cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)\n    at SchemaType.applySetters (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schemaType.js:1258:12)\n    at SchemaType.castForQuery (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schemaType.js:1680:17)\n    at cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/cast.js:390:32)\n    at Query.cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:5055:12)\n    at Query._castConditions (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:2351:10)\n    at model.Query._find (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:2378:8)\n    at model.Query.exec (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:4604:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async SchedulePlanningService.getUserTasks (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/schedulePlanningService.js:196:21)",
+  "processingTime": "64ms"
+}
+[2025-08-20 04:58:32.935] ERROR: 时间调度失败
+  {
+  "error": "Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\""
+}
+[2025-08-20 04:59:12.502] ERROR: 任务存储失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" because of \"BSONError\"",
+  "taskInfo": {
+    "title": "前往虹桥机场",
+    "userId": "test-user-123",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    },
+    "targetDate": "2025-08-19"
+  }
+}
+[2025-08-20 04:59:12.502] ERROR: 任务直接创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" because of \"BSONError\"",
+  "userInput": "我今天下午需要去虹桥机场，请你帮我安排一下时间看一下需要多久",
+  "processingTime": "2116ms"
+}
+[2025-08-20 04:59:12.502] ERROR: 任务创建失败
+  {
+  "error": "Task validation failed: userId: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" because of \"BSONError\""
+}
+[2025-08-20 04:59:12.525] ERROR: 获取用户任务失败
+  {
+  "userId": "test-user-123",
+  "targetDate": "2025-08-19",
+  "error": "Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\""
+}
+[2025-08-20 04:59:12.526] ERROR: 任务调度规划失败
+  {
+  "userId": "test-user-123",
+  "targetDate": "2025-08-19",
+  "error": "Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\"",
+  "stack": "CastError: Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\"\n    at SchemaObjectId.cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schema/objectId.js:251:11)\n    at SchemaType.applySetters (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schemaType.js:1258:12)\n    at SchemaType.castForQuery (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/schemaType.js:1680:17)\n    at cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/cast.js:390:32)\n    at Query.cast (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:5055:12)\n    at Query._castConditions (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:2351:10)\n    at model.Query._find (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:2378:8)\n    at model.Query.exec (/Users/bytedance/Desktop/backend(1) 3/backend/node_modules/mongoose/lib/query.js:4604:80)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async SchedulePlanningService.getUserTasks (/Users/bytedance/Desktop/backend(1) 3/backend/src/AIsiri/services/schedulePlanningService.js:196:21)",
+  "processingTime": "23ms"
+}
+[2025-08-20 04:59:12.526] ERROR: 时间调度失败
+  {
+  "error": "Cast to ObjectId failed for value \"test-user-123\" (type string) at path \"userId\" for model \"Task\""
+}
+[2025-08-20 22:43:22.676] ERROR: 获取番茄钟统计数据失败
+  {
+  "requestId": "stats-1755701002659-jv362o6mj",
+  "userId": "test-user-123",
+  "error": "Request failed with status code 404",
+  "status": 404,
+  "processingTime": 17
+}
+[2025-08-20 23:11:17.255] ERROR: 调度建议解析失败
+  {
+  "error": "无法解析调度建议",
+  "rawResponse": "```json\n{\n  \"analysis\": {\n    \"timeConflicts\": [\n      \"任务 [68a4dbd77ce84d4aca622446] 和 [68a4e8d202a55a41974c8bbb] 都安排在 08:00-12:00，存在时间重叠冲突。\",\n      \"任务 [68a4decc7ce84d4aca622465] 也安排在 08:00-12:00，与上述任务冲突。\"\n    ],\n    \"priorityInsights\": \"目前所有任务都未分类到四象限，无法准确判断优先级高低。建议根据任务紧急性和重要性重新分类。\",\n    \"workloadAssessment\": \"下午时间段任务较多，且包含多个相似任务（如考试压力、机场相关任务），可能需要进一步优化安排以避免重复或冲突。\",\n    \"userStateConsiderations\": \"用户提到压力大且有重要考试，同时也有放松需求（如想出去玩）。建议在安排中加入适当的休息时间，并合理分配任务以缓解压力。\"\n  },\n  \"recommendations\": {\n    \"taskAdjustments\": [\n      {\n        \"taskId\": \"68a4e8d202a55a41974c8bbb\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"开会\",\n          \"date\": \"2025-08-21\",\n          \"time\": \"11:00\",\n          \"timeBlock\": {\n            \"startTime\": \"11:00\",\n            \"endTime\": \"11:30\",\n            \"timeBlockType\": \"forenoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"high\",\n          \"quadrant\": 1,\n          \"reason\": \"用户请求明天早上11:00开会，因此将该任务调整至该时间并标记为高优先级。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4dbd77ce84d4aca622446\",\n        \"action\": \"reschedule\",\n        \"changes\": {\n          \"title\": \"开会\",\n          \"date\": \"2025-08-21\",\n          \"time\": \"08:30\",\n          \"timeBlock\": {\n            \"startTime\": \"08:30\",\n            \"endTime\": \"09:00\",\n            \"timeBlockType\": \"morning\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"medium\",\n          \"quadrant\": 2,\n          \"reason\": \"避免与11:00的会议冲突，将该任务提前至早上时间段。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4decc7ce84d4aca622465\",\n        \"action\": \"reschedule\",\n        \"changes\": {\n          \"title\": \"开会\",\n          \"date\": \"2025-08-21\",\n          \"time\": \"09:30\",\n          \"timeBlock\": {\n            \"startTime\": \"09:30\",\n            \"endTime\": \"10:00\",\n            \"timeBlockType\": \"forenoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"medium\",\n          \"quadrant\": 2,\n          \"reason\": \"避免与11:00的会议冲突，将该任务安排在上午时间段。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4dc577ce84d4aca62244f\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"我压力好大，明天还有个重要的考试。\",\n          \"date\": \"2025-08-21\",\n          \"time\": \"14:30\",\n          \"timeBlock\": {\n            \"startTime\": \"14:30\",\n            \"endTime\": \"15:00\",\n            \"timeBlockType\": \"afternoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"high\",\n          \"quadrant\": 1,\n          \"reason\": \"考虑到用户压力较大且有重要考试，将该任务优先安排在下午早些时间，以便用户及时处理考试相关事项。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4de427ce84d4aca62245a\",\n        \"action\": \"delete\",\n        \"changes\": {\n          \"title\": \"我压力好大，明天还有个重要的考试。\",\n          \"reason\": \"任务重复，已保留一个优先级较高的任务。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4e1e07ce84d4aca622471\",\n        \"action\": \"reschedule\",\n        \"changes\": {\n          \"title\": \"我好累想出去玩，你有什么推荐吗\",\n          \"date\": \"2025-08-21\",\n          \"time\": \"17:00\",\n          \"timeBlock\": {\n            \"startTime\": \"17:00\",\n            \"endTime\": \"17:30\",\n            \"timeBlockType\": \"afternoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"low\",\n          \"quadrant\": 4,\n          \"reason\": \"将该任务安排在下午较晚时间，优先处理其他更紧急任务。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4e2097ce84d4aca62247c\",\n        \"action\": \"reschedule\",\n        \"changes\": {\n          \"title\": \"去虹桥机场\",\n          \"date\": \"2025-08-21\",\n          \"time\": \"15:30\",\n          \"timeBlock\": {\n            \"startTime\": \"15:30\",\n            \"endTime\": \"16:00\",\n            \"timeBlockType\": \"afternoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"medium\",\n          \"quadrant\": 3,\n          \"reason\": \"将该任务安排在下午中段，以便用户处理机场相关事项。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4e5c202a55a41974c8bb5\",\n        \"action\": \"reschedule\",\n        \"changes\": {\n          \"title\": \"我等下要去虹桥机场，现在过去要多久？\",\n          \"date\": \"2025-08-21\",\n          \"time\": \"16:00\",\n          \"timeBlock\": {\n            \"startTime\": \"16:00\",\n            \"endTime\": \"16:30\",\n            \"timeBlockType\": \"afternoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"medium\",\n          \"quadrant\": 3,\n          \"reason\": \"将该任务安排在去机场前，以便用户了解交通情况。\"\n        }\n      }\n    ],\n    \"breakSuggestions\": [\n      {\n        \"startTime\": \"10:00\",\n        \"endTime\": \"10:15\",\n        \"type\": \"short\",\n        \"activity\": \"短暂休息，放松眼睛，喝杯水。\"\n      },\n      {\n        \"startTime\": \"12:00\",\n        \"endTime\": \"13:00\",\n        \"type\": \"meal\",\n        \"activity\": \"午餐时间，适当放松，为下午任务做准备。\"\n      },\n      {\n        \"startTime\": \"16:30\",\n        \"endTime\": \"16:45\",\n        \"type\": \"short\",\n        \"activity\": \"短暂休息，整理思路，准备下午后续任务。\"\n      }\n    ],\n    \"optimizationTips\": [\n      \"建议将相似任务合并处理，例如考试相关任务可集中安排。\",\n      \"考虑用户情绪状态，适当增加休息时间以缓解压力。\",\n      \"确保高优先级任务（如紧急会议、考试准备）优先安排。\"\n    ]\n  },\n  \"schedule\": {\n    \"morning\": [\"68a4dbd77ce84d4aca622446\"],\n    \"forenoon\": [\"68a4decc7ce84d4aca622465\", \"68a4e8d202a55a41974c8bbb\"],\n    \"afternoon\": [\"68a4dc577ce84d4aca62244f\", \"68a4e2097ce84d4aca62247c\", \"68a4e5c202a55a41974c8bb5\", \"68a4e1e07ce84d4aca622471\"],\n    \"evening\": []\n  },\n  \"summary\": \"已根据用户需求调整任务安排，将明天11"
+}
+[2025-08-20 23:11:17.256] ERROR: 任务调度规划失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "targetDate": "2025-08-20",
+  "error": "调度建议解析失败: 无法解析调度建议",
+  "stack": "Error: 调度建议解析失败: 无法解析调度建议\n    at SchedulePlanningService.planSchedule (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/services/schedulePlanningService.js:104:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async IntelligentDispatchService.executeSchedulePlanning (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/services/intelligentDispatchService.js:692:12)\n    at async Promise.all (index 0)\n    at async IntelligentDispatchService.executeServices (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/services/intelligentDispatchService.js:642:7)\n    at async IntelligentDispatchService.processUserInput (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/services/intelligentDispatchService.js:193:32)\n    at async IntelligentDispatchController.processIntelligentDispatch (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/intelligentDispatchController.js:60:22)",
+  "processingTime": "38762ms"
+}
+[2025-08-20 23:11:17.256] ERROR: 时间调度失败
+  {
+  "error": "调度建议解析失败: 无法解析调度建议"
+}
+[2025-08-20 23:15:42.813] ERROR: 调度建议解析失败
+  {
+  "error": "无法解析调度建议",
+  "rawResponse": "```json\n{\n  \"analysis\": {\n    \"timeConflicts\": [\"任务 [68a4e8d202a55a41974c8bbb] 与 [68a4dbd77ce84d4aca622446] 和 [68a4decc7ce84d4aca622465] 的时间重叠在 10:00-11:00，存在时间冲突。\"],\n    \"priorityInsights\": \"所有任务目前未分类到四象限，且优先级为 medium。需要根据任务内容判断优先级。例如，与重要考试相关的任务和去机场的任务可能属于重要且紧急（象限1）。\",\n    \"workloadAssessment\": \"下午时间块任务较多，且任务内容涉及压力管理和出行安排，可能存在较高的工作负荷。需要合理分配任务以避免过度疲劳。\",\n    \"userStateConsiderations\": \"用户情绪状态为中性，但任务中提到压力大和想出去玩，建议在安排中加入休息时间以缓解压力。\"\n  },\n  \"recommendations\": {\n    \"taskAdjustments\": [\n      {\n        \"taskId\": \"68a4dbd77ce84d4aca622446\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"开会\",\n          \"date\": \"2025-08-21\",\n          \"time\": \"08:00\",\n          \"timeBlock\": {\n            \"startTime\": \"08:00\",\n            \"endTime\": \"08:30\",\n            \"timeBlockType\": \"morning\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"medium\",\n          \"quadrant\": 3,\n          \"reason\": \"避免与 [68a4e8d202a55a41974c8bbb] 冲突，并将任务安排在早上时间块的早期。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4decc7ce84d4aca622465\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"开会\",\n          \"date\": \"2025-08-21\",\n          \"time\": \"08:30\",\n          \"timeBlock\": {\n            \"startTime\": \"08:30\",\n            \"endTime\": \"09:00\",\n            \"timeBlockType\": \"morning\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"medium\",\n          \"quadrant\": 3,\n          \"reason\": \"避免与 [68a4dbd77ce84d4aca622446] 冲突，并将任务安排在早上时间块的后续部分。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4e8d202a55a41974c8bbb\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"明天重要考试相关压力管理\",\n          \"date\": \"2025-08-21\",\n          \"time\": \"10:00\",\n          \"timeBlock\": {\n            \"startTime\": \"10:00\",\n            \"endTime\": \"10:30\",\n            \"timeBlockType\": \"forenoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"high\",\n          \"quadrant\": 1,\n          \"reason\": \"任务内容涉及重要考试的压力管理，属于重要且紧急的任务（象限1），优先安排在上午时间块。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4dc577ce84d4aca62244f\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"考试压力管理\",\n          \"date\": \"2025-08-21\",\n          \"time\": \"14:00\",\n          \"timeBlock\": {\n            \"startTime\": \"14:00\",\n            \"endTime\": \"14:30\",\n            \"timeBlockType\": \"afternoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"medium\",\n          \"quadrant\": 2,\n          \"reason\": \"任务内容与考试压力相关，属于重要不紧急的任务（象限2），安排在下午时间块。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4de427ce84d4aca62245a\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"考试压力管理\",\n          \"date\": \"2025-08-21\",\n          \"time\": \"14:30\",\n          \"timeBlock\": {\n            \"startTime\": \"14:30\",\n            \"endTime\": \"15:00\",\n            \"timeBlockType\": \"afternoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"medium\",\n          \"quadrant\": 2,\n          \"reason\": \"任务内容与考试压力相关，属于重要不紧急的任务（象限2），安排在下午时间块。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4e1e07ce84d4aca622471\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"放松与休闲活动推荐\",\n          \"date\": \"2025-08-21\",\n          \"time\": \"15:00\",\n          \"timeBlock\": {\n            \"startTime\": \"15:00\",\n            \"endTime\": \"15:30\",\n            \"timeBlockType\": \"afternoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"low\",\n          \"quadrant\": 4,\n          \"reason\": \"任务内容为休闲活动推荐，属于不重要不紧急的任务（象限4），安排在下午时间块。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4e2097ce84d4aca62247c\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"前往虹桥机场\",\n          \"date\": \"2025-08-21\",\n          \"time\": \"16:00\",\n          \"timeBlock\": {\n            \"startTime\": \"16:00\",\n            \"endTime\": \"16:30\",\n            \"timeBlockType\": \"afternoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"high\",\n          \"quadrant\": 1,\n          \"reason\": \"任务内容涉及前往机场，属于重要且紧急的任务（象限1），安排在下午时间块。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4e5c202a55a41974c8bb5\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"虹桥机场出行时间咨询\",\n          \"date\": \"2025-08-21\",\n          \"time\": \"16:30\",\n          \"timeBlock\": {\n            \"startTime\": \"16:30\",\n            \"endTime\": \"17:00\",\n            \"timeBlockType\": \"afternoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"high\",\n          \"quadrant\": 1,\n          \"reason\": \"任务内容涉及机场出行，属于重要且紧急的任务（象限1），安排在下午时间块。\"\n        }\n      }\n    ],\n    \"breakSuggestions\": [\n      {\n        \"startTime\": \"12:00\",\n        \"endTime\": \"13:00\",\n        \"type\": \"meal\",\n        \"activity\": \"午餐时间\"\n      },\n      {\n        \"startTime\": \"15:30\",\n        \"endTime\": \"16:00\",\n        \"type\": \"short\",\n        \"activity\": \"短暂休息，缓解压力\"\n      }\n    ],\n    \"optimizationTips\": [\n      \"将重要且紧急的任务集中在上午和下午早期完成，以确保高效处理。\",\n      \"合理安排休息时间，避免因任务过多导致疲劳。\"\n    ]\n  },\n  \"schedule\": {\n    \"morning\": [\"68a4dbd77ce84d4aca622446\", \"68a4decc7ce84d4aca622465\"],\n    \"forenoon\": [\"68a4e8d202a55a41974c8bbb\"],\n    \"afternoon\": [\"68a4dc577ce84d4aca62244f\", \"68a4de427ce84d4aca62245a\", \"68a4e1e07ce84d4aca622471\", \"68a4e2097ce84d4aca62"
+}
+[2025-08-20 23:15:42.814] ERROR: 任务调度规划失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "targetDate": "2025-08-20",
+  "error": "调度建议解析失败: 无法解析调度建议",
+  "stack": "Error: 调度建议解析失败: 无法解析调度建议\n    at SchedulePlanningService.planSchedule (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/services/schedulePlanningService.js:104:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async IntelligentDispatchService.executeSchedulePlanning (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/services/intelligentDispatchService.js:692:12)\n    at async Promise.all (index 0)\n    at async IntelligentDispatchService.executeServices (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/services/intelligentDispatchService.js:642:7)\n    at async IntelligentDispatchService.processUserInput (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/services/intelligentDispatchService.js:193:32)\n    at async IntelligentDispatchController.processIntelligentDispatch (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/intelligentDispatchController.js:60:22)",
+  "processingTime": "31276ms"
+}
+[2025-08-20 23:15:42.814] ERROR: 时间调度失败
+  {
+  "error": "调度建议解析失败: 无法解析调度建议"
+}
+[2025-08-20 23:27:18.885] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../models/conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../models/conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "我现在好开心呀",
+    "messageType": "user",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:27:18.790Z"
+  },
+  "processingTime": "1ms"
+}
+[2025-08-20 23:27:26.719] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../models/conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../models/conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "小周听到你现在这么开心，也跟着开心起来啦！有时候生活中的小确幸真的特别美好，希望你一直保持这份快乐的心情。如果需要分享开心事或者需要帮助，随时找我哦~",
+    "messageType": "ai",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:27:26.705Z"
+  },
+  "processingTime": "1ms"
+}
+[2025-08-20 23:31:48.234] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "我明天早上11点要开会",
+    "messageType": "user",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:31:48.182Z"
+  },
+  "processingTime": "0ms"
+}
+[2025-08-20 23:32:27.639] ERROR: 调度建议解析失败
+  {
+  "error": "无法解析调度建议",
+  "rawResponse": "```json\n{\n  \"analysis\": {\n    \"timeConflicts\": [\n      \"任务[68a4dbd77ce84d4aca622446]和任务[68a4decc7ce84d4aca622465]时间重叠，需要调整时间安排。\",\n      \"任务[68a4e8d202a55a41974c8bbb]可能与用户的明天11点会议冲突，需要重新安排。\"\n    ],\n    \"priorityInsights\": \"所有任务目前未分类到四象限，无法准确判断优先级。建议根据四象限原则重新评估任务重要性和紧急性。\",\n    \"workloadAssessment\": \"当前任务安排较为紧凑，尤其是下午时间段有多个任务集中，可能导致工作压力增加。\",\n    \"userStateConsiderations\": \"用户提到压力大且情绪中性，建议合理安排任务，避免过度负荷，并预留休息时间以缓解压力。\"\n  },\n  \"recommendations\": {\n    \"taskAdjustments\": [\n      {\n        \"taskId\": \"68a4dbd77ce84d4aca622446\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"开会\",\n          \"date\": \"2025-08-20\",\n          \"time\": \"08:00\",\n          \"timeBlock\": {\n            \"startTime\": \"08:00\",\n            \"endTime\": \"08:30\",\n            \"timeBlockType\": \"morning\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"high\",\n          \"quadrant\": 1,\n          \"reason\": \"避免与任务[68a4decc7ce84d4aca622465]时间冲突，并优先安排早晨精力充沛时段。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4decc7ce84d4aca622465\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"开会\",\n          \"date\": \"2025-08-20\",\n          \"time\": \"08:30\",\n          \"timeBlock\": {\n            \"startTime\": \"08:30\",\n            \"endTime\": \"09:00\",\n            \"timeBlockType\": \"morning\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"high\",\n          \"quadrant\": 1,\n          \"reason\": \"避免与任务[68a4dbd77ce84d4aca622446]时间冲突，并优先安排早晨精力充沛时段。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4e8d202a55a41974c8bbb\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"开会\",\n          \"date\": \"2025-08-20\",\n          \"time\": \"10:30\",\n          \"timeBlock\": {\n            \"startTime\": \"10:30\",\n            \"endTime\": \"11:00\",\n            \"timeBlockType\": \"forenoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"high\",\n          \"quadrant\": 1,\n          \"reason\": \"避免与明天11点会议冲突，并合理安排上午时段。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4dc577ce84d4aca62244f\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"我压力好大，明天还有个重要的考试。\",\n          \"date\": \"2025-08-20\",\n          \"time\": \"14:00\",\n          \"timeBlock\": {\n            \"startTime\": \"14:00\",\n            \"endTime\": \"14:30\",\n            \"timeBlockType\": \"afternoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"medium\",\n          \"quadrant\": 2,\n          \"reason\": \"调整到下午开始时段，确保优先处理重要任务。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4de427ce84d4aca62245a\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"我压力好大，明天还有个重要的考试。\",\n          \"date\": \"2025-08-20\",\n          \"time\": \"14:30\",\n          \"timeBlock\": {\n            \"startTime\": \"14:30\",\n            \"endTime\": \"15:00\",\n            \"timeBlockType\": \"afternoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"medium\",\n          \"quadrant\": 2,\n          \"reason\": \"调整到下午时段，避免与其他任务冲突。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4e1e07ce84d4aca622471\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"我好累想出去玩，你有什么推荐吗\",\n          \"date\": \"2025-08-20\",\n          \"time\": \"15:00\",\n          \"timeBlock\": {\n            \"startTime\": \"15:00\",\n            \"endTime\": \"15:30\",\n            \"timeBlockType\": \"afternoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"medium\",\n          \"quadrant\": 3,\n          \"reason\": \"调整到下午时段，确保执行类任务合理安排。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4e2097ce84d4aca62247c\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"去虹桥机场\",\n          \"date\": \"2025-08-20\",\n          \"time\": \"15:30\",\n          \"timeBlock\": {\n            \"startTime\": \"15:30\",\n            \"endTime\": \"16:00\",\n            \"timeBlockType\": \"afternoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"medium\",\n          \"quadrant\": 3,\n          \"reason\": \"调整到下午时段，确保执行类任务合理安排。\"\n        }\n      },\n      {\n        \"taskId\": \"68a4e5c202a55a41974c8bb5\",\n        \"action\": \"update\",\n        \"changes\": {\n          \"title\": \"我等下要去虹桥机场，现在过去要多久？\",\n          \"date\": \"2025-08-20\",\n          \"time\": \"16:00\",\n          \"timeBlock\": {\n            \"startTime\": \"16:00\",\n            \"endTime\": \"16:30\",\n            \"timeBlockType\": \"afternoon\"\n          },\n          \"estimatedTime\": 30,\n          \"priority\": \"medium\",\n          \"quadrant\": 3,\n          \"reason\": \"调整到下午时段，确保执行类任务合理安排。\"\n        }\n      }\n    ],\n    \"breakSuggestions\": [\n      {\n        \"startTime\": \"09:00\",\n        \"endTime\": \"09:15\",\n        \"type\": \"short\",\n        \"activity\": \"短暂休息，放松眼睛和身体\"\n      },\n      {\n        \"startTime\": \"12:00\",\n        \"endTime\": \"13:00\",\n        \"type\": \"meal\",\n        \"activity\": \"午餐时间，适当放松\"\n      },\n      {\n        \"startTime\": \"16:30\",\n        \"endTime\": \"16:45\",\n        \"type\": \"short\",\n        \"activity\": \"短暂休息，补充能量\"\n      }\n    ],\n    \"optimizationTips\": [\n      \"根据四象限原则重新评估任务优先级，确保重要紧急任务优先处理。\",\n      \"合理安排休息时间，避免任务过于集中导致疲劳。\",\n      \"考虑将部分任务委托或简化处理，以减轻工作压力。\"\n    ]\n  },\n  \"schedule\": {\n    \"morning\": [\"68a4dbd77ce84d4aca622446\", \"68a4decc7ce84d4aca622465\"],\n    \"forenoon\": [\"68a4e8d202a55a41974c8bbb\"],\n    \"afternoon\": [\n      \"68a4dc577ce84d4aca62244f\",\n      \"68a4de427ce84d4aca62245a\",\n      \"68a4e1e07ce84d4aca622471\",\n      \"68a4e2097ce84d4aca62247c\",\n      \""
+}
+[2025-08-20 23:32:27.642] ERROR: 任务调度规划失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "targetDate": "2025-08-20",
+  "error": "调度建议解析失败: 无法解析调度建议",
+  "stack": "Error: 调度建议解析失败: 无法解析调度建议\n    at SchedulePlanningService.planSchedule (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/services/schedulePlanningService.js:104:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async IntelligentDispatchService.executeSchedulePlanning (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/services/intelligentDispatchService.js:692:12)\n    at async Promise.all (index 0)\n    at async IntelligentDispatchService.executeServices (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/services/intelligentDispatchService.js:642:7)\n    at async IntelligentDispatchService.processUserInput (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/services/intelligentDispatchService.js:193:32)\n    at async IntelligentDispatchController.processIntelligentDispatch (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/intelligentDispatchController.js:60:22)",
+  "processingTime": "35299ms"
+}
+[2025-08-20 23:32:27.642] ERROR: 时间调度失败
+  {
+  "error": "调度建议解析失败: 无法解析调度建议"
+}
+[2025-08-20 23:32:29.378] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "小周明白啦，已经为你成功创建了“开会”这个任务，不过在安排具体时间上遇到了一点小问题。别担心，我们可以一起再调整一下时间规划。希望小周的帮助能让你轻松应对明天的会议！",
+    "messageType": "ai",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:32:29.352Z"
+  },
+  "processingTime": "0ms"
+}
+[2025-08-20 23:32:29.381] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "✅ 任务已创建：开会",
+    "messageType": "ai",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:32:29.353Z"
+  },
+  "processingTime": "1ms"
+}
+[2025-08-20 23:35:53.358] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "早上11点开会",
+    "messageType": "user",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:35:53.326Z"
+  },
+  "processingTime": "0ms"
+}
+[2025-08-20 23:36:12.041] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "好的！小周已经帮您成功创建了“开会”任务，并重新安排了您的日程。现在一切都准备好了，您可以放心在早上11点准时开会啦！如果还有什么需要调整的，随时告诉我哦，祝您一切顺利～",
+    "messageType": "ai",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:36:12.010Z"
+  },
+  "processingTime": "1ms"
+}
+[2025-08-20 23:36:12.045] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "✅ 任务已创建：开会",
+    "messageType": "ai",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:36:12.012Z"
+  },
+  "processingTime": "0ms"
+}
+[2025-08-20 23:36:12.047] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "⏰ 日程已根据你的需求进行调整\n\n📋 任务调整建议：\n1. 调整任务时间：11:00 - 调整任务时间块以避免与目标时间冲突，并明确任务时间安排。\n\n☕ 休息建议：\n1. 10:30-10:55 短暂休息，准备会议材料\n\n💡 已调整任务时间，确保会议在早上11:00顺利进行。建议在会议前预留准备时间，并进一步明确任务优先级以便优化后续安排。",
+    "messageType": "ai",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:36:12.013Z"
+  },
+  "processingTime": "0ms"
+}
+[2025-08-20 23:41:46.131] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "早上11点开会",
+    "messageType": "user",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:41:46.109Z"
+  },
+  "processingTime": "0ms"
+}
+[2025-08-20 23:42:14.826] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "好的！小周已经帮您成功创建了“开会”任务，并将时间安排在了早上11点。一切都已准备就绪，您不用担心时间冲突啦！希望您今天心情愉快，开会顺利哦～如果有其他需要，随时找我帮忙！",
+    "messageType": "ai",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:42:14.784Z"
+  },
+  "processingTime": "5ms"
+}
+[2025-08-20 23:42:14.829] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "✅ 任务已创建：开会",
+    "messageType": "ai",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:42:14.785Z"
+  },
+  "processingTime": "1ms"
+}
+[2025-08-20 23:42:14.840] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "⏰ 日程已根据你的需求进行调整\n\n📋 任务调整建议：\n1. 调整任务时间：11:00 - 调整时间以避免与任务[68a5ecc08e5b5486e45555af]冲突。\n2. 调整任务时间：11:30 - 调整时间以避免与任务[68a5eb5e8e5b5486e4555591]冲突。\n\n☕ 休息建议：\n1. 12:00-12:30 建议用餐并短暂休息，以恢复下午的工作精力。\n2. 15:00-15:15 建议进行短暂休息，如喝水、伸展或放松眼睛。\n\n💡 两个会议任务原定时间冲突，已调整为顺序安排，分别在11:00-11:30和11:30-12:00。建议在12:00-12:30用餐休息，并在下午15:00进行短暂放松以保持效率。",
+    "messageType": "ai",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:42:14.786Z"
+  },
+  "processingTime": "1ms"
+}
+[2025-08-20 23:49:03.901] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "明天下午3点开始开个会",
+    "messageType": "user",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:49:03.830Z"
+  },
+  "processingTime": "0ms"
+}
+[2025-08-20 23:49:37.898] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "好的！小周已经帮您成功创建了“开会”任务，并重新安排了您的日程。会议将在明天下午3点准时开始。希望您的会议顺利进行！如果有其他需要，随时告诉我哦~",
+    "messageType": "ai",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:49:37.862Z"
+  },
+  "processingTime": "1ms"
+}
+[2025-08-20 23:49:37.913] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "✅ 任务已创建：开会",
+    "messageType": "ai",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:49:37.863Z"
+  },
+  "processingTime": "1ms"
+}
+[2025-08-20 23:49:37.938] ERROR: 保存消息失败
+  {
+  "error": "Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js",
+  "stack": "Error: Cannot find module '../../../models/Conversation'\nRequire stack:\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js\n- /Users/bytedance/Desktop/backend(2)/backend/src/app.js\n- /Users/bytedance/Desktop/backend(2)/backend/server.js\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)\n    at Module._load (node:internal/modules/cjs/loader:1219:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.require (node:internal/modules/cjs/loader:1493:12)\n    at require (node:internal/modules/helpers:152:16)\n    at ConversationController.saveMessage (/Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/controllers/conversationController.js:176:28)\n    at /Users/bytedance/Desktop/backend(2)/backend/src/AIsiri/routes/conversationRoutes.js:53:19",
+  "userId": "68a21bf0cdab688c24714231",
+  "body": {
+    "content": "⏰ 日程已根据你的需求进行调整\n\n📋 任务调整建议：\n1. 调整任务时间：15:00 - 根据用户请求，将任务调整到明天下午3点开始，符合紧急但不重要的象限。\n2. 调整任务时间：15:30 - 根据用户请求，将任务调整到明天下午3点半开始，避免时间冲突。\n\n☕ 休息建议：\n1. 16:00-16:15 短暂休息，放松眼睛和身体。\n2. 17:00-17:30 晚餐时间，适当放松以恢复精力。\n\n💡 已根据用户请求将两个会议任务调整到明天下午3点和3点半开始，并合理安排了休息时间。建议用户明确任务的优先级和四象限分类，以便进一步优化任务安排。",
+    "messageType": "ai",
+    "sessionId": "session_1755700955510_v8znzzjx1",
+    "timestamp": "2025-08-20T15:49:37.863Z"
+  },
+  "processingTime": "0ms"
+}

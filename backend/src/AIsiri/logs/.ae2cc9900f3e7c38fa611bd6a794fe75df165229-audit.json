@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\wuby\\OneDrive\\Desktop\\已完成\\ai秘书\\backup\\backend\\src\\AIsiri\\logs\\.ae2cc9900f3e7c38fa611bd6a794fe75df165229-audit.json",
+    "files": [
+        {
+            "date": 1762507164711,
+            "name": "C:\\Users\\wuby\\OneDrive\\Desktop\\已完成\\ai秘书\\backup\\backend\\src\\AIsiri\\logs\\intent-recognition-error-2025-11-07.log",
+            "hash": "18539e8aa1e263a4b531bc264d0d5c77377243bde90ece762de3f8ad8aac1826"
+        }
+    ],
+    "hashType": "sha256"
+}

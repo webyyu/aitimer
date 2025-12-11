@@ -1,0 +1,40 @@
+[2025-08-21 00:35:35.574] ERROR: 对话处理失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "sessionId": null,
+  "error": "Conversation validation failed: sessionId: Path `sessionId` is required.",
+  "stack": "ValidationError: Conversation validation failed: sessionId: Path `sessionId` is required.\n    at Document.invalidate (/Users/bytedance/Desktop/backend(2)/backend/node_modules/mongoose/lib/document.js:3358:32)\n    at /Users/bytedance/Desktop/backend(2)/backend/node_modules/mongoose/lib/document.js:3119:17\n    at /Users/bytedance/Desktop/backend(2)/backend/node_modules/mongoose/lib/schemaType.js:1410:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)",
+  "processingTime": "2592ms"
+}
+[2025-08-21 00:35:51.820] ERROR: 对话处理失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "sessionId": null,
+  "error": "Conversation validation failed: sessionId: Path `sessionId` is required.",
+  "stack": "ValidationError: Conversation validation failed: sessionId: Path `sessionId` is required.\n    at Document.invalidate (/Users/bytedance/Desktop/backend(2)/backend/node_modules/mongoose/lib/document.js:3358:32)\n    at /Users/bytedance/Desktop/backend(2)/backend/node_modules/mongoose/lib/document.js:3119:17\n    at /Users/bytedance/Desktop/backend(2)/backend/node_modules/mongoose/lib/schemaType.js:1410:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)",
+  "processingTime": "1685ms"
+}
+[2025-08-21 00:37:12.522] ERROR: 对话处理失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "sessionId": null,
+  "error": "Conversation validation failed: sessionId: Path `sessionId` is required.",
+  "stack": "ValidationError: Conversation validation failed: sessionId: Path `sessionId` is required.\n    at Document.invalidate (/Users/bytedance/Desktop/backend(2)/backend/node_modules/mongoose/lib/document.js:3358:32)\n    at /Users/bytedance/Desktop/backend(2)/backend/node_modules/mongoose/lib/document.js:3119:17\n    at /Users/bytedance/Desktop/backend(2)/backend/node_modules/mongoose/lib/schemaType.js:1410:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)",
+  "processingTime": "3384ms"
+}
+[2025-08-21 00:38:28.220] ERROR: 对话处理失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "sessionId": null,
+  "error": "Conversation validation failed: sessionId: Path `sessionId` is required.",
+  "stack": "ValidationError: Conversation validation failed: sessionId: Path `sessionId` is required.\n    at Document.invalidate (/Users/bytedance/Desktop/backend(2)/backend/node_modules/mongoose/lib/document.js:3358:32)\n    at /Users/bytedance/Desktop/backend(2)/backend/node_modules/mongoose/lib/document.js:3119:17\n    at /Users/bytedance/Desktop/backend(2)/backend/node_modules/mongoose/lib/schemaType.js:1410:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)",
+  "processingTime": "1816ms"
+}
+[2025-08-21 00:38:56.059] ERROR: 对话处理失败
+  {
+  "userId": "68a21bf0cdab688c24714231",
+  "sessionId": null,
+  "error": "Conversation validation failed: sessionId: Path `sessionId` is required.",
+  "stack": "ValidationError: Conversation validation failed: sessionId: Path `sessionId` is required.\n    at Document.invalidate (/Users/bytedance/Desktop/backend(2)/backend/node_modules/mongoose/lib/document.js:3358:32)\n    at /Users/bytedance/Desktop/backend(2)/backend/node_modules/mongoose/lib/document.js:3119:17\n    at /Users/bytedance/Desktop/backend(2)/backend/node_modules/mongoose/lib/schemaType.js:1410:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)",
+  "processingTime": "6090ms"
+}

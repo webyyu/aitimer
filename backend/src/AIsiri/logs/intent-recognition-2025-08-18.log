@@ -1,0 +1,6517 @@
+[2025-08-18 00:02:19.972] INFO: Schedule Planning API Request
+  {
+  "method": "GET",
+  "path": "/health",
+  "ip": "::1",
+  "userAgent": "axios/1.11.0",
+  "userId": "68a1fd0bd900bace56acf5b8"
+}
+[2025-08-18 00:02:19.973] INFO: 调度服务健康检查请求
+[2025-08-18 00:02:19.973] INFO: 调用通义千问API进行调度分析
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "temperature": 0.3
+}
+[2025-08-18 00:02:20.529] INFO: 通义千问API调用成功 (调度分析)
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 31,
+    "completion_tokens": 2,
+    "total_tokens": 33,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 00:02:20.545] INFO: Schedule Planning API Request
+  {
+  "method": "POST",
+  "path": "/plan",
+  "ip": "::1",
+  "userAgent": "axios/1.11.0",
+  "userId": "68a1fd0bd900bace56acf5b8",
+  "body": {
+    "userInput": "我今天下午三点要去拿快递，但感觉很累",
+    "targetDate": "2025-08-17",
+    "userContext": {
+      "emotionalState": "疲惫",
+      "energyLevel": "低",
+      "workload": "中等"
+    },
+    "options": {
+      "autoApply": false
+    }
+  }
+}
+[2025-08-18 00:02:20.545] INFO: 收到任务调度规划请求
+  {
+  "userId": "68a1fd0bd900bace56acf5b8",
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "targetDate": "2025-08-17",
+  "userContext": {
+    "emotionalState": "疲惫",
+    "energyLevel": "低",
+    "workload": "中等"
+  },
+  "options": {
+    "autoApply": false
+  }
+}
+[2025-08-18 00:02:20.546] INFO: 开始任务调度规划
+  {
+  "userId": "68a1fd0bd900bace56acf5b8",
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "targetDate": "2025-08-17",
+  "userContext": {
+    "emotionalState": "疲惫",
+    "energyLevel": "低",
+    "workload": "中等"
+  }
+}
+[2025-08-18 00:02:20.605] INFO: 获取用户现有任务
+  {
+  "userId": "68a1fd0bd900bace56acf5b8",
+  "taskCount": 0,
+  "date": "2025-08-17"
+}
+[2025-08-18 00:02:20.607] INFO: 获取用户任务集信息
+  {
+  "userId": "68a1fd0bd900bace56acf5b8",
+  "collectionCount": 0
+}
+[2025-08-18 00:02:20.608] INFO: 构建调度规划Prompt完成
+  {
+  "messagesCount": 2
+}
+[2025-08-18 00:02:20.608] INFO: 调用通义千问API进行调度分析
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "temperature": 0.3
+}
+[2025-08-18 00:02:31.854] INFO: 通义千问API调用成功 (调度分析)
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 879,
+    "completion_tokens": 546,
+    "total_tokens": 1425,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 00:02:31.854] INFO: 通义千问调度分析完成
+  {
+  "responseLength": 1465
+}
+[2025-08-18 00:02:31.855] INFO: 调度建议解析成功
+  {
+  "adjustmentCount": 1,
+  "breakCount": 2
+}
+[2025-08-18 00:02:31.855] INFO: 任务调度规划完成
+  {
+  "userId": "68a1fd0bd900bace56acf5b8",
+  "targetDate": "2025-08-17",
+  "processingTime": "11309ms",
+  "success": true
+}
+[2025-08-18 00:02:31.856] INFO: 任务调度规划完成
+  {
+  "userId": "68a1fd0bd900bace56acf5b8",
+  "targetDate": "2025-08-17",
+  "adjustmentCount": 1,
+  "breakCount": 2,
+  "processingTime": 11309
+}
+[2025-08-18 00:02:32.877] INFO: Schedule Planning API Request
+  {
+  "method": "POST",
+  "path": "/analyze-conflicts",
+  "ip": "::1",
+  "userAgent": "axios/1.11.0",
+  "userId": "68a1fd0bd900bace56acf5b8",
+  "body": {
+    "targetDate": "2025-08-17"
+  }
+}
+[2025-08-18 00:02:32.880] INFO: 收到时间冲突分析请求
+  {
+  "userId": "68a1fd0bd900bace56acf5b8",
+  "targetDate": "2025-08-17"
+}
+[2025-08-18 00:02:32.891] INFO: 时间冲突分析完成
+  {
+  "userId": "68a1fd0bd900bace56acf5b8",
+  "targetDate": "2025-08-17",
+  "taskCount": 0,
+  "conflictCount": 0,
+  "processingTime": 11
+}
+[2025-08-18 00:02:33.908] INFO: Schedule Planning API Request
+  {
+  "method": "POST",
+  "path": "/suggest-time",
+  "ip": "::1",
+  "userAgent": "axios/1.11.0",
+  "userId": "68a1fd0bd900bace56acf5b8",
+  "body": {
+    "targetDate": "2025-08-17",
+    "estimatedTime": 60,
+    "preferredTimeBlock": "afternoon"
+  }
+}
+[2025-08-18 00:02:33.909] INFO: 收到时间建议请求
+  {
+  "userId": "68a1fd0bd900bace56acf5b8",
+  "targetDate": "2025-08-17",
+  "estimatedTime": 60,
+  "preferredTimeBlock": "afternoon"
+}
+[2025-08-18 00:02:33.917] INFO: 时间建议生成完成
+  {
+  "userId": "68a1fd0bd900bace56acf5b8",
+  "targetDate": "2025-08-17",
+  "estimatedTime": 60,
+  "preferredTimeBlock": "afternoon",
+  "suggestion": {
+    "startTime": "12:00",
+    "endTime": "13:00",
+    "timeBlockType": "afternoon"
+  },
+  "processingTime": 8
+}
+[2025-08-18 01:09:05.648] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:09:05.649] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:09:05.650] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:09:05.650] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:09:05.650] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:09:05.651] ERROR: 智能调度快速测试失败
+  {
+  "error": "SchedulePlanningService is not a constructor",
+  "stack": "TypeError: SchedulePlanningService is not a constructor\n    at new IntelligentDispatchService (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/intelligentDispatchService.js:21:36)\n    at quickTest (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/tests/dispatch-quick-test.js:14:27)\n    at Object.<anonymous> (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/tests/dispatch-quick-test.js:189:3)\n    at Module._compile (node:internal/modules/cjs/loader:1738:14)\n    at Object..js (node:internal/modules/cjs/loader:1871:10)\n    at Module.load (node:internal/modules/cjs/loader:1470:32)\n    at Module._load (node:internal/modules/cjs/loader:1290:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)"
+}
+[2025-08-18 01:10:07.385] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:10:07.386] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:10:07.386] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:10:07.386] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:10:07.386] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:10:07.386] INFO: IntelligentDispatchService 初始化完成
+[2025-08-18 01:10:07.387] INFO: 开始意图识别
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "inputLength": 19
+}
+[2025-08-18 01:10:07.387] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 379
+}
+[2025-08-18 01:10:07.387] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:10:10.052] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 476,
+    "completion_tokens": 112,
+    "total_tokens": 588,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:10:10.053] INFO: 收到模型响应
+  {
+  "responseLength": 286,
+  "responseTime": "2667ms"
+}
+[2025-08-18 01:10:10.053] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"用户主要表达了情绪上的疲惫，虽然提到了下午三点拿快递的事项，但重点在于传达当前状态的感受，属于带有轻微任务信息的情绪表达。\",\n  \"extracted_info\": {\n    \"keywords\": [\"下午三点\", \"拿快递\", \"累\"],\n    \"enti..."
+}
+[2025-08-18 01:10:10.054] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:10:10.054] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "processingTime": "2668ms",
+  "success": true
+}
+[2025-08-18 01:10:10.055] INFO: 检测到任务创建，添加任务意图
+[2025-08-18 01:10:10.055] INFO: 检测到时间调度需求，添加调度意图
+[2025-08-18 01:10:12.058] INFO: 开始意图识别
+  {
+  "userInput": "帮我重新安排今天的工作时间",
+  "inputLength": 13
+}
+[2025-08-18 01:10:12.059] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 373
+}
+[2025-08-18 01:10:12.059] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:10:14.104] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 469,
+    "completion_tokens": 97,
+    "total_tokens": 566,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:10:14.105] INFO: 收到模型响应
+  {
+  "responseLength": 258,
+  "responseTime": "2048ms"
+}
+[2025-08-18 01:10:14.105] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户明确请求重新安排今天的工作时间，这属于时间调度和日程规划的范畴。\",\n  \"extracted_info\": {\n    \"keywords\": [\"重新安排\", \"工作时间\"],\n    \"entities\": {\n      \"time\": \"今..."
+}
+[2025-08-18 01:10:14.107] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:10:14.108] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "2051ms",
+  "success": true
+}
+[2025-08-18 01:10:14.109] INFO: 检测到任务创建，添加任务意图
+[2025-08-18 01:10:14.111] INFO: 检测到外部工具需求，添加工具调用意图
+[2025-08-18 01:10:16.114] INFO: 开始意图识别
+  {
+  "userInput": "今天上海的天气怎么样？",
+  "inputLength": 11
+}
+[2025-08-18 01:10:16.114] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 371
+}
+[2025-08-18 01:10:16.115] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:10:18.791] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 469,
+    "completion_tokens": 86,
+    "total_tokens": 555,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:10:18.793] INFO: 收到模型响应
+  {
+  "responseLength": 242,
+  "responseTime": "2679ms"
+}
+[2025-08-18 01:10:18.793] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"EXTERNAL_TOOL\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户询问天气情况，需要调用外部天气API获取信息。\",\n  \"extracted_info\": {\n    \"keywords\": [\"天气\", \"怎么样\"],\n    \"entities\": {\n      \"time\": \"今天\",\n      \"locat..."
+}
+[2025-08-18 01:10:18.793] INFO: 意图识别结果解析成功
+  {
+  "intent": "EXTERNAL_TOOL",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:10:18.794] INFO: 意图识别完成
+  {
+  "intent": "EXTERNAL_TOOL",
+  "confidence": 0.95,
+  "processingTime": "2680ms",
+  "success": true
+}
+[2025-08-18 01:10:20.796] INFO: 开始意图识别
+  {
+  "userInput": "我感觉压力很大，需要支持",
+  "inputLength": 12
+}
+[2025-08-18 01:10:20.796] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 372
+}
+[2025-08-18 01:10:20.796] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:10:22.802] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 470,
+    "completion_tokens": 76,
+    "total_tokens": 546,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:10:22.803] INFO: 收到模型响应
+  {
+  "responseLength": 192,
+  "responseTime": "2007ms"
+}
+[2025-08-18 01:10:22.803] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了情绪上的困扰，寻求情感支持，没有提及任务创建、时间安排或需要调用外部工具的内容。\",\n  \"extracted_info\": {\n    \"keywords\": [\"压力\", \"支持\"],\n    \"entities\": {}\n  }\n}..."
+}
+[2025-08-18 01:10:22.803] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:10:22.803] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2008ms",
+  "success": true
+}
+[2025-08-18 01:17:40.701] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:17:40.702] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:17:40.702] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:17:40.702] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:17:40.702] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:17:40.702] INFO: IntelligentDispatchService 初始化完成
+[2025-08-18 01:17:40.703] INFO: 开始意图识别
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "inputLength": 19
+}
+[2025-08-18 01:17:40.703] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 379
+}
+[2025-08-18 01:17:40.704] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:17:48.932] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 476,
+    "completion_tokens": 111,
+    "total_tokens": 587,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:17:48.933] INFO: 收到模型响应
+  {
+  "responseLength": 284,
+  "responseTime": "8230ms"
+}
+[2025-08-18 01:17:48.934] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"用户主要表达了情绪上的疲惫，虽然提到了下午三点拿快递的事项，但重点在于传达当前状态的感受，属于带有轻微任务信息的情绪表达。\",\n  \"extracted_info\": {\n    \"keywords\": [\"下午三点\", \"拿快递\", \"累\"],\n    \"enti..."
+}
+[2025-08-18 01:17:48.934] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:17:48.934] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "processingTime": "8231ms",
+  "success": true
+}
+[2025-08-18 01:17:48.935] INFO: 检测到任务创建，添加任务意图
+[2025-08-18 01:17:48.935] INFO: 检测到时间调度需求，添加调度意图
+[2025-08-18 01:17:50.938] INFO: 开始意图识别
+  {
+  "userInput": "帮我重新安排今天的工作时间，我觉得太紧张了。",
+  "inputLength": 22
+}
+[2025-08-18 01:17:50.938] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 382
+}
+[2025-08-18 01:17:50.939] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:17:53.773] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 475,
+    "completion_tokens": 102,
+    "total_tokens": 577,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:17:53.774] INFO: 收到模型响应
+  {
+  "responseLength": 257,
+  "responseTime": "2835ms"
+}
+[2025-08-18 01:17:53.774] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户明确请求重新安排今天的工作时间，这属于时间调度的范畴，主要目的是调整现有时间安排以缓解紧张感。\",\n  \"extracted_info\": {\n    \"keywords\": [\"重新安排\", \"工作时间\", \"紧张\"],\n    \"entities..."
+}
+[2025-08-18 01:17:53.774] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:17:53.774] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "2836ms",
+  "success": true
+}
+[2025-08-18 01:17:53.775] INFO: 检测到任务创建，添加任务意图
+[2025-08-18 01:17:53.775] INFO: 检测到外部工具需求，添加工具调用意图
+[2025-08-18 01:17:55.778] INFO: 开始意图识别
+  {
+  "userInput": "今天上海的天气怎么样？我要决定穿什么衣服。",
+  "inputLength": 21
+}
+[2025-08-18 01:17:55.778] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 381
+}
+[2025-08-18 01:17:55.778] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:17:57.367] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 475,
+    "completion_tokens": 96,
+    "total_tokens": 571,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:17:57.367] INFO: 收到模型响应
+  {
+  "responseLength": 256,
+  "responseTime": "1590ms"
+}
+[2025-08-18 01:17:57.368] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"EXTERNAL_TOOL\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户询问天气情况，需要调用外部天气API获取信息，符合外部工具调用的意图类型。\",\n  \"extracted_info\": {\n    \"keywords\": [\"天气\", \"穿衣服\"],\n    \"entities\": {\n      \"time\": \"今天\"..."
+}
+[2025-08-18 01:17:57.368] INFO: 意图识别结果解析成功
+  {
+  "intent": "EXTERNAL_TOOL",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:17:57.368] INFO: 意图识别完成
+  {
+  "intent": "EXTERNAL_TOOL",
+  "confidence": 0.95,
+  "processingTime": "1591ms",
+  "success": true
+}
+[2025-08-18 01:17:59.371] INFO: 开始意图识别
+  {
+  "userInput": "我最近工作压力很大，感觉很焦虑，需要一些鼓励。",
+  "inputLength": 23
+}
+[2025-08-18 01:17:59.371] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 383
+}
+[2025-08-18 01:17:59.372] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:18:01.103] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 477,
+    "completion_tokens": 91,
+    "total_tokens": 568,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:18:01.104] INFO: 收到模型响应
+  {
+  "responseLength": 251,
+  "responseTime": "1733ms"
+}
+[2025-08-18 01:18:01.104] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了情绪上的困扰，并寻求鼓励，这属于情绪安慰和感情表达的范畴。\",\n  \"extracted_info\": {\n    \"keywords\": [\"工作压力\", \"焦虑\", \"鼓励\"],\n    \"entities\": {\n      \"time\": \"\",..."
+}
+[2025-08-18 01:18:01.104] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:18:01.104] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "1734ms",
+  "success": true
+}
+[2025-08-18 01:22:42.534] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:22:42.535] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:22:42.535] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:22:42.535] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:22:42.535] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:22:42.535] INFO: IntelligentDispatchService 初始化完成
+[2025-08-18 01:22:42.536] INFO: 开始意图识别
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "inputLength": 19
+}
+[2025-08-18 01:22:42.537] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 379
+}
+[2025-08-18 01:22:42.537] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:22:45.026] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 476,
+    "completion_tokens": 101,
+    "total_tokens": 577,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:22:45.026] INFO: 收到模型响应
+  {
+  "responseLength": 261,
+  "responseTime": "2491ms"
+}
+[2025-08-18 01:22:45.027] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户主要表达了情绪上的疲惫，并未明确要求创建任务或调整日程，属于情绪表达和日常对话。\",\n  \"extracted_info\": {\n    \"keywords\": [\"拿快递\", \"很累\"],\n    \"entities\": {\n      \"time\": \"今..."
+}
+[2025-08-18 01:22:45.027] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:22:45.027] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2492ms",
+  "success": true
+}
+[2025-08-18 01:22:45.028] INFO: 检测到任务创建，添加任务意图
+[2025-08-18 01:22:45.028] INFO: 检测到时间调度需求，添加调度意图
+[2025-08-18 01:22:47.031] INFO: 开始意图识别
+  {
+  "userInput": "帮我重新安排今天的工作时间，我觉得太紧张了。",
+  "inputLength": 22
+}
+[2025-08-18 01:22:47.031] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 382
+}
+[2025-08-18 01:22:47.031] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:22:49.605] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 475,
+    "completion_tokens": 108,
+    "total_tokens": 583,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:22:49.606] INFO: 收到模型响应
+  {
+  "responseLength": 279,
+  "responseTime": "2575ms"
+}
+[2025-08-18 01:22:49.606] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户明确请求重新安排今天的工作时间，这属于时间调度的范畴。主要意图是调整现有时间安排以缓解紧张感。\",\n  \"extracted_info\": {\n    \"keywords\": [\"重新安排\", \"工作时间\", \"紧张\"],\n    \"entities..."
+}
+[2025-08-18 01:22:49.606] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:22:49.606] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "2575ms",
+  "success": true
+}
+[2025-08-18 01:22:49.607] INFO: 检测到任务创建，添加任务意图
+[2025-08-18 01:22:49.607] INFO: 检测到外部工具需求，添加工具调用意图
+[2025-08-18 01:22:51.610] INFO: 开始意图识别
+  {
+  "userInput": "今天上海的天气怎么样？我要决定穿什么衣服。",
+  "inputLength": 21
+}
+[2025-08-18 01:22:51.611] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 381
+}
+[2025-08-18 01:22:51.612] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:22:53.288] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 475,
+    "completion_tokens": 96,
+    "total_tokens": 571,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:22:53.289] INFO: 收到模型响应
+  {
+  "responseLength": 256,
+  "responseTime": "1680ms"
+}
+[2025-08-18 01:22:53.289] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"EXTERNAL_TOOL\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户询问天气情况，需要调用外部天气API获取信息，符合外部工具调用的意图类型。\",\n  \"extracted_info\": {\n    \"keywords\": [\"天气\", \"穿衣服\"],\n    \"entities\": {\n      \"time\": \"今天\"..."
+}
+[2025-08-18 01:22:53.289] INFO: 意图识别结果解析成功
+  {
+  "intent": "EXTERNAL_TOOL",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:22:53.289] INFO: 意图识别完成
+  {
+  "intent": "EXTERNAL_TOOL",
+  "confidence": 0.95,
+  "processingTime": "1680ms",
+  "success": true
+}
+[2025-08-18 01:22:55.291] INFO: 开始意图识别
+  {
+  "userInput": "我最近工作压力很大，感觉很焦虑，需要一些鼓励。",
+  "inputLength": 23
+}
+[2025-08-18 01:22:55.291] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 383
+}
+[2025-08-18 01:22:55.292] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:22:58.091] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 477,
+    "completion_tokens": 91,
+    "total_tokens": 568,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:22:58.092] INFO: 收到模型响应
+  {
+  "responseLength": 251,
+  "responseTime": "2802ms"
+}
+[2025-08-18 01:22:58.092] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了情绪上的困扰，并请求鼓励，这属于情绪安慰和感情表达的范畴。\",\n  \"extracted_info\": {\n    \"keywords\": [\"工作压力\", \"焦虑\", \"鼓励\"],\n    \"entities\": {\n      \"time\": \"\",..."
+}
+[2025-08-18 01:22:58.093] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:22:58.093] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2803ms",
+  "success": true
+}
+[2025-08-18 01:36:34.985] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:36:34.986] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:36:34.986] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:36:34.986] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:36:34.986] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 01:36:34.986] INFO: IntelligentDispatchService 初始化完成
+[2025-08-18 01:36:34.987] INFO: 开始意图识别
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "inputLength": 19
+}
+[2025-08-18 01:36:34.987] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 379
+}
+[2025-08-18 01:36:34.987] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:36:37.181] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 476,
+    "completion_tokens": 109,
+    "total_tokens": 585,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:36:37.181] INFO: 收到模型响应
+  {
+  "responseLength": 274,
+  "responseTime": "2195ms"
+}
+[2025-08-18 01:36:37.182] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"用户主要表达了一种情绪上的疲惫感，虽然提到了下午三点拿快递的事情，但整体语义偏向于情绪表达和日常交流。\",\n  \"extracted_info\": {\n    \"keywords\": [\"下午三点\", \"拿快递\", \"累\"],\n    \"entities\": {\n ..."
+}
+[2025-08-18 01:36:37.182] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:36:37.182] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "processingTime": "2196ms",
+  "success": true
+}
+[2025-08-18 01:36:37.182] INFO: 检测到任务创建，添加任务意图
+[2025-08-18 01:36:37.183] INFO: 检测到时间调度需求，添加调度意图
+[2025-08-18 01:36:41.691] INFO: 开始意图识别
+  {
+  "userInput": "我明天上午9点要去虹桥机场开会，帮我查一下路线并安排好时间。",
+  "inputLength": 30
+}
+[2025-08-18 01:36:41.692] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 390
+}
+[2025-08-18 01:36:41.692] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:36:44.924] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 482,
+    "completion_tokens": 112,
+    "total_tokens": 594,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:36:44.925] INFO: 收到模型响应
+  {
+  "responseLength": 282,
+  "responseTime": "3234ms"
+}
+[2025-08-18 01:36:44.925] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户请求安排前往机场的时间和路线，涉及日程规划和时间调整，属于时间调度类意图。\",\n  \"extracted_info\": {\n    \"keywords\": [\"虹桥机场\", \"开会\", \"查路线\", \"安排时间\"],\n    \"entities\": ..."
+}
+[2025-08-18 01:36:44.926] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:36:44.926] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "3235ms",
+  "success": true
+}
+[2025-08-18 01:36:44.926] INFO: 检测到任务创建，添加任务意图
+[2025-08-18 01:36:44.927] INFO: 检测到外部工具需求，添加工具调用意图
+[2025-08-18 01:36:49.435] INFO: 开始意图识别
+  {
+  "userInput": "我这周工作压力很大，需要重新安排一下任务，让节奏慢一些。",
+  "inputLength": 28
+}
+[2025-08-18 01:36:49.436] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 388
+}
+[2025-08-18 01:36:49.437] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:36:51.880] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 481,
+    "completion_tokens": 108,
+    "total_tokens": 589,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:36:51.881] INFO: 收到模型响应
+  {
+  "responseLength": 276,
+  "responseTime": "2446ms"
+}
+[2025-08-18 01:36:51.881] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"用户提到需要重新安排任务并调整节奏，这涉及到对现有任务的时间调整和日程规划，符合时间调度的意图。\",\n  \"extracted_info\": {\n    \"keywords\": [\"重新安排\", \"任务\", \"节奏慢一些\"],\n    \"entities\"..."
+}
+[2025-08-18 01:36:51.882] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.9,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:36:51.882] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.9,
+  "processingTime": "2447ms",
+  "success": true
+}
+[2025-08-18 01:36:51.882] INFO: 检测到情绪表达，添加对话意图
+[2025-08-18 01:36:51.882] INFO: 检测到任务创建，添加任务意图
+[2025-08-18 01:36:56.390] INFO: 开始意图识别
+  {
+  "userInput": "今天上海天气怎么样？如果下雨的话，我想把户外任务改到室内。",
+  "inputLength": 29
+}
+[2025-08-18 01:36:56.390] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 389
+}
+[2025-08-18 01:36:56.390] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 01:37:00.152] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 480,
+    "completion_tokens": 105,
+    "total_tokens": 585,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 01:37:00.152] INFO: 收到模型响应
+  {
+  "responseLength": 275,
+  "responseTime": "3763ms"
+}
+[2025-08-18 01:37:00.153] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"EXTERNAL_TOOL\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户询问天气情况，并基于天气情况考虑调整任务地点，核心意图是获取外部天气信息。\",\n  \"extracted_info\": {\n    \"keywords\": [\"天气\", \"下雨\", \"户外任务\", \"室内\"],\n    \"entities\": {\n     ..."
+}
+[2025-08-18 01:37:00.153] INFO: 意图识别结果解析成功
+  {
+  "intent": "EXTERNAL_TOOL",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 01:37:00.154] INFO: 意图识别完成
+  {
+  "intent": "EXTERNAL_TOOL",
+  "confidence": 0.95,
+  "processingTime": "3764ms",
+  "success": true
+}
+[2025-08-18 01:37:00.154] INFO: 检测到任务创建，添加任务意图
+[2025-08-18 01:37:00.155] INFO: 检测到时间调度需求，添加调度意图
+[2025-08-18 02:06:53.658] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 02:06:53.668] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 02:06:53.668] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 02:06:53.789] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 02:07:48.628] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 02:07:48.643] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 02:07:48.643] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 02:07:48.782] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 02:16:22.045] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 02:16:22.060] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 02:16:22.061] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 02:16:22.226] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 02:16:36.309] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 02:16:36.322] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 02:16:36.323] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 02:16:36.605] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 16:50:32.562] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 16:50:32.573] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 16:50:32.573] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 16:50:32.717] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 16:59:59.037] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 16:59:59.068] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 16:59:59.069] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 16:59:59.686] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 17:17:00.723] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 17:17:00.736] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 17:17:00.736] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 17:17:00.906] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 17:34:57.742] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 17:34:57.753] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 17:34:57.754] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 17:34:57.880] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 17:53:48.171] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 17:53:48.179] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 17:53:48.179] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 17:53:48.276] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 18:36:43.090] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 18:36:43.102] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 18:36:43.102] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 18:36:43.246] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:26:35.810] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:26:35.824] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:26:35.825] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:26:35.960] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:27:45.412] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:27:45.422] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:27:45.422] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:27:45.528] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:32:36.789] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:33:09.565] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:35:12.547] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:35:12.852] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:35:12.852] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:35:12.852] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:35:12.852] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:35:12.852] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:35:12.852] INFO: IntelligentDispatchService 初始化完成
+[2025-08-18 19:35:12.852] INFO: IntelligentDispatchController 初始化完成
+[2025-08-18 19:35:12.855] INFO: ✅ 中间件配置完成
+[2025-08-18 19:35:12.855] INFO: ✅ 路由配置完成
+[2025-08-18 19:35:12.855] INFO: ✅ 错误处理配置完成
+[2025-08-18 19:35:12.857] INFO: 🚀 AI Siri 意图识别服务启动成功
+[2025-08-18 19:35:12.857] INFO: 🌐 服务地址: http://localhost:3001
+[2025-08-18 19:35:12.857] INFO: 📝 API文档: http://localhost:3001/api/intent/status
+[2025-08-18 19:35:12.857] INFO: 💚 健康检查: http://localhost:3001/health
+[2025-08-18 19:35:12.857] INFO: 🔧 环境: development
+[2025-08-18 19:35:24.154] INFO: 🌐 GET /health - IP: ::1
+[2025-08-18 19:35:24.157] INFO: ✅ GET /health [200] 4ms
+[2025-08-18 19:35:30.978] INFO: 🌐 GET /api/aisiri/dispatch/status - IP: ::1
+[2025-08-18 19:35:30.979] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-08-18 19:35:30.980] INFO: [调度状态-371fb43c-76d8-4b06-b32f-80cc4f641cee] 获取服务状态
+[2025-08-18 19:35:30.980] INFO: [调度状态-371fb43c-76d8-4b06-b32f-80cc4f641cee] 状态获取完成
+  {
+  "processingTime": "1ms"
+}
+[2025-08-18 19:35:30.981] INFO: ✅ GET /api/aisiri/dispatch/status [200] 2ms
+[2025-08-18 19:36:53.588] INFO: 🌐 POST /api/aisiri/dispatch - IP: ::1
+[2025-08-18 19:36:53.590] INFO: ❌ POST /api/aisiri/dispatch [401] 2ms
+[2025-08-18 19:37:08.556] INFO: 🌐 POST /api/aisiri/dispatch/test - IP: ::1
+[2025-08-18 19:37:08.556] INFO: 智能调度测试请求
+  {
+  "url": "/api/aisiri/dispatch/test",
+  "userId": "anonymous",
+  "ip": "::1"
+}
+[2025-08-18 19:37:08.560] INFO: [调度测试-9aa99219-7232-42e9-9784-70bf084dfc0e] 开始测试
+[2025-08-18 19:37:08.560] INFO: [调度测试-9aa99219-7232-42e9-9784-70bf084dfc0e] 测试用例 1: 我今天下午三点要去拿快递，但感觉很累。
+[2025-08-18 19:37:08.560] INFO: 开始智能调度处理
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "userId": "test-user-1755517028560",
+  "sessionId": "test-session-0"
+}
+[2025-08-18 19:37:08.560] INFO: 步骤1: 执行意图识别
+[2025-08-18 19:37:08.561] INFO: 开始意图识别
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "inputLength": 19
+}
+[2025-08-18 19:37:08.561] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 379
+}
+[2025-08-18 19:37:08.561] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 19:37:11.682] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 476,
+    "completion_tokens": 102,
+    "total_tokens": 578,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 19:37:11.683] INFO: 收到模型响应
+  {
+  "responseLength": 257,
+  "responseTime": "3122ms"
+}
+[2025-08-18 19:37:11.683] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"TASK_CREATION\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"用户提到今天下午三点要去拿快递，这是一个具体的任务安排，尽管同时表达了情绪（很累），但核心意图是告知一个需要执行的任务。\",\n  \"extracted_info\": {\n    \"keywords\": [\"下午三点\", \"拿快递\"],\n    \"entities\"..."
+}
+[2025-08-18 19:37:11.684] INFO: 意图识别结果解析成功
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.9,
+  "hasExtractedInfo": true
+}
+[2025-08-18 19:37:11.684] INFO: 意图识别完成
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.9,
+  "processingTime": "3123ms",
+  "success": true
+}
+[2025-08-18 19:37:11.684] INFO: 意图识别完成
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.9
+}
+[2025-08-18 19:37:11.684] INFO: 步骤2: 分析多重意图
+[2025-08-18 19:37:11.685] INFO: 多重意图分析完成
+  {
+  "intents": [
+    "TASK_CREATION"
+  ]
+}
+[2025-08-18 19:37:11.685] INFO: 步骤3: 并行执行相关服务
+[2025-08-18 19:37:11.686] INFO: 执行任务创建服务
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "userId": "test-user-1755517028560"
+}
+[2025-08-18 19:37:11.686] INFO: 开始任务识别和存储
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "userId": "test-user-1755517028560"
+}
+[2025-08-18 19:37:11.686] INFO: 开始意图识别
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "inputLength": 19
+}
+[2025-08-18 19:37:11.686] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 379
+}
+[2025-08-18 19:37:11.687] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 19:37:15.241] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 476,
+    "completion_tokens": 103,
+    "total_tokens": 579,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 19:37:15.241] INFO: 收到模型响应
+  {
+  "responseLength": 267,
+  "responseTime": "3555ms"
+}
+[2025-08-18 19:37:15.241] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"用户主要表达了情绪上的疲惫，并未明确要求创建任务或调整日程，属于情绪表达和日常对话。\",\n  \"extracted_info\": {\n    \"keywords\": [\"下午三点\", \"拿快递\", \"累\"],\n    \"entities\": {\n      \"tim..."
+}
+[2025-08-18 19:37:15.242] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "hasExtractedInfo": true
+}
+[2025-08-18 19:37:15.242] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "processingTime": "3556ms",
+  "success": true
+}
+[2025-08-18 19:37:15.242] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9
+}
+[2025-08-18 19:37:15.242] INFO: 非任务创建意图，跳过任务存储
+  {
+  "intent": "CONVERSATION"
+}
+[2025-08-18 19:37:15.243] INFO: 服务执行完成
+  {
+  "servicesExecuted": [
+    "taskCreation"
+  ]
+}
+[2025-08-18 19:37:15.243] INFO: 步骤4: 生成统一回复
+[2025-08-18 19:37:15.245] WARN: 回复生成失败，使用备用逻辑
+  {
+  "error": "responsePrompt.buildIntelligentDispatchPrompt is not a function"
+}
+[2025-08-18 19:37:15.245] INFO: 回复生成完成
+  {
+  "responseLength": 16
+}
+[2025-08-18 19:37:15.245] INFO: 智能调度处理完成
+  {
+  "processingTime": 6685,
+  "servicesUsed": [
+    "taskCreation"
+  ]
+}
+[2025-08-18 19:37:15.245] INFO: [调度测试-9aa99219-7232-42e9-9784-70bf084dfc0e] 测试用例 1 完成
+  {
+  "success": true
+}
+[2025-08-18 19:37:15.246] INFO: [调度测试-9aa99219-7232-42e9-9784-70bf084dfc0e] 测试用例 2: 帮我安排明天的工作计划
+[2025-08-18 19:37:15.246] INFO: 开始智能调度处理
+  {
+  "userInput": "帮我安排明天的工作计划",
+  "userId": "test-user-1755517035246",
+  "sessionId": "test-session-1"
+}
+[2025-08-18 19:37:15.246] INFO: 步骤1: 执行意图识别
+[2025-08-18 19:37:15.246] INFO: 开始意图识别
+  {
+  "userInput": "帮我安排明天的工作计划",
+  "inputLength": 11
+}
+[2025-08-18 19:37:15.246] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 371
+}
+[2025-08-18 19:37:15.246] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 19:37:17.507] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 468,
+    "completion_tokens": 98,
+    "total_tokens": 566,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 19:37:17.508] INFO: 收到模型响应
+  {
+  "responseLength": 260,
+  "responseTime": "2261ms"
+}
+[2025-08-18 19:37:17.508] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户请求安排明天的工作计划，这涉及到对时间的规划和调度，属于时间安排类任务。\",\n  \"extracted_info\": {\n    \"keywords\": [\"安排\", \"工作计划\"],\n    \"entities\": {\n      \"time\": ..."
+}
+[2025-08-18 19:37:17.509] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 19:37:17.510] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "2264ms",
+  "success": true
+}
+[2025-08-18 19:37:17.510] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95
+}
+[2025-08-18 19:37:17.511] INFO: 步骤2: 分析多重意图
+[2025-08-18 19:37:17.511] INFO: 检测到任务创建，添加任务意图
+[2025-08-18 19:37:17.511] INFO: 多重意图分析完成
+  {
+  "intents": [
+    "SCHEDULE_PLANNING",
+    "TASK_CREATION"
+  ]
+}
+[2025-08-18 19:37:17.511] INFO: 步骤3: 并行执行相关服务
+[2025-08-18 19:37:17.512] INFO: 执行时间调度服务
+  {
+  "userInput": "帮我安排明天的工作计划",
+  "userId": "test-user-1755517035246"
+}
+[2025-08-18 19:37:17.512] INFO: 执行任务创建服务
+  {
+  "userInput": "帮我安排明天的工作计划",
+  "userId": "test-user-1755517035246"
+}
+[2025-08-18 19:37:17.512] INFO: 开始任务识别和存储
+  {
+  "userInput": "帮我安排明天的工作计划",
+  "userId": "test-user-1755517035246"
+}
+[2025-08-18 19:37:17.512] INFO: 开始意图识别
+  {
+  "userInput": "帮我安排明天的工作计划",
+  "inputLength": 11
+}
+[2025-08-18 19:37:17.512] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 371
+}
+[2025-08-18 19:37:17.513] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 19:37:20.680] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 468,
+    "completion_tokens": 98,
+    "total_tokens": 566,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 19:37:20.681] INFO: 收到模型响应
+  {
+  "responseLength": 260,
+  "responseTime": "3169ms"
+}
+[2025-08-18 19:37:20.681] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户请求安排明天的工作计划，这涉及到对时间的规划和调度，属于时间调度类意图。\",\n  \"extracted_info\": {\n    \"keywords\": [\"安排\", \"工作计划\"],\n    \"entities\": {\n      \"time\": ..."
+}
+[2025-08-18 19:37:20.681] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 19:37:20.681] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "3169ms",
+  "success": true
+}
+[2025-08-18 19:37:20.682] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95
+}
+[2025-08-18 19:37:20.682] INFO: 非任务创建意图，跳过任务存储
+  {
+  "intent": "SCHEDULE_PLANNING"
+}
+[2025-08-18 19:37:20.682] INFO: 服务执行完成
+  {
+  "servicesExecuted": [
+    "schedulePlanning",
+    "taskCreation"
+  ]
+}
+[2025-08-18 19:37:20.682] INFO: 步骤4: 生成统一回复
+[2025-08-18 19:37:20.682] WARN: 回复生成失败，使用备用逻辑
+  {
+  "error": "responsePrompt.buildIntelligentDispatchPrompt is not a function"
+}
+[2025-08-18 19:37:20.683] INFO: 回复生成完成
+  {
+  "responseLength": 27
+}
+[2025-08-18 19:37:20.683] INFO: 智能调度处理完成
+  {
+  "processingTime": 5437,
+  "servicesUsed": [
+    "schedulePlanning",
+    "taskCreation"
+  ]
+}
+[2025-08-18 19:37:20.683] INFO: [调度测试-9aa99219-7232-42e9-9784-70bf084dfc0e] 测试用例 2 完成
+  {
+  "success": true
+}
+[2025-08-18 19:37:20.684] INFO: [调度测试-9aa99219-7232-42e9-9784-70bf084dfc0e] 测试用例 3: 今天天气怎么样？
+[2025-08-18 19:37:20.685] INFO: 开始智能调度处理
+  {
+  "userInput": "今天天气怎么样？",
+  "userId": "test-user-1755517040684",
+  "sessionId": "test-session-2"
+}
+[2025-08-18 19:37:20.685] INFO: 步骤1: 执行意图识别
+[2025-08-18 19:37:20.686] INFO: 开始意图识别
+  {
+  "userInput": "今天天气怎么样？",
+  "inputLength": 8
+}
+[2025-08-18 19:37:20.687] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 368
+}
+[2025-08-18 19:37:20.687] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 19:37:22.753] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 467,
+    "completion_tokens": 94,
+    "total_tokens": 561,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 19:37:22.755] INFO: 收到模型响应
+  {
+  "responseLength": 255,
+  "responseTime": "2070ms"
+}
+[2025-08-18 19:37:22.755] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"EXTERNAL_TOOL\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户询问天气情况，需要调用外部天气API获取信息，符合外部工具调用的意图类型。\",\n  \"extracted_info\": {\n    \"keywords\": [\"今天\", \"天气\"],\n    \"entities\": {\n      \"time\": \"今天\",..."
+}
+[2025-08-18 19:37:22.755] INFO: 意图识别结果解析成功
+  {
+  "intent": "EXTERNAL_TOOL",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 19:37:22.756] INFO: 意图识别完成
+  {
+  "intent": "EXTERNAL_TOOL",
+  "confidence": 0.95,
+  "processingTime": "2071ms",
+  "success": true
+}
+[2025-08-18 19:37:22.756] INFO: 意图识别完成
+  {
+  "intent": "EXTERNAL_TOOL",
+  "confidence": 0.95
+}
+[2025-08-18 19:37:22.756] INFO: 步骤2: 分析多重意图
+[2025-08-18 19:37:22.756] INFO: 多重意图分析完成
+  {
+  "intents": [
+    "EXTERNAL_TOOL"
+  ]
+}
+[2025-08-18 19:37:22.756] INFO: 步骤3: 并行执行相关服务
+[2025-08-18 19:37:22.756] INFO: 执行外部工具服务
+  {
+  "userInput": "今天天气怎么样？"
+}
+[2025-08-18 19:37:22.756] INFO: 服务执行完成
+  {
+  "servicesExecuted": [
+    "externalTool"
+  ]
+}
+[2025-08-18 19:37:22.757] INFO: 步骤4: 生成统一回复
+[2025-08-18 19:37:22.757] WARN: 回复生成失败，使用备用逻辑
+  {
+  "error": "responsePrompt.buildIntelligentDispatchPrompt is not a function"
+}
+[2025-08-18 19:37:22.757] INFO: 回复生成完成
+  {
+  "responseLength": 11
+}
+[2025-08-18 19:37:22.758] INFO: 智能调度处理完成
+  {
+  "processingTime": 2074,
+  "servicesUsed": [
+    "externalTool"
+  ]
+}
+[2025-08-18 19:37:22.758] INFO: [调度测试-9aa99219-7232-42e9-9784-70bf084dfc0e] 测试用例 3 完成
+  {
+  "success": true
+}
+[2025-08-18 19:37:22.758] INFO: [调度测试-9aa99219-7232-42e9-9784-70bf084dfc0e] 测试用例 4: 我感觉压力很大，需要休息一下
+[2025-08-18 19:37:22.758] INFO: 开始智能调度处理
+  {
+  "userInput": "我感觉压力很大，需要休息一下",
+  "userId": "test-user-1755517042758",
+  "sessionId": "test-session-3"
+}
+[2025-08-18 19:37:22.758] INFO: 步骤1: 执行意图识别
+[2025-08-18 19:37:22.758] INFO: 开始意图识别
+  {
+  "userInput": "我感觉压力很大，需要休息一下",
+  "inputLength": 14
+}
+[2025-08-18 19:37:22.758] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 374
+}
+[2025-08-18 19:37:22.758] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 19:37:24.912] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 471,
+    "completion_tokens": 84,
+    "total_tokens": 555,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 19:37:24.912] INFO: 收到模型响应
+  {
+  "responseLength": 206,
+  "responseTime": "2154ms"
+}
+[2025-08-18 19:37:24.912] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了情绪上的压力，并提到需要休息，这属于情绪表达和日常对话范畴，没有明确的任务创建、时间调度或外部工具调用意图。\",\n  \"extracted_info\": {\n    \"keywords\": [\"压力\", \"休息\"],\n    \"entities\": {}..."
+}
+[2025-08-18 19:37:24.912] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 19:37:24.912] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2154ms",
+  "success": true
+}
+[2025-08-18 19:37:24.913] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95
+}
+[2025-08-18 19:37:24.913] INFO: 步骤2: 分析多重意图
+[2025-08-18 19:37:24.913] INFO: 检测到任务创建，添加任务意图
+[2025-08-18 19:37:24.913] INFO: 多重意图分析完成
+  {
+  "intents": [
+    "CONVERSATION",
+    "TASK_CREATION"
+  ]
+}
+[2025-08-18 19:37:24.913] INFO: 步骤3: 并行执行相关服务
+[2025-08-18 19:37:24.913] INFO: 执行对话服务
+  {
+  "userInput": "我感觉压力很大，需要休息一下"
+}
+[2025-08-18 19:37:24.913] INFO: 执行任务创建服务
+  {
+  "userInput": "我感觉压力很大，需要休息一下",
+  "userId": "test-user-1755517042758"
+}
+[2025-08-18 19:37:24.913] INFO: 开始任务识别和存储
+  {
+  "userInput": "我感觉压力很大，需要休息一下",
+  "userId": "test-user-1755517042758"
+}
+[2025-08-18 19:37:24.913] INFO: 开始意图识别
+  {
+  "userInput": "我感觉压力很大，需要休息一下",
+  "inputLength": 14
+}
+[2025-08-18 19:37:24.913] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 374
+}
+[2025-08-18 19:37:24.913] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 19:37:26.788] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 471,
+    "completion_tokens": 84,
+    "total_tokens": 555,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 19:37:26.788] INFO: 收到模型响应
+  {
+  "responseLength": 206,
+  "responseTime": "1875ms"
+}
+[2025-08-18 19:37:26.788] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了情绪上的压力，并提到需要休息，这属于情绪表达和日常对话范畴，没有明确的任务创建、时间安排或外部工具调用意图。\",\n  \"extracted_info\": {\n    \"keywords\": [\"压力\", \"休息\"],\n    \"entities\": {}..."
+}
+[2025-08-18 19:37:26.789] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 19:37:26.789] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "1876ms",
+  "success": true
+}
+[2025-08-18 19:37:26.789] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95
+}
+[2025-08-18 19:37:26.789] INFO: 非任务创建意图，跳过任务存储
+  {
+  "intent": "CONVERSATION"
+}
+[2025-08-18 19:37:26.789] INFO: 服务执行完成
+  {
+  "servicesExecuted": [
+    "conversation",
+    "taskCreation"
+  ]
+}
+[2025-08-18 19:37:26.789] INFO: 步骤4: 生成统一回复
+[2025-08-18 19:37:26.790] WARN: 回复生成失败，使用备用逻辑
+  {
+  "error": "responsePrompt.buildIntelligentDispatchPrompt is not a function"
+}
+[2025-08-18 19:37:26.790] INFO: 回复生成完成
+  {
+  "responseLength": 32
+}
+[2025-08-18 19:37:26.790] INFO: 智能调度处理完成
+  {
+  "processingTime": 4032,
+  "servicesUsed": [
+    "conversation",
+    "taskCreation"
+  ]
+}
+[2025-08-18 19:37:26.790] INFO: [调度测试-9aa99219-7232-42e9-9784-70bf084dfc0e] 测试用例 4 完成
+  {
+  "success": true
+}
+[2025-08-18 19:37:26.790] INFO: [调度测试-9aa99219-7232-42e9-9784-70bf084dfc0e] 测试完成
+  {
+  "totalTests": 4,
+  "successfulTests": 4,
+  "successRate": "100.00%",
+  "processingTime": "18231ms"
+}
+[2025-08-18 19:37:26.793] INFO: ✅ POST /api/aisiri/dispatch/test [200] 18237ms
+[2025-08-18 19:37:52.216] INFO: 🌐 GET /health - IP: ::1
+[2025-08-18 19:37:52.218] INFO: ✅ GET /health [200] 3ms
+[2025-08-18 19:38:00.602] INFO: 🌐 POST /api/aisiri/dispatch/demo - IP: ::1
+[2025-08-18 19:38:00.602] WARN: ❌ 404 - 未找到路由: POST /api/aisiri/dispatch/demo
+[2025-08-18 19:38:00.603] INFO: ❌ POST /api/aisiri/dispatch/demo [404] 2ms
+[2025-08-18 19:38:16.123] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:38:16.532] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:38:16.533] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:38:16.533] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:38:16.533] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:38:16.533] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:38:16.533] INFO: IntelligentDispatchService 初始化完成
+[2025-08-18 19:38:16.533] INFO: IntelligentDispatchController 初始化完成
+[2025-08-18 19:38:16.537] INFO: ✅ 中间件配置完成
+[2025-08-18 19:38:16.538] INFO: ✅ 路由配置完成
+[2025-08-18 19:38:16.538] INFO: ✅ 错误处理配置完成
+[2025-08-18 19:38:16.540] INFO: 🚀 AI Siri 意图识别服务启动成功
+[2025-08-18 19:38:16.540] INFO: 🌐 服务地址: http://localhost:3001
+[2025-08-18 19:38:16.540] INFO: 📝 API文档: http://localhost:3001/api/intent/status
+[2025-08-18 19:38:16.540] INFO: 💚 健康检查: http://localhost:3001/health
+[2025-08-18 19:38:16.540] INFO: 🔧 环境: development
+[2025-08-18 19:38:26.378] INFO: 🌐 POST /api/aisiri/dispatch/demo - IP: ::1
+[2025-08-18 19:38:26.379] INFO: 智能调度演示请求
+  {
+  "url": "/api/aisiri/dispatch/demo",
+  "ip": "::1"
+}
+[2025-08-18 19:38:26.379] INFO: [智能调度-5ce96275-ce9e-4841-87b1-622a53379a13] 收到调度请求
+  {
+  "url": "/api/aisiri/dispatch/demo",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1"
+}
+[2025-08-18 19:38:26.380] INFO: [智能调度-5ce96275-ce9e-4841-87b1-622a53379a13] 开始处理
+  {
+  "userId": "demo-user",
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "sessionId": "demo-session-123",
+  "inputLength": 19
+}
+[2025-08-18 19:38:26.380] INFO: 开始智能调度处理
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "userId": "demo-user",
+  "sessionId": "demo-session-123"
+}
+[2025-08-18 19:38:26.380] INFO: 步骤1: 执行意图识别
+[2025-08-18 19:38:26.380] INFO: 开始意图识别
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "inputLength": 19
+}
+[2025-08-18 19:38:26.380] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 379
+}
+[2025-08-18 19:38:26.380] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 19:38:31.420] ERROR: 通义千问API调用失败
+  {
+  "error": "Client network socket disconnected before secure TLS connection was established"
+}
+[2025-08-18 19:38:31.421] ERROR: 意图识别失败
+  {
+  "error": "API调用失败: Client network socket disconnected before secure TLS connection was established",
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "processingTime": "5040ms",
+  "success": false
+}
+[2025-08-18 19:38:31.421] ERROR: 智能调度处理失败
+  {
+  "error": "API调用失败: Client network socket disconnected before secure TLS connection was established",
+  "stack": "Error: API调用失败: Client network socket disconnected before secure TLS connection was established\n    at IntentRecognitionService.callQwenAPI (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/intentRecognitionService.js:155:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async IntentRecognitionService.recognizeIntent (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/intentRecognitionService.js:65:24)\n    at async IntelligentDispatchService.processUserInput (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/services/intelligentDispatchService.js:43:28)\n    at async IntelligentDispatchController.processIntelligentDispatch (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/controllers/intelligentDispatchController.js:93:22)"
+}
+[2025-08-18 19:38:31.422] INFO: [智能调度-5ce96275-ce9e-4841-87b1-622a53379a13] 处理完成
+  {
+  "success": false,
+  "servicesUsed": [],
+  "responseLength": 0,
+  "processingTime": "5042ms"
+}
+[2025-08-18 19:38:31.422] ERROR: [智能调度-5ce96275-ce9e-4841-87b1-622a53379a13] 处理失败
+  {
+  "error": "Cannot read properties of undefined (reading 'response')",
+  "stack": "TypeError: Cannot read properties of undefined (reading 'response')\n    at IntelligentDispatchController.processIntelligentDispatch (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/controllers/intelligentDispatchController.js:113:33)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)",
+  "processingTime": "5043ms"
+}
+[2025-08-18 19:38:31.426] INFO: ❌ POST /api/aisiri/dispatch/demo [500] 5048ms
+[2025-08-18 19:40:58.805] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:40:59.138] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:40:59.139] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:40:59.139] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:40:59.139] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:40:59.139] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:40:59.139] INFO: IntelligentDispatchService 初始化完成
+[2025-08-18 19:40:59.139] INFO: IntelligentDispatchController 初始化完成
+[2025-08-18 19:40:59.142] INFO: ✅ 中间件配置完成
+[2025-08-18 19:40:59.142] INFO: ✅ 路由配置完成
+[2025-08-18 19:40:59.143] INFO: ✅ 错误处理配置完成
+[2025-08-18 19:40:59.144] INFO: 🚀 AI Siri 意图识别服务启动成功
+[2025-08-18 19:40:59.144] INFO: 🌐 服务地址: http://localhost:3001
+[2025-08-18 19:40:59.144] INFO: 📝 API文档: http://localhost:3001/api/intent/status
+[2025-08-18 19:40:59.145] INFO: 💚 健康检查: http://localhost:3001/health
+[2025-08-18 19:40:59.145] INFO: 🔧 环境: development
+[2025-08-18 19:41:06.667] INFO: 🌐 POST /api/aisiri/dispatch/demo - IP: ::1
+[2025-08-18 19:41:06.667] INFO: 智能调度演示请求
+  {
+  "url": "/api/aisiri/dispatch/demo",
+  "ip": "::1"
+}
+[2025-08-18 19:41:06.668] INFO: [智能调度-7a6465aa-f1bd-4736-84e7-fe898a27d5d1] 收到调度请求
+  {
+  "url": "/api/aisiri/dispatch/demo",
+  "method": "POST",
+  "ip": "::1",
+  "userAgent": "curl/8.7.1"
+}
+[2025-08-18 19:41:06.668] INFO: [智能调度-7a6465aa-f1bd-4736-84e7-fe898a27d5d1] 开始处理
+  {
+  "userId": "demo-user",
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "sessionId": "demo-session-123",
+  "inputLength": 19
+}
+[2025-08-18 19:41:06.668] INFO: 开始智能调度处理
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "userId": "demo-user",
+  "sessionId": "demo-session-123"
+}
+[2025-08-18 19:41:06.669] INFO: 步骤1: 执行意图识别
+[2025-08-18 19:41:06.669] INFO: 开始意图识别
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "inputLength": 19
+}
+[2025-08-18 19:41:06.669] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 379
+}
+[2025-08-18 19:41:06.669] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 19:41:09.721] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 476,
+    "completion_tokens": 111,
+    "total_tokens": 587,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 19:41:09.721] INFO: 收到模型响应
+  {
+  "responseLength": 284,
+  "responseTime": "3052ms"
+}
+[2025-08-18 19:41:09.721] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"用户主要表达了情绪上的疲惫，虽然提到了下午三点拿快递的事项，但重点在于传达当前状态的感受，属于带有轻微任务信息的情绪表达。\",\n  \"extracted_info\": {\n    \"keywords\": [\"下午三点\", \"拿快递\", \"累\"],\n    \"enti..."
+}
+[2025-08-18 19:41:09.721] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "hasExtractedInfo": true
+}
+[2025-08-18 19:41:09.722] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "processingTime": "3052ms",
+  "success": true
+}
+[2025-08-18 19:41:09.722] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9
+}
+[2025-08-18 19:41:09.722] INFO: 步骤2: 分析多重意图
+[2025-08-18 19:41:09.722] INFO: 检测到任务创建，添加任务意图
+[2025-08-18 19:41:09.722] INFO: 多重意图分析完成
+  {
+  "intents": [
+    "CONVERSATION",
+    "TASK_CREATION"
+  ]
+}
+[2025-08-18 19:41:09.722] INFO: 步骤3: 并行执行相关服务
+[2025-08-18 19:41:09.722] INFO: 执行对话服务
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。"
+}
+[2025-08-18 19:41:09.722] INFO: 执行任务创建服务
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "userId": "demo-user"
+}
+[2025-08-18 19:41:09.722] INFO: 开始任务识别和存储
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "userId": "demo-user"
+}
+[2025-08-18 19:41:09.723] INFO: 开始意图识别
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "inputLength": 19
+}
+[2025-08-18 19:41:09.723] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 379
+}
+[2025-08-18 19:41:09.723] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 19:41:13.571] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 476,
+    "completion_tokens": 117,
+    "total_tokens": 593,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 19:41:13.571] INFO: 收到模型响应
+  {
+  "responseLength": 273,
+  "responseTime": "3848ms"
+}
+[2025-08-18 19:41:13.572] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"用户主要表达了情绪（感觉很累）并提到了一个计划（下午三点拿快递），但整体更偏向于日常对话和情感表达，而非明确的任务创建、时间规划或外部工具调用。\",\n  \"extracted_info\": {\n    \"keywords\": [\"下午三点\", \"拿快递\", \"累\"]..."
+}
+[2025-08-18 19:41:13.572] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "hasExtractedInfo": true
+}
+[2025-08-18 19:41:13.572] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "processingTime": "3849ms",
+  "success": true
+}
+[2025-08-18 19:41:13.572] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9
+}
+[2025-08-18 19:41:13.573] INFO: 非任务创建意图，跳过任务存储
+  {
+  "intent": "CONVERSATION"
+}
+[2025-08-18 19:41:13.573] INFO: 服务执行完成
+  {
+  "servicesExecuted": [
+    "conversation",
+    "taskCreation"
+  ]
+}
+[2025-08-18 19:41:13.573] INFO: 步骤4: 生成统一回复
+[2025-08-18 19:41:13.576] WARN: 回复生成失败，使用备用逻辑
+  {
+  "error": "responsePrompt.buildIntelligentDispatchPrompt is not a function"
+}
+[2025-08-18 19:41:13.577] INFO: 回复生成完成
+  {
+  "responseLength": 32
+}
+[2025-08-18 19:41:13.580] INFO: 智能调度处理完成
+  {
+  "processingTime": 6911,
+  "servicesUsed": [
+    "conversation",
+    "taskCreation"
+  ]
+}
+[2025-08-18 19:41:13.580] INFO: [智能调度-7a6465aa-f1bd-4736-84e7-fe898a27d5d1] 处理完成
+  {
+  "success": true,
+  "servicesUsed": [],
+  "responseLength": 0,
+  "processingTime": "6912ms"
+}
+[2025-08-18 19:41:13.582] ERROR: [智能调度-7a6465aa-f1bd-4736-84e7-fe898a27d5d1] 处理失败
+  {
+  "error": "智能调度处理失败",
+  "stack": "Error: 智能调度处理失败\n    at IntelligentDispatchController.processIntelligentDispatch (/Users/bytedance/Desktop/coding/timer3/backend/src/AIsiri/controllers/intelligentDispatchController.js:130:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)",
+  "processingTime": "6913ms"
+}
+[2025-08-18 19:41:13.591] INFO: ❌ POST /api/aisiri/dispatch/demo [500] 6925ms
+[2025-08-18 19:42:11.471] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:42:11.805] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:42:11.805] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:42:11.805] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:42:11.806] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:42:11.806] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 19:42:11.806] INFO: IntelligentDispatchService 初始化完成
+[2025-08-18 19:42:11.806] INFO: IntelligentDispatchController 初始化完成
+[2025-08-18 19:42:11.809] INFO: ✅ 中间件配置完成
+[2025-08-18 19:42:11.809] INFO: ✅ 路由配置完成
+[2025-08-18 19:42:11.809] INFO: ✅ 错误处理配置完成
+[2025-08-18 19:42:11.811] INFO: 🚀 AI Siri 意图识别服务启动成功
+[2025-08-18 19:42:11.811] INFO: 🌐 服务地址: http://localhost:3001
+[2025-08-18 19:42:11.811] INFO: 📝 API文档: http://localhost:3001/api/intent/status
+[2025-08-18 19:42:11.811] INFO: 💚 健康检查: http://localhost:3001/health
+[2025-08-18 19:42:11.811] INFO: 🔧 环境: development
+[2025-08-18 19:52:00.045] INFO: 🌐 GET /health - IP: ::1
+[2025-08-18 19:52:00.054] INFO: ✅ GET /health [200] 8ms
+[2025-08-18 21:36:50.897] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 21:36:51.383] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 21:36:51.383] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 21:36:58.745] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:06:06.721] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:06:07.364] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:06:07.365] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:06:16.308] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:07:42.126] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:07:42.151] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:07:42.152] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:07:42.521] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:08:35.812] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:08:35.840] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:08:35.840] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:08:36.205] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:08:46.626] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-08-18 22:08:46.627] INFO: 获取智能调度服务状态
+[2025-08-18 22:08:46.628] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 0
+}
+[2025-08-18 22:08:57.974] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "689c9e67e830282547f98447",
+  "ip": "::1"
+}
+[2025-08-18 22:08:57.976] INFO: 收到智能调度请求
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "我今天下午三点要去拿快递，但感觉很累。",
+  "sessionId": "session_1755526126416_v3gimzn13",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-08-18 22:08:57.977] INFO: 智能调度处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": 2,
+  "responseLength": 45
+}
+[2025-08-18 22:09:29.868] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "689c9e67e830282547f98447",
+  "ip": "::1"
+}
+[2025-08-18 22:09:29.868] INFO: 收到智能调度请求
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "我明天有个会，但是我好累",
+  "sessionId": "session_1755526126416_v3gimzn13",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-08-18 22:09:29.869] INFO: 智能调度处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": 1,
+  "responseLength": 22
+}
+[2025-08-18 22:09:47.705] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:09:47.730] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:09:47.731] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:09:48.087] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:09:57.696] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "689c9e67e830282547f98447",
+  "ip": "::1"
+}
+[2025-08-18 22:09:57.697] INFO: 收到智能调度请求
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "今天上海天气怎么样？我要决定穿什么衣服",
+  "sessionId": "session_1755526126416_v3gimzn13",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-08-18 22:09:57.698] INFO: 智能调度处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": 0,
+  "responseLength": 13
+}
+[2025-08-18 22:11:33.582] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-08-18 22:11:33.583] INFO: 获取智能调度服务状态
+[2025-08-18 22:11:33.584] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 1
+}
+[2025-08-18 22:12:13.502] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-08-18 22:12:13.505] INFO: 获取智能调度服务状态
+[2025-08-18 22:12:13.505] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 1
+}
+[2025-08-18 22:12:44.838] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-08-18 22:12:44.839] INFO: 获取智能调度服务状态
+[2025-08-18 22:12:44.840] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 1
+}
+[2025-08-18 22:12:53.471] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-08-18 22:12:53.472] INFO: 获取智能调度服务状态
+[2025-08-18 22:12:53.472] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 1
+}
+[2025-08-18 22:12:57.153] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-08-18 22:12:57.153] INFO: 获取智能调度服务状态
+[2025-08-18 22:12:57.153] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 0
+}
+[2025-08-18 22:12:59.449] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-08-18 22:12:59.450] INFO: 获取智能调度服务状态
+[2025-08-18 22:12:59.450] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 0
+}
+[2025-08-18 22:13:00.651] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-08-18 22:13:00.651] INFO: 获取智能调度服务状态
+[2025-08-18 22:13:00.652] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 0
+}
+[2025-08-18 22:13:36.871] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-08-18 22:13:36.872] INFO: 获取智能调度服务状态
+[2025-08-18 22:13:36.872] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 1
+}
+[2025-08-18 22:13:47.848] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "689c9e67e830282547f98447",
+  "ip": "::1"
+}
+[2025-08-18 22:13:47.848] INFO: 收到智能调度请求
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "sessionId": "session_1755526416705_38dkafsn2",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-08-18 22:13:47.849] INFO: 智能调度处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": 1,
+  "responseLength": 45
+}
+[2025-08-18 22:13:55.135] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "689c9e67e830282547f98447",
+  "ip": "::1"
+}
+[2025-08-18 22:13:55.137] INFO: 收到智能调度请求
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "我最近工作压力很大，感觉很焦虑，需要一些鼓励。",
+  "sessionId": "session_1755526416705_38dkafsn2",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-08-18 22:13:55.141] INFO: 智能调度处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": 2,
+  "responseLength": 22
+}
+[2025-08-18 22:14:42.426] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-08-18 22:14:42.426] INFO: 获取智能调度服务状态
+[2025-08-18 22:14:42.427] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 1
+}
+[2025-08-18 22:14:44.320] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "689c9e67e830282547f98447",
+  "ip": "::1"
+}
+[2025-08-18 22:14:44.320] INFO: 收到智能调度请求
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "今天上海天气怎么样？我要决定穿什么衣服",
+  "sessionId": "session_1755526482273_mjpgs4xy6",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-08-18 22:14:44.321] INFO: 智能调度处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": 0,
+  "responseLength": 13
+}
+[2025-08-18 22:17:39.293] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:17:39.320] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:17:39.321] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:17:39.732] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:37.494] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:37.521] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:37.521] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:37.864] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:37.870] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:37.870] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:37.871] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:37.871] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:37.872] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:37.872] INFO: 智能调度服务初始化完成
+  {
+  "services": [
+    "intentRecognition",
+    "conversation",
+    "taskRecognition",
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 22:18:50.464] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:50.487] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:50.488] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:50.848] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:50.854] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:50.854] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:50.855] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:50.856] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:50.856] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:18:50.857] INFO: 智能调度服务初始化完成
+  {
+  "services": [
+    "intentRecognition",
+    "conversation",
+    "taskRecognition",
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 22:19:03.766] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:03.793] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:03.794] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:04.160] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:04.168] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:04.168] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:04.169] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:04.170] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:04.171] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:04.172] INFO: 智能调度服务初始化完成
+  {
+  "services": [
+    "intentRecognition",
+    "conversation",
+    "taskRecognition",
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 22:19:12.010] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:12.047] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:12.048] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:12.447] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:12.452] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:12.453] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:12.454] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:12.454] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:12.455] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:12.455] INFO: 智能调度服务初始化完成
+  {
+  "services": [
+    "intentRecognition",
+    "conversation",
+    "taskRecognition",
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 22:19:20.877] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:20.900] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:20.901] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:21.289] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:21.295] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:21.296] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:21.297] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:21.297] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:21.298] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:19:21.299] INFO: 智能调度服务初始化完成
+  {
+  "services": [
+    "intentRecognition",
+    "conversation",
+    "taskRecognition",
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 22:20:38.018] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:20:38.041] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:20:38.042] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:20:38.389] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:20:38.395] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:20:38.396] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:20:38.396] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:20:38.397] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:20:38.398] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:20:38.398] INFO: 智能调度服务初始化完成
+  {
+  "services": [
+    "intentRecognition",
+    "conversation",
+    "taskRecognition",
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 22:21:50.513] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:21:50.537] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:21:50.538] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:21:50.884] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:21:50.891] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:21:50.891] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:21:50.892] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:21:50.892] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:21:50.893] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:21:50.894] INFO: 智能调度服务初始化完成
+  {
+  "services": [
+    "intentRecognition",
+    "conversation",
+    "taskRecognition",
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 22:22:25.100] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-08-18 22:22:25.101] INFO: 获取智能调度服务状态
+[2025-08-18 22:22:25.102] INFO: 开始意图识别
+  {
+  "userInput": "你好",
+  "inputLength": 2
+}
+[2025-08-18 22:22:25.103] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 362
+}
+[2025-08-18 22:22:25.104] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 22:22:27.387] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 464,
+    "completion_tokens": 78,
+    "total_tokens": 542,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:22:27.388] INFO: 收到模型响应
+  {
+  "responseLength": 191,
+  "responseTime": "2285ms"
+}
+[2025-08-18 22:22:27.389] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户输入为简单问候语'你好'，没有涉及任务创建、时间安排或外部工具调用的相关内容，属于正常对话意图。\",\n  \"extracted_info\": {\n    \"keywords\": [\"你好\"],\n    \"entities\": {}\n  }\n}..."
+}
+[2025-08-18 22:22:27.390] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 22:22:27.391] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2289ms",
+  "success": true
+}
+[2025-08-18 22:22:27.392] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 2290
+}
+[2025-08-18 22:22:29.700] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "689c9e67e830282547f98447",
+  "ip": "::1"
+}
+[2025-08-18 22:22:29.701] INFO: 收到智能调度请求
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "我最近工作压力很大，感觉很焦虑，需要一些鼓励。",
+  "sessionId": "session_1755526944882_vvd9sf424",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-08-18 22:22:29.702] INFO: 开始智能调度处理
+  {
+  "requestId": "dispatch-1755526949702-0i8rr2tb2",
+  "userInput": "我最近工作压力很大，感觉很焦虑，需要一些鼓励。",
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755526944882_vvd9sf424",
+  "inputLength": 23
+}
+[2025-08-18 22:22:29.703] INFO: 步骤1: 执行意图识别
+  {
+  "requestId": "dispatch-1755526949702-0i8rr2tb2"
+}
+[2025-08-18 22:22:29.703] INFO: 开始意图识别
+  {
+  "userInput": "我最近工作压力很大，感觉很焦虑，需要一些鼓励。",
+  "inputLength": 23
+}
+[2025-08-18 22:22:29.703] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 383
+}
+[2025-08-18 22:22:29.704] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 22:22:31.896] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 477,
+    "completion_tokens": 91,
+    "total_tokens": 568,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:22:31.896] INFO: 收到模型响应
+  {
+  "responseLength": 251,
+  "responseTime": "2193ms"
+}
+[2025-08-18 22:22:31.897] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了情绪上的困扰，并请求鼓励，这属于情绪安慰和感情表达的范畴。\",\n  \"extracted_info\": {\n    \"keywords\": [\"工作压力\", \"焦虑\", \"鼓励\"],\n    \"entities\": {\n      \"time\": \"\",..."
+}
+[2025-08-18 22:22:31.897] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 22:22:31.898] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2194ms",
+  "success": true
+}
+[2025-08-18 22:22:31.898] INFO: 意图识别完成
+  {
+  "requestId": "dispatch-1755526949702-0i8rr2tb2",
+  "intent": "CONVERSATION",
+  "confidence": 0.95
+}
+[2025-08-18 22:22:31.898] INFO: 步骤2: 分析多重意图
+  {
+  "requestId": "dispatch-1755526949702-0i8rr2tb2"
+}
+[2025-08-18 22:22:31.899] INFO: 多重意图分析完成
+  {
+  "requestId": "dispatch-1755526949702-0i8rr2tb2",
+  "intents": [
+    "CONVERSATION"
+  ],
+  "count": 1
+}
+[2025-08-18 22:22:31.899] INFO: 步骤3: 执行相应的服务
+  {
+  "requestId": "dispatch-1755526949702-0i8rr2tb2"
+}
+[2025-08-18 22:22:31.900] INFO: 开始处理对话
+  {
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755526944882_vvd9sf424",
+  "messageLength": 23
+}
+[2025-08-18 22:22:31.901] INFO: 开始意图识别 我最近工作压力很大，感觉很焦虑，需要一些鼓励。...
+  {
+  "userId": "689c9e67e830282547f98447"
+}
+[2025-08-18 22:22:31.901] INFO: 开始意图识别
+  {
+  "userInput": "我最近工作压力很大，感觉很焦虑，需要一些鼓励。",
+  "inputLength": 23
+}
+[2025-08-18 22:22:31.901] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 383
+}
+[2025-08-18 22:22:31.902] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 22:22:33.909] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 477,
+    "completion_tokens": 91,
+    "total_tokens": 568,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:22:33.910] INFO: 收到模型响应
+  {
+  "responseLength": 251,
+  "responseTime": "2008ms"
+}
+[2025-08-18 22:22:33.910] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了情绪上的困扰，并请求鼓励，这属于情绪安慰和感情表达的范畴。\",\n  \"extracted_info\": {\n    \"keywords\": [\"工作压力\", \"焦虑\", \"鼓励\"],\n    \"entities\": {\n      \"time\": \"\",..."
+}
+[2025-08-18 22:22:33.910] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 22:22:33.911] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2010ms",
+  "success": true
+}
+[2025-08-18 22:22:33.988] INFO: 用户消息已保存
+  {
+  "messageId": "68a3372980af80055a418ad7",
+  "intent": "CONVERSATION",
+  "confidence": 0.95
+}
+[2025-08-18 22:22:33.997] INFO: 检测到用户情绪
+  {
+  "userId": "689c9e67e830282547f98447",
+  "emotion": "stressed",
+  "keywords": [
+    "工作压力",
+    "焦虑",
+    "鼓励"
+  ]
+}
+[2025-08-18 22:22:34.015] INFO: 开始生成AI回应
+  {
+  "userId": "689c9e67e830282547f98447",
+  "historyCount": 1
+}
+[2025-08-18 22:22:34.015] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-08-18 22:22:35.938] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "1923ms",
+  "usage": {
+    "prompt_tokens": 560,
+    "completion_tokens": 63,
+    "total_tokens": 623,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:22:35.943] INFO: 对话处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755526944882_vvd9sf424",
+  "userMessageId": "68a3372980af80055a418ad7",
+  "assistantMessageId": "68a3372b80af80055a418ada",
+  "totalTime": "4043ms",
+  "emotion": "stressed",
+  "intent": "CONVERSATION"
+}
+[2025-08-18 22:22:35.944] INFO: 服务执行完成
+  {
+  "requestId": "dispatch-1755526949702-0i8rr2tb2",
+  "servicesExecuted": [
+    "conversation"
+  ],
+  "successCount": 1
+}
+[2025-08-18 22:22:35.944] INFO: 步骤4: 生成统一回复
+  {
+  "requestId": "dispatch-1755526949702-0i8rr2tb2"
+}
+[2025-08-18 22:22:35.945] WARN: AI回复生成失败，使用备用逻辑
+  {
+  "error": "Cannot convert undefined or null to object"
+}
+[2025-08-18 22:22:35.945] INFO: 回复生成完成
+  {
+  "requestId": "dispatch-1755526949702-0i8rr2tb2",
+  "responseLength": 20
+}
+[2025-08-18 22:22:35.946] INFO: 智能调度处理完成
+  {
+  "requestId": "dispatch-1755526949702-0i8rr2tb2",
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": "6243ms",
+  "responseLength": 20,
+  "servicesExecuted": [
+    "conversation"
+  ]
+}
+[2025-08-18 22:22:35.946] INFO: 智能调度处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": 6245,
+  "responseLength": 20,
+  "servicesExecuted": [
+    "conversation"
+  ]
+}
+[2025-08-18 22:22:56.962] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:22:56.987] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:22:56.987] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:22:57.337] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:22:57.343] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:22:57.344] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:22:57.344] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:22:57.345] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:22:57.346] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:22:57.346] INFO: 智能调度服务初始化完成
+  {
+  "services": [
+    "intentRecognition",
+    "conversation",
+    "taskRecognition",
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 22:22:58.926] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "689c9e67e830282547f98447",
+  "ip": "::1"
+}
+[2025-08-18 22:22:58.927] INFO: 收到智能调度请求
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "sessionId": "session_1755526944882_vvd9sf424",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-08-18 22:22:58.928] INFO: 开始智能调度处理
+  {
+  "requestId": "dispatch-1755526978927-6wvmp8rnd",
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755526944882_vvd9sf424",
+  "inputLength": 18
+}
+[2025-08-18 22:22:58.928] INFO: 步骤1: 执行意图识别
+  {
+  "requestId": "dispatch-1755526978927-6wvmp8rnd"
+}
+[2025-08-18 22:22:58.929] INFO: 开始意图识别
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "inputLength": 18
+}
+[2025-08-18 22:22:58.930] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 378
+}
+[2025-08-18 22:22:58.931] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 22:23:01.445] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 475,
+    "completion_tokens": 95,
+    "total_tokens": 570,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:23:01.446] INFO: 收到模型响应
+  {
+  "responseLength": 239,
+  "responseTime": "2517ms"
+}
+[2025-08-18 22:23:01.447] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户主要表达了情绪上的疲惫，并未明确要求创建任务、安排时间或调用外部工具。\",\n  \"extracted_info\": {\n    \"keywords\": [\"下午三点\", \"拿快递\", \"累\"],\n    \"entities\": {\n      \"time\": ..."
+}
+[2025-08-18 22:23:01.447] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 22:23:01.448] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2518ms",
+  "success": true
+}
+[2025-08-18 22:23:01.448] INFO: 意图识别完成
+  {
+  "requestId": "dispatch-1755526978927-6wvmp8rnd",
+  "intent": "CONVERSATION",
+  "confidence": 0.95
+}
+[2025-08-18 22:23:01.448] INFO: 步骤2: 分析多重意图
+  {
+  "requestId": "dispatch-1755526978927-6wvmp8rnd"
+}
+[2025-08-18 22:23:01.449] INFO: 多重意图分析完成
+  {
+  "requestId": "dispatch-1755526978927-6wvmp8rnd",
+  "intents": [
+    "CONVERSATION",
+    "TASK_CREATION"
+  ],
+  "count": 2
+}
+[2025-08-18 22:23:01.449] INFO: 步骤3: 执行相应的服务
+  {
+  "requestId": "dispatch-1755526978927-6wvmp8rnd"
+}
+[2025-08-18 22:23:01.450] INFO: 开始处理对话
+  {
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755526944882_vvd9sf424",
+  "messageLength": 18
+}
+[2025-08-18 22:23:01.450] INFO: 开始意图识别 我今天下午三点要去拿快递，但感觉很累...
+  {
+  "userId": "689c9e67e830282547f98447"
+}
+[2025-08-18 22:23:01.450] INFO: 开始意图识别
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "inputLength": 18
+}
+[2025-08-18 22:23:01.451] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 378
+}
+[2025-08-18 22:23:01.451] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 22:23:01.454] INFO: 开始任务识别和存储
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "userId": "689c9e67e830282547f98447"
+}
+[2025-08-18 22:23:01.454] INFO: 开始意图识别
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "inputLength": 18
+}
+[2025-08-18 22:23:01.454] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 378
+}
+[2025-08-18 22:23:01.455] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 22:23:03.392] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 475,
+    "completion_tokens": 104,
+    "total_tokens": 579,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:23:03.392] INFO: 收到模型响应
+  {
+  "responseLength": 265,
+  "responseTime": "1938ms"
+}
+[2025-08-18 22:23:03.393] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"用户表达了要去拿快递的计划，但主要情绪集中在‘感觉很累’，属于情绪表达，因此主要意图为对话交流。\",\n  \"extracted_info\": {\n    \"keywords\": [\"拿快递\", \"累\"],\n    \"entities\": {\n      \"time\"..."
+}
+[2025-08-18 22:23:03.394] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "hasExtractedInfo": true
+}
+[2025-08-18 22:23:03.395] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "processingTime": "1941ms",
+  "success": true
+}
+[2025-08-18 22:23:03.396] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9
+}
+[2025-08-18 22:23:03.397] INFO: 非任务创建意图，跳过任务存储
+  {
+  "intent": "CONVERSATION"
+}
+[2025-08-18 22:23:03.554] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 475,
+    "completion_tokens": 103,
+    "total_tokens": 578,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:23:03.555] INFO: 收到模型响应
+  {
+  "responseLength": 263,
+  "responseTime": "2105ms"
+}
+[2025-08-18 22:23:03.555] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"用户表达了要去拿快递的计划，但主要情绪集中在‘感觉很累’，属于情绪表达，因此主要意图是对话交流。\",\n  \"extracted_info\": {\n    \"keywords\": [\"拿快递\", \"累\"],\n    \"entities\": {\n      \"time\"..."
+}
+[2025-08-18 22:23:03.555] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "hasExtractedInfo": true
+}
+[2025-08-18 22:23:03.556] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "processingTime": "2106ms",
+  "success": true
+}
+[2025-08-18 22:23:03.572] INFO: 用户消息已保存
+  {
+  "messageId": "68a33747fc96f598f8fb9511",
+  "intent": "CONVERSATION",
+  "confidence": 0.9
+}
+[2025-08-18 22:23:03.603] INFO: 检测到用户情绪
+  {
+  "userId": "689c9e67e830282547f98447",
+  "emotion": "tired",
+  "keywords": [
+    "拿快递",
+    "累"
+  ]
+}
+[2025-08-18 22:23:03.623] INFO: 开始生成AI回应
+  {
+  "userId": "689c9e67e830282547f98447",
+  "historyCount": 3
+}
+[2025-08-18 22:23:03.623] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-08-18 22:23:06.723] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "3099ms",
+  "usage": {
+    "prompt_tokens": 651,
+    "completion_tokens": 90,
+    "total_tokens": 741,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:23:06.734] INFO: 对话处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755526944882_vvd9sf424",
+  "userMessageId": "68a33747fc96f598f8fb9511",
+  "assistantMessageId": "68a3374afc96f598f8fb9514",
+  "totalTime": "5284ms",
+  "emotion": "tired",
+  "intent": "CONVERSATION"
+}
+[2025-08-18 22:23:06.734] INFO: 服务执行完成
+  {
+  "requestId": "dispatch-1755526978927-6wvmp8rnd",
+  "servicesExecuted": [
+    "taskCreation",
+    "conversation"
+  ],
+  "successCount": 2
+}
+[2025-08-18 22:23:06.735] INFO: 步骤4: 生成统一回复
+  {
+  "requestId": "dispatch-1755526978927-6wvmp8rnd"
+}
+[2025-08-18 22:23:06.736] WARN: AI回复生成失败，使用备用逻辑
+  {
+  "error": "Cannot convert undefined or null to object"
+}
+[2025-08-18 22:23:06.736] INFO: 回复生成完成
+  {
+  "requestId": "dispatch-1755526978927-6wvmp8rnd",
+  "responseLength": 36
+}
+[2025-08-18 22:23:06.737] INFO: 智能调度处理完成
+  {
+  "requestId": "dispatch-1755526978927-6wvmp8rnd",
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": "7810ms",
+  "responseLength": 36,
+  "servicesExecuted": [
+    "taskCreation",
+    "conversation"
+  ]
+}
+[2025-08-18 22:23:06.737] INFO: 智能调度处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": 7811,
+  "responseLength": 36,
+  "servicesExecuted": [
+    "taskCreation",
+    "conversation"
+  ]
+}
+[2025-08-18 22:24:19.831] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:19.856] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:19.857] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:20.236] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:20.243] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:20.244] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:20.245] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:20.246] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:20.247] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:20.248] INFO: 智能调度服务初始化完成
+  {
+  "services": [
+    "intentRecognition",
+    "conversation",
+    "taskRecognition",
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 22:24:34.843] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:34.867] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:34.868] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:35.266] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:35.275] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:35.276] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:35.277] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:35.277] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:35.278] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:35.278] INFO: 智能调度服务初始化完成
+  {
+  "services": [
+    "intentRecognition",
+    "conversation",
+    "taskRecognition",
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 22:24:51.189] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "689c9e67e830282547f98447",
+  "ip": "::1"
+}
+[2025-08-18 22:24:52.847] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:52.869] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:52.869] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:53.213] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:53.221] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:53.222] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:53.222] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:53.223] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:53.224] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:24:53.224] INFO: 智能调度服务初始化完成
+  {
+  "services": [
+    "intentRecognition",
+    "conversation",
+    "taskRecognition",
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 22:25:00.631] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-08-18 22:25:00.632] INFO: 获取智能调度服务状态
+[2025-08-18 22:25:00.633] INFO: 开始意图识别
+  {
+  "userInput": "你好",
+  "inputLength": 2
+}
+[2025-08-18 22:25:00.633] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 362
+}
+[2025-08-18 22:25:00.634] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 22:25:02.597] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 464,
+    "completion_tokens": 78,
+    "total_tokens": 542,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:25:02.597] INFO: 收到模型响应
+  {
+  "responseLength": 192,
+  "responseTime": "1965ms"
+}
+[2025-08-18 22:25:02.598] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户输入为简单的问候语'你好'，没有涉及任务创建、时间安排或外部工具调用的相关内容，属于正常对话范畴。\",\n  \"extracted_info\": {\n    \"keywords\": [\"你好\"],\n    \"entities\": {}\n  }\n}..."
+}
+[2025-08-18 22:25:02.599] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 22:25:02.599] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "1967ms",
+  "success": true
+}
+[2025-08-18 22:25:02.600] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 1968
+}
+[2025-08-18 22:25:06.767] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "689c9e67e830282547f98447",
+  "ip": "::1"
+}
+[2025-08-18 22:25:06.768] INFO: 收到智能调度请求
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "我最近工作压力很大，感觉很焦虑，需要一些鼓励。",
+  "sessionId": "session_1755527100471_xuhz6xdz2",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-08-18 22:25:06.768] INFO: 开始智能调度处理
+  {
+  "requestId": "dispatch-1755527106768-75vksezbj",
+  "userInput": "我最近工作压力很大，感觉很焦虑，需要一些鼓励。",
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755527100471_xuhz6xdz2",
+  "inputLength": 23
+}
+[2025-08-18 22:25:06.769] INFO: 步骤1: 执行意图识别
+  {
+  "requestId": "dispatch-1755527106768-75vksezbj"
+}
+[2025-08-18 22:25:06.769] INFO: 开始意图识别
+  {
+  "userInput": "我最近工作压力很大，感觉很焦虑，需要一些鼓励。",
+  "inputLength": 23
+}
+[2025-08-18 22:25:06.770] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 383
+}
+[2025-08-18 22:25:06.770] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 22:25:09.051] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 477,
+    "completion_tokens": 93,
+    "total_tokens": 570,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:25:09.051] INFO: 收到模型响应
+  {
+  "responseLength": 255,
+  "responseTime": "2282ms"
+}
+[2025-08-18 22:25:09.052] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了情绪上的困扰，并明确提到需要鼓励，这属于情绪安慰和感情表达的范畴。\",\n  \"extracted_info\": {\n    \"keywords\": [\"工作压力\", \"焦虑\", \"鼓励\"],\n    \"entities\": {\n      \"time\":..."
+}
+[2025-08-18 22:25:09.053] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 22:25:09.053] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2284ms",
+  "success": true
+}
+[2025-08-18 22:25:09.054] INFO: 意图识别完成
+  {
+  "requestId": "dispatch-1755527106768-75vksezbj",
+  "intent": "CONVERSATION",
+  "confidence": 0.95
+}
+[2025-08-18 22:25:09.055] INFO: 步骤2: 分析多重意图
+  {
+  "requestId": "dispatch-1755527106768-75vksezbj"
+}
+[2025-08-18 22:25:09.055] INFO: 多重意图分析完成
+  {
+  "requestId": "dispatch-1755527106768-75vksezbj",
+  "intents": [
+    "CONVERSATION"
+  ],
+  "count": 1
+}
+[2025-08-18 22:25:09.056] INFO: 步骤3: 执行相应的服务
+  {
+  "requestId": "dispatch-1755527106768-75vksezbj"
+}
+[2025-08-18 22:25:09.057] INFO: 开始处理对话
+  {
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755527100471_xuhz6xdz2",
+  "messageLength": 23
+}
+[2025-08-18 22:25:09.059] INFO: 开始意图识别 我最近工作压力很大，感觉很焦虑，需要一些鼓励。...
+  {
+  "userId": "689c9e67e830282547f98447"
+}
+[2025-08-18 22:25:09.059] INFO: 开始意图识别
+  {
+  "userInput": "我最近工作压力很大，感觉很焦虑，需要一些鼓励。",
+  "inputLength": 23
+}
+[2025-08-18 22:25:09.060] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 383
+}
+[2025-08-18 22:25:09.060] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 22:25:11.487] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 477,
+    "completion_tokens": 91,
+    "total_tokens": 568,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:25:11.488] INFO: 收到模型响应
+  {
+  "responseLength": 251,
+  "responseTime": "2428ms"
+}
+[2025-08-18 22:25:11.488] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了情绪上的困扰，并请求鼓励，这属于情绪安慰和感情表达的范畴。\",\n  \"extracted_info\": {\n    \"keywords\": [\"工作压力\", \"焦虑\", \"鼓励\"],\n    \"entities\": {\n      \"time\": \"\",..."
+}
+[2025-08-18 22:25:11.488] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 22:25:11.489] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2429ms",
+  "success": true
+}
+[2025-08-18 22:25:11.504] INFO: 用户消息已保存
+  {
+  "messageId": "68a337c725b2231a6ad7c07e",
+  "intent": "CONVERSATION",
+  "confidence": 0.95
+}
+[2025-08-18 22:25:11.509] INFO: 检测到用户情绪
+  {
+  "userId": "689c9e67e830282547f98447",
+  "emotion": "stressed",
+  "keywords": [
+    "工作压力",
+    "焦虑",
+    "鼓励"
+  ]
+}
+[2025-08-18 22:25:11.528] INFO: 开始生成AI回应
+  {
+  "userId": "689c9e67e830282547f98447",
+  "historyCount": 1
+}
+[2025-08-18 22:25:11.529] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-08-18 22:25:15.085] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "3555ms",
+  "usage": {
+    "prompt_tokens": 560,
+    "completion_tokens": 62,
+    "total_tokens": 622,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:25:15.115] INFO: 对话处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755527100471_xuhz6xdz2",
+  "userMessageId": "68a337c725b2231a6ad7c07e",
+  "assistantMessageId": "68a337cb25b2231a6ad7c081",
+  "totalTime": "6057ms",
+  "emotion": "stressed",
+  "intent": "CONVERSATION"
+}
+[2025-08-18 22:25:15.117] INFO: 服务执行完成
+  {
+  "requestId": "dispatch-1755527106768-75vksezbj",
+  "servicesExecuted": [
+    "conversation"
+  ],
+  "successCount": 1
+}
+[2025-08-18 22:25:15.117] INFO: 步骤4: 生成统一回复
+  {
+  "requestId": "dispatch-1755527106768-75vksezbj"
+}
+[2025-08-18 22:25:15.120] INFO: 开始生成统一回复
+  {
+  "userInput": "我最近工作压力很大，感觉很焦虑，需要一些鼓励。",
+  "intentsCount": 1,
+  "executionResultsKeys": [
+    "conversation"
+  ],
+  "executionResults": {
+    "conversation": {
+      "success": true,
+      "data": {
+        "sessionId": "session_1755527100471_xuhz6xdz2",
+        "userMessage": {
+          "id": "68a337c725b2231a6ad7c07e",
+          "content": "我最近工作压力很大，感觉很焦虑，需要一些鼓励。",
+          "timestamp": "2025-08-18T14:25:11.498Z",
+          "intent": "CONVERSATION",
+          "confidence": 0.95
+        },
+        "assistantMessage": {
+          "id": "68a337cb25b2231a6ad7c081",
+          "content": "亲爱的朋友～🌼 感到焦虑的时候，记得深呼吸，给自己一点温柔的关怀。每个人都会有压力大的时候，你已经很棒了！可以和我说说具体是什么让你感到特别有压力吗？有时候说出来，心里会舒服很多。无论怎样，我都在这里陪你～💖",
+          "timestamp": "2025-08-18T14:25:15.088Z",
+          "emotion": "stressed"
+        },
+        "metadata": {
+          "processingTime": 6057,
+          "intentInfo": {
+            "intent": "CONVERSATION",
+            "confidence": 0.95,
+            "reasoning": "用户表达了情绪上的困扰，并请求鼓励，这属于情绪安慰和感情表达的范畴。"
+          },
+          "conversationStats": {
+            "historyCount": 1,
+            "emotion": "stressed"
+          }
+        }
+      }
+    }
+  }
+}
+[2025-08-18 22:25:15.121] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-08-18 22:25:17.440] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "2319ms",
+  "usage": {
+    "prompt_tokens": 261,
+    "completion_tokens": 54,
+    "total_tokens": 315,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:25:17.442] INFO: 回复生成完成
+  {
+  "requestId": "dispatch-1755527106768-75vksezbj",
+  "responseLength": 94
+}
+[2025-08-18 22:25:17.443] INFO: 智能调度处理完成
+  {
+  "requestId": "dispatch-1755527106768-75vksezbj",
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": "10675ms",
+  "responseLength": 94,
+  "servicesExecuted": [
+    "conversation"
+  ]
+}
+[2025-08-18 22:25:17.444] INFO: 智能调度处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": 10676,
+  "responseLength": 94,
+  "servicesExecuted": [
+    "conversation"
+  ]
+}
+[2025-08-18 22:25:28.284] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "689c9e67e830282547f98447",
+  "ip": "::1"
+}
+[2025-08-18 22:25:28.285] INFO: 收到智能调度请求
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "sessionId": "session_1755527100471_xuhz6xdz2",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-08-18 22:25:28.285] INFO: 开始智能调度处理
+  {
+  "requestId": "dispatch-1755527128285-a7juriicf",
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755527100471_xuhz6xdz2",
+  "inputLength": 18
+}
+[2025-08-18 22:25:28.285] INFO: 步骤1: 执行意图识别
+  {
+  "requestId": "dispatch-1755527128285-a7juriicf"
+}
+[2025-08-18 22:25:28.286] INFO: 开始意图识别
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "inputLength": 18
+}
+[2025-08-18 22:25:28.286] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 378
+}
+[2025-08-18 22:25:28.287] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 22:25:33.228] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 475,
+    "completion_tokens": 101,
+    "total_tokens": 576,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:25:33.228] INFO: 收到模型响应
+  {
+  "responseLength": 246,
+  "responseTime": "4943ms"
+}
+[2025-08-18 22:25:33.229] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户表达了要去拿快递的计划，但主要强调的是‘感觉很累’，带有情绪表达，属于日常对话范畴。\",\n  \"extracted_info\": {\n    \"keywords\": [\"下午三点\", \"拿快递\", \"累\"],\n    \"entities\": {\n      \"..."
+}
+[2025-08-18 22:25:33.230] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 22:25:33.230] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "4945ms",
+  "success": true
+}
+[2025-08-18 22:25:33.231] INFO: 意图识别完成
+  {
+  "requestId": "dispatch-1755527128285-a7juriicf",
+  "intent": "CONVERSATION",
+  "confidence": 0.95
+}
+[2025-08-18 22:25:33.232] INFO: 步骤2: 分析多重意图
+  {
+  "requestId": "dispatch-1755527128285-a7juriicf"
+}
+[2025-08-18 22:25:33.232] INFO: 多重意图分析完成
+  {
+  "requestId": "dispatch-1755527128285-a7juriicf",
+  "intents": [
+    "CONVERSATION",
+    "TASK_CREATION"
+  ],
+  "count": 2
+}
+[2025-08-18 22:25:33.233] INFO: 步骤3: 执行相应的服务
+  {
+  "requestId": "dispatch-1755527128285-a7juriicf"
+}
+[2025-08-18 22:25:33.233] INFO: 开始处理对话
+  {
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755527100471_xuhz6xdz2",
+  "messageLength": 18
+}
+[2025-08-18 22:25:33.235] INFO: 开始意图识别 我今天下午三点要去拿快递，但感觉很累...
+  {
+  "userId": "689c9e67e830282547f98447"
+}
+[2025-08-18 22:25:33.236] INFO: 开始意图识别
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "inputLength": 18
+}
+[2025-08-18 22:25:33.236] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 378
+}
+[2025-08-18 22:25:33.237] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 22:25:33.239] INFO: 开始任务识别和存储
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "userId": "689c9e67e830282547f98447"
+}
+[2025-08-18 22:25:33.239] INFO: 开始意图识别
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "inputLength": 18
+}
+[2025-08-18 22:25:33.240] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 378
+}
+[2025-08-18 22:25:33.241] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 22:25:35.756] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 475,
+    "completion_tokens": 109,
+    "total_tokens": 584,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:25:35.757] INFO: 收到模型响应
+  {
+  "responseLength": 275,
+  "responseTime": "2522ms"
+}
+[2025-08-18 22:25:35.758] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"用户表达了要去拿快递的计划，但主要情绪是表达疲惫感，整体偏向于情绪倾诉而非明确的任务创建或时间安排。\",\n  \"extracted_info\": {\n    \"keywords\": [\"下午三点\", \"拿快递\", \"累\"],\n    \"entities\": {\n  ..."
+}
+[2025-08-18 22:25:35.758] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "hasExtractedInfo": true
+}
+[2025-08-18 22:25:35.758] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "processingTime": "2523ms",
+  "success": true
+}
+[2025-08-18 22:25:35.763] INFO: 用户消息已保存
+  {
+  "messageId": "68a337df25b2231a6ad7c086",
+  "intent": "CONVERSATION",
+  "confidence": 0.9
+}
+[2025-08-18 22:25:35.765] INFO: 检测到用户情绪
+  {
+  "userId": "689c9e67e830282547f98447",
+  "emotion": "tired",
+  "keywords": [
+    "下午三点",
+    "拿快递",
+    "累"
+  ]
+}
+[2025-08-18 22:25:35.766] INFO: 开始生成AI回应
+  {
+  "userId": "689c9e67e830282547f98447",
+  "historyCount": 3
+}
+[2025-08-18 22:25:35.766] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-08-18 22:25:35.787] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 475,
+    "completion_tokens": 97,
+    "total_tokens": 572,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:25:35.787] INFO: 收到模型响应
+  {
+  "responseLength": 240,
+  "responseTime": "2548ms"
+}
+[2025-08-18 22:25:35.788] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.9,\n  \"reasoning\": \"用户表达了要去拿快递的计划，但主要情绪是感觉累，整体偏向于情绪表达和日常对话。\",\n  \"extracted_info\": {\n    \"keywords\": [\"下午三点\", \"拿快递\", \"累\"],\n    \"entities\": {\n      \"time\":..."
+}
+[2025-08-18 22:25:35.788] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "hasExtractedInfo": true
+}
+[2025-08-18 22:25:35.789] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9,
+  "processingTime": "2549ms",
+  "success": true
+}
+[2025-08-18 22:25:35.789] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.9
+}
+[2025-08-18 22:25:35.789] INFO: 非任务创建意图，跳过任务存储
+  {
+  "intent": "CONVERSATION"
+}
+[2025-08-18 22:25:38.277] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "2510ms",
+  "usage": {
+    "prompt_tokens": 651,
+    "completion_tokens": 74,
+    "total_tokens": 725,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:25:38.284] INFO: 对话处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755527100471_xuhz6xdz2",
+  "userMessageId": "68a337df25b2231a6ad7c086",
+  "assistantMessageId": "68a337e225b2231a6ad7c089",
+  "totalTime": "5050ms",
+  "emotion": "tired",
+  "intent": "CONVERSATION"
+}
+[2025-08-18 22:25:38.284] INFO: 服务执行完成
+  {
+  "requestId": "dispatch-1755527128285-a7juriicf",
+  "servicesExecuted": [
+    "taskCreation",
+    "conversation"
+  ],
+  "successCount": 2
+}
+[2025-08-18 22:25:38.285] INFO: 步骤4: 生成统一回复
+  {
+  "requestId": "dispatch-1755527128285-a7juriicf"
+}
+[2025-08-18 22:25:38.286] INFO: 开始生成统一回复
+  {
+  "userInput": "我今天下午三点要去拿快递，但感觉很累",
+  "intentsCount": 2,
+  "executionResultsKeys": [
+    "taskCreation",
+    "conversation"
+  ],
+  "executionResults": {
+    "taskCreation": {
+      "success": true,
+      "message": "输入不是任务创建意图，无需存储",
+      "intentResult": {
+        "intent": "CONVERSATION",
+        "confidence": 0.9,
+        "reasoning": "用户表达了要去拿快递的计划，但主要情绪是感觉累，整体偏向于情绪表达和日常对话。",
+        "extracted_info": {
+          "keywords": [
+            "下午三点",
+            "拿快递",
+            "累"
+          ],
+          "entities": {
+            "time": "下午三点",
+            "task": "拿快递"
+          }
+        },
+        "original_input": "我今天下午三点要去拿快递，但感觉很累",
+        "timestamp": "2025-08-18T14:25:35.788Z",
+        "intent_description": "正常对话（情绪安慰、聊天）"
+      }
+    },
+    "conversation": {
+      "success": true,
+      "data": {
+        "sessionId": "session_1755527100471_xuhz6xdz2",
+        "userMessage": {
+          "id": "68a337df25b2231a6ad7c086",
+          "content": "我今天下午三点要去拿快递，但感觉很累",
+          "timestamp": "2025-08-18T14:25:35.760Z",
+          "intent": "CONVERSATION",
+          "confidence": 0.9
+        },
+        "assistantMessage": {
+          "id": "68a337e225b2231a6ad7c089",
+          "content": "亲爱的朋友～🌼 下午三点拿快递的事情听起来确实有点让人犯愁呢。感觉累的时候，就连小小的任务也会觉得有点头疼吧？要不先躺下休息一会儿，把闹钟定早一点，起来后冲个脸，喝杯水，让自己清醒一下再出发？记得照顾好自己哦～你真的很棒的！💖",
+          "timestamp": "2025-08-18T14:25:38.278Z",
+          "emotion": "tired"
+        },
+        "metadata": {
+          "processingTime": 5050,
+          "intentInfo": {
+            "intent": "CONVERSATION",
+            "confidence": 0.9,
+            "reasoning": "用户表达了要去拿快递的计划，但主要情绪是表达疲惫感，整体偏向于情绪倾诉而非明确的任务创建或时间安排。"
+          },
+          "conversationStats": {
+            "historyCount": 3,
+            "emotion": "tired"
+          }
+        }
+      }
+    }
+  }
+}
+[2025-08-18 22:25:38.287] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-08-18 22:25:41.035] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "2749ms",
+  "usage": {
+    "prompt_tokens": 284,
+    "completion_tokens": 50,
+    "total_tokens": 334,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:25:41.036] INFO: 回复生成完成
+  {
+  "requestId": "dispatch-1755527128285-a7juriicf",
+  "responseLength": 82
+}
+[2025-08-18 22:25:41.036] INFO: 智能调度处理完成
+  {
+  "requestId": "dispatch-1755527128285-a7juriicf",
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": "12751ms",
+  "responseLength": 82,
+  "servicesExecuted": [
+    "taskCreation",
+    "conversation"
+  ]
+}
+[2025-08-18 22:25:41.037] INFO: 智能调度处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": 12752,
+  "responseLength": 82,
+  "servicesExecuted": [
+    "taskCreation",
+    "conversation"
+  ]
+}
+[2025-08-18 22:25:51.664] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "689c9e67e830282547f98447",
+  "ip": "::1"
+}
+[2025-08-18 22:25:51.665] INFO: 收到智能调度请求
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "今天上海天气怎么样？我要决定穿什么衣服",
+  "sessionId": "session_1755527100471_xuhz6xdz2",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-08-18 22:25:51.666] INFO: 开始智能调度处理
+  {
+  "requestId": "dispatch-1755527151666-r23utpnhw",
+  "userInput": "今天上海天气怎么样？我要决定穿什么衣服",
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755527100471_xuhz6xdz2",
+  "inputLength": 19
+}
+[2025-08-18 22:25:51.666] INFO: 步骤1: 执行意图识别
+  {
+  "requestId": "dispatch-1755527151666-r23utpnhw"
+}
+[2025-08-18 22:25:51.666] INFO: 开始意图识别
+  {
+  "userInput": "今天上海天气怎么样？我要决定穿什么衣服",
+  "inputLength": 19
+}
+[2025-08-18 22:25:51.667] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 379
+}
+[2025-08-18 22:25:51.667] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 22:25:53.995] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 473,
+    "completion_tokens": 96,
+    "total_tokens": 569,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:25:53.996] INFO: 收到模型响应
+  {
+  "responseLength": 257,
+  "responseTime": "2330ms"
+}
+[2025-08-18 22:25:53.996] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"EXTERNAL_TOOL\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户询问天气情况，目的是为了获取外部信息以辅助决策，符合外部工具调用的定义。\",\n  \"extracted_info\": {\n    \"keywords\": [\"天气\", \"穿什么衣服\"],\n    \"entities\": {\n      \"time\": \"今天..."
+}
+[2025-08-18 22:25:53.997] INFO: 意图识别结果解析成功
+  {
+  "intent": "EXTERNAL_TOOL",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 22:25:53.998] INFO: 意图识别完成
+  {
+  "intent": "EXTERNAL_TOOL",
+  "confidence": 0.95,
+  "processingTime": "2331ms",
+  "success": true
+}
+[2025-08-18 22:25:53.998] INFO: 意图识别完成
+  {
+  "requestId": "dispatch-1755527151666-r23utpnhw",
+  "intent": "EXTERNAL_TOOL",
+  "confidence": 0.95
+}
+[2025-08-18 22:25:53.998] INFO: 步骤2: 分析多重意图
+  {
+  "requestId": "dispatch-1755527151666-r23utpnhw"
+}
+[2025-08-18 22:25:53.999] INFO: 多重意图分析完成
+  {
+  "requestId": "dispatch-1755527151666-r23utpnhw",
+  "intents": [
+    "EXTERNAL_TOOL"
+  ],
+  "count": 1
+}
+[2025-08-18 22:25:53.999] INFO: 步骤3: 执行相应的服务
+  {
+  "requestId": "dispatch-1755527151666-r23utpnhw"
+}
+[2025-08-18 22:25:54.000] INFO: 服务执行完成
+  {
+  "requestId": "dispatch-1755527151666-r23utpnhw",
+  "servicesExecuted": [
+    "externalTool"
+  ],
+  "successCount": 1
+}
+[2025-08-18 22:25:54.000] INFO: 步骤4: 生成统一回复
+  {
+  "requestId": "dispatch-1755527151666-r23utpnhw"
+}
+[2025-08-18 22:25:54.001] INFO: 开始生成统一回复
+  {
+  "userInput": "今天上海天气怎么样？我要决定穿什么衣服",
+  "intentsCount": 1,
+  "executionResultsKeys": [
+    "externalTool"
+  ],
+  "executionResults": {
+    "externalTool": {
+      "success": true,
+      "type": "weather",
+      "message": "外部工具功能待集成"
+    }
+  }
+}
+[2025-08-18 22:25:54.001] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-08-18 22:25:55.172] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "1171ms",
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 46,
+    "total_tokens": 302,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 22:25:55.173] INFO: 回复生成完成
+  {
+  "requestId": "dispatch-1755527151666-r23utpnhw",
+  "responseLength": 70
+}
+[2025-08-18 22:25:55.173] INFO: 智能调度处理完成
+  {
+  "requestId": "dispatch-1755527151666-r23utpnhw",
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": "3507ms",
+  "responseLength": 70,
+  "servicesExecuted": [
+    "externalTool"
+  ]
+}
+[2025-08-18 22:25:55.174] INFO: 智能调度处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": 3509,
+  "responseLength": 70,
+  "servicesExecuted": [
+    "externalTool"
+  ]
+}
+[2025-08-18 22:26:05.230] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:26:05.262] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:26:05.262] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:26:05.604] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:26:05.610] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:26:05.610] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:26:05.611] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:26:05.611] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:26:05.612] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 22:26:05.612] INFO: 智能调度服务初始化完成
+  {
+  "services": [
+    "intentRecognition",
+    "conversation",
+    "taskRecognition",
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 23:07:57.897] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:07:57.939] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:07:57.939] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:07:58.562] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:07:58.569] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:07:58.570] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:07:58.571] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:07:58.571] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:07:58.572] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:07:58.573] INFO: 智能调度服务初始化完成
+  {
+  "services": [
+    "intentRecognition",
+    "conversation",
+    "taskRecognition",
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 23:09:25.002] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-08-18 23:09:25.003] INFO: 获取智能调度服务状态
+[2025-08-18 23:09:25.003] INFO: 开始意图识别
+  {
+  "userInput": "你好",
+  "inputLength": 2
+}
+[2025-08-18 23:09:25.004] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 362
+}
+[2025-08-18 23:09:25.005] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 23:09:27.227] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 464,
+    "completion_tokens": 70,
+    "total_tokens": 534,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 23:09:27.227] INFO: 收到模型响应
+  {
+  "responseLength": 179,
+  "responseTime": "2224ms"
+}
+[2025-08-18 23:09:27.228] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户输入为简单的问候语，没有涉及任务创建、时间调度或外部工具调用的相关内容。\",\n  \"extracted_info\": {\n    \"keywords\": [\"你好\"],\n    \"entities\": {}\n  }\n}..."
+}
+[2025-08-18 23:09:27.229] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 23:09:27.229] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "2226ms",
+  "success": true
+}
+[2025-08-18 23:09:27.230] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 2227
+}
+[2025-08-18 23:09:30.348] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "689c9e67e830282547f98447",
+  "ip": "::1"
+}
+[2025-08-18 23:09:30.351] INFO: 收到智能调度请求
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "帮我安排一下今天的日程",
+  "sessionId": "session_1755529760832_289r8dc4a",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-08-18 23:09:30.351] INFO: 开始智能调度处理
+  {
+  "requestId": "dispatch-1755529770351-unbi5qnwx",
+  "userInput": "帮我安排一下今天的日程",
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755529760832_289r8dc4a",
+  "inputLength": 11
+}
+[2025-08-18 23:09:30.352] INFO: 步骤1: 执行意图识别
+  {
+  "requestId": "dispatch-1755529770351-unbi5qnwx"
+}
+[2025-08-18 23:09:30.352] INFO: 开始意图识别
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "inputLength": 11
+}
+[2025-08-18 23:09:30.352] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 371
+}
+[2025-08-18 23:09:30.353] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 23:09:32.200] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 469,
+    "completion_tokens": 92,
+    "total_tokens": 561,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 23:09:32.200] INFO: 收到模型响应
+  {
+  "responseLength": 246,
+  "responseTime": "1848ms"
+}
+[2025-08-18 23:09:32.200] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户明确请求安排今天的日程，这属于时间调度和日程规划的范畴。\",\n  \"extracted_info\": {\n    \"keywords\": [\"安排\", \"日程\"],\n    \"entities\": {\n      \"time\": \"今天\",\n    ..."
+}
+[2025-08-18 23:09:32.201] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 23:09:32.201] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "1849ms",
+  "success": true
+}
+[2025-08-18 23:09:32.201] INFO: 意图识别完成
+  {
+  "requestId": "dispatch-1755529770351-unbi5qnwx",
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95
+}
+[2025-08-18 23:09:32.202] INFO: 步骤2: 分析多重意图
+  {
+  "requestId": "dispatch-1755529770351-unbi5qnwx"
+}
+[2025-08-18 23:09:32.202] INFO: 多重意图分析完成
+  {
+  "requestId": "dispatch-1755529770351-unbi5qnwx",
+  "intents": [
+    "SCHEDULE_PLANNING"
+  ],
+  "count": 1
+}
+[2025-08-18 23:09:32.202] INFO: 步骤3: 执行相应的服务
+  {
+  "requestId": "dispatch-1755529770351-unbi5qnwx"
+}
+[2025-08-18 23:09:32.203] INFO: 开始任务调度规划
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "帮我安排一下今天的日程",
+  "targetDate": "2025-08-18",
+  "userContext": {
+    "emotionalState": "neutral"
+  }
+}
+[2025-08-18 23:09:32.251] INFO: 获取用户现有任务
+  {
+  "userId": "689c9e67e830282547f98447",
+  "taskCount": 0,
+  "date": "2025-08-18"
+}
+[2025-08-18 23:09:32.261] INFO: 获取用户任务集信息
+  {
+  "userId": "689c9e67e830282547f98447",
+  "collectionCount": 1
+}
+[2025-08-18 23:09:32.262] INFO: 构建调度规划Prompt完成
+  {
+  "messagesCount": 2
+}
+[2025-08-18 23:09:32.263] INFO: 调用通义千问API进行调度分析
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "temperature": 0.3
+}
+[2025-08-18 23:09:39.477] INFO: 通义千问API调用成功 (调度分析)
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 867,
+    "completion_tokens": 342,
+    "total_tokens": 1209,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 23:09:39.478] INFO: 通义千问调度分析完成
+  {
+  "responseLength": 907
+}
+[2025-08-18 23:09:39.478] INFO: 调度建议解析成功
+  {
+  "adjustmentCount": 0,
+  "breakCount": 2
+}
+[2025-08-18 23:09:39.479] INFO: 任务调度规划完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "targetDate": "2025-08-18",
+  "processingTime": "7276ms",
+  "success": true
+}
+[2025-08-18 23:09:39.480] INFO: 服务执行完成
+  {
+  "requestId": "dispatch-1755529770351-unbi5qnwx",
+  "servicesExecuted": [
+    "schedulePlanning"
+  ],
+  "successCount": 1
+}
+[2025-08-18 23:09:39.480] INFO: 步骤4: 生成统一回复
+  {
+  "requestId": "dispatch-1755529770351-unbi5qnwx"
+}
+[2025-08-18 23:09:39.481] INFO: 开始生成统一回复
+  {
+  "userInput": "帮我安排一下今天的日程",
+  "intentsCount": 1,
+  "executionResultsKeys": [
+    "schedulePlanning"
+  ],
+  "executionResults": {
+    "schedulePlanning": {
+      "success": true,
+      "data": {
+        "analysis": {
+          "timeConflicts": [
+            "目前没有任务安排，因此无时间冲突。"
+          ],
+          "priorityInsights": "由于当前没有任务，无法进行优先级分析。建议用户添加任务以进行进一步规划。",
+          "workloadAssessment": "当前任务总数为0，工作量为零，时间完全空闲。",
+          "userStateConsiderations": "用户情绪状态中立，适合安排任务，但需注意保持轻松节奏以避免压力积累。"
+        },
+        "recommendations": {
+          "taskAdjustments": [],
+          "breakSuggestions": [
+            {
+              "startTime": "12:00",
+              "endTime": "12:30",
+              "type": "meal",
+              "activity": "午餐休息"
+            },
+            {
+              "startTime": "15:00",
+              "endTime": "15:15",
+              "type": "short",
+              "activity": "短暂休息，活动身体或喝水"
+            }
+          ],
+          "optimizationTips": [
+            "建议在早上时间安排重要任务，因为这是精力最充沛的时间段。",
+            "如果需要安排会议或执行类任务，可以放在下午。",
+            "晚上适合进行轻松的学习或回顾当天工作。"
+          ]
+        },
+        "schedule": {
+          "morning": [],
+          "forenoon": [],
+          "afternoon": [],
+          "evening": []
+        },
+        "summary": "当前没有任务安排，建议用户添加任务以便进行详细规划。同时，已建议安排适当的休息时间以保持高效和健康。",
+        "appliedChanges": [],
+        "metadata": {
+          "currentTime": "2025/08/18 23:09:32",
+          "targetDate": "2025-08-18",
+          "existingTaskCount": 0,
+          "collectionCount": 1,
+          "userContext": {
+            "emotionalState": "neutral"
+          },
+          "autoApplied": false,
+          "processingTime": 7276
+        }
+      }
+    }
+  }
+}
+[2025-08-18 23:09:39.482] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-08-18 23:09:40.999] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "1516ms",
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 41,
+    "total_tokens": 297,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 23:09:41.000] INFO: 回复生成完成
+  {
+  "requestId": "dispatch-1755529770351-unbi5qnwx",
+  "responseLength": 68
+}
+[2025-08-18 23:09:41.000] INFO: 智能调度处理完成
+  {
+  "requestId": "dispatch-1755529770351-unbi5qnwx",
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": "10649ms",
+  "responseLength": 68,
+  "servicesExecuted": [
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 23:09:41.000] INFO: 智能调度处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": 10650,
+  "responseLength": 68,
+  "servicesExecuted": [
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 23:09:46.190] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "689c9e67e830282547f98447",
+  "ip": "::1"
+}
+[2025-08-18 23:09:46.190] INFO: 收到智能调度请求
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "帮我创建一个新任务",
+  "sessionId": "session_1755529760832_289r8dc4a",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-08-18 23:09:46.191] INFO: 开始智能调度处理
+  {
+  "requestId": "dispatch-1755529786191-bti0bw15e",
+  "userInput": "帮我创建一个新任务",
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755529760832_289r8dc4a",
+  "inputLength": 9
+}
+[2025-08-18 23:09:46.191] INFO: 步骤1: 执行意图识别
+  {
+  "requestId": "dispatch-1755529786191-bti0bw15e"
+}
+[2025-08-18 23:09:46.191] INFO: 开始意图识别
+  {
+  "userInput": "帮我创建一个新任务",
+  "inputLength": 9
+}
+[2025-08-18 23:09:46.192] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 369
+}
+[2025-08-18 23:09:46.192] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 23:09:52.599] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 468,
+    "completion_tokens": 85,
+    "total_tokens": 553,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 23:09:52.599] INFO: 收到模型响应
+  {
+  "responseLength": 237,
+  "responseTime": "6408ms"
+}
+[2025-08-18 23:09:52.600] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"TASK_CREATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户明确请求创建一个新任务，符合任务新增的意图。\",\n  \"extracted_info\": {\n    \"keywords\": [\"创建\", \"任务\"],\n    \"entities\": {\n      \"time\": \"\",\n      \"location\"..."
+}
+[2025-08-18 23:09:52.601] INFO: 意图识别结果解析成功
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 23:09:52.602] INFO: 意图识别完成
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95,
+  "processingTime": "6410ms",
+  "success": true
+}
+[2025-08-18 23:09:52.602] INFO: 意图识别完成
+  {
+  "requestId": "dispatch-1755529786191-bti0bw15e",
+  "intent": "TASK_CREATION",
+  "confidence": 0.95
+}
+[2025-08-18 23:09:52.603] INFO: 步骤2: 分析多重意图
+  {
+  "requestId": "dispatch-1755529786191-bti0bw15e"
+}
+[2025-08-18 23:09:52.604] INFO: 多重意图分析完成
+  {
+  "requestId": "dispatch-1755529786191-bti0bw15e",
+  "intents": [
+    "TASK_CREATION"
+  ],
+  "count": 1
+}
+[2025-08-18 23:09:52.604] INFO: 步骤3: 执行相应的服务
+  {
+  "requestId": "dispatch-1755529786191-bti0bw15e"
+}
+[2025-08-18 23:09:52.605] INFO: 开始任务识别和存储
+  {
+  "userInput": "帮我创建一个新任务",
+  "userId": "689c9e67e830282547f98447"
+}
+[2025-08-18 23:09:52.606] INFO: 开始意图识别
+  {
+  "userInput": "帮我创建一个新任务",
+  "inputLength": 9
+}
+[2025-08-18 23:09:52.607] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 369
+}
+[2025-08-18 23:09:52.608] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 23:09:54.202] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 468,
+    "completion_tokens": 75,
+    "total_tokens": 543,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 23:09:54.202] INFO: 收到模型响应
+  {
+  "responseLength": 197,
+  "responseTime": "1597ms"
+}
+[2025-08-18 23:09:54.203] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"TASK_CREATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户明确请求创建一个新任务，符合任务新增的意图。\",\n  \"extracted_info\": {\n    \"keywords\": [\"创建\", \"任务\"],\n    \"entities\": {\n      \"task\": \"新任务\"\n    }\n  }\n}..."
+}
+[2025-08-18 23:09:54.203] INFO: 意图识别结果解析成功
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 23:09:54.203] INFO: 意图识别完成
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95,
+  "processingTime": "1598ms",
+  "success": true
+}
+[2025-08-18 23:09:54.204] INFO: 意图识别完成
+  {
+  "intent": "TASK_CREATION",
+  "confidence": 0.95
+}
+[2025-08-18 23:09:54.204] INFO: 提取任务信息完成
+  {
+  "taskInfo": {
+    "title": "新任务",
+    "userId": "689c9e67e830282547f98447",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    }
+  }
+}
+[2025-08-18 23:09:54.205] INFO: 开始存储任务到数据库
+  {
+  "taskInfo": {
+    "title": "新任务",
+    "userId": "689c9e67e830282547f98447",
+    "timeBlock": {
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "timeBlockType": "afternoon"
+    }
+  }
+}
+[2025-08-18 23:09:54.229] INFO: 任务存储成功
+  {
+  "taskId": "68a3424231020f2ab6b819f2"
+}
+[2025-08-18 23:09:54.229] INFO: 任务存储成功
+  {
+  "taskId": "68a3424231020f2ab6b819f2",
+  "title": "新任务",
+  "processingTime": "1625ms"
+}
+[2025-08-18 23:09:54.230] INFO: 服务执行完成
+  {
+  "requestId": "dispatch-1755529786191-bti0bw15e",
+  "servicesExecuted": [
+    "taskCreation"
+  ],
+  "successCount": 1
+}
+[2025-08-18 23:09:54.230] INFO: 步骤4: 生成统一回复
+  {
+  "requestId": "dispatch-1755529786191-bti0bw15e"
+}
+[2025-08-18 23:09:54.231] INFO: 开始生成统一回复
+  {
+  "userInput": "帮我创建一个新任务",
+  "intentsCount": 1,
+  "executionResultsKeys": [
+    "taskCreation"
+  ],
+  "executionResults": {
+    "taskCreation": {
+      "success": true,
+      "message": "任务创建成功",
+      "task": {
+        "timeBlock": {
+          "startTime": "14:00",
+          "endTime": "18:00",
+          "timeBlockType": "afternoon"
+        },
+        "_id": "68a3424231020f2ab6b819f2",
+        "title": "新任务",
+        "description": "",
+        "priority": "medium",
+        "completed": false,
+        "userId": "689c9e67e830282547f98447",
+        "isScheduled": false,
+        "createdAt": "2025-08-18T15:09:54.220Z",
+        "updatedAt": "2025-08-18T15:09:54.220Z",
+        "__v": 0
+      },
+      "intentResult": {
+        "intent": "TASK_CREATION",
+        "confidence": 0.95,
+        "reasoning": "用户明确请求创建一个新任务，符合任务新增的意图。",
+        "extracted_info": {
+          "keywords": [
+            "创建",
+            "任务"
+          ],
+          "entities": {
+            "task": "新任务"
+          }
+        },
+        "original_input": "帮我创建一个新任务",
+        "timestamp": "2025-08-18T15:09:54.203Z",
+        "intent_description": "任务新增（待办事项、习惯养成）"
+      },
+      "processingTime": 1625
+    }
+  }
+}
+[2025-08-18 23:09:54.232] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-08-18 23:09:55.706] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "1473ms",
+  "usage": {
+    "prompt_tokens": 254,
+    "completion_tokens": 40,
+    "total_tokens": 294,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 23:09:55.706] INFO: 回复生成完成
+  {
+  "requestId": "dispatch-1755529786191-bti0bw15e",
+  "responseLength": 73
+}
+[2025-08-18 23:09:55.706] INFO: 智能调度处理完成
+  {
+  "requestId": "dispatch-1755529786191-bti0bw15e",
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": "9515ms",
+  "responseLength": 73,
+  "servicesExecuted": [
+    "taskCreation"
+  ]
+}
+[2025-08-18 23:09:55.707] INFO: 智能调度处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": 9517,
+  "responseLength": 73,
+  "servicesExecuted": [
+    "taskCreation"
+  ]
+}
+[2025-08-18 23:10:10.370] INFO: 获取智能调度服务状态
+  {
+  "url": "/api/aisiri/dispatch/status",
+  "ip": "::1"
+}
+[2025-08-18 23:10:10.371] INFO: 获取智能调度服务状态
+[2025-08-18 23:10:10.372] INFO: 开始意图识别
+  {
+  "userInput": "你好",
+  "inputLength": 2
+}
+[2025-08-18 23:10:10.372] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 362
+}
+[2025-08-18 23:10:10.373] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 23:10:12.277] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 464,
+    "completion_tokens": 73,
+    "total_tokens": 537,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 23:10:12.277] INFO: 收到模型响应
+  {
+  "responseLength": 183,
+  "responseTime": "1906ms"
+}
+[2025-08-18 23:10:12.278] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"CONVERSATION\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户输入为简单的问候语'你好'，没有涉及任务创建、时间调度或需要调用外部工具的内容。\",\n  \"extracted_info\": {\n    \"keywords\": [\"你好\"],\n    \"entities\": {}\n  }\n}..."
+}
+[2025-08-18 23:10:12.278] INFO: 意图识别结果解析成功
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 23:10:12.279] INFO: 意图识别完成
+  {
+  "intent": "CONVERSATION",
+  "confidence": 0.95,
+  "processingTime": "1907ms",
+  "success": true
+}
+[2025-08-18 23:10:12.279] INFO: 智能调度服务状态查询完成
+  {
+  "status": "healthy",
+  "processingTime": 1908
+}
+[2025-08-18 23:10:20.900] INFO: 智能调度请求
+  {
+  "url": "/api/aisiri/dispatch",
+  "userId": "689c9e67e830282547f98447",
+  "ip": "::1"
+}
+[2025-08-18 23:10:20.901] INFO: 收到智能调度请求
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "我明天早上要考试，帮我安排一下",
+  "sessionId": "session_1755529760832_289r8dc4a",
+  "deviceInfo": {
+    "platform": "web",
+    "version": "2.0.0"
+  }
+}
+[2025-08-18 23:10:20.901] INFO: 开始智能调度处理
+  {
+  "requestId": "dispatch-1755529820901-tkyy67xjx",
+  "userInput": "我明天早上要考试，帮我安排一下",
+  "userId": "689c9e67e830282547f98447",
+  "sessionId": "session_1755529760832_289r8dc4a",
+  "inputLength": 15
+}
+[2025-08-18 23:10:20.902] INFO: 步骤1: 执行意图识别
+  {
+  "requestId": "dispatch-1755529820901-tkyy67xjx"
+}
+[2025-08-18 23:10:20.902] INFO: 开始意图识别
+  {
+  "userInput": "我明天早上要考试，帮我安排一下",
+  "inputLength": 15
+}
+[2025-08-18 23:10:20.903] INFO: 发送请求到通义千问模型
+  {
+  "messagesCount": 2,
+  "systemPromptLength": 530,
+  "userPromptLength": 375
+}
+[2025-08-18 23:10:20.904] INFO: 准备调用通义千问API
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2
+}
+[2025-08-18 23:10:25.048] INFO: 通义千问API调用成功
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 472,
+    "completion_tokens": 99,
+    "total_tokens": 571,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 23:10:25.049] INFO: 收到模型响应
+  {
+  "responseLength": 264,
+  "responseTime": "4146ms"
+}
+[2025-08-18 23:10:25.049] INFO: 开始解析模型响应
+  {
+  "responseContent": "{\n  \"intent\": \"SCHEDULE_PLANNING\",\n  \"confidence\": 0.95,\n  \"reasoning\": \"用户请求帮助安排明天早上的时间，涉及时间调度和规划，目的是为即将到来的考试合理安排时间。\",\n  \"extracted_info\": {\n    \"keywords\": [\"考试\", \"安排\"],\n    \"entities\": {\n      \"tim..."
+}
+[2025-08-18 23:10:25.050] INFO: 意图识别结果解析成功
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "hasExtractedInfo": true
+}
+[2025-08-18 23:10:25.051] INFO: 意图识别完成
+  {
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95,
+  "processingTime": "4148ms",
+  "success": true
+}
+[2025-08-18 23:10:25.051] INFO: 意图识别完成
+  {
+  "requestId": "dispatch-1755529820901-tkyy67xjx",
+  "intent": "SCHEDULE_PLANNING",
+  "confidence": 0.95
+}
+[2025-08-18 23:10:25.052] INFO: 步骤2: 分析多重意图
+  {
+  "requestId": "dispatch-1755529820901-tkyy67xjx"
+}
+[2025-08-18 23:10:25.052] INFO: 多重意图分析完成
+  {
+  "requestId": "dispatch-1755529820901-tkyy67xjx",
+  "intents": [
+    "SCHEDULE_PLANNING"
+  ],
+  "count": 1
+}
+[2025-08-18 23:10:25.053] INFO: 步骤3: 执行相应的服务
+  {
+  "requestId": "dispatch-1755529820901-tkyy67xjx"
+}
+[2025-08-18 23:10:25.053] INFO: 开始任务调度规划
+  {
+  "userId": "689c9e67e830282547f98447",
+  "userInput": "我明天早上要考试，帮我安排一下",
+  "targetDate": "2025-08-18",
+  "userContext": {
+    "emotionalState": "neutral"
+  }
+}
+[2025-08-18 23:10:25.059] INFO: 获取用户现有任务
+  {
+  "userId": "689c9e67e830282547f98447",
+  "taskCount": 0,
+  "date": "2025-08-18"
+}
+[2025-08-18 23:10:25.064] INFO: 获取用户任务集信息
+  {
+  "userId": "689c9e67e830282547f98447",
+  "collectionCount": 1
+}
+[2025-08-18 23:10:25.065] INFO: 构建调度规划Prompt完成
+  {
+  "messagesCount": 2
+}
+[2025-08-18 23:10:25.065] INFO: 调用通义千问API进行调度分析
+  {
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "temperature": 0.3
+}
+[2025-08-18 23:10:33.902] INFO: 通义千问API调用成功 (调度分析)
+  {
+  "status": 200,
+  "usage": {
+    "prompt_tokens": 870,
+    "completion_tokens": 513,
+    "total_tokens": 1383,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 23:10:33.902] INFO: 通义千问调度分析完成
+  {
+  "responseLength": 1422
+}
+[2025-08-18 23:10:33.903] INFO: 调度建议解析成功
+  {
+  "adjustmentCount": 1,
+  "breakCount": 2
+}
+[2025-08-18 23:10:33.903] INFO: 任务调度规划完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "targetDate": "2025-08-18",
+  "processingTime": "8850ms",
+  "success": true
+}
+[2025-08-18 23:10:33.904] INFO: 服务执行完成
+  {
+  "requestId": "dispatch-1755529820901-tkyy67xjx",
+  "servicesExecuted": [
+    "schedulePlanning"
+  ],
+  "successCount": 1
+}
+[2025-08-18 23:10:33.904] INFO: 步骤4: 生成统一回复
+  {
+  "requestId": "dispatch-1755529820901-tkyy67xjx"
+}
+[2025-08-18 23:10:33.906] INFO: 开始生成统一回复
+  {
+  "userInput": "我明天早上要考试，帮我安排一下",
+  "intentsCount": 1,
+  "executionResultsKeys": [
+    "schedulePlanning"
+  ],
+  "executionResults": {
+    "schedulePlanning": {
+      "success": true,
+      "data": {
+        "analysis": {
+          "timeConflicts": [],
+          "priorityInsights": "由于用户明天早上需要考试，复习准备属于重要且紧急的任务（象限1），需要优先安排时间。",
+          "workloadAssessment": "当前没有现有任务，因此可以将全部时间用于复习和准备考试。",
+          "userStateConsiderations": "用户当前情绪状态为中性，可以高效投入复习，但需安排适当的休息以避免疲劳。"
+        },
+        "recommendations": {
+          "taskAdjustments": [
+            {
+              "taskId": "exam_prep",
+              "action": "create",
+              "changes": {
+                "title": "复习准备考试",
+                "date": "2025-08-18",
+                "time": "18:00",
+                "timeBlock": {
+                  "startTime": "18:00",
+                  "endTime": "21:30",
+                  "timeBlockType": "evening"
+                },
+                "estimatedTime": 210,
+                "priority": "high",
+                "quadrant": 1,
+                "reason": "明天早上要考试，复习属于重要且紧急的任务，需要优先安排。"
+              }
+            }
+          ],
+          "breakSuggestions": [
+            {
+              "startTime": "19:30",
+              "endTime": "19:45",
+              "type": "short",
+              "activity": "短暂休息，活动身体或喝水"
+            },
+            {
+              "startTime": "20:30",
+              "endTime": "20:45",
+              "type": "short",
+              "activity": "短暂休息，放松眼睛和大脑"
+            }
+          ],
+          "optimizationTips": [
+            "确保复习内容精炼，重点难点优先攻克。",
+            "睡前回顾关键知识点，有助于加深记忆。",
+            "准备好考试所需的物品（如证件、文具等），避免临时慌乱。"
+          ]
+        },
+        "schedule": {
+          "morning": [],
+          "forenoon": [],
+          "afternoon": [],
+          "evening": [
+            "exam_prep"
+          ]
+        },
+        "summary": "已为您安排今晚的复习时间，集中在晚上18:00至21:30，期间安排两次短暂休息以保持高效学习。建议您专注于重点内容的复习，并确保考试所需物品准备齐全。",
+        "appliedChanges": [],
+        "metadata": {
+          "currentTime": "2025/08/18 23:10:25",
+          "targetDate": "2025-08-18",
+          "existingTaskCount": 0,
+          "collectionCount": 1,
+          "userContext": {
+            "emotionalState": "neutral"
+          },
+          "autoApplied": false,
+          "processingTime": 8850
+        }
+      }
+    }
+  }
+}
+[2025-08-18 23:10:33.906] INFO: 调用通义千问API生成回应
+  {
+  "model": "qwen-plus",
+  "messagesCount": 2,
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions"
+}
+[2025-08-18 23:10:35.364] INFO: AI回应生成成功
+  {
+  "status": 200,
+  "responseTime": "1457ms",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 37,
+    "total_tokens": 296,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "model": "qwen-plus"
+}
+[2025-08-18 23:10:35.364] INFO: 回复生成完成
+  {
+  "requestId": "dispatch-1755529820901-tkyy67xjx",
+  "responseLength": 63
+}
+[2025-08-18 23:10:35.365] INFO: 智能调度处理完成
+  {
+  "requestId": "dispatch-1755529820901-tkyy67xjx",
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": "14463ms",
+  "responseLength": 63,
+  "servicesExecuted": [
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 23:10:35.365] INFO: 智能调度处理完成
+  {
+  "userId": "689c9e67e830282547f98447",
+  "processingTime": 14465,
+  "responseLength": 63,
+  "servicesExecuted": [
+    "schedulePlanning"
+  ]
+}
+[2025-08-18 23:13:01.006] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:13:01.032] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:13:01.032] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:13:01.401] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:13:01.409] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:13:01.409] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:13:01.410] INFO: 对话服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:13:01.410] INFO: 意图识别服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:13:01.411] INFO: 任务调度规划服务初始化成功
+  {
+  "model": "qwen-plus",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "hasApiKey": true
+}
+[2025-08-18 23:13:01.411] INFO: 智能调度服务初始化完成
+  {
+  "services": [
+    "intentRecognition",
+    "conversation",
+    "taskRecognition",
+    "schedulePlanning"
+  ]
+}
